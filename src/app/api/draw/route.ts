@@ -8,6 +8,8 @@ import { createDb } from "@/db/client";
 import { findBeerSignalsForFixture } from "@/db/beer-signal-repository";
 import { findEligibleFixtures, persistDraw } from "@/db/draw-repository";
 
+import { findHeadToHeadForFixture } from "@/providers/head-to-head";
+
 const requestSchema = z.object({ startDate: z.string(), endDate: z.string() }).strict();
 
 export async function POST(request: Request) {
@@ -25,8 +27,9 @@ export async function POST(request: Request) {
       // Optional editorial data must never make the core draw unavailable.
       console.warn("Beer signal lookup skipped", error);
     }
+    const headToHead = await findHeadToHeadForFixture(fixture, new Date());
     const visualIdentity = drawVisualIdentity({ competitionEmblemUrl: fixture.competition.emblemUrl, countryFlagUrl: fixture.competition.areaFlagUrl, homeTeamCrestUrl: fixture.homeTeamCrestUrl, awayTeamCrestUrl: fixture.awayTeamCrestUrl });
-    const draw = await persistDraw(db, { shareToken: createShareToken(), fixtureId: fixture.id, startDate: dates.startDate, endDate: dates.endDate, expiresAt: drawExpiresAt(), resultSnapshot: { competition: fixture.competition.name, country: fixture.competition.country, homeTeam: fixture.homeTeam, awayTeam: fixture.awayTeam, kickoffDate: fixture.kickoffDate, kickoffAt: fixture.kickoffAt.toISOString(), timezone: fixture.timezone, stadium: fixture.stadium, city: fixture.city, officialTicketUrl: fixture.officialTicketUrl, ...(visualIdentity && { visualIdentity }), ...(beerSignals && { beerSignals }) } });
+    const draw = await persistDraw(db, { shareToken: createShareToken(), fixtureId: fixture.id, startDate: dates.startDate, endDate: dates.endDate, expiresAt: drawExpiresAt(), resultSnapshot: { competition: fixture.competition.name, country: fixture.competition.country, homeTeam: fixture.homeTeam, awayTeam: fixture.awayTeam, kickoffDate: fixture.kickoffDate, kickoffAt: fixture.kickoffAt.toISOString(), timezone: fixture.timezone, stadium: fixture.stadium, city: fixture.city, officialTicketUrl: fixture.officialTicketUrl, ...(visualIdentity && { visualIdentity }), ...(beerSignals && { beerSignals }), ...(headToHead && { headToHead }) } });
     return NextResponse.json({ shareToken: draw.shareToken, expiresAt: draw.expiresAt.toISOString() }, { status: 201 });
   } catch (error) {
     if (error instanceof SyntaxError || error instanceof z.ZodError || error instanceof DateRangeError) {

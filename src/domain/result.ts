@@ -1,3 +1,5 @@
+import type { HeadToHeadSnapshot } from "./head-to-head";
+
 export type DrawResultSnapshot = Readonly<{
   competition: string; country: string; homeTeam: string; awayTeam: string;
   kickoffDate: string; kickoffAt: string; timezone: string; stadium: string; city: string;
@@ -8,6 +10,7 @@ export type DrawResultSnapshot = Readonly<{
     homeTeamCrestUrl?: string;
     awayTeamCrestUrl?: string;
   }>;
+  headToHead?: HeadToHeadSnapshot;
   beerSignals?: Readonly<{
     cityAverage?: Readonly<{
       servingLabel: string;
