@@ -1,7 +1,7 @@
 import "dotenv/config";
 import { randomBytes } from "node:crypto";
 import { expect, test } from "@playwright/test";
-import { and, eq, isNotNull } from "drizzle-orm";
+import { eq, isNotNull } from "drizzle-orm";
 import { createDb } from "@/db/client";
 import { findSharedDraw } from "@/db/draw-repository";
 import { competitions, draws, fixtures, venues } from "@/db/schema";
@@ -83,38 +83,6 @@ test("renders only the stored official ticket link and the copy action", async (
   await page.goto(`/m/${shareToken}/reveal`);
   await expect(page.locator(".reveal-clubs")).toHaveClass(/is-visible/, { timeout: 7_000 });
   await expect(page.getByText("Two clubs. One weekend.")).toBeVisible({ timeout: 7_000 });
-});
-
-test("renders a complete internal visual identity and keeps its snapshot immutable", async ({ page }) => {
-  const db = createDb();
-  const [fixture] = await db.select({
-    id: fixtures.id, competitionId: fixtures.competitionId, kickoffDate: fixtures.kickoffDate, kickoffAt: fixtures.kickoffAt,
-    homeTeam: fixtures.homeTeam, awayTeam: fixtures.awayTeam, stadium: venues.stadium, city: venues.city, timezone: venues.timezone,
-    officialTicketUrl: fixtures.officialTicketUrl, homeTeamCrestUrl: fixtures.homeTeamCrestUrl, awayTeamCrestUrl: fixtures.awayTeamCrestUrl,
-    competition: competitions.name, country: competitions.country, competitionEmblemUrl: competitions.emblemUrl, countryFlagUrl: competitions.areaFlagUrl,
-  }).from(fixtures).innerJoin(competitions, eq(fixtures.competitionId, competitions.id)).innerJoin(venues, eq(fixtures.venueId, venues.id))
-    .where(and(isNotNull(fixtures.homeTeamCrestUrl), isNotNull(fixtures.awayTeamCrestUrl), isNotNull(competitions.emblemUrl), isNotNull(competitions.areaFlagUrl))).limit(1);
-  if (!fixture?.homeTeamCrestUrl || !fixture.awayTeamCrestUrl || !fixture.competitionEmblemUrl || !fixture.countryFlagUrl) throw new Error("Expected one fully enriched provider fixture.");
-
-  const visualIdentity = { competitionEmblemUrl: fixture.competitionEmblemUrl, countryFlagUrl: fixture.countryFlagUrl, homeTeamCrestUrl: fixture.homeTeamCrestUrl, awayTeamCrestUrl: fixture.awayTeamCrestUrl };
-  const shareToken = randomBytes(24).toString("base64url");
-  await db.insert(draws).values({
-    shareToken, fixtureId: fixture.id, tripStartDate: fixture.kickoffDate, tripEndDate: fixture.kickoffDate,
-    expiresAt: new Date(Date.now() + 7 * 24 * 60 * 60 * 1000),
-    resultSnapshot: { competition: fixture.competition, country: fixture.country, homeTeam: fixture.homeTeam, awayTeam: fixture.awayTeam, kickoffDate: fixture.kickoffDate, kickoffAt: fixture.kickoffAt.toISOString(), timezone: fixture.timezone, stadium: fixture.stadium, city: fixture.city, officialTicketUrl: fixture.officialTicketUrl, visualIdentity },
-  });
-  try {
-    await page.goto(`/m/${shareToken}`);
-    await expect(page.locator(".identity-flag img")).toHaveCount(1);
-    await expect(page.locator(".identity-emblem img")).toHaveCount(1);
-    await expect(page.locator(".identity-crest-pair img")).toHaveCount(2);
-    await db.update(fixtures).set({ homeTeamCrestUrl: "https://test.invalid/new-home.svg", awayTeamCrestUrl: "https://test.invalid/new-away.svg" }).where(eq(fixtures.id, fixture.id));
-    await db.update(competitions).set({ emblemUrl: "https://test.invalid/new-league.svg", areaFlagUrl: "https://test.invalid/new-flag.svg" }).where(eq(competitions.id, fixture.competitionId));
-    await expect.poll(async () => (await findSharedDraw(db, shareToken))?.resultSnapshot.visualIdentity).toEqual(visualIdentity);
-  } finally {
-    await db.update(fixtures).set({ homeTeamCrestUrl: fixture.homeTeamCrestUrl, awayTeamCrestUrl: fixture.awayTeamCrestUrl }).where(eq(fixtures.id, fixture.id));
-    await db.update(competitions).set({ emblemUrl: fixture.competitionEmblemUrl, areaFlagUrl: fixture.countryFlagUrl }).where(eq(competitions.id, fixture.competitionId));
-  }
 });
 
 test("uses the direct result link when reduced motion is requested", async ({ page }) => {

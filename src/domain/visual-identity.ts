@@ -3,9 +3,9 @@ import type { DrawResultSnapshot } from "./result";
 export type VisualAssetKind = "countryFlag" | "competitionEmblem" | "teamCrest";
 
 export type VisualAssetDisplayPolicy = Readonly<{
-  /** Internal-development switch. This never represents public display rights. */
-  internalPreviewEnabled: boolean;
-  /** Exact HTTPS origins supplied by the licensed visual-asset provider. */
+  /** Whether approved provider artwork is displayed. */
+  enabled: boolean;
+  /** Exact HTTPS origins supplied by the visual-asset provider. */
   allowedOrigins: readonly string[];
 }>;
 
@@ -31,15 +31,14 @@ export function drawVisualIdentity(input: ProviderVisualIdentityInput): DrawResu
 }
 
 /**
- * A snapshot may retain upstream provenance, but it is never automatically a
- * permission to render third-party artwork. Rendering is opt-in by policy and
- * only accepts a credential-free HTTPS URL from an approved provider origin.
+ * Stored artwork renders only from an approved HTTPS provider origin.
+ * Credential-bearing and unapproved URLs always use the text fallback.
  */
 export function publicVisualAssetUrl(
   value: string | undefined,
   policy: VisualAssetDisplayPolicy,
 ): string | undefined {
-  if (!value || !policy.internalPreviewEnabled) return undefined;
+  if (!value || !policy.enabled) return undefined;
 
   try {
     const url = new URL(value);
@@ -50,14 +49,11 @@ export function publicVisualAssetUrl(
   }
 }
 
-export function internalVisualAssetPolicy(
-  internalPreviewEnabled: boolean,
-  environment: string | undefined,
-): VisualAssetDisplayPolicy {
-  const enabled = internalPreviewEnabled && environment !== "production";
+/** Shared by development and production; no preview flag is required. */
+export function providerVisualAssetPolicy(): VisualAssetDisplayPolicy {
   return {
-    internalPreviewEnabled: enabled,
-    allowedOrigins: enabled ? ["https://crests.football-data.org"] : [],
+    enabled: true,
+    allowedOrigins: ["https://crests.football-data.org"],
   };
 }
 

@@ -75,7 +75,7 @@ html body .pass-place {
 .reveal-clubs:has(.identity-crest-pair.identity-asset--ready) .reveal-club-fallback { display: none; }
 .reveal-clubs .identity-crest-pair.identity-asset--pending { display: none; }
 
-/* Empty by design until an explicitly licensed provider is configured. */
+/* Provider identity marks retain compact proportions across reveal and result. */
 .identity-country,
 .identity-competition,
 .identity-crest-pair {
@@ -307,6 +307,10 @@ html body .pass-place {
   width: 44px;
   height: 44px;
   flex: 0 0 auto;
+  box-sizing: border-box;
+  padding: 4px;
+  border-radius: 4px;
+  background: #f4f1e7;
 }
 
 .result-artefact .venue .identity-competition-text {

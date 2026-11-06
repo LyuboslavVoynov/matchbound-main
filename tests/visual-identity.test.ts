@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { drawVisualIdentity, internalVisualAssetPolicy, publicVisualAssetUrl, shouldRenderTeamCrestPair, shouldRenderVisualAsset } from "@/domain/visual-identity";
+import { drawVisualIdentity, providerVisualAssetPolicy, publicVisualAssetUrl, shouldRenderTeamCrestPair, shouldRenderVisualAsset } from "@/domain/visual-identity";
 
 describe("provider visual identity snapshots", () => {
   it("retains every available provider asset for a persisted draw", () => {
@@ -20,15 +20,15 @@ describe("provider visual identity snapshots", () => {
     expect(drawVisualIdentity({ competitionEmblemUrl: null, countryFlagUrl: null, homeTeamCrestUrl: null, awayTeamCrestUrl: null })).toBeUndefined();
   });
 
-  it("does not treat an upstream asset URL as display permission", () => {
+  it("does not render artwork when a display policy is disabled", () => {
     expect(publicVisualAssetUrl("https://crests.football-data.org/1.svg", {
-      internalPreviewEnabled: false,
+      enabled: false,
       allowedOrigins: ["https://crests.football-data.org"],
     })).toBeUndefined();
   });
 
-  it("only permits credential-free HTTPS artwork from an approved origin in an internal preview", () => {
-    const policy = { internalPreviewEnabled: true, allowedOrigins: ["https://assets.licensed.example"] };
+  it("only permits credential-free HTTPS artwork from an approved origin", () => {
+    const policy = { enabled: true, allowedOrigins: ["https://assets.licensed.example"] };
     expect(publicVisualAssetUrl("https://assets.licensed.example/club.svg", policy)).toBe("https://assets.licensed.example/club.svg");
     expect(publicVisualAssetUrl("http://assets.licensed.example/club.svg", policy)).toBeUndefined();
     expect(publicVisualAssetUrl("https://token@assets.licensed.example/club.svg", policy)).toBeUndefined();
@@ -43,9 +43,11 @@ describe("provider visual identity snapshots", () => {
     expect(shouldRenderTeamCrestPair("https://assets.licensed.example/home.svg", "https://assets.licensed.example/away.svg", true)).toBe(false);
   });
 
-  it("only enables provider marks for an explicit non-production internal preview", () => {
-    expect(internalVisualAssetPolicy(false, "development")).toEqual({ internalPreviewEnabled: false, allowedOrigins: [] });
-    expect(internalVisualAssetPolicy(true, "development")).toEqual({ internalPreviewEnabled: true, allowedOrigins: ["https://crests.football-data.org"] });
-    expect(internalVisualAssetPolicy(true, "production")).toEqual({ internalPreviewEnabled: false, allowedOrigins: [] });
+  it("enables approved provider marks without environment-dependent preview flags", () => {
+    const policy = providerVisualAssetPolicy();
+    expect(policy).toEqual({ enabled: true, allowedOrigins: ["https://crests.football-data.org"] });
+    expect(publicVisualAssetUrl("https://crests.football-data.org/57.png", policy)).toBe("https://crests.football-data.org/57.png");
+    expect(publicVisualAssetUrl("https://crests.football-data.org.evil.example/57.png", policy)).toBeUndefined();
+    expect(publicVisualAssetUrl("data:image/svg+xml,anything", policy)).toBeUndefined();
   });
 });
