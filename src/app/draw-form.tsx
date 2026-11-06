@@ -28,7 +28,7 @@ export function DrawForm() {
     <div className="dates"><label>Trip starts<input ref={startInput} required type="date" aria-invalid={hasError} aria-describedby={hasError ? "draw-error" : "date-hint"} value={startDate} onChange={(e) => { setStartDate(e.target.value); if (endDate && endDate < e.target.value) setEndDate(""); }} /></label>
       <label>Trip ends<input ref={endInput} required type="date" aria-invalid={hasError} aria-describedby={hasError ? "draw-error" : "date-hint"} min={startDate || undefined} max={maxEndDate} value={endDate} onChange={(e) => setEndDate(e.target.value)} /></label></div>
     <p className="hint" id="date-hint">Up to 7 days. Confirmed fixtures only.</p>
-    <button className="button" disabled={state === "loading" || state === "success"}>{state === "loading" ? "Drawing your match…" : state === "success" ? "Fixture locked" : "Draw my match"}<span aria-hidden="true">↗</span></button>
+    <button className="button" disabled={state === "loading" || state === "success"}>{state === "loading" ? "Drawing your match…" : state === "success" ? "Fixture locked" : "Draw my match"}<svg className="draw-arrow" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6" /></svg></button>
     {message && <p id="draw-error" className="form-message" role="alert">{message}</p>}
   </form>;
 }

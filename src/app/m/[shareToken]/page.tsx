@@ -23,9 +23,9 @@ export default async function MatchPage({ params }: { params: Promise<{ shareTok
     <div className="resultlocation"><div><p className="eyebrow result-locked"><span className="dot" aria-hidden="true" />Fixture locked</p><h1 tabIndex={-1} data-handoff-heading>{result.city}</h1><p className="trip-dates">{formatTripDates(draw.tripStartDate, draw.tripEndDate)}</p></div><span className="country"><CountryFlagMark identity={result.visualIdentity} />{result.country}</span></div>
     <div className="result-grid"><FixtureCard result={result} /><div className="result-extras">
       {summary && <section className="matchup" aria-labelledby="matchup-title"><div className="matchuptop"><h2 id="matchup-title">The matchup</h2><span>Last {summary.count} {summary.count === 1 ? "meeting" : "meetings"}</span></div>
-        <div className="stats"><div><strong>{summary.homeWins}</strong><span className="stat-label">{result.homeTeam} {summary.homeWins === 1 ? "win" : "wins"}</span><p className="gd"><b>{signedGoalDifference(summary.homeGoalDifference)}</b> goal difference</p></div>
+        <div className="stats"><div><strong>{summary.homeWins}</strong><span className="stat-label">{result.homeTeam} {summary.homeWins === 1 ? "win" : "wins"}</span><p className="gd"><b>{signedGoalDifference(summary.homeGoalDifference)}</b><span>Goal difference</span></p></div>
           <div><strong>{summary.draws}</strong><span className="stat-label">{summary.draws === 1 ? "Draw" : "Draws"}</span></div>
-          <div><strong>{summary.awayWins}</strong><span className="stat-label">{result.awayTeam} {summary.awayWins === 1 ? "win" : "wins"}</span><p className="gd"><b>{signedGoalDifference(summary.awayGoalDifference)}</b> goal difference</p></div></div>
+          <div><strong>{summary.awayWins}</strong><span className="stat-label">{result.awayTeam} {summary.awayWins === 1 ? "win" : "wins"}</span><p className="gd"><b>{signedGoalDifference(summary.awayGoalDifference)}</b><span>Goal difference</span></p></div></div>
       </section>}
       {(beerBrand || beerPrice) && <section className="beer-panel" aria-label="Beer details">
         <h2 className="eyebrow">{beerBrand ? `A beer from ${beerBrand.countryName}` : `Beer in ${result.city}`}</h2>
