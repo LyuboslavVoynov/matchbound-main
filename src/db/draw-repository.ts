@@ -24,7 +24,7 @@ export async function persistDraw(db: Database, values: { shareToken: string; fi
 }
 
 export async function findSharedDraw(db: Database, shareToken: string) {
-  const [row] = await db.select({ expiresAt: draws.expiresAt, resultSnapshot: draws.resultSnapshot }).from(draws).where(eq(draws.shareToken, shareToken));
+  const [row] = await db.select({ expiresAt: draws.expiresAt, resultSnapshot: draws.resultSnapshot, tripStartDate: draws.tripStartDate, tripEndDate: draws.tripEndDate }).from(draws).where(eq(draws.shareToken, shareToken));
   return row;
 }
 

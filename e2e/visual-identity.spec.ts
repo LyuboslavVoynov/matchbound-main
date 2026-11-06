@@ -54,27 +54,22 @@ test("loads provider marks through the reveal and persisted result", async ({ pa
   const draw = await saveDraw();
   try {
     await page.goto(`/m/${draw.token}/reveal`);
-    await expect(page.locator('[data-stage="country"]')).toHaveAttribute("aria-hidden", "false", { timeout: 5_000 });
+    await expect(page.locator('[data-stage="country"]')).toHaveAttribute("aria-hidden", "false", { timeout: 7_000 });
     await expect(page.locator('[data-stage="country"] img')).toBeVisible();
-    await expect(page.locator('[data-stage="competition"]')).toHaveAttribute("aria-hidden", "false", { timeout: 5_000 });
+    await expect(page.locator('[data-stage="competition"]')).toHaveAttribute("aria-hidden", "false", { timeout: 7_000 });
     await expect(page.locator('[data-stage="competition"] img')).toBeVisible();
-    await expect(page.locator('[data-stage="clubs"]')).toHaveAttribute("aria-hidden", "false", { timeout: 5_000 });
+    await expect(page.locator('[data-stage="clubs"]')).toHaveAttribute("aria-hidden", "false", { timeout: 7_000 });
     await expect(page.locator('[data-stage="clubs"] img')).toHaveCount(2);
-    await expect(page.getByRole("link", { name: "View match details" })).toBeVisible({ timeout: 5_000 });
-    await settleAnimations(page, ".reveal-stages");
-    await expect(page.locator('[data-stage="match"]')).toHaveCSS("opacity", "1");
-    await expect(page.locator('[data-stage="clubs"]')).toHaveCSS("opacity", "0");
-    await page.screenshot({ path: testInfo.outputPath("reveal.png"), fullPage: true });
-    await page.getByRole("link", { name: "View match details" }).click();
-    await page.waitForURL(`/m/${draw.token}`);
+    await page.waitForURL(`/m/${draw.token}`, { timeout: 22_000 });
+    await expect(page.locator(".result-locked")).toHaveText("Fixture locked");
     await expectLoadedImages(page);
-    await expect(page.locator(".venue .identity-emblem")).toHaveCSS("background-color", "rgb(244, 241, 231)");
+    await expect(page.locator(".competition .identity-emblem")).toHaveCSS("background-color", "rgba(0, 0, 0, 0)");
     await page.reload();
     await expectLoadedImages(page);
-    await expect(page.locator(".match-card h1")).toContainText(draw.result.homeTeam);
+    await expect(page.locator(".fixture-heading")).toContainText(draw.result.homeTeam);
     expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
     await settleAnimations(page, ".match-card");
-    await expect(page.locator(".artefact-place")).toHaveCSS("opacity", "1");
+    await expect(page.locator(".resultlocation")).toHaveCSS("opacity", "1");
     await expect(page.locator(".venue")).toHaveCSS("opacity", "1");
     await page.screenshot({ path: testInfo.outputPath("result.png"), fullPage: true });
   } finally { await draw.cleanup(); }
@@ -95,12 +90,9 @@ test("keeps text and navigation when marks are missing, unapproved or fail to lo
     const draw = await saveDraw(transform);
     try {
       await page.goto(`/m/${draw.token}/reveal`);
-      await expect(page.getByText("Two clubs. One weekend.")).toBeVisible();
-      await expect(page.getByRole("link", { name: "View match details" })).toBeVisible();
-      await expect(page.locator(".identity-flag img, .identity-emblem img, .identity-crest-pair img")).toHaveCount(0);
-      await page.getByRole("link", { name: "View match details" }).click();
       await page.waitForURL(`/m/${draw.token}`);
-      await expect(page.locator(".match-card h1")).toContainText(draw.result.homeTeam);
+      await expect(page.locator(".ticket-brand")).toHaveCount(0);
+      await expect(page.locator(".fixture-heading")).toContainText(draw.result.homeTeam);
       await expect(page.locator(".identity-flag img, .identity-emblem img, .identity-crest-pair img")).toHaveCount(0);
       await expect(page.getByRole("button", { name: "Copy trip link" })).toBeVisible();
     } finally { await draw.cleanup(); }

@@ -1,47 +1,44 @@
 # Matchbound agent workflow
 
-## Product Critic review gate
+## Proportionate review
 
-For every meaningful user-facing change, the primary implementation agent must request an independent review from the custom `product_critic` subagent when subagent functionality is available.
+Use the lightest review that addresses the actual risk of the change. Critics are available tools, not mandatory steps for every feature. The primary agent remains responsible for correctness, usability and completion.
 
-Meaningful user-facing changes include user flows, pages, components, visual design, copy, interaction states, validation, sharing, localisation, and reveal behavior. Purely internal migrations, refactors, or test cleanup may skip this gate unless they affect visible behavior.
+| Change | Default review |
+| --- | --- |
+| Small styling, copy, icon, spacing or timing adjustment | Primary-agent review and one focused check; no critic |
+| New page or substantial interaction | One independent critic, chosen for the main risk, once |
+| Major flow or architecture change involving both functional and visual risks | Product Critic and Designer Critic, once each |
+| Internal technical change without a UI impact | Relevant technical checks; no Designer Critic |
+| Documentation or workflow change | Primary-agent review; no critic |
 
-Required sequence:
+Choose `product_critic` for functional UX, validation, navigation, persistence, sharing and product scope. Choose `designer_critic` for hierarchy, typography, responsive layout, interaction and motion. Do not add both merely because a change is user-facing. Explicit user requests override these defaults.
 
-1. Implement the scoped change.
-2. Run relevant automated verification.
-3. Delegate a read-only independent review to `product_critic`, including the requirements, changed files, test evidence, and local URL when available.
-4. Evaluate its findings and fix every `BLOCKER` automatically.
-5. Fix `IMPORTANT` findings when consistent with the agreed MVP; explain any deliberately deferred finding to the user.
-6. Rerun relevant verification.
-7. Request one final `product_critic` review.
-8. Consider the feature complete only after that review has no `BLOCKER` or `IMPORTANT` findings.
+When a critic is needed:
 
-Do not run more than two Product Critic passes per feature unless a serious defect remains. Product Critic is review-only and must not edit files or be run concurrently with implementation work. Its report must use `BLOCKER`, `IMPORTANT`, `POLISH`, and `PASS`, with concrete recommendations for every issue.
+1. Finish the scoped implementation and relevant verification.
+2. Provide the reviewer with the requirements, changed files, existing test evidence and local URL or screenshots when useful.
+3. Request a read-only review scoped to the change. Pause implementation of the reviewed code during that review.
+4. Fix blockers and important findings that are consistent with the agreed scope. Do not expand the feature to address unrelated polish.
+5. Verify affected fixes. The primary agent may confirm straightforward fixes; request a focused follow-up only if a material issue remains uncertain.
 
-## Designer Critic review gate
+There is no automatic final signoff or second review pass. Do not repeat a clean review. Follow-up reviews must inspect the specific unresolved issue rather than restart the full review. Report material deferred issues to the user.
 
-For every meaningful UI, UX, typography, responsive-layout, interaction, or motion change, the primary agent must also delegate an independent read-only review to a `designer_critic` subagent when subagent functionality is available. Product Critic protects product simplicity and functional UX; Designer Critic protects visual craft, interaction feel, and mobile-native quality. They must not edit files or run concurrently with the primary implementation agent.
+Keep critic reports concise: severity, concrete issue, impact and recommended fix. Use `BLOCKER`, `IMPORTANT`, `POLISH` and `PASS` when helpful; do not require empty sections or before/after tables.
 
-Designer Critic must use the installed Emil Kowalski design-engineering skills relevant to the change:
+Designer Critic may use relevant Emil Kowalski skills (`emil-design-eng`, `mobile-native`, `break-ui`, `review-animations`, `find-animation-opportunities`) when installed and useful. Missing optional skills do not require installation, permission or a blocked review.
 
-- `emil-design-eng` for visual hierarchy, component craft, interaction and motion decisions.
-- `mobile-native` for mobile surfaces and touch interactions.
-- `break-ui` for worst-case content and responsive stress tests.
-- `review-animations` for any motion implementation.
-- `find-animation-opportunities` only when deciding whether a new animation is justified.
+## Verification and compute budget
 
-Designer Critic should exercise the live UI where tooling permits and must be adversarial rather than agreeable. For UI reviews, its report must include the required `BLOCKER`, `IMPORTANT`, `POLISH`, and `PASS` sections plus an actual Markdown table with `Before`, `After`, and `Why` columns for every proposed visual or interaction change. It must not propose product features as a substitute for improving the existing experience.
-
-For a meaningful UI or motion feature, the required completion sequence is:
-
-1. Implement and run automated verification.
-2. Product Critic reviews product/functional UX.
-3. Designer Critic reviews visual, interaction, responsive and motion quality.
-4. Fix all `BLOCKER` issues and MVP-consistent `IMPORTANT` issues from both reviews.
-5. Re-run relevant verification.
-6. Request one final combined pass from both critics, sequentially.
-7. Stop after two review passes per critic unless a serious defect remains.
+- Select checks from the behavior changed, not from a fixed checklist. Small reversible changes do not need new tests that merely mirror the implementation.
+- Run the smallest meaningful test set first. Broaden only for an observed failure, cross-cutting risk or unresolved concern.
+- Once checks pass, reuse their evidence. Repeat checks only when subsequent changes or failures justify it; rerun affected cases rather than an entire suite by default.
+- Do not rebuild production for every cosmetic adjustment. Use a production build when changing build-sensitive configuration, server/client boundaries, routing or dependencies, or when preparing a release or investigating a production-only problem.
+- Inspect the relevant UI state for visual changes. A small cosmetic follow-up can use a focused screenshot or browser check; it does not automatically restart reviews and production verification.
+- Prefer one representative viewport for a small local adjustment. Check mobile and desktop when responsive behavior or a shared layout is affected, and reduced motion when changing animation behavior.
+- Avoid brittle millisecond assertions; verify visible sequencing, usable states and reasonable timing bounds.
+- Use subagents only when independent work or specialist review materially saves time or reduces risk. Do not delegate routine small edits. Do not create a review cascade where reviewers automatically spawn more reviewers.
+- Keep progress updates concise and meaningful. Do not poll subagents repeatedly at short intervals or narrate unchanged status. Ask for checkpoints at useful milestones.
 
 ## Product constraints
 

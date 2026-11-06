@@ -1,22 +1,32 @@
 "use client";
 
-import Link from "next/link";
-import { useEffect, useRef, useState, type MouseEvent } from "react";
 import { useRouter } from "next/navigation";
+import { useEffect, useRef, useState } from "react";
 import type { DrawResultSnapshot } from "@/domain/result";
-import { CompetitionEmblemMark, CountryFlagMark, TeamCrestPair, useVisualIdentityReadiness } from "@/components/visual-identity";
+import { CompetitionEmblemMark, CountryFlagMark, FixtureTeams, useVisualIdentityReadiness } from "@/components/visual-identity";
+import { useResultHandoff } from "@/components/result-handoff";
+import { BrandLockup } from "@/components/brand-lockup";
+import { SiteHeader, SiteFooter } from "@/components/site-chrome";
+
+const stages = ["brand-intro", "country", "city", "competition", "stadium", "clubs", "brand-outro"] as const;
+// 17 seconds before navigation, plus at most three 500ms artwork waits.
+const CARD_TRANSITION_MS = 650;
+const BRAND_TRANSITION_MS = 800;
+const holds = [1200, 1800, 1600, 1800, 1800, 2600, 1200];
+const brandStage = (stage: number) => stage === 0 || stage === 6;
 
 type RevealExperienceProps = Readonly<{ result: DrawResultSnapshot; resultHref: string }>;
 export function RevealExperience({ result, resultHref }: RevealExperienceProps) {
   const router = useRouter();
+  const { cover, cancel } = useResultHandoff();
+  const navigationTarget = useRef<string | null>(null);
   const [reducedMotion, setReducedMotion] = useState<boolean | null>(null);
   const [stage, setStage] = useState(0);
-  const [isLeaving, setIsLeaving] = useState(false);
-  const exitTimer = useRef<number | undefined>(undefined);
+  const [previous, setPrevious] = useState<number | null>(null);
   const readiness = useVisualIdentityReadiness(result.visualIdentity);
   const readinessRef = useRef(readiness);
-
   useEffect(() => { readinessRef.current = readiness; }, [readiness]);
+  useEffect(() => { router.prefetch(resultHref); }, [router, resultHref]);
 
   useEffect(() => {
     const media = window.matchMedia("(prefers-reduced-motion: reduce)");
@@ -27,61 +37,77 @@ export function RevealExperience({ result, resultHref }: RevealExperienceProps) 
   }, []);
 
   useEffect(() => {
-    if (reducedMotion !== false) return;
-    const timers: number[] = [];
+    if (reducedMotion === null) return;
     let cancelled = false;
+    const timers = new Set<number>();
+    const navigate = () => {
+      if (cancelled || navigationTarget.current === resultHref) return;
+      navigationTarget.current = resultHref;
+      if (!reducedMotion) cover(resultHref);
+      try { router.replace(resultHref); } catch { cancel(); }
+    };
+    if (reducedMotion) {
+      navigate();
+      return () => { cancelled = true; };
+    }
     const pause = (milliseconds: number) => new Promise<void>((resolve) => {
-      timers.push(window.setTimeout(resolve, milliseconds));
+      const timer = window.setTimeout(() => { timers.delete(timer); resolve(); }, milliseconds);
+      timers.add(timer);
     });
     const waitForMark = async (mark: keyof typeof readinessRef.current) => {
-      const startedAt = Date.now();
-      while (readinessRef.current[mark] === "loading" && Date.now() - startedAt < 500 && !cancelled) await pause(100);
+      const startedAt = performance.now();
+      while (!cancelled && readinessRef.current[mark] === "loading" && performance.now() - startedAt < 500) await pause(50);
     };
     const run = async () => {
-      await pause(1700); await waitForMark("country"); if (cancelled) return; setStage(1);
-      await pause(1600); if (cancelled) return; setStage(2);
-      await pause(1250); await waitForMark("competition"); if (cancelled) return; setStage(3);
-      await pause(1600); if (cancelled) return; setStage(4);
-      await pause(1250); await waitForMark("clubs"); if (cancelled) return; setStage(5);
-      await pause(1800); if (!cancelled) setStage(6);
+      setStage(0); setPrevious(null);
+      await pause(BRAND_TRANSITION_MS + holds[0]);
+      for (let next = 1; next < stages.length; next++) {
+        if (cancelled) return;
+        if (next === 1) await waitForMark("country");
+        if (next === 3) await waitForMark("competition");
+        if (next === 5) await waitForMark("clubs");
+        if (cancelled) return;
+        setPrevious(next - 1); setStage(next);
+        await pause(brandStage(next) || brandStage(next - 1) ? BRAND_TRANSITION_MS : CARD_TRANSITION_MS);
+        if (cancelled) return;
+        setPrevious(null);
+        await pause(holds[next]);
+      }
+      // Keep the closing brand on screen until the saved result replaces this route.
+      navigate();
     };
     void run();
-    return () => { cancelled = true; timers.forEach(window.clearTimeout); };
-  }, [reducedMotion]);
-
-  useEffect(() => () => {
-    if (exitTimer.current !== undefined) window.clearTimeout(exitTimer.current);
-  }, []);
-
-  function handleResultNavigation(event: MouseEvent<HTMLAnchorElement>) {
-    if (
-      reducedMotion === true || isLeaving || event.button !== 0 ||
-      event.metaKey || event.ctrlKey || event.shiftKey || event.altKey
-    ) return;
-
-    event.preventDefault();
-    setIsLeaving(true);
-    exitTimer.current = window.setTimeout(() => router.push(resultHref), 1080);
-  }
+    return () => { cancelled = true; timers.forEach(window.clearTimeout); timers.clear(); };
+  }, [reducedMotion, resultHref, router, cover, cancel]);
 
   const immediate = reducedMotion === true;
-  return <main className={`reveal-page ${immediate ? "reveal-page--reduced" : ""} ${isLeaving ? "reveal-page--leaving" : ""}`}>
-    <header className="topbar"><Link className="wordmark" href="/">MATCHBOUND<span>•</span></Link><p>Fixture locked</p></header>
-    <span className="reveal-handoff-wordmark" aria-hidden="true">MATCHBOUND<span>•</span></span>
-    <span className="reveal-handoff-ball" aria-hidden="true"><i /></span>
+  const active = (value: number) => reducedMotion === false && stage === value;
+  const brandActive = reducedMotion === false && brandStage(stage);
+  const progress = immediate ? 6 : Math.min(stage, 6);
+  const progressHidden = reducedMotion !== false || brandActive;
+  const stageClass = (value: number, extra = "") => `reveal-beat ${extra} ${active(value) ? "is-visible" : ""} ${!immediate && previous === value ? "is-exiting" : ""}`;
+  const stageName = ["Matchbound. Your next football weekend.", `Your country: ${result.country}.`, `Your city: ${result.city}.`, `Your competition: ${result.competition}.`, `Your stadium: ${result.stadium}.`, `Your clubs: ${result.homeTeam} versus ${result.awayTeam}.`, "Matchbound. Fixture locked."][stage];
+  const brand = (value: 0 | 6) => <section aria-hidden={!active(value)} inert={!active(value)} className={stageClass(value, "ticket-brand")} data-stage={stages[value]}>
+    <BrandLockup caption={value === 0 ? "Your next football weekend" : "Fixture locked"} />
+  </section>;
+
+  return <main className={`site-shell reveal-page ticket-reveal ${immediate ? "reveal-page--reduced" : ""}`} data-active-stage={reducedMotion === null ? "pending" : immediate ? "opening-result" : stages[stage]}>
+    <div inert={brandActive} aria-hidden={brandActive || undefined}><SiteHeader /></div><h1 className="sr-only">Your locked football fixture</h1>
     <section className="reveal-content" aria-label="Your locked fixture">
-      <div className="reveal-stages">
-        <section aria-hidden={immediate ? undefined : stage !== 0} className={`reveal-beat reveal-picking ${stage === 0 ? "is-visible" : ""}`} data-stage="picking"><p>Matchbound</p><h1>Picking your next<br /><i>European trip.</i></h1><span className="reveal-picking-dots" aria-hidden="true"><i /><i /><i /></span></section>
-        <section aria-hidden={immediate ? undefined : stage !== 1} className={`reveal-beat reveal-country ${stage === 1 ? "is-visible" : ""}`} data-stage="country"><p>Country</p><CountryFlagMark identity={result.visualIdentity} /><h1>{result.country}</h1></section>
-        <section aria-hidden={immediate ? undefined : stage !== 2} className={`reveal-beat ${stage === 2 ? "is-visible" : ""}`} data-stage="city"><p>City</p><h2>{result.city}</h2></section>
-        <section aria-hidden={immediate ? undefined : stage !== 3} className={`reveal-beat reveal-competition-stage ${stage === 3 ? "is-visible" : ""}`} data-stage="competition"><p>Competition</p><CompetitionEmblemMark identity={result.visualIdentity} /><h2>{result.competition}</h2></section>
-        <section aria-hidden={immediate ? undefined : stage !== 4} className={`reveal-beat ${stage === 4 ? "is-visible" : ""}`} data-stage="stadium"><p>Stadium</p><h2>{result.stadium}</h2></section>
-        <section aria-hidden={immediate ? undefined : stage !== 5} className={`reveal-beat reveal-clubs ${stage === 5 ? "is-visible" : ""}`} data-stage="clubs"><p>Your clubs</p><TeamCrestPair identity={result.visualIdentity} /><span className="reveal-club-fallback">Two clubs. One weekend.</span></section>
-        <section aria-hidden={immediate ? undefined : stage !== 6} className={`reveal-beat reveal-match ${stage === 6 ? "is-visible" : ""}`} data-stage="match"><p>Match</p><TeamCrestPair identity={result.visualIdentity} /><h2><span>{result.homeTeam}</span><i>v</i><span>{result.awayTeam}</span></h2></section>
+      <div className={`ticket-progress ${progressHidden ? "is-hidden" : ""}`} aria-label={`Reveal progress: ${progress} of 6`} aria-hidden={progressHidden}>
+        <span className="sr-only">{progress} of 6 stages complete</span>{[1, 2, 3, 4, 5, 6].map(value => <i key={value} className={progress >= value ? "on" : ""} aria-hidden="true" />)}
       </div>
-      <p className="sr-only" aria-live="polite">{stage === 6 ? `Your match is revealed: ${result.homeTeam} v ${result.awayTeam}.` : ""}</p>
-      <Link className={`reveal-result-link ${stage === 6 ? "is-ready" : ""}`} href={resultHref} onClick={handleResultNavigation}>View match details <span>↗</span></Link>
+      <div className="reveal-stages">
+        {brand(0)}
+        <section aria-hidden={!active(1)} inert={!active(1)} className={stageClass(1, "ticket-card reveal-country")} data-stage="country"><p className="eyebrow">Your country</p><CountryFlagMark identity={result.visualIdentity} /><h2>{result.country}</h2><p className="stage-note">It starts here.</p></section>
+        <section aria-hidden={!active(2)} inert={!active(2)} className={stageClass(2, "ticket-card")} data-stage="city"><p className="eyebrow">Your city</p><p className="ticket-index">{result.country} /</p><h2>{result.city}</h2><p className="stage-note">Football takes you places.</p></section>
+        <section aria-hidden={!active(3)} inert={!active(3)} className={stageClass(3, "ticket-card reveal-competition-stage")} data-stage="competition"><p className="eyebrow">Your competition</p><CompetitionEmblemMark identity={result.visualIdentity} /><h2>{result.competition}</h2></section>
+        <section aria-hidden={!active(4)} inert={!active(4)} className={stageClass(4, "ticket-card")} data-stage="stadium"><p className="eyebrow">At the ground</p><p className="ticket-index">{result.city} /</p><h2>{result.stadium}</h2><p className="stage-note">Your weekend has a home.</p></section>
+        <section aria-hidden={!active(5)} inert={!active(5)} className={stageClass(5, "ticket-card reveal-clubs")} data-stage="clubs"><p className="eyebrow">Your clubs</p><FixtureTeams identity={result.visualIdentity} homeTeam={result.homeTeam} awayTeam={result.awayTeam}><span className="ticket-versus" aria-hidden="true">VS</span></FixtureTeams><p className="stage-note">Two clubs. One weekend.</p></section>
+        {brand(6)}
+      </div>
+      <p className="sr-only" role="status" aria-live="polite" aria-atomic="true">{reducedMotion === null ? "" : immediate ? "Opening your saved fixture." : stageName}</p>
     </section>
-    <footer><span>Confirmed fixture</span><span>Result persisted</span></footer>
+    <div className="reveal-footer" inert={brandActive} aria-hidden={brandActive || undefined}><SiteFooter /></div>
   </main>;
 }
