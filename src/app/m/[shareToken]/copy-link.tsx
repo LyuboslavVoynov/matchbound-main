@@ -1,0 +1,3 @@
+"use client";
+import { useState } from "react";
+export function CopyLink() { const [status, setStatus] = useState<"idle" | "copied" | "error">("idle"); return <><button className="copy-link" onClick={async () => { try { await navigator.clipboard.writeText(window.location.href); setStatus("copied"); } catch { setStatus("error"); } }}>{status === "copied" ? "Link copied" : "Copy trip link"}</button><span className="sr-only" role="status" aria-live="polite">{status === "copied" ? "Trip link copied." : status === "error" ? "Could not copy the trip link." : ""}</span>{status === "error" && <p className="copy-error">Couldn’t copy the link. Copy it from your browser address bar.</p>}</>; }

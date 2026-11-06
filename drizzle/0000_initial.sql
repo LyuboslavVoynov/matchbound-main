@@ -1,0 +1,11 @@
+CREATE TYPE "competition_gender" AS ENUM ('men', 'women', 'mixed');
+CREATE TYPE "competition_format" AS ENUM ('club', 'international');
+CREATE TYPE "fixture_status" AS ENUM ('confirmed', 'tentative', 'postponed', 'cancelled');
+CREATE TABLE "competitions" ("id" uuid PRIMARY KEY DEFAULT gen_random_uuid(), "name" text NOT NULL, "country" text NOT NULL, "region" text NOT NULL DEFAULT 'Europe', "gender" competition_gender NOT NULL DEFAULT 'men', "format" competition_format NOT NULL DEFAULT 'club', "active" boolean NOT NULL DEFAULT true, "created_at" timestamptz NOT NULL DEFAULT now());
+CREATE UNIQUE INDEX "competitions_name_country_unique" ON "competitions" ("name", "country");
+CREATE TABLE "fixtures" ("id" uuid PRIMARY KEY DEFAULT gen_random_uuid(), "source_id" text NOT NULL, "competition_id" uuid NOT NULL REFERENCES "competitions"("id"), "kickoff_at" timestamptz NOT NULL, "kickoff_date" date NOT NULL, "home_team" text NOT NULL, "away_team" text NOT NULL, "city" text NOT NULL, "stadium" text NOT NULL, "status" fixture_status NOT NULL DEFAULT 'tentative', "updated_at" timestamptz NOT NULL DEFAULT now());
+CREATE UNIQUE INDEX "fixtures_source_id_unique" ON "fixtures" ("source_id");
+CREATE INDEX "fixtures_date_status_competition_idx" ON "fixtures" ("kickoff_date", "status", "competition_id");
+CREATE TABLE "draws" ("id" uuid PRIMARY KEY DEFAULT gen_random_uuid(), "share_token" text NOT NULL UNIQUE, "fixture_id" uuid NOT NULL REFERENCES "fixtures"("id"), "trip_start_date" date NOT NULL, "trip_end_date" date NOT NULL, "created_at" timestamptz NOT NULL DEFAULT now(), "expires_at" timestamptz NOT NULL);
+CREATE INDEX "draws_share_token_idx" ON "draws" ("share_token");
+CREATE INDEX "draws_expires_at_idx" ON "draws" ("expires_at");

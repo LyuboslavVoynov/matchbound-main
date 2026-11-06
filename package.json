@@ -1,0 +1,52 @@
+{
+  "name": "matchbound",
+  "private": true,
+  "version": "0.1.0",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint .",
+    "test": "vitest run",
+    "test:e2e": "playwright test",
+    "test:watch": "vitest",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "drizzle-kit migrate",
+    "fixtures:import": "tsx scripts/import-fixtures.ts data/fixtures.dev.csv",
+    "venues:seed": "tsx scripts/seed-venues.ts",
+    "venues:audit": "tsx scripts/audit-venue-coverage.ts",
+    "fixtures:sync:preflight": "tsx scripts/sync-football-data.ts",
+    "fixtures:sync": "tsx scripts/sync-football-data-apply.ts",
+    "beer-signals:seed": "tsx scripts/seed-beer-signals.ts",
+    "place-media:seed": "tsx scripts/seed-place-media.ts",
+    "place-media:diagnose": "tsx scripts/diagnose-place-media.ts",
+    "beer-signals:diagnose": "tsx scripts/diagnose-beer-signals.ts",
+    "catalog-beer:diagnose": "tsx scripts/diagnose-catalog-beer.ts",
+    "catalog-beer:queue": "tsx scripts/queue-catalog-beer-candidates.ts",
+    "catalog-beer:review-queue": "tsx scripts/review-catalog-beer-candidates.ts",
+    "db:diagnose": "tsx scripts/diagnose-db.ts"
+  },
+  "dependencies": {
+    "dotenv": "^16.6.1",
+    "drizzle-orm": "^0.44.2",
+    "next": "^15.5.0",
+    "postgres": "^3.4.7",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "tailwindcss": "^4.1.11",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.63.0",
+    "@tailwindcss/postcss": "^4.1.11",
+    "@types/node": "^22.15.0",
+    "@types/react": "^19.1.0",
+    "@types/react-dom": "^19.1.0",
+    "drizzle-kit": "^0.31.4",
+    "eslint": "^9.26.0",
+    "eslint-config-next": "^15.5.0",
+    "tsx": "^4.19.4",
+    "typescript": "^5.8.3",
+    "vitest": "^3.2.4"
+  }
+}

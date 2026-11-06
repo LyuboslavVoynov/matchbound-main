@@ -1,0 +1,3 @@
+import Link from "next/link";
+import { DrawForm } from "./draw-form";
+export default function Home() { return <main className="site-shell"><header className="topbar"><Link className="wordmark" href="/">MATCHBOUND<span>•</span></Link><p className="topbar-route">European football trips</p></header><section className="hero"><p className="kicker">A fixture for your trip</p><h1>Get the trip out<br />of the <i>group chat.</i></h1><p className="intro">Pick your dates. We’ll lock in your match — and the city it takes you to — for your next European trip.</p><DrawForm /></section><footer><span>Confirmed fixtures only</span><span>Maximum seven days</span></footer></main>; }
