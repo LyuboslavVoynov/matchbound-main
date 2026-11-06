@@ -35,7 +35,7 @@ test("draws once, reveals the persisted result, and remains stable on refresh", 
   const revealPath = await createDrawFromHome(page);
   const shareToken = revealPath.split("/")[2];
   const storedDraw = await findSharedDraw(createDb(), shareToken);
-  expect(storedDraw?.resultSnapshot.placeMedia).toBeDefined();
+  expect(storedDraw?.resultSnapshot).not.toHaveProperty("placeMedia");
   await expect(page.locator('[data-stage="picking"]')).toHaveAttribute("aria-hidden", "false");
   await expect(page.locator('[data-stage="country"]')).toHaveAttribute("aria-hidden", "false", { timeout: 3_000 });
   await expect(page.getByRole("link", { name: "View match details" })).toBeVisible({ timeout: 10_000 });
@@ -123,4 +123,42 @@ test("uses the direct result link when reduced motion is requested", async ({ pa
   await expect(page.getByRole("link", { name: "View match details" })).toBeVisible();
   await page.getByRole("link", { name: "View match details" }).click();
   await page.waitForURL(revealPath.replace(/\/reveal$/, ""));
+});
+
+
+test("ignores city and stadium photos in legacy saved draws", async ({ page, request }) => {
+  const response = await request.post("/api/draw", { data: { startDate: "2026-08-01", endDate: "2026-08-07" } });
+  expect(response.status()).toBe(201);
+  const { shareToken } = await response.json() as { shareToken: string };
+  const db = createDb();
+  const stored = await findSharedDraw(db, shareToken);
+  expect(stored).toBeDefined();
+  expect(stored!.resultSnapshot).not.toHaveProperty("placeMedia");
+  const legacyPhoto = {
+    imageUrl: "https://test.invalid/legacy-photo.jpg", sourcePageUrl: "https://test.invalid/photo",
+    attribution: "Legacy photo attribution", licenceName: "Legacy licence", licenceUrl: "https://test.invalid/licence", focalPoint: "center",
+  };
+  const legacySnapshot = { ...stored!.resultSnapshot, placeMedia: { city: legacyPhoto, stadium: legacyPhoto } };
+  await db.update(draws).set({ resultSnapshot: legacySnapshot }).where(eq(draws.shareToken, shareToken));
+
+  const photoRequests: string[] = [];
+  await page.route("https://test.invalid/**", (route) => {
+    photoRequests.push(route.request().url());
+    return route.abort();
+  });
+  for (const reducedMotion of ["no-preference", "reduce"] as const) {
+    await page.emulateMedia({ reducedMotion });
+    await page.goto(`/m/${shareToken}/reveal`);
+    await expect(page.locator('[data-stage="stadium"] h2')).toHaveText(stored!.resultSnapshot.stadium);
+    await expect(page.getByRole("link", { name: "View match details" })).toBeVisible({ timeout: 15_000 });
+    await expect(page.getByText("Legacy photo attribution", { exact: false })).toHaveCount(0);
+    expect(await page.locator('[data-stage="city"], [data-stage="stadium"]').evaluateAll((stages) =>
+      stages.every((stage) => [stage, ...stage.querySelectorAll("*")].every((element) =>
+        getComputedStyle(element).backgroundImage === "none" && element.tagName !== "IMG")),
+    )).toBe(true);
+    expect(photoRequests).toEqual([]);
+  }
+  await page.getByRole("link", { name: "View match details" }).click();
+  await page.waitForURL(`/m/${shareToken}`);
+  await expect(page.locator(".venue strong")).toHaveText(stored!.resultSnapshot.stadium);
 });

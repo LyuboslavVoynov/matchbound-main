@@ -7,20 +7,6 @@ import type { DrawResultSnapshot } from "@/domain/result";
 import { CompetitionEmblemMark, CountryFlagMark, TeamCrestPair, useVisualIdentityReadiness } from "@/components/visual-identity";
 
 type RevealExperienceProps = Readonly<{ result: DrawResultSnapshot; resultHref: string }>;
-type RevealMedia = NonNullable<DrawResultSnapshot["placeMedia"]>["stadium"];
-
-function RevealBackdrop({ media, active }: Readonly<{ media: RevealMedia | undefined; active: boolean }>) {
-  if (!media) return null;
-  const tabIndex = active ? 0 : -1;
-  return <><div className="reveal-backdrop" style={{ backgroundImage: `url("${media.imageUrl}")`, backgroundPosition: media.focalPoint }} aria-hidden="true" /><span className="reveal-media-credit"><a href={media.sourcePageUrl} target="_blank" rel="noreferrer" tabIndex={tabIndex}>Photo: {media.attribution}<span className="sr-only"> (opens in a new tab)</span></a><span aria-hidden="true"> · </span><a href={media.licenceUrl} target="_blank" rel="noreferrer" tabIndex={tabIndex}>{media.licenceName}<span className="sr-only"> (opens in a new tab)</span></a></span></>;
-}
-
-function RevealPersistentCredits({ media, active }: Readonly<{ media: DrawResultSnapshot["placeMedia"]; active: boolean }>) {
-  const entries = ([media?.stadium && { label: "Stadium photo", media: media.stadium }].filter(Boolean) as { label: string; media: NonNullable<RevealMedia> }[]);
-  if (!entries.length) return null;
-  return <span className={`reveal-persistent-credits ${active ? "is-visible" : ""}`} aria-hidden={!active}>{entries.map(({ label, media }, index) => <span key={label}>{index > 0 && <span aria-hidden="true"> · </span>}<a href={media.sourcePageUrl} target="_blank" rel="noreferrer" tabIndex={active ? 0 : -1}>{label}: {media.attribution}<span className="sr-only"> (opens in a new tab)</span></a><span aria-hidden="true"> · </span><a href={media.licenceUrl} target="_blank" rel="noreferrer" tabIndex={active ? 0 : -1}>{media.licenceName}<span className="sr-only"> (opens in a new tab)</span></a></span>)}</span>;
-}
-
 export function RevealExperience({ result, resultHref }: RevealExperienceProps) {
   const router = useRouter();
   const [reducedMotion, setReducedMotion] = useState<boolean | null>(null);
@@ -89,13 +75,12 @@ export function RevealExperience({ result, resultHref }: RevealExperienceProps) 
         <section aria-hidden={immediate ? undefined : stage !== 1} className={`reveal-beat reveal-country ${stage === 1 ? "is-visible" : ""}`} data-stage="country"><p>Country</p><CountryFlagMark identity={result.visualIdentity} /><h1>{result.country}</h1></section>
         <section aria-hidden={immediate ? undefined : stage !== 2} className={`reveal-beat ${stage === 2 ? "is-visible" : ""}`} data-stage="city"><p>City</p><h2>{result.city}</h2></section>
         <section aria-hidden={immediate ? undefined : stage !== 3} className={`reveal-beat reveal-competition-stage ${stage === 3 ? "is-visible" : ""}`} data-stage="competition"><p>Competition</p><CompetitionEmblemMark identity={result.visualIdentity} /><h2>{result.competition}</h2></section>
-        <section aria-hidden={immediate ? undefined : stage !== 4} className={`reveal-beat ${stage === 4 ? "is-visible" : ""}`} data-stage="stadium"><RevealBackdrop media={result.placeMedia?.stadium} active={immediate || stage === 4} /><p>Stadium</p><h2>{result.stadium}</h2></section>
+        <section aria-hidden={immediate ? undefined : stage !== 4} className={`reveal-beat ${stage === 4 ? "is-visible" : ""}`} data-stage="stadium"><p>Stadium</p><h2>{result.stadium}</h2></section>
         <section aria-hidden={immediate ? undefined : stage !== 5} className={`reveal-beat reveal-clubs ${stage === 5 ? "is-visible" : ""}`} data-stage="clubs"><p>Your clubs</p><TeamCrestPair identity={result.visualIdentity} /><span className="reveal-club-fallback">Two clubs. One weekend.</span></section>
         <section aria-hidden={immediate ? undefined : stage !== 6} className={`reveal-beat reveal-match ${stage === 6 ? "is-visible" : ""}`} data-stage="match"><p>Match</p><TeamCrestPair identity={result.visualIdentity} /><h2><span>{result.homeTeam}</span><i>v</i><span>{result.awayTeam}</span></h2></section>
       </div>
       <p className="sr-only" aria-live="polite">{stage === 6 ? `Your match is revealed: ${result.homeTeam} v ${result.awayTeam}.` : ""}</p>
       <Link className={`reveal-result-link ${stage === 6 ? "is-ready" : ""}`} href={resultHref} onClick={handleResultNavigation}>View match details <span>↗</span></Link>
-      <RevealPersistentCredits media={result.placeMedia} active={immediate || stage === 6} />
     </section>
     <footer><span>Confirmed fixture</span><span>Result persisted</span></footer>
   </main>;

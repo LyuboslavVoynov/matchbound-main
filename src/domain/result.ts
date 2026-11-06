@@ -8,10 +8,6 @@ export type DrawResultSnapshot = Readonly<{
     homeTeamCrestUrl?: string;
     awayTeamCrestUrl?: string;
   }>;
-  placeMedia?: Readonly<{
-    city?: Readonly<{ imageUrl: string; sourceName: string; sourcePageUrl: string; author: string; licenceName: string; licenceUrl: string; attribution: string; focalPoint: string }>;
-    stadium?: Readonly<{ imageUrl: string; sourceName: string; sourcePageUrl: string; author: string; licenceName: string; licenceUrl: string; attribution: string; focalPoint: string }>;
-  }>;
   beerSignals?: Readonly<{
     cityAverage?: Readonly<{
       servingLabel: string;

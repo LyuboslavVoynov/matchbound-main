@@ -18,8 +18,6 @@
     "fixtures:sync:preflight": "tsx scripts/sync-football-data.ts",
     "fixtures:sync": "tsx scripts/sync-football-data-apply.ts",
     "beer-signals:seed": "tsx scripts/seed-beer-signals.ts",
-    "place-media:seed": "tsx scripts/seed-place-media.ts",
-    "place-media:diagnose": "tsx scripts/diagnose-place-media.ts",
     "beer-signals:diagnose": "tsx scripts/diagnose-beer-signals.ts",
     "catalog-beer:diagnose": "tsx scripts/diagnose-catalog-beer.ts",
     "catalog-beer:queue": "tsx scripts/queue-catalog-beer-candidates.ts",
