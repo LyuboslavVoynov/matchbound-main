@@ -44,11 +44,7 @@ export const venues = pgTable("venues", {
   active: boolean("active").notNull().default(true),
 }, (table) => [uniqueIndex("venues_provider_team_unique").on(table.provider, table.providerTeamId)]);
 
-/**
- * Editorially approved, licence-recorded reveal imagery. We store Commons
- * source metadata alongside the resolved image URL so a display never relies
- * on runtime search results or an undocumented attribution convention.
- */
+/** Legacy table retained for migration compatibility; no longer read or written by the app. */
 export const placeMedia = pgTable("place_media", {
   id: uuid("id").defaultRandom().primaryKey(),
   subjectType: placeMediaSubject("subject_type").notNull(),
