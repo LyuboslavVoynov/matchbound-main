@@ -11,8 +11,8 @@ async function createDrawFromHome(page: import("@playwright/test").Page) {
   await page.getByLabel("Trip starts").fill("2026-08-01");
   await page.getByLabel("Trip ends").fill("2026-08-07");
   await page.getByRole("button", { name: "Draw my match" }).click();
-  await page.waitForURL(/\/m\/[^/]+\/reveal$/);
-  return new URL(page.url()).pathname;
+  await page.waitForURL(/\/m\/[^/]+(?:\/reveal)?$/);
+  return new URL(page.url()).pathname.replace(/\/reveal$/, "") + "/reveal";
 }
 
 test("enforces the inclusive seven-day limit before drawing", async ({ page }) => {
@@ -36,17 +36,16 @@ test("draws once, reveals the persisted result, and remains stable on refresh", 
   const shareToken = revealPath.split("/")[2];
   const storedDraw = await findSharedDraw(createDb(), shareToken);
   expect(storedDraw?.resultSnapshot).not.toHaveProperty("placeMedia");
-  await expect(page.locator('[data-stage="picking"]')).toHaveAttribute("aria-hidden", "false");
+  await expect(page.locator('[data-stage="brand-intro"]')).toHaveAttribute("aria-hidden", "false");
   await expect(page.locator('[data-stage="country"]')).toHaveAttribute("aria-hidden", "false", { timeout: 3_000 });
-  await expect(page.getByRole("link", { name: "View match details" })).toBeVisible({ timeout: 10_000 });
-  await page.getByRole("link", { name: "View match details" }).click();
-  await page.waitForURL(/\/m\/[^/]+$/);
+  await page.waitForURL(/\/m\/[^/]+$/, { timeout: 22_000 });
+  await expect(page.getByRole("link", { name: "View match details" })).toHaveCount(0);
   const resultPath = new URL(page.url()).pathname;
   expect(resultPath).toBe(revealPath.replace(/\/reveal$/, ""));
-  const match = await page.locator(".match-card h1").innerText();
+  const match = await page.locator(".fixture-heading").innerText();
   await expect(page.getByRole("button", { name: "Copy trip link" })).toBeVisible();
   await page.reload();
-  await expect.poll(() => page.locator(".match-card h1").innerText()).toBe(match);
+  await expect.poll(() => page.locator(".fixture-heading").innerText()).toBe(match);
   await expect.poll(() => page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(true);
 });
 
@@ -81,16 +80,16 @@ test("renders only the stored official ticket link and the copy action", async (
   await expect(page.getByRole("link", { name: "Get tickets" })).toHaveAttribute("href", fixture.officialTicketUrl);
   await expect(page.getByRole("button", { name: "Copy trip link" })).toBeVisible();
   await page.goto(`/m/${shareToken}/reveal`);
-  await expect(page.locator(".reveal-clubs")).toHaveClass(/is-visible/, { timeout: 7_000 });
+  await expect(page.locator(".reveal-clubs")).toHaveClass(/is-visible/, { timeout: 15_000 });
   await expect(page.getByText("Two clubs. One weekend.")).toBeVisible({ timeout: 7_000 });
 });
 
-test("uses the direct result link when reduced motion is requested", async ({ page }) => {
+test("opens the saved result directly when reduced motion is requested", async ({ page }) => {
   await page.emulateMedia({ reducedMotion: "reduce" });
   const revealPath = await createDrawFromHome(page);
-  await expect(page.getByRole("link", { name: "View match details" })).toBeVisible();
-  await page.getByRole("link", { name: "View match details" }).click();
   await page.waitForURL(revealPath.replace(/\/reveal$/, ""));
+  await expect(page.locator(".ticket-brand")).toHaveCount(0);
+  await expect(page.getByRole("button", { name: "Copy trip link" })).toBeVisible();
 });
 
 
@@ -117,16 +116,16 @@ test("ignores city and stadium photos in legacy saved draws", async ({ page, req
   for (const reducedMotion of ["no-preference", "reduce"] as const) {
     await page.emulateMedia({ reducedMotion });
     await page.goto(`/m/${shareToken}/reveal`);
-    await expect(page.locator('[data-stage="stadium"] h2')).toHaveText(stored!.resultSnapshot.stadium);
-    await expect(page.getByRole("link", { name: "View match details" })).toBeVisible({ timeout: 15_000 });
+    if (reducedMotion === "no-preference") {
+      await expect(page.locator('[data-stage="stadium"] h2')).toHaveText(stored!.resultSnapshot.stadium);
+      expect(await page.locator('[data-stage="city"], [data-stage="stadium"]').evaluateAll((stages) =>
+        stages.every((stage) => [stage, ...stage.querySelectorAll("*")].every((element) =>
+          getComputedStyle(element).backgroundImage === "none" && element.tagName !== "IMG")),
+      )).toBe(true);
+    }
+    await page.waitForURL(`/m/${shareToken}`, { timeout: 22_000 });
     await expect(page.getByText("Legacy photo attribution", { exact: false })).toHaveCount(0);
-    expect(await page.locator('[data-stage="city"], [data-stage="stadium"]').evaluateAll((stages) =>
-      stages.every((stage) => [stage, ...stage.querySelectorAll("*")].every((element) =>
-        getComputedStyle(element).backgroundImage === "none" && element.tagName !== "IMG")),
-    )).toBe(true);
     expect(photoRequests).toEqual([]);
   }
-  await page.getByRole("link", { name: "View match details" }).click();
-  await page.waitForURL(`/m/${shareToken}`);
   await expect(page.locator(".venue strong")).toHaveText(stored!.resultSnapshot.stadium);
 });

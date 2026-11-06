@@ -11,5 +11,5 @@ export default defineConfig({
     { name: "desktop", use: { ...devices["Desktop Chrome"] } },
     { name: "mobile", use: { ...devices["iPhone 13"], browserName: "chromium" } },
   ],
-  webServer: { command: "npm.cmd run dev -- -p 3002", url: "http://localhost:3002", reuseExistingServer: !process.env.CI, timeout: 30_000 },
+  webServer: { command: `${process.platform === "win32" ? "npm.cmd" : "npm"} run dev -- -p 3002`, url: "http://localhost:3002", reuseExistingServer: !process.env.CI, timeout: 30_000 },
 });

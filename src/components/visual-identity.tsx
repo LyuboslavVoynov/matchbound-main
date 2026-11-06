@@ -114,3 +114,17 @@ export function TeamCrestPair({ identity }: Readonly<{ identity: Identity }>) {
     <img src={away} alt="" />
   </div>;
 }
+
+/** Keep the same paired-image fallback while placing each crest with its club. */
+export function FixtureTeams({ identity, homeTeam, awayTeam, children }: Readonly<{
+  identity: Identity; homeTeam: string; awayTeam: string; children: React.ReactNode;
+}>) {
+  const home = assetUrl(identity?.homeTeamCrestUrl);
+  const away = assetUrl(identity?.awayTeamCrestUrl);
+  const status = useCrestPairStatus(home, away);
+  return <div className={`teams identity-crest-pair identity-asset--${status}`}>
+    <div className="team"><span className="crest-slot" aria-hidden="true">{status === "ready" && <img src={home} alt="" />}</span><span className="clubname">{homeTeam}</span></div>
+    {children}
+    <div className="team"><span className="crest-slot" aria-hidden="true">{status === "ready" && <img src={away} alt="" />}</span><span className="clubname">{awayTeam}</span></div>
+  </div>;
+}
