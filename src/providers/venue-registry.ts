@@ -1,3 +1,5 @@
+import { expandedLeagueVenues } from "./expanded-league-venues";
+
 export type VenueRecord = Readonly<{
   provider: "football-data";
   providerTeamId: number;
@@ -7,6 +9,7 @@ export type VenueRecord = Readonly<{
   country: string;
   address?: string;
   sourceUrl: string;
+  verificationUrl?: string;
   reviewedAt: string;
 }>;
 
@@ -113,8 +116,8 @@ const VENUES: readonly VenueRecord[] = [
   { provider: "football-data", providerTeamId: 1045, stadium: "Stade Sébastien Charléty", city: "Paris", country: "France", timezone: "Europe/Paris", address: "17 rue Neuve Tolbiac Paris 75013", sourceUrl: "https://api.football-data.org/v4/teams/1045", reviewedAt: "2026-10-05T00:00:00.000Z" },
 ];
 
-export const reviewedVenues = VENUES;
+export const reviewedVenues: readonly VenueRecord[] = [...VENUES, ...expandedLeagueVenues];
 
 export function trustedVenueForTeam(providerTeamId: number): VenueRecord | undefined {
-  return VENUES.find((venue) => venue.providerTeamId === providerTeamId);
+  return reviewedVenues.find((venue) => venue.providerTeamId === providerTeamId);
 }
