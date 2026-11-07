@@ -3,31 +3,22 @@ import { and, eq, inArray, sql } from "drizzle-orm";
 import { createDb } from "../src/db/client";
 import { competitions, fixtures, venues } from "../src/db/schema";
 import { createFootballDataClient, type FootballDataMatch } from "../src/providers/football-data";
-import { normalizeFootballDataStatus } from "../src/providers/football-data-normalize";
-import { SUPPORTED_COMPETITIONS } from "../src/providers/football-data-registry";
-import { unresolvedVenueTeams } from "../src/providers/venue-coverage";
+import { normalizeFootballDataStatus, localFixtureDate } from "../src/providers/football-data-normalize";
+import { fixtureSyncOptions, verifySyncRoster, pacedFootballFetch } from "../src/providers/fixture-sync";
 import { validateVenueRegistry } from "../src/providers/venue-registry-validation";
 
-function localDate(utcDate: string, timezone: string) {
-  const parts = new Intl.DateTimeFormat("en-CA", { timeZone: timezone, year: "numeric", month: "2-digit", day: "2-digit" }).formatToParts(new Date(utcDate));
-  const value = (type: string) => parts.find((part) => part.type === type)?.value;
-  return `${value("year")}-${value("month")}-${value("day")}`;
-}
-
 async function main() {
-  const season = Number(process.argv[2] ?? 2026);
+  const { season, profiles } = fixtureSyncOptions(process.argv.slice(2));
   const errors = validateVenueRegistry();
   if (errors.length) throw new Error(`Venue registry validation failed:\n${errors.join("\n")}`);
 
-  const client = createFootballDataClient();
+  const client = createFootballDataClient(undefined, pacedFootballFetch());
   const payload = [] as { code: string; name: string; country: string; matches: FootballDataMatch[] }[];
-  for (const profile of SUPPORTED_COMPETITIONS) {
-    // Check the actual provider roster before fetching matches. A provider roster
-    // change must block the complete transaction, even if a changed club has no match.
-    const teams = await client.getCompetitionTeams(profile.code);
-    const unresolved = unresolvedVenueTeams(teams);
-    if (unresolved.length) throw new Error(`${profile.code} has unreviewed or changed teams: ${unresolved.map((team) => team.id).join(", ")}`);
+  for (const profile of profiles) {
+    const teams = await client.getCompetitionTeams(profile.code, season);
+    verifySyncRoster(profile.code, teams);
     const matches = await client.getCompetitionMatches(profile.code, season);
+    verifySyncRoster(profile.code, teams, matches);
     payload.push({ ...profile, matches });
   }
 
@@ -66,7 +57,7 @@ async function main() {
       const fixtureValues = profile.matches.map((match) => {
         const venue = venueByTeamId.get(String(match.homeTeam.id));
         if (!venue) throw new Error(`Missing reviewed home venue for provider team ${match.homeTeam.id}`);
-        return { sourceId: `football-data:${match.id}`, providerStatus: match.status, competitionId: competition.id, venueId: venue.id, kickoffAt: new Date(match.utcDate), kickoffDate: localDate(match.utcDate, venue.timezone), timezone: venue.timezone, homeTeamProviderId: String(match.homeTeam.id), awayTeamProviderId: String(match.awayTeam.id), homeTeamCrestUrl: match.homeTeam.crest, awayTeamCrestUrl: match.awayTeam.crest, homeTeam: match.homeTeam.name, awayTeam: match.awayTeam.name, city: venue.city, stadium: venue.stadium, officialTicketUrl: null, status: normalizeFootballDataStatus(match.status) };
+        return { sourceId: `football-data:${match.id}`, providerStatus: match.status, competitionId: competition.id, venueId: venue.id, kickoffAt: new Date(match.utcDate), kickoffDate: localFixtureDate(match.utcDate, venue.timezone), timezone: venue.timezone, homeTeamProviderId: String(match.homeTeam.id), awayTeamProviderId: String(match.awayTeam.id), homeTeamCrestUrl: match.homeTeam.crest, awayTeamCrestUrl: match.awayTeam.crest, homeTeam: match.homeTeam.name, awayTeam: match.awayTeam.name, city: venue.city, stadium: venue.stadium, officialTicketUrl: null, status: normalizeFootballDataStatus(match.status) };
       });
       if (fixtureValues.length) await tx.insert(fixtures).values(fixtureValues)
         .onConflictDoUpdate({ target: fixtures.sourceId, set: {
@@ -77,4 +68,4 @@ async function main() {
   console.info(`Synced ${payload.reduce((count, competition) => count + competition.matches.length, 0)} fixture(s) for ${season}.`);
 }
 
-main().catch((error: unknown) => { console.error(error); process.exitCode = 1; });
+main().catch((error: unknown) => { console.error(error instanceof Error ? error.message : "Fixture sync failed."); process.exitCode = 1; });
