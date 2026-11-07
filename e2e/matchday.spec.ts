@@ -5,8 +5,8 @@ import { saveMatchdayDraw } from "./helpers/saved-draw";
 test("Matchday surfaces match the selected direction and show sample-aligned matchup numbers", async ({ page }, info) => {
   await page.goto("/");
   await expect(page.getByRole("heading", { name: "Your next football weekend." })).toBeVisible();
-  await expect(page.getByLabel("Trip starts")).toHaveValue("");
-  await expect(page.getByLabel("Trip ends")).toHaveValue("");
+  await expect(page.getByRole("button", { name: "Trip starts", exact: true })).toContainText("Choose a date");
+  await expect(page.getByRole("button", { name: "Trip ends", exact: true })).toContainText("Choose a date");
   await page.screenshot({ path: info.outputPath("home.png"), fullPage: true });
   const draw = await saveMatchdayDraw();
   try {
