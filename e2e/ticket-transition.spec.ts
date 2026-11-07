@@ -1,3 +1,4 @@
+import { selectTripDates } from "./helpers/trip-dates";
 import "dotenv/config";
 import { expect, test } from "@playwright/test";
 import { saveMatchdayDraw } from "./helpers/saved-draw";
@@ -100,8 +101,7 @@ test("home errors never start a brand handoff and repeated success submissions c
       else await route.fulfill({ status: 201, json: { shareToken: draw.token } });
     });
     await page.goto("/");
-    await page.getByLabel("Trip starts").fill("2026-11-27");
-    await page.getByLabel("Trip ends").fill("2026-11-29");
+    await selectTripDates(page, "2026-11-27", "2026-11-29");
     await page.getByRole("button", { name: "Draw my match" }).click();
     await expect(page.locator("#draw-error")).toHaveText("The fixture service is temporarily unavailable.");
     await expect(page.locator("form")).toHaveAttribute("data-state", "error");

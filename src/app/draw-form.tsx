@@ -1,10 +1,11 @@
 "use client";
-import { FormEvent, useEffect, useMemo, useRef, useState } from "react";
+import { FormEvent, useEffect, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
+import { TripCalendar } from "@/components/trip-calendar";
+import { addCalendarDays } from "@/domain/calendar";
 type FormState = "idle" | "loading" | "success" | "error";
-function addDays(value: string, days: number) { if (!value) return undefined; const date = new Date(`${value}T00:00:00Z`); date.setUTCDate(date.getUTCDate() + days); return date.toISOString().slice(0, 10); }
 export function DrawForm() {
-  const [startDate, setStartDate] = useState(""); const [endDate, setEndDate] = useState(""); const [state, setState] = useState<FormState>("idle"); const [message, setMessage] = useState(""); const startInput = useRef<HTMLInputElement>(null); const endInput = useRef<HTMLInputElement>(null); const router = useRouter(); const maxEndDate = useMemo(() => addDays(startDate, 6), [startDate]); const hasError = state === "error";
+  const [startDate, setStartDate] = useState(""); const [endDate, setEndDate] = useState(""); const [state, setState] = useState<FormState>("idle"); const [message, setMessage] = useState(""); const startInput = useRef<HTMLButtonElement>(null); const endInput = useRef<HTMLButtonElement>(null); const router = useRouter(); const maxEndDate = startDate ? addCalendarDays(startDate, 6) : undefined; const hasError = state === "error";
   const submitting = useRef(false);
   const mounted = useRef(true);
   const request = useRef<AbortController | null>(null);
@@ -24,9 +25,8 @@ export function DrawForm() {
       else handoff.current = window.setTimeout(() => { if (mounted.current) router.push(target); }, 220); } catch (error) { if (!mounted.current) return; submitting.current = false; setState("error"); setMessage(error instanceof Error ? error.message : "We couldn’t create a draw."); }
   }
   return <form className="draw-form trip" data-state={state} onSubmit={submit} noValidate aria-busy={state === "loading"} aria-labelledby="trip-form-title">
-    <h2 className="sectiontitle" id="trip-form-title">When are you going?</h2>
-    <div className="dates"><label>Trip starts<input ref={startInput} required type="date" aria-invalid={hasError} aria-describedby={hasError ? "draw-error" : "date-hint"} value={startDate} onChange={(e) => { setStartDate(e.target.value); if (endDate && endDate < e.target.value) setEndDate(""); }} /></label>
-      <label>Trip ends<input ref={endInput} required type="date" aria-invalid={hasError} aria-describedby={hasError ? "draw-error" : "date-hint"} min={startDate || undefined} max={maxEndDate} value={endDate} onChange={(e) => setEndDate(e.target.value)} /></label></div>
+    <h2 className="sectiontitle" id="trip-form-title">Give your weekend a kick-off.</h2>
+    <TripCalendar startDate={startDate} endDate={endDate} onChange={(start, end) => { setStartDate(start); setEndDate(end); setMessage(""); setState("idle"); }} disabled={state === "loading" || state === "success"} hasError={hasError} startRef={startInput} endRef={endInput} />
     <p className="hint" id="date-hint">Up to 7 days. Confirmed fixtures only.</p>
     <button className="button" disabled={state === "loading" || state === "success"}>{state === "loading" ? "Drawing your match…" : state === "success" ? "Fixture locked" : "Draw my match"}<svg className="draw-arrow" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6" /></svg></button>
     {message && <p id="draw-error" className="form-message" role="alert">{message}</p>}

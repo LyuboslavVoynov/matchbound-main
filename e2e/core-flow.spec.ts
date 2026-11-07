@@ -1,3 +1,4 @@
+import { selectTripDate, selectTripDates } from "./helpers/trip-dates";
 import "dotenv/config";
 import { randomBytes } from "node:crypto";
 import { expect, test } from "@playwright/test";
@@ -8,8 +9,7 @@ import { competitions, draws, fixtures, venues } from "@/db/schema";
 
 async function createDrawFromHome(page: import("@playwright/test").Page) {
   await page.goto("/");
-  await page.getByLabel("Trip starts").fill("2026-08-01");
-  await page.getByLabel("Trip ends").fill("2026-08-07");
+  await selectTripDates(page, "2026-08-01", "2026-08-07");
   await page.getByRole("button", { name: "Draw my match" }).click();
   await page.waitForURL(/\/m\/[^/]+(?:\/reveal)?$/);
   return new URL(page.url()).pathname.replace(/\/reveal$/, "") + "/reveal";
@@ -17,16 +17,18 @@ async function createDrawFromHome(page: import("@playwright/test").Page) {
 
 test("enforces the inclusive seven-day limit before drawing", async ({ page }) => {
   await page.goto("/");
-  await page.getByLabel("Trip starts").fill("2026-08-01");
-  await page.getByLabel("Trip ends").fill("2026-08-08");
-  await page.getByRole("button", { name: "Draw my match" }).click();
-  await expect(page.locator("#draw-error")).toHaveText("Choose a trip of up to seven calendar days, inclusive.");
+  await selectTripDate(page, "Trip starts", "2026-08-01");
+  await page.locator('[data-calendar-date="2026-08-08"]').focus();
+  await page.keyboard.press("Enter");
+  await expect(page.locator('[data-calendar-date="2026-08-08"]')).toHaveAttribute("aria-disabled", "true");
+  await expect(page.getByRole("button", { name: "Trip ends", exact: true })).toContainText("Choose a date");
+  await page.locator('[data-calendar-date="2026-08-07"]').click();
+  await expect(page.locator("#calendar-selection")).toContainText("7 calendar days");
 });
 
 test("reports a range with no eligible fixtures", async ({ page }) => {
   await page.goto("/");
-  await page.getByLabel("Trip starts").fill("2028-01-01");
-  await page.getByLabel("Trip ends").fill("2028-01-07");
+  await selectTripDates(page, "2028-01-01", "2028-01-07");
   await page.getByRole("button", { name: "Draw my match" }).click();
   await expect(page.locator("#draw-error")).toHaveText("No eligible confirmed fixtures were found for these dates.");
 });
