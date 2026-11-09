@@ -7,7 +7,7 @@ type Brand = NonNullable<NonNullable<DrawResultSnapshot["beerSignals"]>["country
 export function BeerTicket({brand,resultPath}:{brand:Brand;resultPath:string}) {
   const [state,setState] = useState<"sealed"|"opening"|"revealed">("sealed");
   const [failed,setFailed] = useState(false);
-  const artwork = beerArtworkFor(brand.countryName,brand.brandName);
+  const artwork = beerArtworkFor(brand.countryName,brand.brandName,brand.productId);
   const timer = useRef<ReturnType<typeof setTimeout>|null>(null);
   const storageKey = "matchbound:beer-ticket:v1:" + resultPath;
   useEffect(()=>{
