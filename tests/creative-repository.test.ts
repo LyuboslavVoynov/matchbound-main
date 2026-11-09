@@ -11,7 +11,16 @@ afterEach(()=>{vi.unstubAllEnvs();vi.restoreAllMocks();});
 describe("approved remote creative resolution",()=>{
  it("keeps the existing local library when Storage is not configured",async()=>{
   vi.stubEnv("SUPABASE_URL","");const db={select:()=>{throw Error("Should not query")}}as unknown as Database;
+  const warn=vi.spyOn(console,"warn").mockImplementation(()=>{});
   expect((await findJournalVisuals(db,result)).city?.src).toBe("/journal/porto-city.webp");
+  expect(warn).toHaveBeenCalledWith("Creative library configuration issue",{reason:"SUPABASE_URL missing"});
+ });
+ it("reports a bucket mismatch without logging stored URLs or configuration values",async()=>{
+  vi.stubEnv("SUPABASE_URL","https://example.supabase.co");vi.stubEnv("SUPABASE_CREATIVE_BUCKET","matchboundimage");
+  const warn=vi.spyOn(console,"warn").mockImplementation(()=>{});
+  expect((await findJournalVisuals(dbReturning([row()]),result)).city?.src).toBe("/journal/porto-city.webp");
+  expect(warn).toHaveBeenCalledWith("Creative library configuration issue",{reason:"Published image URL does not match configured origin or bucket"});
+  expect(JSON.stringify(warn.mock.calls)).not.toContain("https://");
  });
  it("resolves an approved hash-addressed remote image and keeps other local fallbacks",async()=>{
   vi.stubEnv("SUPABASE_URL","https://example.supabase.co");const x=row();const photos=await findJournalVisuals(dbReturning([x]),result);

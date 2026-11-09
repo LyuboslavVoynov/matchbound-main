@@ -32,6 +32,8 @@ Two issues prevent calling the release fully validated:
 
 The smoke suite intentionally keeps these checks strict. A missing required reviewed photo is not turned into a passing test or hidden behind a skip.
 
+Follow-up: redeployment did not restore Rio Maior imagery on either viewport. Missing public Storage configuration previously returned silently, and query failures use Warning-level logs, so an empty Error filter does not establish a healthy configuration. The branch now emits one warning per reason per server process for missing/invalid public configuration or a stored image origin/bucket mismatch. Logs contain only fixed reason labels, never variable values, image URLs or credentials. Five focused repository tests, TypeScript and scoped lint pass for this diagnostic change.
+
 ## Data preflight
 
 Read-only audit at 14:27 UTC confirmed future reviewed/active confirmed fixture rows for all eight supported leagues: PL280, PD260, BL1225, SA270, FL1216, ELC372, DED198 and PPL207. These are database coverage counts, not a guarantee of every future provider kickoff or a proof that all dates have a match.
