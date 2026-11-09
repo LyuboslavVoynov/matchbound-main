@@ -45,7 +45,7 @@ test("phone and desktop layouts preserve validation and the existing draw submis
   await page.route("**/api/draw", async route => { payload = route.request().postDataJSON(); await route.fulfill({ status: 404, contentType: "application/json", body: JSON.stringify({ error: "No eligible confirmed fixtures were found for these dates." }) }); });
   await page.getByRole("button", { name: "Draw my match" }).click();
   await expect(page.locator("#draw-error")).toContainText("No eligible confirmed fixtures");
-  expect(payload).toEqual({ startDate: "2026-11-27", endDate: "2026-11-29" });
+  expect(payload).toEqual({ startDate: "2026-11-27", endDate: "2026-11-29", includeUK: true });
   await page.getByRole("button", { name: "Trip starts", exact: true }).click();
   await page.locator('[data-calendar-date="2026-11-26"]').click();
   await expect(page.locator("#draw-error")).toHaveCount(0);

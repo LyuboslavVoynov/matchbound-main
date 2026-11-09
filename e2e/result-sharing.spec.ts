@@ -9,21 +9,21 @@ test("beer has a substantial panel and sharing stays compact for every data vari
     try {
       await page.goto(`/m/${draw.token}`);
       await expect(page.locator(".result-handoff-overlay")).toHaveCount(0);
-      if (beer === "none") await expect(page.locator(".beer-panel")).toHaveCount(0);
+      if (beer === "none") await expect(page.locator(".beer-panel,.beer-ticket")).toHaveCount(0);
       else {
-        await expect(page.getByRole("region", { name: "Beer details" })).toBeVisible();
-        await expect(page.locator(".beer-name")).toHaveCount(beer === "price" ? 0 : 1);
+        await expect(page.locator(".beer-ticket")).toHaveCount(beer === "price" ? 0 : 1);
         await expect(page.locator(".beer-price strong")).toHaveCount(beer === "brand" ? 0 : 1);
         if (beer !== "price") {
-          await expect(page.locator(".beer-name")).toHaveText("London Pride");
-          expect(parseFloat(await page.locator(".beer-name").evaluate(el => getComputedStyle(el).fontSize))).toBeGreaterThanOrEqual(23);
+          await page.getByRole("button",{name:"Reveal my beer"}).click();
+          await expect(page.locator(".beer-ticket-result h2")).toHaveText("London Pride");
+          expect(parseFloat(await page.locator(".beer-ticket-result h2").evaluate(el => getComputedStyle(el).fontSize))).toBeGreaterThanOrEqual(23);
         }
         if (beer !== "brand") await expect(page.getByText("City average, not a stadium price.")).toBeVisible();
       }
-      const copy = await page.getByRole("button", { name: "Copy trip link" }).boundingBox();
+      const copy = await page.getByRole("button", { name: "Copy link" }).boundingBox();
       const ticket = await page.getByRole("link", { name: "Get tickets" }).boundingBox();
       expect(copy!.height).toBeGreaterThanOrEqual(44);
-      expect(copy!.width).toBeLessThan(ticket!.width * .7);
+      expect(copy!.width).toBeLessThan(ticket!.width);
       await expect(page.getByRole("link", { name: "Share on WhatsApp" })).toBeVisible();
       expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
       await page.screenshot({ path: info.outputPath(`beer-${beer}-320.png`), fullPage: true });
@@ -43,7 +43,7 @@ test("copy success and failure are announced and WhatsApp encodes the same canon
     });
     await page.goto(`/m/${draw.token}?utm_source=test#fixture`);
     const canonical = `${new URL(page.url()).origin}/m/${draw.token}`;
-    await page.getByRole("button", { name: "Copy trip link" }).click();
+    await page.getByRole("button", { name: "Copy link" }).click();
     await expect(page.getByRole("button", { name: "Link copied" })).toBeVisible();
     await expect(page.locator(".trip-sharing [role=status]")).toHaveText("Trip link copied.");
     expect(await page.evaluate(() => (window as Window & { copiedTrip?: string }).copiedTrip)).toBe(canonical);

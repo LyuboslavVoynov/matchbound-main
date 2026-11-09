@@ -1,0 +1,101 @@
+{
+  "porto-city": {
+    "src": "/journal/porto-city.webp",
+    "title": "Puente de Don Luis I, Oporto, Portugal, 2019-06-02, DD 29-31 HDR.jpg",
+    "author": "Diego Delso",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Puente_de_Don_Luis_I,_Oporto,_Portugal,_2019-06-02,_DD_29-31_HDR.jpg",
+    "original": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Puente_de_Don_Luis_I%2C_Oporto%2C_Portugal%2C_2019-06-02%2C_DD_29-31_HDR.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "note": "Displayed with responsive cropping; no retouching.",
+    "bytes": 153292
+  },
+  "porto-stadium": {
+    "src": "/journal/porto-stadium.webp",
+    "title": "Porto Estádio do Dragão 1.jpg",
+    "author": "Валерий Дед",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Porto_Est%C3%A1dio_do_Drag%C3%A3o_1.jpg",
+    "original": "https://upload.wikimedia.org/wikipedia/commons/4/40/Porto_Est%C3%A1dio_do_Drag%C3%A3o_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "note": "Displayed with responsive cropping; no retouching.",
+    "bytes": 177760
+  },
+  "milan-city": {
+    "src": "/journal/milan-city.webp",
+    "title": "Duomo Di Milano, Front Facade, Milan, Italy.jpg",
+    "author": "Saptarshi Pal",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Duomo_Di_Milano,_Front_Facade,_Milan,_Italy.jpg",
+    "original": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Duomo_Di_Milano%2C_Front_Facade%2C_Milan%2C_Italy.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "note": "Displayed with responsive cropping; no retouching.",
+    "bytes": 225396
+  },
+  "milan-stadium": {
+    "src": "/journal/milan-stadium.webp",
+    "title": "Giuseppe Meazza (San Siro) stadium, exterior view.jpg",
+    "author": "https://www.flickr.com/photos/johnseb/",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Giuseppe_Meazza_(San_Siro)_stadium,_exterior_view.jpg",
+    "original": "https://upload.wikimedia.org/wikipedia/commons/a/a7/Giuseppe_Meazza_%28San_Siro%29_stadium%2C_exterior_view.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "note": "Displayed with responsive cropping; no retouching.",
+    "bytes": 138550
+  },
+  "bilbao-city": {
+    "src": "/journal/bilbao-city.webp",
+    "title": "Bilbao - Guggenheim aurore.jpg",
+    "author": "PA",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Bilbao_-_Guggenheim_aurore.jpg",
+    "original": "https://upload.wikimedia.org/wikipedia/commons/c/c7/Bilbao_-_Guggenheim_aurore.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "note": "Displayed with responsive cropping; no retouching.",
+    "bytes": 71334
+  },
+  "bilbao-stadium": {
+    "src": "/journal/bilbao-stadium.webp",
+    "title": "Exterior of San Mamés stadium.jpg",
+    "author": "Marco Almbauer",
+    "license": "CC0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "source": "https://commons.wikimedia.org/wiki/File:Exterior_of_San_Mam%C3%A9s_stadium.jpg",
+    "original": "https://upload.wikimedia.org/wikipedia/commons/6/6d/Exterior_of_San_Mam%C3%A9s_stadium.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "note": "Displayed with responsive cropping; no retouching.",
+    "bytes": 111648
+  },
+  "portugal-country": {
+    "src": "/journal/portugal-country.webp",
+    "title": "Portugal - Algarve - coast west of Lagos (25657164162).jpg",
+    "author": "muffinn from Worcester, UK",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Portugal_-_Algarve_-_coast_west_of_Lagos_(25657164162).jpg",
+    "original": "https://upload.wikimedia.org/wikipedia/commons/6/67/Portugal_-_Algarve_-_coast_west_of_Lagos_%2825657164162%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "note": "Displayed with responsive cropping; no retouching.",
+    "bytes": 226972
+  },
+  "italy-country": {
+    "src": "/journal/italy-country.webp",
+    "title": "Cypress tree alley at sunset in Asciano, Tuscany.jpg",
+    "author": "Eric Kilby",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Cypress_tree_alley_at_sunset_in_Asciano,_Tuscany.jpg",
+    "original": "https://upload.wikimedia.org/wikipedia/commons/7/78/Cypress_tree_alley_at_sunset_in_Asciano%2C_Tuscany.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "note": "Displayed with responsive cropping; no retouching.",
+    "bytes": 192514
+  },
+  "spain-country": {
+    "src": "/journal/spain-country.webp",
+    "title": "Gaztelugatxe (11355271064).jpg",
+    "author": "Grand Parc - Bordeaux, France from France",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Gaztelugatxe_(11355271064).jpg",
+    "original": "https://upload.wikimedia.org/wikipedia/commons/8/87/Gaztelugatxe_%2811355271064%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "note": "Displayed with responsive cropping; no retouching.",
+    "bytes": 359508
+  }
+}

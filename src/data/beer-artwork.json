@@ -1,0 +1,29 @@
+{
+  "Berliner Pilsner": {
+    "brand": "Berliner Pilsner",
+    "country": "Germany",
+    "src": "/beer/berliner-pilsner.gif",
+    "source": "https://commons.wikimedia.org/wiki/File:Berliner-pilsner-logo.gif",
+    "author": "Berliner Pilsner",
+    "license": "Public domain",
+    "licenseUrl": ""
+  },
+  "1664": {
+    "brand": "1664",
+    "country": "France",
+    "src": "/beer/1664.png",
+    "source": "https://commons.wikimedia.org/wiki/File:Logo_Bi%C3%A8re_1664_en_2021.png",
+    "author": "1664",
+    "license": "Public domain",
+    "licenseUrl": ""
+  },
+  "Kronenbourg": {
+    "brand": "Kronenbourg",
+    "country": "France",
+    "src": "/beer/kronenbourg.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Logo_Kronenbourg_depuis_2019.jpg",
+    "author": "Agence de communication \"La Noisette\"",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  }
+}

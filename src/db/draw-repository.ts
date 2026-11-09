@@ -12,7 +12,13 @@ export async function findEligibleFixtures(db: Database, startDate: string, endD
     id: fixtures.id, sourceId: fixtures.sourceId, homeTeamProviderId: fixtures.homeTeamProviderId, awayTeamProviderId: fixtures.awayTeamProviderId, kickoffDate: fixtures.kickoffDate, status: fixtures.status, kickoffAt: fixtures.kickoffAt, timezone: venues.timezone, homeTeam: fixtures.homeTeam, awayTeam: fixtures.awayTeam, homeTeamCrestUrl: fixtures.homeTeamCrestUrl, awayTeamCrestUrl: fixtures.awayTeamCrestUrl, stadium: venues.stadium, city: venues.city, country: venues.country, officialTicketUrl: fixtures.officialTicketUrl,
     competition: { name: competitions.name, country: competitions.country, emblemUrl: competitions.emblemUrl, areaFlagUrl: competitions.areaFlagUrl, gender: competitions.gender, region: competitions.region, format: competitions.format },
   }).from(fixtures).innerJoin(competitions, eq(fixtures.competitionId, competitions.id)).innerJoin(venues, eq(fixtures.venueId, venues.id))
-    .where(and(options.includeUK === false ? notInArray(sql`lower(trim(${venues.country}))`, ["england", "scotland", "wales", "northern ireland", "united kingdom", "uk", "great britain"]) : undefined, gte(fixtures.kickoffDate, startDate), lte(fixtures.kickoffDate, endDate), inArray(fixtures.status, ["confirmed"]), eq(venues.active, true), eq(competitions.active, true), inArray(competitions.providerCompetitionCode, SUPPORTED_COMPETITIONS.map(profile => profile.code)), localDevelopmentDataAllowed ? or(eq(venues.reviewed, true), eq(venues.provider, "development")) : eq(venues.reviewed, true)));
+    .where(and(
+      options.includeUK === false ? notInArray(sql`lower(trim(${venues.country}))`, ["england", "scotland", "wales", "northern ireland", "united kingdom", "uk", "great britain"]) : undefined,
+      gte(fixtures.kickoffDate, startDate), lte(fixtures.kickoffDate, endDate),
+      inArray(fixtures.status, ["confirmed"]), eq(venues.active, true), eq(competitions.active, true),
+      inArray(competitions.providerCompetitionCode, SUPPORTED_COMPETITIONS.map(profile => profile.code)),
+      localDevelopmentDataAllowed ? or(eq(venues.reviewed, true), eq(venues.provider, "development")) : eq(venues.reviewed, true),
+    ));
   return getEligibleFixtures(candidates, startDate, endDate);
 }
 

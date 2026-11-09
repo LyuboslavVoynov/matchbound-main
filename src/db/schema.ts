@@ -132,3 +132,38 @@ export const draws = pgTable("draws", {
   createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
   expiresAt: timestamp("expires_at", { withTimezone: true }).notNull(),
 }, (table) => [index("draws_share_token_idx").on(table.shareToken), index("draws_expires_at_idx").on(table.expiresAt)]);
+
+/** New versioned creative library; intentionally independent of retired place_media. */
+export const creativeSubject = pgEnum("creative_subject", ["country", "city", "stadium"]);
+export const creativeApproval = pgEnum("creative_approval", ["pending", "approved", "rejected"]);
+export const creativeAssets = pgTable("creative_assets", {
+  id: text("id").primaryKey(),
+  objectKey: text("object_key").notNull(),
+  imageUrl: text("image_url"),
+  contentSha256: text("content_sha256").notNull(),
+  title: text("title").notNull(),
+  creator: text("creator").notNull(),
+  sourcePageUrl: text("source_page_url").notNull(),
+  originalUrl: text("original_url").notNull(),
+  licenseName: text("license_name").notNull(),
+  licenseUrl: text("license_url").notNull(),
+  attribution: text("attribution").notNull(),
+  transformationNote: text("transformation_note").notNull(),
+  width: integer("width").notNull(), height: integer("height").notNull(), bytes: integer("bytes").notNull(),
+  focalX: integer("focal_x").notNull().default(50), focalY: integer("focal_y").notNull().default(50),
+  approvalStatus: creativeApproval("approval_status").notNull().default("pending"),
+  reviewedAt: timestamp("reviewed_at", { withTimezone: true }),
+  reviewNote: text("review_note"),
+  /** Set only after the public object bytes have been downloaded and hash-verified. */
+  publishedAt: timestamp("published_at", { withTimezone: true }),
+  active: boolean("active").notNull().default(true),
+  createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
+}, table => [uniqueIndex("creative_assets_object_key_unique").on(table.objectKey), index("creative_assets_approved_idx").on(table.approvalStatus, table.active, table.publishedAt)]).enableRLS();
+export const creativePlacements = pgTable("creative_placements", {
+  subjectKey: text("subject_key").primaryKey(),
+  subjectType: creativeSubject("subject_type").notNull(),
+  country: text("country").notNull(), city: text("city"), stadium: text("stadium"),
+  assetId: text("asset_id").notNull().references(() => creativeAssets.id),
+  alt: text("alt").notNull(),
+  active: boolean("active").notNull().default(true),
+}, table => [index("creative_placements_asset_idx").on(table.assetId)]).enableRLS();

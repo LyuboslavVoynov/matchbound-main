@@ -1,0 +1,1750 @@
+{
+  "inventorySnapshot": "2026-11-08; reviewed season-2026 registry including expansion branch",
+  "storagePublished": false,
+  "approvedLocalAssets": 38,
+  "uniqueCities": 133,
+  "uniqueStadiums": 154,
+  "leagues": [
+    {
+      "code": "PL",
+      "clubs": 20,
+      "cities": 14,
+      "approvedCities": 0,
+      "stadiums": 20,
+      "approvedStadiums": 0,
+      "missing": [
+        {
+          "subjectType": "city",
+          "country": "England",
+          "city": "London",
+          "alt": ""
+        },
+        {
+          "subjectType": "city",
+          "country": "England",
+          "city": "Birmingham",
+          "alt": ""
+        },
+        {
+          "subjectType": "city",
+          "country": "England",
+          "city": "Liverpool",
+          "alt": ""
+        },
+        {
+          "subjectType": "city",
+          "country": "England",
+          "city": "Manchester",
+          "alt": ""
+        },
+        {
+          "subjectType": "city",
+          "country": "England",
+          "city": "Newcastle upon Tyne",
+          "alt": ""
+        },
+        {
+          "subjectType": "city",
+          "country": "England",
+          "city": "Sunderland",
+          "alt": ""
+        },
+        {
+          "subjectType": "city",
+          "country": "England",
+          "city": "Hull",
+          "alt": ""
+        },
+        {
+          "subjectType": "city",
+          "country": "England",
+          "city": "Leeds",
+          "alt": ""
+        },
+        {
+          "subjectType": "city",
+          "country": "England",
+          "city": "Ipswich",
+          "alt": ""
+        },
+        {
+          "subjectType": "city",
+          "country": "England",
+          "city": "Nottingham",
+          "alt": ""
+        },
+        {
+          "subjectType": "city",
+          "country": "England",
+          "city": "Brighton & Hove",
+          "alt": ""
+        },
+        {
+          "subjectType": "city",
+          "country": "England",
+          "city": "Brentford",
+          "alt": ""
+        },
+        {
+          "subjectType": "city",
+          "country": "England",
+          "city": "Bournemouth",
+          "alt": ""
+        },
+        {
+          "subjectType": "city",
+          "country": "England",
+          "city": "Coventry",
+          "alt": ""
+        },
+        {
+          "subjectType": "stadium",
+          "country": "England",
+          "city": "London",
+          "stadium": "Emirates Stadium",
+          "alt": ""
+        },
+        {
+          "subjectType": "stadium",
+          "country": "England",
+          "city": "Birmingham",
+          "stadium": "Villa Park",
+          "alt": ""
+        },
+        {
+          "subjectType": "stadium",
+          "country": "England",
+          "city": "London",
+          "stadium": "Stamford Bridge",
+          "alt": ""
+        },
+        {
+          "subjectType": "stadium",
+          "country": "England",
+          "city": "Liverpool",
+          "stadium": "Hill Dickinson Stadium",
+          "alt": ""
+        },
+        {
+          "subjectType": "stadium",
+          "country": "England",
+          "city": "London",
+          "stadium": "Craven Cottage",
+          "alt": ""
+        },
+        {
+          "subjectType": "stadium",
+          "country": "England",
+          "city": "Liverpool",
+          "stadium": "Anfield",
+          "alt": ""
+        },
+        {
+          "subjectType": "stadium",
+          "country": "England",
+          "city": "Manchester",
+          "stadium": "Etihad Stadium",
+          "alt": ""
+        },
+        {
+          "subjectType": "stadium",
+          "country": "England",
+          "city": "Manchester",
+          "stadium": "Old Trafford",
+          "alt": ""
+        },
+        {
+          "subjectType": "stadium",
+          "country": "England",
+          "city": "Newcastle upon Tyne",
+          "stadium": "St. James' Park",
+          "alt": ""
+        },
+        {
+          "subjectType": "stadium",
+          "country": "England",
+          "city": "Sunderland",
+          "stadium": "Stadium of Light",
+          "alt": ""
+        },
+        {
+          "subjectType": "stadium",
+          "country": "England",
+          "city": "London",
+          "stadium": "Tottenham Hotspur Stadium",
+          "alt": ""
+        },
+        {
+          "subjectType": "stadium",
+          "country": "England",
+          "city": "Hull",
+          "stadium": "MKM Stadium",
+          "alt": ""
+        },
+        {
+          "subjectType": "stadium",
+          "country": "England",
+          "city": "Leeds",
+          "stadium": "Elland Road",
+          "alt": ""
+        },
+        {
+          "subjectType": "stadium",
+          "country": "England",
+          "city": "Ipswich",
+          "stadium": "Portman Road Stadium",
+          "alt": ""
+        },
+        {
+          "subjectType": "stadium",
+          "country": "England",
+          "city": "Nottingham",
+          "stadium": "The City Ground",
+          "alt": ""
+        },
+        {
+          "subjectType": "stadium",
+          "country": "England",
+          "city": "London",
+          "stadium": "Selhurst Park",
+          "alt": ""
+        },
+        {
+          "subjectType": "stadium",
+          "country": "England",
+          "city": "Brighton & Hove",
+          "stadium": "The American Express Community Stadium",
+          "alt": ""
+        },
+        {
+          "subjectType": "stadium",
+          "country": "England",
+          "city": "Brentford",
+          "stadium": "Gtech Community Stadium",
+          "alt": ""
+        },
+        {
+          "subjectType": "stadium",
+          "country": "England",
+          "city": "Bournemouth",
+          "stadium": "Vitality Stadium",
+          "alt": ""
+        },
+        {
+          "subjectType": "stadium",
+          "country": "England",
+          "city": "Coventry",
+          "stadium": "Coventry Building Society Arena",
+          "alt": ""
+        }
+      ]
+    },
+    {
+      "code": "PD",
+      "clubs": 20,
+      "cities": 16,
+      "approvedCities": 1,
+      "stadiums": 20,
+      "approvedStadiums": 1,
+      "missing": [
+        {
+          "subjectType": "city",
+          "country": "Spain",
+          "city": "Madrid",
+          "alt": ""
+        },
+        {
+          "subjectType": "city",
+          "country": "Spain",
+          "city": "Pamplona",
+          "alt": ""
+        },
+        {
+          "subjectType": "city",
+          "country": "Spain",
+          "city": "Cornellà de Llobregat",
+          "alt": ""
+        },
+        {
+          "subjectType": "city",
+          "country": "Spain",
+          "city": "Barcelona",
+          "alt": ""
+        },
+        {
+          "subjectType": "city",
+          "country": "Spain",
+          "city": "Getafe",
+          "alt": ""
+        },
+        {
+          "subjectType": "city",
+          "country": "Spain",
+          "city": "Málaga",
+          "alt": ""
+        },
+        {
+          "subjectType": "city",
+          "country": "Spain",
+          "city": "Valencia",
+          "alt": ""
+        },
+        {
+          "subjectType": "city",
+          "country": "Spain",
+          "city": "Sevilla",
+          "alt": ""
+        },
+        {
+          "subjectType": "city",
+          "country": "Spain",
+          "city": "San Sebastián",
+          "alt": ""
+        },
+        {
+          "subjectType": "city",
+          "country": "Spain",
+          "city": "Villarreal",
+          "alt": ""
+        },
+        {
+          "subjectType": "city",
+          "country": "Spain",
+          "city": "Vitoria",
+          "alt": ""
+        },
+        {
+          "subjectType": "city",
+          "country": "Spain",
+          "city": "Elche",
+          "alt": ""
+        },
+        {
+          "subjectType": "city",
+          "country": "Spain",
+          "city": "Vigo",
+          "alt": ""
+        },
+        {
+          "subjectType": "city",
+          "country": "Spain",
+          "city": "A Coruña",
+          "alt": ""
+        },
+        {
+          "subjectType": "city",
+          "country": "Spain",
+          "city": "Santander",
+          "alt": ""
+        },
+        {
+          "subjectType": "stadium",
+          "country": "Spain",
+          "city": "Madrid",
+          "stadium": "Riyadh Air Metropolitano",
+          "alt": ""
+        },
+        {
+          "subjectType": "stadium",
+          "country": "Spain",
+          "city": "Pamplona",
+          "stadium": "Estadio El Sadar",
+          "alt": ""
+        },
+        {
+          "subjectType": "stadium",
+          "country": "Spain",
+          "city": "Cornellà de Llobregat",
+          "stadium": "RCDE Stadium",
+          "alt": ""
+        },
+        {
+          "subjectType": "stadium",
+          "country": "Spain",
+          "city": "Barcelona",
+          "stadium": "Camp Nou",
+          "alt": ""
+        },
+        {
+          "subjectType": "stadium",
+          "country": "Spain",
+          "city": "Getafe",
+          "stadium": "Coliseum Alfonso Pérez",
+          "alt": ""
+        },
+        {
+          "subjectType": "stadium",
+          "country": "Spain",
+          "city": "Málaga",
+          "stadium": "Estadio La Rosaleda",
+          "alt": ""
+        },
+        {
+          "subjectType": "stadium",
+          "country": "Spain",
+          "city": "Madrid",
+          "stadium": "Estadio Santiago Bernabéu",
+          "alt": ""
+        },
+        {
+          "subjectType": "stadium",
+          "country": "Spain",
+          "city": "Madrid",
+          "stadium": "Estadio del Rayo Vallecano",
+          "alt": ""
+        },
+        {
+          "subjectType": "stadium",
+          "country": "Spain",
+          "city": "Valencia",
+          "stadium": "Estadio Ciudad de Valencia",
+          "alt": ""
+        },
+        {
+          "subjectType": "stadium",
+          "country": "Spain",
+          "city": "Sevilla",
+          "stadium": "Estadio Benito Villamarín",
+          "alt": ""
+        },
+        {
+          "subjectType": "stadium",
+          "country": "Spain",
+          "city": "San Sebastián",
+          "stadium": "Estadio Municipal de Anoeta",
+          "alt": ""
+        },
+        {
+          "subjectType": "stadium",
+          "country": "Spain",
+          "city": "Villarreal",
+          "stadium": "Estadio de la Cerámica",
+          "alt": ""
+        },
+        {
+          "subjectType": "stadium",
+          "country": "Spain",
+          "city": "Valencia",
+          "stadium": "Estadio de Mestalla",
+          "alt": ""
+        },
+        {
+          "subjectType": "stadium",
+          "country": "Spain",
+          "city": "Vitoria",
+          "stadium": "Estadio de Mendizorroza",
+          "alt": ""
+        },
+        {
+          "subjectType": "stadium",
+          "country": "Spain",
+          "city": "Elche",
+          "stadium": "Estadio Manuel Martínez Valero",
+          "alt": ""
+        },
+        {
+          "subjectType": "stadium",
+          "country": "Spain",
+          "city": "Vigo",
+          "stadium": "Estadio de Balaídos",
+          "alt": ""
+        },
+        {
+          "subjectType": "stadium",
+          "country": "Spain",
+          "city": "Sevilla",
+          "stadium": "Estadio Ramón Sánchez Pizjuán",
+          "alt": ""
+        },
+        {
+          "subjectType": "stadium",
+          "country": "Spain",
+          "city": "A Coruña",
+          "stadium": "Estadio Abanca-Riazor",
+          "alt": ""
+        },
+        {
+          "subjectType": "stadium",
+          "country": "Spain",
+          "city": "Santander",
+          "stadium": "Campos de Sport de El Sardinero",
+          "alt": ""
+        }
+      ]
+    },
+    {
+      "code": "BL1",
+      "clubs": 18,
+      "cities": 18,
+      "approvedCities": 0,
+      "stadiums": 18,
+      "approvedStadiums": 0,
+      "missing": [
+        {
+          "subjectType": "city",
+          "country": "Germany",
+          "city": "Cologne",
+          "alt": ""
+        },
+        {
+          "subjectType": "city",
+          "country": "Germany",
+          "city": "Zuzenhausen",
+          "alt": ""
+        },
+        {
+          "subjectType": "city",
+          "country": "Germany",
+          "city": "Leverkusen",
+          "alt": ""
+        },
+        {
+          "subjectType": "city",
+          "country": "Germany",
+          "city": "Dortmund",
+          "alt": ""
+        },
+        {
+          "subjectType": "city",
+          "country": "Germany",
+          "city": "Munich",
+          "alt": ""
+        },
+        {
+          "subjectType": "city",
+          "country": "Germany",
+          "city": "Gelsenkirchen",
+          "alt": ""
+        },
+        {
+          "subjectType": "city",
+          "country": "Germany",
+          "city": "Hamburg",
+          "alt": ""
+        },
+        {
+          "subjectType": "city",
+          "country": "Germany",
+          "city": "Stuttgart",
+          "alt": ""
+        },
+        {
+          "subjectType": "city",
+          "country": "Germany",
+          "city": "Bremen",
+          "alt": ""
+        },
+        {
+          "subjectType": "city",
+          "country": "Germany",
+          "city": "Mainz",
+          "alt": ""
+        },
+        {
+          "subjectType": "city",
+          "country": "Germany",
+          "city": "Augsburg",
+          "alt": ""
+        },
+        {
+          "subjectType": "city",
+          "country": "Germany",
+          "city": "Freiburg",
+          "alt": ""
+        },
+        {
+          "subjectType": "city",
+          "country": "Germany",
+          "city": "Mönchengladbach",
+          "alt": ""
+        },
+        {
+          "subjectType": "city",
+          "country": "Germany",
+          "city": "Frankfurt am Main",
+          "alt": ""
+        },
+        {
+          "subjectType": "city",
+          "country": "Germany",
+          "city": "Berlin",
+          "alt": ""
+        },
+        {
+          "subjectType": "city",
+          "country": "Germany",
+          "city": "Paderborn",
+          "alt": ""
+        },
+        {
+          "subjectType": "city",
+          "country": "Germany",
+          "city": "Spiesen-Elversberg",
+          "alt": ""
+        },
+        {
+          "subjectType": "city",
+          "country": "Germany",
+          "city": "Leipzig",
+          "alt": ""
+        },
+        {
+          "subjectType": "stadium",
+          "country": "Germany",
+          "city": "Cologne",
+          "stadium": "RheinEnergieSTADION",
+          "alt": ""
+        },
+        {
+          "subjectType": "stadium",
+          "country": "Germany",
+          "city": "Zuzenhausen",
+          "stadium": "PreZero Arena",
+          "alt": ""
+        },
+        {
+          "subjectType": "stadium",
+          "country": "Germany",
+          "city": "Leverkusen",
+          "stadium": "BayArena",
+          "alt": ""
+        },
+        {
+          "subjectType": "stadium",
+          "country": "Germany",
+          "city": "Dortmund",
+          "stadium": "Signal Iduna Park",
+          "alt": ""
+        },
+        {
+          "subjectType": "stadium",
+          "country": "Germany",
+          "city": "Munich",
+          "stadium": "Allianz Arena",
+          "alt": ""
+        },
+        {
+          "subjectType": "stadium",
+          "country": "Germany",
+          "city": "Gelsenkirchen",
+          "stadium": "Veltins-Arena",
+          "alt": ""
+        },
+        {
+          "subjectType": "stadium",
+          "country": "Germany",
+          "city": "Hamburg",
+          "stadium": "Volksparkstadion",
+          "alt": ""
+        },
+        {
+          "subjectType": "stadium",
+          "country": "Germany",
+          "city": "Stuttgart",
+          "stadium": "Mercedes-Benz Arena",
+          "alt": ""
+        },
+        {
+          "subjectType": "stadium",
+          "country": "Germany",
+          "city": "Bremen",
+          "stadium": "Weserstadion",
+          "alt": ""
+        },
+        {
+          "subjectType": "stadium",
+          "country": "Germany",
+          "city": "Mainz",
+          "stadium": "MEWA ARENA",
+          "alt": ""
+        },
+        {
+          "subjectType": "stadium",
+          "country": "Germany",
+          "city": "Augsburg",
+          "stadium": "WWK Arena",
+          "alt": ""
+        },
+        {
+          "subjectType": "stadium",
+          "country": "Germany",
+          "city": "Freiburg",
+          "stadium": "Europa-Park Stadion",
+          "alt": ""
+        },
+        {
+          "subjectType": "stadium",
+          "country": "Germany",
+          "city": "Mönchengladbach",
+          "stadium": "Stadion im Borussia-Park",
+          "alt": ""
+        },
+        {
+          "subjectType": "stadium",
+          "country": "Germany",
+          "city": "Frankfurt am Main",
+          "stadium": "Deutsche Bank Park",
+          "alt": ""
+        },
+        {
+          "subjectType": "stadium",
+          "country": "Germany",
+          "city": "Berlin",
+          "stadium": "Stadion An der Alten Försterei",
+          "alt": ""
+        },
+        {
+          "subjectType": "stadium",
+          "country": "Germany",
+          "city": "Paderborn",
+          "stadium": "Home Deluxe Arena",
+          "alt": ""
+        },
+        {
+          "subjectType": "stadium",
+          "country": "Germany",
+          "city": "Spiesen-Elversberg",
+          "stadium": "Ursapharm-Arena an der Kaiserlinde",
+          "alt": ""
+        },
+        {
+          "subjectType": "stadium",
+          "country": "Germany",
+          "city": "Leipzig",
+          "stadium": "Red Bull Arena",
+          "alt": ""
+        }
+      ]
+    },
+    {
+      "code": "SA",
+      "clubs": 20,
+      "cities": 17,
+      "approvedCities": 1,
+      "stadiums": 18,
+      "approvedStadiums": 1,
+      "missing": [
+        {
+          "subjectType": "city",
+          "country": "Italy",
+          "city": "Florence",
+          "alt": ""
+        },
+        {
+          "subjectType": "city",
+          "country": "Italy",
+          "city": "Rome",
+          "alt": ""
+        },
+        {
+          "subjectType": "city",
+          "country": "Italy",
+          "city": "Bergamo",
+          "alt": ""
+        },
+        {
+          "subjectType": "city",
+          "country": "Italy",
+          "city": "Bologna",
+          "alt": ""
+        },
+        {
+          "subjectType": "city",
+          "country": "Italy",
+          "city": "Cagliari",
+          "alt": ""
+        },
+        {
+          "subjectType": "city",
+          "country": "Italy",
+          "city": "Genoa",
+          "alt": ""
+        },
+        {
+          "subjectType": "city",
+          "country": "Italy",
+          "city": "Turin",
+          "alt": ""
+        },
+        {
+          "subjectType": "city",
+          "country": "Italy",
+          "city": "Parma",
+          "alt": ""
+        },
+        {
+          "subjectType": "city",
+          "country": "Italy",
+          "city": "Naples",
+          "alt": ""
+        },
+        {
+          "subjectType": "city",
+          "country": "Italy",
+          "city": "Udine",
+          "alt": ""
+        },
+        {
+          "subjectType": "city",
+          "country": "Italy",
+          "city": "Venice",
+          "alt": ""
+        },
+        {
+          "subjectType": "city",
+          "country": "Italy",
+          "city": "Frosinone",
+          "alt": ""
+        },
+        {
+          "subjectType": "city",
+          "country": "Italy",
+          "city": "Reggio Emilia",
+          "alt": ""
+        },
+        {
+          "subjectType": "city",
+          "country": "Italy",
+          "city": "Lecce",
+          "alt": ""
+        },
+        {
+          "subjectType": "city",
+          "country": "Italy",
+          "city": "Monza",
+          "alt": ""
+        },
+        {
+          "subjectType": "city",
+          "country": "Italy",
+          "city": "Como",
+          "alt": ""
+        },
+        {
+          "subjectType": "stadium",
+          "country": "Italy",
+          "city": "Florence",
+          "stadium": "Stadio Artemio Franchi",
+          "alt": ""
+        },
+        {
+          "subjectType": "stadium",
+          "country": "Italy",
+          "city": "Rome",
+          "stadium": "Stadio Olimpico",
+          "alt": ""
+        },
+        {
+          "subjectType": "stadium",
+          "country": "Italy",
+          "city": "Bergamo",
+          "stadium": "Gewiss Stadium",
+          "alt": ""
+        },
+        {
+          "subjectType": "stadium",
+          "country": "Italy",
+          "city": "Bologna",
+          "stadium": "Stadio Renato Dall'Ara",
+          "alt": ""
+        },
+        {
+          "subjectType": "stadium",
+          "country": "Italy",
+          "city": "Cagliari",
+          "stadium": "Unipol Domus",
+          "alt": ""
+        },
+        {
+          "subjectType": "stadium",
+          "country": "Italy",
+          "city": "Genoa",
+          "stadium": "Stadio Comunale Luigi Ferraris",
+          "alt": ""
+        },
+        {
+          "subjectType": "stadium",
+          "country": "Italy",
+          "city": "Turin",
+          "stadium": "Allianz Stadium",
+          "alt": ""
+        },
+        {
+          "subjectType": "stadium",
+          "country": "Italy",
+          "city": "Parma",
+          "stadium": "Stadio Ennio Tardini",
+          "alt": ""
+        },
+        {
+          "subjectType": "stadium",
+          "country": "Italy",
+          "city": "Naples",
+          "stadium": "Stadio Diego Armando Maradona",
+          "alt": ""
+        },
+        {
+          "subjectType": "stadium",
+          "country": "Italy",
+          "city": "Udine",
+          "stadium": "Bluenergy Stadium",
+          "alt": ""
+        },
+        {
+          "subjectType": "stadium",
+          "country": "Italy",
+          "city": "Venice",
+          "stadium": "Stadio Pierluigi Penzo",
+          "alt": ""
+        },
+        {
+          "subjectType": "stadium",
+          "country": "Italy",
+          "city": "Frosinone",
+          "stadium": "Stadio Benito Stirpe",
+          "alt": ""
+        },
+        {
+          "subjectType": "stadium",
+          "country": "Italy",
+          "city": "Reggio Emilia",
+          "stadium": "Mapei Stadium - Città del Tricolore",
+          "alt": ""
+        },
+        {
+          "subjectType": "stadium",
+          "country": "Italy",
+          "city": "Turin",
+          "stadium": "Stadio Olimpico Grande Torino",
+          "alt": ""
+        },
+        {
+          "subjectType": "stadium",
+          "country": "Italy",
+          "city": "Lecce",
+          "stadium": "Stadio Comunale Via Del Mare",
+          "alt": ""
+        },
+        {
+          "subjectType": "stadium",
+          "country": "Italy",
+          "city": "Monza",
+          "stadium": "Stadio Comunale Brianteo",
+          "alt": ""
+        },
+        {
+          "subjectType": "stadium",
+          "country": "Italy",
+          "city": "Como",
+          "stadium": "Stadio Giuseppe Sinigaglia",
+          "alt": ""
+        }
+      ]
+    },
+    {
+      "code": "FL1",
+      "clubs": 18,
+      "cities": 17,
+      "approvedCities": 0,
+      "stadiums": 18,
+      "approvedStadiums": 0,
+      "missing": [
+        {
+          "subjectType": "city",
+          "country": "France",
+          "city": "Toulouse",
+          "alt": ""
+        },
+        {
+          "subjectType": "city",
+          "country": "France",
+          "city": "Brest",
+          "alt": ""
+        },
+        {
+          "subjectType": "city",
+          "country": "France",
+          "city": "Marseille",
+          "alt": ""
+        },
+        {
+          "subjectType": "city",
+          "country": "France",
+          "city": "Auxerre",
+          "alt": ""
+        },
+        {
+          "subjectType": "city",
+          "country": "France",
+          "city": "Villeneuve-d'Ascq",
+          "alt": ""
+        },
+        {
+          "subjectType": "city",
+          "country": "France",
+          "city": "Nice",
+          "alt": ""
+        },
+        {
+          "subjectType": "city",
+          "country": "France",
+          "city": "Décines-Charpieu",
+          "alt": ""
+        },
+        {
+          "subjectType": "city",
+          "country": "France",
+          "city": "Paris",
+          "alt": ""
+        },
+        {
+          "subjectType": "city",
+          "country": "France",
+          "city": "Lorient",
+          "alt": ""
+        },
+        {
+          "subjectType": "city",
+          "country": "France",
+          "city": "Rennes",
+          "alt": ""
+        },
+        {
+          "subjectType": "city",
+          "country": "France",
+          "city": "Troyes",
+          "alt": ""
+        },
+        {
+          "subjectType": "city",
+          "country": "France",
+          "city": "Angers",
+          "alt": ""
+        },
+        {
+          "subjectType": "city",
+          "country": "France",
+          "city": "Le Havre",
+          "alt": ""
+        },
+        {
+          "subjectType": "city",
+          "country": "France",
+          "city": "Le Mans",
+          "alt": ""
+        },
+        {
+          "subjectType": "city",
+          "country": "France",
+          "city": "Lens",
+          "alt": ""
+        },
+        {
+          "subjectType": "city",
+          "country": "Monaco",
+          "city": "Monaco",
+          "alt": ""
+        },
+        {
+          "subjectType": "city",
+          "country": "France",
+          "city": "Strasbourg",
+          "alt": ""
+        },
+        {
+          "subjectType": "stadium",
+          "country": "France",
+          "city": "Toulouse",
+          "stadium": "Stadium Municipal",
+          "alt": ""
+        },
+        {
+          "subjectType": "stadium",
+          "country": "France",
+          "city": "Brest",
+          "stadium": "Stade Francis-Le Blé",
+          "alt": ""
+        },
+        {
+          "subjectType": "stadium",
+          "country": "France",
+          "city": "Marseille",
+          "stadium": "Orange Vélodrome",
+          "alt": ""
+        },
+        {
+          "subjectType": "stadium",
+          "country": "France",
+          "city": "Auxerre",
+          "stadium": "Stade de l'Abbé Deschamps",
+          "alt": ""
+        },
+        {
+          "subjectType": "stadium",
+          "country": "France",
+          "city": "Villeneuve-d'Ascq",
+          "stadium": "Stade Pierre-Mauroy",
+          "alt": ""
+        },
+        {
+          "subjectType": "stadium",
+          "country": "France",
+          "city": "Nice",
+          "stadium": "Allianz Riviera",
+          "alt": ""
+        },
+        {
+          "subjectType": "stadium",
+          "country": "France",
+          "city": "Décines-Charpieu",
+          "stadium": "Groupama Stadium",
+          "alt": ""
+        },
+        {
+          "subjectType": "stadium",
+          "country": "France",
+          "city": "Paris",
+          "stadium": "Parc des Princes",
+          "alt": ""
+        },
+        {
+          "subjectType": "stadium",
+          "country": "France",
+          "city": "Lorient",
+          "stadium": "Stade Yves Allainmat - Le Moustoir",
+          "alt": ""
+        },
+        {
+          "subjectType": "stadium",
+          "country": "France",
+          "city": "Rennes",
+          "stadium": "Roazhon Park",
+          "alt": ""
+        },
+        {
+          "subjectType": "stadium",
+          "country": "France",
+          "city": "Troyes",
+          "stadium": "Stade de l'Aube",
+          "alt": ""
+        },
+        {
+          "subjectType": "stadium",
+          "country": "France",
+          "city": "Angers",
+          "stadium": "Stade Raymond Kopa",
+          "alt": ""
+        },
+        {
+          "subjectType": "stadium",
+          "country": "France",
+          "city": "Le Havre",
+          "stadium": "Stade Océane",
+          "alt": ""
+        },
+        {
+          "subjectType": "stadium",
+          "country": "France",
+          "city": "Le Mans",
+          "stadium": "MMArena",
+          "alt": ""
+        },
+        {
+          "subjectType": "stadium",
+          "country": "France",
+          "city": "Lens",
+          "stadium": "Stade Bollaert-Delelis",
+          "alt": ""
+        },
+        {
+          "subjectType": "stadium",
+          "country": "Monaco",
+          "city": "Monaco",
+          "stadium": "Stade Louis II",
+          "alt": ""
+        },
+        {
+          "subjectType": "stadium",
+          "country": "France",
+          "city": "Strasbourg",
+          "stadium": "Stade de la Meinau",
+          "alt": ""
+        },
+        {
+          "subjectType": "stadium",
+          "country": "France",
+          "city": "Paris",
+          "stadium": "Stade Sébastien Charléty",
+          "alt": ""
+        }
+      ]
+    },
+    {
+      "code": "ELC",
+      "clubs": 24,
+      "cities": 21,
+      "approvedCities": 0,
+      "stadiums": 24,
+      "approvedStadiums": 0,
+      "missing": [
+        {
+          "subjectType": "city",
+          "country": "England",
+          "city": "Blackburn",
+          "alt": ""
+        },
+        {
+          "subjectType": "city",
+          "country": "England",
+          "city": "Horwich",
+          "alt": ""
+        },
+        {
+          "subjectType": "city",
+          "country": "England",
+          "city": "Norwich",
+          "alt": ""
+        },
+        {
+          "subjectType": "city",
+          "country": "England",
+          "city": "London",
+          "alt": ""
+        },
+        {
+          "subjectType": "city",
+          "country": "England",
+          "city": "Stoke-on-Trent",
+          "alt": ""
+        },
+        {
+          "subjectType": "city",
+          "country": "Wales",
+          "city": "Swansea",
+          "alt": ""
+        },
+        {
+          "subjectType": "city",
+          "country": "England",
+          "city": "West Bromwich",
+          "alt": ""
+        },
+        {
+          "subjectType": "city",
+          "country": "England",
+          "city": "Wolverhampton",
+          "alt": ""
+        },
+        {
+          "subjectType": "city",
+          "country": "England",
+          "city": "Portsmouth",
+          "alt": ""
+        },
+        {
+          "subjectType": "city",
+          "country": "England",
+          "city": "Burnley",
+          "alt": ""
+        },
+        {
+          "subjectType": "city",
+          "country": "England",
+          "city": "Birmingham",
+          "alt": ""
+        },
+        {
+          "subjectType": "city",
+          "country": "England",
+          "city": "Southampton",
+          "alt": ""
+        },
+        {
+          "subjectType": "city",
+          "country": "England",
+          "city": "Derby",
+          "alt": ""
+        },
+        {
+          "subjectType": "city",
+          "country": "England",
+          "city": "Middlesbrough",
+          "alt": ""
+        },
+        {
+          "subjectType": "city",
+          "country": "England",
+          "city": "Watford",
+          "alt": ""
+        },
+        {
+          "subjectType": "city",
+          "country": "England",
+          "city": "Sheffield",
+          "alt": ""
+        },
+        {
+          "subjectType": "city",
+          "country": "England",
+          "city": "Bristol",
+          "alt": ""
+        },
+        {
+          "subjectType": "city",
+          "country": "Wales",
+          "city": "Wrexham",
+          "alt": ""
+        },
+        {
+          "subjectType": "city",
+          "country": "Wales",
+          "city": "Cardiff",
+          "alt": ""
+        },
+        {
+          "subjectType": "city",
+          "country": "England",
+          "city": "Preston",
+          "alt": ""
+        },
+        {
+          "subjectType": "city",
+          "country": "England",
+          "city": "Lincoln",
+          "alt": ""
+        },
+        {
+          "subjectType": "stadium",
+          "country": "England",
+          "city": "Blackburn",
+          "stadium": "Ewood Park",
+          "alt": ""
+        },
+        {
+          "subjectType": "stadium",
+          "country": "England",
+          "city": "Horwich",
+          "stadium": "Toughsheet Community Stadium",
+          "alt": ""
+        },
+        {
+          "subjectType": "stadium",
+          "country": "England",
+          "city": "Norwich",
+          "stadium": "Carrow Road",
+          "alt": ""
+        },
+        {
+          "subjectType": "stadium",
+          "country": "England",
+          "city": "London",
+          "stadium": "MATRADE Loftus Road",
+          "alt": ""
+        },
+        {
+          "subjectType": "stadium",
+          "country": "England",
+          "city": "Stoke-on-Trent",
+          "stadium": "bet365 Stadium",
+          "alt": ""
+        },
+        {
+          "subjectType": "stadium",
+          "country": "Wales",
+          "city": "Swansea",
+          "stadium": "Swansea.com Stadium",
+          "alt": ""
+        },
+        {
+          "subjectType": "stadium",
+          "country": "England",
+          "city": "West Bromwich",
+          "stadium": "The Hawthorns",
+          "alt": ""
+        },
+        {
+          "subjectType": "stadium",
+          "country": "England",
+          "city": "Wolverhampton",
+          "stadium": "Molineux Stadium",
+          "alt": ""
+        },
+        {
+          "subjectType": "stadium",
+          "country": "England",
+          "city": "Portsmouth",
+          "stadium": "Fratton Park",
+          "alt": ""
+        },
+        {
+          "subjectType": "stadium",
+          "country": "England",
+          "city": "Burnley",
+          "stadium": "Turf Moor",
+          "alt": ""
+        },
+        {
+          "subjectType": "stadium",
+          "country": "England",
+          "city": "Birmingham",
+          "stadium": "St. Andrew's @ Knighthead Park",
+          "alt": ""
+        },
+        {
+          "subjectType": "stadium",
+          "country": "England",
+          "city": "Southampton",
+          "stadium": "St. Mary's Stadium",
+          "alt": ""
+        },
+        {
+          "subjectType": "stadium",
+          "country": "England",
+          "city": "Derby",
+          "stadium": "Pride Park Stadium",
+          "alt": ""
+        },
+        {
+          "subjectType": "stadium",
+          "country": "England",
+          "city": "Middlesbrough",
+          "stadium": "Riverside Stadium",
+          "alt": ""
+        },
+        {
+          "subjectType": "stadium",
+          "country": "England",
+          "city": "Watford",
+          "stadium": "Vicarage Road",
+          "alt": ""
+        },
+        {
+          "subjectType": "stadium",
+          "country": "England",
+          "city": "London",
+          "stadium": "The Valley",
+          "alt": ""
+        },
+        {
+          "subjectType": "stadium",
+          "country": "England",
+          "city": "Sheffield",
+          "stadium": "Bramall Lane",
+          "alt": ""
+        },
+        {
+          "subjectType": "stadium",
+          "country": "England",
+          "city": "London",
+          "stadium": "The Den",
+          "alt": ""
+        },
+        {
+          "subjectType": "stadium",
+          "country": "England",
+          "city": "Bristol",
+          "stadium": "Ashton Gate Stadium",
+          "alt": ""
+        },
+        {
+          "subjectType": "stadium",
+          "country": "Wales",
+          "city": "Wrexham",
+          "stadium": "Racecourse Ground",
+          "alt": ""
+        },
+        {
+          "subjectType": "stadium",
+          "country": "England",
+          "city": "London",
+          "stadium": "London Stadium",
+          "alt": ""
+        },
+        {
+          "subjectType": "stadium",
+          "country": "Wales",
+          "city": "Cardiff",
+          "stadium": "Cardiff City Stadium",
+          "alt": ""
+        },
+        {
+          "subjectType": "stadium",
+          "country": "England",
+          "city": "Preston",
+          "stadium": "Deepdale",
+          "alt": ""
+        },
+        {
+          "subjectType": "stadium",
+          "country": "England",
+          "city": "Lincoln",
+          "stadium": "ProAmpac Stadium",
+          "alt": ""
+        }
+      ]
+    },
+    {
+      "code": "DED",
+      "clubs": 18,
+      "cities": 16,
+      "approvedCities": 0,
+      "stadiums": 18,
+      "approvedStadiums": 0,
+      "missing": [
+        {
+          "subjectType": "city",
+          "country": "Netherlands",
+          "city": "Enschede",
+          "alt": ""
+        },
+        {
+          "subjectType": "city",
+          "country": "Netherlands",
+          "city": "Rotterdam",
+          "alt": ""
+        },
+        {
+          "subjectType": "city",
+          "country": "Netherlands",
+          "city": "Tilburg",
+          "alt": ""
+        },
+        {
+          "subjectType": "city",
+          "country": "Netherlands",
+          "city": "Heerenveen",
+          "alt": ""
+        },
+        {
+          "subjectType": "city",
+          "country": "Netherlands",
+          "city": "Eindhoven",
+          "alt": ""
+        },
+        {
+          "subjectType": "city",
+          "country": "Netherlands",
+          "city": "Utrecht",
+          "alt": ""
+        },
+        {
+          "subjectType": "city",
+          "country": "Netherlands",
+          "city": "Groningen",
+          "alt": ""
+        },
+        {
+          "subjectType": "city",
+          "country": "Netherlands",
+          "city": "Amsterdam",
+          "alt": ""
+        },
+        {
+          "subjectType": "city",
+          "country": "Netherlands",
+          "city": "Den Haag",
+          "alt": ""
+        },
+        {
+          "subjectType": "city",
+          "country": "Netherlands",
+          "city": "Alkmaar",
+          "alt": ""
+        },
+        {
+          "subjectType": "city",
+          "country": "Netherlands",
+          "city": "Zwolle",
+          "alt": ""
+        },
+        {
+          "subjectType": "city",
+          "country": "Netherlands",
+          "city": "Deventer",
+          "alt": ""
+        },
+        {
+          "subjectType": "city",
+          "country": "Netherlands",
+          "city": "Leeuwarden",
+          "alt": ""
+        },
+        {
+          "subjectType": "city",
+          "country": "Netherlands",
+          "city": "Velsen-Zuid",
+          "alt": ""
+        },
+        {
+          "subjectType": "city",
+          "country": "Netherlands",
+          "city": "Nijmegen",
+          "alt": ""
+        },
+        {
+          "subjectType": "city",
+          "country": "Netherlands",
+          "city": "Sittard",
+          "alt": ""
+        },
+        {
+          "subjectType": "stadium",
+          "country": "Netherlands",
+          "city": "Enschede",
+          "stadium": "De Grolsch Veste",
+          "alt": ""
+        },
+        {
+          "subjectType": "stadium",
+          "country": "Netherlands",
+          "city": "Rotterdam",
+          "stadium": "Stadion Woudestein",
+          "alt": ""
+        },
+        {
+          "subjectType": "stadium",
+          "country": "Netherlands",
+          "city": "Tilburg",
+          "stadium": "Koning Willem II Stadion",
+          "alt": ""
+        },
+        {
+          "subjectType": "stadium",
+          "country": "Netherlands",
+          "city": "Heerenveen",
+          "stadium": "Abe Lenstra Stadion",
+          "alt": ""
+        },
+        {
+          "subjectType": "stadium",
+          "country": "Netherlands",
+          "city": "Eindhoven",
+          "stadium": "Philips Stadion",
+          "alt": ""
+        },
+        {
+          "subjectType": "stadium",
+          "country": "Netherlands",
+          "city": "Rotterdam",
+          "stadium": "Stadion Feijenoord (De Kuip)",
+          "alt": ""
+        },
+        {
+          "subjectType": "stadium",
+          "country": "Netherlands",
+          "city": "Utrecht",
+          "stadium": "Stadion Galgenwaard",
+          "alt": ""
+        },
+        {
+          "subjectType": "stadium",
+          "country": "Netherlands",
+          "city": "Groningen",
+          "stadium": "Euroborg",
+          "alt": ""
+        },
+        {
+          "subjectType": "stadium",
+          "country": "Netherlands",
+          "city": "Amsterdam",
+          "stadium": "Johan Cruijff ArenA",
+          "alt": ""
+        },
+        {
+          "subjectType": "stadium",
+          "country": "Netherlands",
+          "city": "Den Haag",
+          "stadium": "WerkTalent Stadion",
+          "alt": ""
+        },
+        {
+          "subjectType": "stadium",
+          "country": "Netherlands",
+          "city": "Alkmaar",
+          "stadium": "AFAS Stadion",
+          "alt": ""
+        },
+        {
+          "subjectType": "stadium",
+          "country": "Netherlands",
+          "city": "Zwolle",
+          "stadium": "MAC³PARK Stadion",
+          "alt": ""
+        },
+        {
+          "subjectType": "stadium",
+          "country": "Netherlands",
+          "city": "Deventer",
+          "stadium": "De Adelaarshorst",
+          "alt": ""
+        },
+        {
+          "subjectType": "stadium",
+          "country": "Netherlands",
+          "city": "Leeuwarden",
+          "stadium": "Kooi Stadion",
+          "alt": ""
+        },
+        {
+          "subjectType": "stadium",
+          "country": "Netherlands",
+          "city": "Velsen-Zuid",
+          "stadium": "BUKO Stadion",
+          "alt": ""
+        },
+        {
+          "subjectType": "stadium",
+          "country": "Netherlands",
+          "city": "Nijmegen",
+          "stadium": "Goffertstadion",
+          "alt": ""
+        },
+        {
+          "subjectType": "stadium",
+          "country": "Netherlands",
+          "city": "Sittard",
+          "stadium": "Fortuna Sittard Stadion",
+          "alt": ""
+        },
+        {
+          "subjectType": "stadium",
+          "country": "Netherlands",
+          "city": "Rotterdam",
+          "stadium": "Sparta Stadion Het Kasteel",
+          "alt": ""
+        }
+      ]
+    },
+    {
+      "code": "PPL",
+      "clubs": 18,
+      "cities": 16,
+      "approvedCities": 16,
+      "stadiums": 18,
+      "approvedStadiums": 15,
+      "missing": [
+        {
+          "subjectType": "stadium",
+          "country": "Portugal",
+          "city": "Vila do Conde",
+          "stadium": "Estádio do Rio Ave FC",
+          "alt": ""
+        },
+        {
+          "subjectType": "stadium",
+          "country": "Portugal",
+          "city": "Rio Maior",
+          "stadium": "Estádio Municipal de Rio Maior",
+          "alt": ""
+        },
+        {
+          "subjectType": "stadium",
+          "country": "Portugal",
+          "city": "Alverca do Ribatejo",
+          "stadium": "Estádio do FC Alverca",
+          "alt": ""
+        }
+      ]
+    }
+  ]
+}
