@@ -120,6 +120,13 @@
       "when": 1794156342292,
       "tag": "0016_curated_creatives",
       "breakpoints": true
+    },
+    {
+      "idx": 17,
+      "version": "7",
+      "when": 1794225127923,
+      "tag": "0017_beer_product_catalogue",
+      "breakpoints": true
     }
   ]
 }

@@ -28,7 +28,7 @@ Validation:87unit tests passed in the combined suite; a new rejected-artwork reg
 
 No content reseeding, migration replay, data deletion or deployment is required for this integration. The creative migration/upload were already verified:38photos,41placements. Live test-created draws are temporary and cleaned up.
 
-## Sprint 2 — beer catalogue
+## Sprint 2 — beer catalogue (Germany pilot implemented)
 
 Acceptance:
 - Distinct brewery and beer-product records; do not count brewery names and umbrella brands as separate beers.
@@ -38,6 +38,8 @@ Acceptance:
 - Start with a reviewed Germany pilot, target20–30distinct approved beers per supported destination country, then publish further country batches.
 - Preserve legacy saved draws. Import/dry-run tooling rejects duplicates, unsourced claims and unapproved artwork. No new beer is eligible merely because a search API returned it.
 - Selection remains server-side and country-scoped; the selected product is saved once in the immutable trip snapshot. The ticket reveals that saved selection.
+
+Implementation: `feat/beer-catalogue` adds normalized breweries/products, strict transactional imports, nation-specific selection, immutable snapshot facts and ticket source/ABV details. The configured database now has20approved Germany products from five breweries, with RLS enabled. Thirteen targeted unit tests and two desktop/mobile saved-ticket checks passed; TypeScript, scoped lint and production build passed. One scoped Product review found a schema/snapshot RLS mismatch, now fixed with an empty follow-up schema diff. Product logos and additional country batches remain incomplete.
 
 Deliver data/model/import in one branch; use small country commits for review. Keep the eight legacy catalogue entries until explicitly reviewed/replaced. Expanded coverage is incomplete until the approved counts and artwork report demonstrate it.
 
