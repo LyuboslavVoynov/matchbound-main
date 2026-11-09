@@ -10,7 +10,7 @@ describe("football-data normalization", () => {
     expect(normalizeFootballDataStatus("POSTPONED")).toBe("postponed");
     expect(normalizeFootballDataStatus("CANCELLED")).toBe("cancelled");
   });
-  it("only approves the reviewed top-five competition codes", () => {
+  it("only approves reviewed competition codes", () => {
     expect(supportedCompetition("PL")?.country).toBe("England");
     expect(supportedCompetition("CL")).toBeUndefined();
     expect(supportedCompetition(null)).toBeUndefined();

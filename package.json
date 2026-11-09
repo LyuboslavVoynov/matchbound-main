@@ -22,7 +22,9 @@
     "catalog-beer:diagnose": "tsx scripts/diagnose-catalog-beer.ts",
     "catalog-beer:queue": "tsx scripts/queue-catalog-beer-candidates.ts",
     "catalog-beer:review-queue": "tsx scripts/review-catalog-beer-candidates.ts",
-    "db:diagnose": "tsx scripts/diagnose-db.ts"
+    "db:diagnose": "tsx scripts/diagnose-db.ts",
+    "creatives:sync": "tsx scripts/sync-creatives.ts",
+    "creatives:coverage": "tsx scripts/creative-coverage.ts"
   },
   "dependencies": {
     "dotenv": "^16.6.1",

@@ -1,113 +1,97 @@
 "use client";
 
 import { useRouter } from "next/navigation";
-import { useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import type { DrawResultSnapshot } from "@/domain/result";
+import { journalVisuals, type JournalVisualSet } from "@/domain/journal-visuals";
 import { CompetitionEmblemMark, CountryFlagMark, FixtureTeams, useVisualIdentityReadiness } from "@/components/visual-identity";
 import { useResultHandoff } from "@/components/result-handoff";
+import { JournalArtwork, useJournalPreload } from "@/components/journal-artwork";
 import { BrandLockup } from "@/components/brand-lockup";
-import { SiteHeader, SiteFooter } from "@/components/site-chrome";
+import Link from "next/link";
+import "./journal-reveal.css";
 
 const stages = ["brand-intro", "country", "city", "competition", "stadium", "clubs", "brand-outro"] as const;
-// 17 seconds before navigation, plus at most three 500ms artwork waits.
-const CARD_TRANSITION_MS = 650;
-const BRAND_TRANSITION_MS = 800;
-const holds = [1200, 1800, 1600, 1800, 1800, 2600, 1200];
-const brandStage = (stage: number) => stage === 0 || stage === 6;
-
-type RevealExperienceProps = Readonly<{ result: DrawResultSnapshot; resultHref: string }>;
-export function RevealExperience({ result, resultHref }: RevealExperienceProps) {
+const labels = ["Country", "City", "League", "Stadium", "Clubs"];
+const holds = [1800, 3700, 4000, 3500, 4100, 4700, 1500];
+type RevealExperienceProps = Readonly<{ result: DrawResultSnapshot; resultHref: string; preview?: boolean; photos?: JournalVisualSet }>;
+export function RevealExperience({ result, resultHref, preview = false, photos: approvedPhotos }: RevealExperienceProps) {
   const router = useRouter();
   const { cover, cancel } = useResultHandoff();
   const navigationTarget = useRef<string | null>(null);
   const [reducedMotion, setReducedMotion] = useState<boolean | null>(null);
   const [stage, setStage] = useState(0);
-  const [previous, setPrevious] = useState<number | null>(null);
-  const readiness = useVisualIdentityReadiness(result.visualIdentity);
-  const readinessRef = useRef(readiness);
-  useEffect(() => { readinessRef.current = readiness; }, [readiness]);
+  const [creditOpen, setCreditOpen] = useState(false);
+  const [remainingMs, setRemainingMs] = useState(holds[0]);
+  const countdown = useRef({ stage: 0, remaining: holds[0] });
+  const [hidden, setHidden] = useState(false);
+  const [leavingIntro, setLeavingIntro] = useState(false);
+  const photos = useMemo(() => approvedPhotos ?? journalVisuals(result), [approvedPhotos, result]);
+  const preload = useJournalPreload(photos);
+  useVisualIdentityReadiness(result.visualIdentity);
+  const navigate = useCallback(() => {
+    if (navigationTarget.current === resultHref) return;
+    navigationTarget.current = resultHref;
+    if (!reducedMotion) cover(resultHref);
+    try { router.replace(resultHref); } catch { navigationTarget.current = null; cancel(); }
+  }, [resultHref, router, cover, cancel, reducedMotion]);
+  const advance = useCallback(() => {
+    if (stage === 6) { navigate(); return; }
+    if (stage === 0) setLeavingIntro(true);
+    setStage(current => Math.min(current + 1, 6));
+  }, [stage, navigate]);
   useEffect(() => { router.prefetch(resultHref); }, [router, resultHref]);
-
   useEffect(() => {
     const media = window.matchMedia("(prefers-reduced-motion: reduce)");
     const update = () => setReducedMotion(media.matches);
-    update();
-    media.addEventListener("change", update);
-    return () => media.removeEventListener("change", update);
+    update(); media.addEventListener("change", update);
+    const visibility = () => setHidden(document.hidden);
+    visibility(); document.addEventListener("visibilitychange", visibility);
+    return () => { media.removeEventListener("change", update); document.removeEventListener("visibilitychange", visibility); };
   }, []);
-
+  useEffect(() => { if (reducedMotion === true) navigate(); }, [reducedMotion, navigate]);
   useEffect(() => {
-    if (reducedMotion === null) return;
-    let cancelled = false;
-    const timers = new Set<number>();
-    const navigate = () => {
-      if (cancelled || navigationTarget.current === resultHref) return;
-      navigationTarget.current = resultHref;
-      if (!reducedMotion) cover(resultHref);
-      try { router.replace(resultHref); } catch { cancel(); }
+    if (countdown.current.stage !== stage) countdown.current = { stage, remaining: holds[stage] };
+    const remaining = countdown.current.remaining;
+    setRemainingMs(remaining);
+    if (reducedMotion !== false || creditOpen || hidden || (!preload.ready && stage > 0)) return;
+    const startedAt = performance.now();
+    const update = () => {
+      countdown.current.remaining = Math.max(0, remaining - (performance.now() - startedAt));
+      setRemainingMs(countdown.current.remaining);
     };
-    if (reducedMotion) {
-      navigate();
-      return () => { cancelled = true; };
-    }
-    const pause = (milliseconds: number) => new Promise<void>((resolve) => {
-      const timer = window.setTimeout(() => { timers.delete(timer); resolve(); }, milliseconds);
-      timers.add(timer);
-    });
-    const waitForMark = async (mark: keyof typeof readinessRef.current) => {
-      const startedAt = performance.now();
-      while (!cancelled && readinessRef.current[mark] === "loading" && performance.now() - startedAt < 500) await pause(50);
+    const tick = window.setInterval(update, 100);
+    const timer = window.setTimeout(advance, remaining);
+    return () => {
+      window.clearInterval(tick);
+      window.clearTimeout(timer);
+      countdown.current.remaining = Math.max(0, remaining - (performance.now() - startedAt));
     };
-    const run = async () => {
-      setStage(0); setPrevious(null);
-      await pause(BRAND_TRANSITION_MS + holds[0]);
-      for (let next = 1; next < stages.length; next++) {
-        if (cancelled) return;
-        if (next === 1) await waitForMark("country");
-        if (next === 3) await waitForMark("competition");
-        if (next === 5) await waitForMark("clubs");
-        if (cancelled) return;
-        setPrevious(next - 1); setStage(next);
-        await pause(brandStage(next) || brandStage(next - 1) ? BRAND_TRANSITION_MS : CARD_TRANSITION_MS);
-        if (cancelled) return;
-        setPrevious(null);
-        await pause(holds[next]);
-      }
-      // Keep the closing brand on screen until the saved result replaces this route.
-      navigate();
-    };
-    void run();
-    return () => { cancelled = true; timers.forEach(window.clearTimeout); timers.clear(); };
-  }, [reducedMotion, resultHref, router, cover, cancel]);
-
-  const immediate = reducedMotion === true;
-  const active = (value: number) => reducedMotion === false && stage === value;
-  const brandActive = reducedMotion === false && brandStage(stage);
-  const progress = immediate ? 6 : Math.min(stage, 6);
-  const progressHidden = reducedMotion !== false || brandActive;
-  const stageClass = (value: number, extra = "") => `reveal-beat ${extra} ${active(value) ? "is-visible" : ""} ${!immediate && previous === value ? "is-exiting" : ""}`;
-  const stageName = ["Matchbound. Your next football weekend.", `Your country: ${result.country}.`, `Your city: ${result.city}.`, `Your competition: ${result.competition}.`, `Your stadium: ${result.stadium}.`, `Your clubs: ${result.homeTeam} versus ${result.awayTeam}.`, "Matchbound. Fixture locked."][stage];
-  const brand = (value: 0 | 6) => <section aria-hidden={!active(value)} inert={!active(value)} className={stageClass(value, "ticket-brand")} data-stage={stages[value]}>
-    <BrandLockup caption={value === 0 ? "Your next football weekend" : "Fixture locked"} />
-  </section>;
-
-  return <main className={`site-shell reveal-page ticket-reveal ${immediate ? "reveal-page--reduced" : ""}`} data-active-stage={reducedMotion === null ? "pending" : immediate ? "opening-result" : stages[stage]}>
-    <div inert={brandActive} aria-hidden={brandActive || undefined}><SiteHeader /></div><h1 className="sr-only">Your locked football fixture</h1>
-    <section className="reveal-content" aria-label="Your locked fixture">
-      <div className={`ticket-progress ${progressHidden ? "is-hidden" : ""}`} aria-label={`Reveal progress: ${progress} of 6`} aria-hidden={progressHidden}>
-        <span className="sr-only">{progress} of 6 stages complete</span>{[1, 2, 3, 4, 5, 6].map(value => <i key={value} className={progress >= value ? "on" : ""} aria-hidden="true" />)}
-      </div>
-      <div className="reveal-stages">
-        {brand(0)}
-        <section aria-hidden={!active(1)} inert={!active(1)} className={stageClass(1, "ticket-card reveal-country")} data-stage="country"><p className="eyebrow">Your country</p><CountryFlagMark identity={result.visualIdentity} /><h2>{result.country}</h2><p className="stage-note">It starts here.</p></section>
-        <section aria-hidden={!active(2)} inert={!active(2)} className={stageClass(2, "ticket-card")} data-stage="city"><p className="eyebrow">Your city</p><p className="ticket-index">{result.country} /</p><h2>{result.city}</h2><p className="stage-note">Football takes you places.</p></section>
-        <section aria-hidden={!active(3)} inert={!active(3)} className={stageClass(3, "ticket-card reveal-competition-stage")} data-stage="competition"><p className="eyebrow">Your competition</p><CompetitionEmblemMark identity={result.visualIdentity} /><h2>{result.competition}</h2></section>
-        <section aria-hidden={!active(4)} inert={!active(4)} className={stageClass(4, "ticket-card")} data-stage="stadium"><p className="eyebrow">At the ground</p><p className="ticket-index">{result.city} /</p><h2>{result.stadium}</h2><p className="stage-note">Your weekend has a home.</p></section>
-        <section aria-hidden={!active(5)} inert={!active(5)} className={stageClass(5, "ticket-card reveal-clubs")} data-stage="clubs"><p className="eyebrow">Your clubs</p><FixtureTeams identity={result.visualIdentity} homeTeam={result.homeTeam} awayTeam={result.awayTeam}><span className="ticket-versus" aria-hidden="true">VS</span></FixtureTeams><p className="stage-note">Two clubs. One weekend.</p></section>
-        {brand(6)}
-      </div>
-      <p className="sr-only" role="status" aria-live="polite" aria-atomic="true">{reducedMotion === null ? "" : immediate ? "Opening your saved fixture." : stageName}</p>
-    </section>
-    <div className="reveal-footer" inert={brandActive} aria-hidden={brandActive || undefined}><SiteFooter /></div>
+  }, [stage, creditOpen, hidden, preload.ready, reducedMotion, advance]);
+  useEffect(() => {
+    if (!leavingIntro) return;
+    const timer = window.setTimeout(() => setLeavingIntro(false), 650);
+    return () => window.clearTimeout(timer);
+  }, [leavingIntro]);
+  const brandActive = stage === 0 || stage === 6;
+  const chapter = Math.max(0, Math.min(stage - 1, 4));
+  const title = [result.country, result.city, result.competition, result.stadium, "Your match."][chapter];
+  const photo = stage === 1 ? photos.country : stage === 2 ? photos.city : stage === 4 ? photos.stadium : undefined;
+  const stageName = brandActive ? stage === 0 ? "Your next football weekend." : "Fixture locked. Opening your saved trip." : stage === 5 ? `${result.homeTeam} versus ${result.awayTeam}.` : `${labels[chapter]}: ${title}.`;
+  const elapsedPercent = Math.max(0, Math.min(100, (1 - remainingMs / holds[stage]) * 100));
+  return <main className={`site-shell ticket-reveal journal-reveal ${reducedMotion ? "journal-reduced" : ""}`} data-playback={creditOpen || hidden ? "paused" : "playing"} data-active-stage={reducedMotion === null ? "pending" : reducedMotion ? "opening-result" : stages[stage]}>
+    <header className="journal-live-header"><Link href="/" aria-label="Matchbound home">MATCHBOUND <span>↗</span></Link><span>{preview ? "DESIGN PREVIEW · EXAMPLE FIXTURE" : "ONE MATCH. A NEW STORY."}</span></header>
+    <h1 className="sr-only">Your locked football fixture</h1>
+    {(!brandActive || leavingIntro) && <section className="journal-live-card" key={stage} aria-label="Your locked fixture" data-stage={stages[stage]}>
+      <div className="journal-live-progress" aria-label={`Chapter ${chapter+1} of 5`}>{labels.map((label,i)=><span key={label} className={i<chapter?"on":i===chapter?"is-loading":""} aria-current={i===chapter?"step":undefined}><i style={i===chapter ? { background: `conic-gradient(var(--journal-lime) ${elapsedPercent * 3.6}deg, var(--journal-paper) 0deg)` } : undefined}/>{label}</span>)}</div>
+      <div className="journal-live-chapter"><span>CHAPTER 0{chapter+1}</span><span>0{chapter+1} / 05</span></div>
+      <h2>{title}</h2><p className="journal-live-label">{["The destination", "The city", "The competition", "The ground", "The clubs"][chapter]}</p>
+      {stage===3 ? <div className="journal-live-art journal-editorial journal-league"><CompetitionEmblemMark identity={result.visualIdentity}/><strong>{result.competition}</strong><p>The weekend has a stage.</p></div> : stage===5 ? <div className="journal-live-art journal-clubs"><FixtureTeams identity={result.visualIdentity} homeTeam={result.homeTeam} awayTeam={result.awayTeam}><span className="journal-live-versus">v</span></FixtureTeams><p>One match.<br/><em>A new story.</em></p><span>{result.stadium} / {result.city}</span></div> : <JournalArtwork onCreditToggle={setCreditOpen} photo={photo} usable={Boolean(photo && preload.loaded.includes(photo.src))}>
+        {stage===1 ? <><CountryFlagMark identity={result.visualIdentity}/><span className="journal-editorial-mark" aria-hidden="true">↗</span><strong>{result.country}</strong><p>It starts here.</p></> : stage===2 ? <><span className="journal-editorial-mark" aria-hidden="true">↗</span><strong>{result.city}</strong><p>Football takes you places.</p></> : <><span className="journal-ground-lines" aria-hidden="true"><i/><i/><i/></span><strong>{result.stadium}</strong><p>Your weekend has a home.</p></>}
+      </JournalArtwork>}
+      <p className="journal-live-caption">{stage===1?"Your next chapter starts here.":stage===2?"A new city. A different weekend.":stage===4?"Imagine the walk to the ground.":"Football takes you places."}</p>
+    </section>}
+    {(brandActive || leavingIntro) && <section className={`reveal-beat ticket-brand is-visible ${leavingIntro ? "journal-brand-leaving" : ""}`} data-stage={leavingIntro ? "brand-intro" : stages[stage]} aria-hidden="true"><BrandLockup caption={stage===6?"Fixture locked":"Your next football weekend"}/></section>}
+    <p className="sr-only" role="status" aria-live="polite" aria-atomic="true">{reducedMotion===null?"Preparing your weekend.":reducedMotion?"Opening your saved fixture.":stageName}</p>
   </main>;
 }

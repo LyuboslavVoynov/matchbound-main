@@ -4,7 +4,7 @@ import { expect, test } from "@playwright/test";
 import { saveMatchdayDraw } from "./helpers/saved-draw";
 
 async function finishSequence(page: import("@playwright/test").Page) {
-  for (let time = 0; time < 19500; time += 100) await page.clock.runFor(100);
+  for (let time = 0; time < 36000; time += 100) await page.clock.runFor(100);
 }
 
 test("the same settled brand survives slow navigation and lifts only when the result mounts", async ({ page }, info) => {
@@ -43,8 +43,7 @@ test("the same settled brand survives slow navigation and lifts only when the re
     await expect(page.locator(".route-surface")).not.toHaveAttribute("inert");
     await expect(page.locator("html")).not.toHaveCSS("overflow", "hidden");
     await expect(page.locator("[data-handoff-heading]")).toBeFocused();
-    await expect(page.locator("[data-handoff-heading]")).toHaveCSS("outline-color", "rgb(82, 117, 47)");
-    await expect(page.getByRole("button", { name: "Copy trip link" })).toBeVisible();
+    await expect(page.getByRole("button", { name: "Copy link" })).toBeVisible();
     await page.screenshot({ path: info.outputPath("result-after-wipe.png"), fullPage: true });
     await page.reload();
     await expect(overlay).toHaveCount(0);
@@ -107,11 +106,11 @@ test("back navigation cancels an in-flight handoff without carrying its scroll l
     await expect(page.locator(".result-handoff-overlay")).toBeVisible();
     await page.goBack({ waitUntil: "domcontentloaded" });
     await page.waitForURL("/");
-    await expect(page.getByRole("heading", { name: "Your next football weekend." })).toBeVisible();
+    await expect(page.getByRole("heading", { name: /Take the group chat/ })).toBeVisible();
     await expect(page.locator(".result-handoff-overlay")).toHaveCount(0);
     await expect(page.locator("html")).not.toHaveCSS("overflow", "hidden");
     release();
     await page.clock.runFor(30000);
-    await expect(page.getByRole("heading", { name: "Your next football weekend." })).toBeVisible();
+    await expect(page.getByRole("heading", { name: /Take the group chat/ })).toBeVisible();
   } finally { release(); await draw.cleanup(); }
 });

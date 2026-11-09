@@ -1,5 +1,5 @@
 "use client";
-import { useRef, useState, type KeyboardEvent } from "react";
+import { useLayoutEffect, useRef, useState, type KeyboardEvent } from "react";
 import { addCalendarDays, calendarDayCount, monthCalendarDays, shiftCalendarMonth } from "@/domain/calendar";
 
 const shortDate = new Intl.DateTimeFormat("en-GB", { weekday: "short", day: "numeric", month: "short", timeZone: "UTC" });
@@ -15,6 +15,13 @@ export function TripCalendar({ startDate, endDate, onChange, disabled, hasError,
   const [selecting, setSelecting] = useState<"start" | "end">("start");
   const [focused, setFocused] = useState(startDate || today);
   const grid = useRef<HTMLDivElement>(null);
+  const restoreEndFocus = useRef(false);
+  useLayoutEffect(() => {
+    if (!open && restoreEndFocus.current) {
+      restoreEndFocus.current = false;
+      endRef.current?.focus();
+    }
+  }, [open, endRef]);
   const maxEnd = startDate ? addCalendarDays(startDate, 6) : "";
   const unavailable = (day: string) => selecting === "end" && Boolean(startDate) && (day < startDate || day > maxEnd);
   const days = monthCalendarDays(month);
@@ -35,8 +42,8 @@ export function TripCalendar({ startDate, endDate, onChange, disabled, hasError,
     if (selecting === "start" || !startDate) {
       onChange(day, ""); setSelecting("end");
     } else {
+      restoreEndFocus.current = true;
       onChange(startDate, day); setSelecting("start"); setOpen(false);
-      requestAnimationFrame(() => endRef.current?.focus());
     }
   }
   function keydown(event: KeyboardEvent<HTMLButtonElement>, day: string) {

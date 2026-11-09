@@ -3,10 +3,10 @@ import { useEffect, useState } from "react";
 import { CopyLink } from "@/app/m/[shareToken]/copy-link";
 import { canonicalTripUrl, whatsAppShareUrl } from "@/domain/sharing";
 
-export function TripSharing({ resultPath, message }: Readonly<{ resultPath: string; message: string }>) {
+export function TripSharing({ resultPath, message, labelled = false }: Readonly<{ resultPath: string; message: string; labelled?: boolean }>) {
   const [href, setHref] = useState<string>();
   useEffect(() => { setHref(whatsAppShareUrl(canonicalTripUrl(window.location.origin, resultPath), message)); }, [resultPath, message]);
-  return <section className="trip-sharing" aria-label="Share your trip"><p>Share this trip</p><div className="share-tools"><CopyLink resultPath={resultPath} /><a className="share-button whatsapp-share" href={href} tabIndex={href ? undefined : -1} aria-disabled={!href || undefined} target="_blank" rel="noreferrer" aria-label="Share on WhatsApp"><WhatsAppIcon /></a></div></section>;
+  return <section className={"trip-sharing"+(labelled?" trip-sharing-labelled":"")} aria-label="Share your trip">{!labelled&&<p>Share this trip</p>}<div className="share-tools"><CopyLink resultPath={resultPath} labelled={labelled} /><a className="share-button whatsapp-share" href={href} tabIndex={href ? undefined : -1} aria-disabled={!href || undefined} target="_blank" rel="noreferrer" aria-label="Share on WhatsApp"><WhatsAppIcon />{labelled&&<span>Share on WhatsApp</span>}</a></div></section>;
 }
 
 function WhatsAppIcon() {

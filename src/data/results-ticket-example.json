@@ -1,0 +1,79 @@
+{
+  "city": "Munich",
+  "country": "Germany",
+  "stadium": "Allianz Arena",
+  "awayTeam": "1. FC Köln",
+  "homeTeam": "FC Bayern München",
+  "timezone": "Europe/Berlin",
+  "kickoffAt": "2026-11-20T19:30:00.000Z",
+  "headToHead": {
+    "asOf": "2026-11-08T17:01:21.440Z",
+    "draws": 0,
+    "awayWins": 0,
+    "homeWins": 4,
+    "meetings": [
+      {
+        "id": 540710,
+        "awayTeam": "1. FC Köln",
+        "homeTeam": "FC Bayern München",
+        "awayScore": 1,
+        "homeScore": 5,
+        "kickoffAt": "2026-05-16T13:30:00Z",
+        "awayTeamId": 1,
+        "homeTeamId": 5,
+        "competition": "Bundesliga"
+      },
+      {
+        "id": 540557,
+        "awayTeam": "FC Bayern München",
+        "homeTeam": "1. FC Köln",
+        "awayScore": 3,
+        "homeScore": 1,
+        "kickoffAt": "2026-01-14T19:30:00Z",
+        "awayTeamId": 5,
+        "homeTeamId": 1,
+        "competition": "Bundesliga"
+      },
+      {
+        "id": 442046,
+        "awayTeam": "1. FC Köln",
+        "homeTeam": "FC Bayern München",
+        "awayScore": 0,
+        "homeScore": 2,
+        "kickoffAt": "2024-04-13T13:30:00Z",
+        "awayTeamId": 1,
+        "homeTeamId": 5,
+        "competition": "Bundesliga"
+      },
+      {
+        "id": 441893,
+        "awayTeam": "FC Bayern München",
+        "homeTeam": "1. FC Köln",
+        "awayScore": 1,
+        "homeScore": 0,
+        "kickoffAt": "2023-11-24T19:30:00Z",
+        "awayTeamId": 5,
+        "homeTeamId": 1,
+        "competition": "Bundesliga"
+      }
+    ],
+    "awayTeamId": 1,
+    "homeTeamId": 5
+  },
+  "beerSignals": {
+    "countryBrand": {
+      "brandName": "Berliner Kindl Weisse",
+      "countryName": "Germany",
+      "originStatement": "A Berlin original from a brewery founded in 1872."
+    }
+  },
+  "competition": "Bundesliga",
+  "kickoffDate": "2026-11-20",
+  "visualIdentity": {
+    "countryFlagUrl": "https://crests.football-data.org/759.svg",
+    "awayTeamCrestUrl": "https://crests.football-data.org/1.png",
+    "homeTeamCrestUrl": "https://crests.football-data.org/5.png",
+    "competitionEmblemUrl": "https://crests.football-data.org/BL1.png"
+  },
+  "officialTicketUrl": null
+}

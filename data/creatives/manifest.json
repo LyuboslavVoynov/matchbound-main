@@ -1,0 +1,1142 @@
+{
+  "version": 1,
+  "assets": [
+    {
+      "id": "porto-city-v1",
+      "localPath": "public/journal/porto-city.webp",
+      "title": "Puente de Don Luis I, Oporto, Portugal, 2019-06-02, DD 29-31 HDR.jpg",
+      "creator": "Diego Delso",
+      "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Puente_de_Don_Luis_I,_Oporto,_Portugal,_2019-06-02,_DD_29-31_HDR.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Puente_de_Don_Luis_I%2C_Oporto%2C_Portugal%2C_2019-06-02%2C_DD_29-31_HDR.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "licenseName": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "attribution": "Puente de Don Luis I, Oporto, Portugal, 2019-06-02, DD 29-31 HDR.jpg — Diego Delso, CC BY-SA 4.0; via Wikimedia Commons.",
+      "transformationNote": "Resized and WebP-compressed; responsive display crop; no retouching. Adaptation retains the source image licence.",
+      "sha256": "5248c935d98951364fd236d4eb4650920c011f107264aac610e90ce38d98682f",
+      "width": 1200,
+      "height": 598,
+      "bytes": 153292,
+      "focalX": 50,
+      "focalY": 50,
+      "approvalStatus": "approved",
+      "reviewedAt": "2026-11-08T00:00:00Z",
+      "reviewNote": "Existing Weekend Journal collection: source/licence recorded; named landmark or exact ground and desktop/mobile display reviewed in f27bf36. Re-reviewed from source metadata in creative library migration.",
+      "placements": [
+        {
+          "subjectType": "city",
+          "country": "Portugal",
+          "city": "Porto",
+          "alt": "Dom Luís I Bridge, Porto"
+        }
+      ]
+    },
+    {
+      "id": "porto-stadium-v1",
+      "localPath": "public/journal/porto-stadium.webp",
+      "title": "Porto Estádio do Dragão 1.jpg",
+      "creator": "Валерий Дед",
+      "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Porto_Est%C3%A1dio_do_Drag%C3%A3o_1.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/4/40/Porto_Est%C3%A1dio_do_Drag%C3%A3o_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "licenseName": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "attribution": "Porto Estádio do Dragão 1.jpg — Валерий Дед, CC BY 3.0; via Wikimedia Commons.",
+      "transformationNote": "Resized and WebP-compressed; responsive display crop; no retouching. Adaptation retains the source image licence.",
+      "sha256": "081431e22524b16132a83e6ab0a58d18f9a406bdf75f105595a9bff5ed6bb246",
+      "width": 1200,
+      "height": 800,
+      "bytes": 177760,
+      "focalX": 50,
+      "focalY": 50,
+      "approvalStatus": "approved",
+      "reviewedAt": "2026-11-08T00:00:00Z",
+      "reviewNote": "Existing Weekend Journal collection: source/licence recorded; named landmark or exact ground and desktop/mobile display reviewed in f27bf36. Re-reviewed from source metadata in creative library migration.",
+      "placements": [
+        {
+          "subjectType": "stadium",
+          "country": "Portugal",
+          "city": "Porto",
+          "stadium": "Estádio do Dragão",
+          "alt": "Estádio do Dragão, Porto"
+        }
+      ]
+    },
+    {
+      "id": "milan-city-v1",
+      "localPath": "public/journal/milan-city.webp",
+      "title": "Duomo Di Milano, Front Facade, Milan, Italy.jpg",
+      "creator": "Saptarshi Pal",
+      "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Duomo_Di_Milano,_Front_Facade,_Milan,_Italy.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Duomo_Di_Milano%2C_Front_Facade%2C_Milan%2C_Italy.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "licenseName": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "attribution": "Duomo Di Milano, Front Facade, Milan, Italy.jpg — Saptarshi Pal, CC BY-SA 4.0; via Wikimedia Commons.",
+      "transformationNote": "Resized and WebP-compressed; responsive display crop; no retouching. Adaptation retains the source image licence.",
+      "sha256": "fb0d066146fa3fdb71df6ffb8297f9a8d9d18dd82803f7320c0bd672126214ce",
+      "width": 900,
+      "height": 1200,
+      "bytes": 225396,
+      "focalX": 50,
+      "focalY": 50,
+      "approvalStatus": "approved",
+      "reviewedAt": "2026-11-08T00:00:00Z",
+      "reviewNote": "Existing Weekend Journal collection: source/licence recorded; named landmark or exact ground and desktop/mobile display reviewed in f27bf36. Re-reviewed from source metadata in creative library migration.",
+      "placements": [
+        {
+          "subjectType": "city",
+          "country": "Italy",
+          "city": "Milan",
+          "alt": "Duomo di Milano"
+        }
+      ]
+    },
+    {
+      "id": "milan-stadium-v1",
+      "localPath": "public/journal/milan-stadium.webp",
+      "title": "Giuseppe Meazza (San Siro) stadium, exterior view.jpg",
+      "creator": "https://www.flickr.com/photos/johnseb/",
+      "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Giuseppe_Meazza_(San_Siro)_stadium,_exterior_view.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a7/Giuseppe_Meazza_%28San_Siro%29_stadium%2C_exterior_view.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "licenseName": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "attribution": "Giuseppe Meazza (San Siro) stadium, exterior view.jpg — https://www.flickr.com/photos/johnseb/, CC BY 2.0; via Wikimedia Commons.",
+      "transformationNote": "Resized and WebP-compressed; responsive display crop; no retouching. Adaptation retains the source image licence.",
+      "sha256": "fdaeda99aafcb9f47c7e27b2013b4c157801b36e81df76d199bf0b1ba503628f",
+      "width": 1200,
+      "height": 900,
+      "bytes": 138550,
+      "focalX": 50,
+      "focalY": 50,
+      "approvalStatus": "approved",
+      "reviewedAt": "2026-11-08T00:00:00Z",
+      "reviewNote": "Existing Weekend Journal collection: source/licence recorded; named landmark or exact ground and desktop/mobile display reviewed in f27bf36. Re-reviewed from source metadata in creative library migration.",
+      "placements": [
+        {
+          "subjectType": "stadium",
+          "country": "Italy",
+          "city": "Milan",
+          "stadium": "San Siro",
+          "alt": "San Siro / Stadio Giuseppe Meazza, Milan"
+        },
+        {
+          "subjectType": "stadium",
+          "country": "Italy",
+          "city": "Milan",
+          "stadium": "Stadio Giuseppe Meazza",
+          "alt": "San Siro / Stadio Giuseppe Meazza, Milan"
+        },
+        {
+          "subjectType": "stadium",
+          "country": "Italy",
+          "city": "Milan",
+          "stadium": "Giuseppe Meazza",
+          "alt": "San Siro / Stadio Giuseppe Meazza, Milan"
+        }
+      ]
+    },
+    {
+      "id": "bilbao-city-v1",
+      "localPath": "public/journal/bilbao-city.webp",
+      "title": "Bilbao - Guggenheim aurore.jpg",
+      "creator": "PA",
+      "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Bilbao_-_Guggenheim_aurore.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c7/Bilbao_-_Guggenheim_aurore.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "licenseName": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "attribution": "Bilbao - Guggenheim aurore.jpg — PA, CC BY-SA 4.0; via Wikimedia Commons.",
+      "transformationNote": "Resized and WebP-compressed; responsive display crop; no retouching. Adaptation retains the source image licence.",
+      "sha256": "2c1967c0cf82e82f7ae7196cc9fc4d8ff0f2d7d4335fcc549d773a0b1fe7fced",
+      "width": 1200,
+      "height": 802,
+      "bytes": 71334,
+      "focalX": 50,
+      "focalY": 50,
+      "approvalStatus": "approved",
+      "reviewedAt": "2026-11-08T00:00:00Z",
+      "reviewNote": "Existing Weekend Journal collection: source/licence recorded; named landmark or exact ground and desktop/mobile display reviewed in f27bf36. Re-reviewed from source metadata in creative library migration.",
+      "placements": [
+        {
+          "subjectType": "city",
+          "country": "Spain",
+          "city": "Bilbao",
+          "alt": "Guggenheim Museum, Bilbao"
+        }
+      ]
+    },
+    {
+      "id": "bilbao-stadium-v1",
+      "localPath": "public/journal/bilbao-stadium.webp",
+      "title": "Exterior of San Mamés stadium.jpg",
+      "creator": "Marco Almbauer",
+      "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Exterior_of_San_Mam%C3%A9s_stadium.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6d/Exterior_of_San_Mam%C3%A9s_stadium.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "licenseName": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "attribution": "Exterior of San Mamés stadium.jpg — Marco Almbauer, CC0; via Wikimedia Commons.",
+      "transformationNote": "Resized and WebP-compressed; responsive display crop; no retouching. Adaptation retains the source image licence.",
+      "sha256": "5664fdbf2baeab19fe7bc0531675dfdea7c6d72529d46131ce7740d27d1b65a4",
+      "width": 1200,
+      "height": 839,
+      "bytes": 111648,
+      "focalX": 50,
+      "focalY": 50,
+      "approvalStatus": "approved",
+      "reviewedAt": "2026-11-08T00:00:00Z",
+      "reviewNote": "Existing Weekend Journal collection: source/licence recorded; named landmark or exact ground and desktop/mobile display reviewed in f27bf36. Re-reviewed from source metadata in creative library migration.",
+      "placements": [
+        {
+          "subjectType": "stadium",
+          "country": "Spain",
+          "city": "Bilbao",
+          "stadium": "San Mamés",
+          "alt": "San Mamés, Bilbao"
+        },
+        {
+          "subjectType": "stadium",
+          "country": "Spain",
+          "city": "Bilbao",
+          "stadium": "Estadio San Mamés",
+          "alt": "San Mamés, Bilbao"
+        }
+      ]
+    },
+    {
+      "id": "portugal-country-v1",
+      "localPath": "public/journal/portugal-country.webp",
+      "title": "Portugal - Algarve - coast west of Lagos (25657164162).jpg",
+      "creator": "muffinn from Worcester, UK",
+      "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Portugal_-_Algarve_-_coast_west_of_Lagos_(25657164162).jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/6/67/Portugal_-_Algarve_-_coast_west_of_Lagos_%2825657164162%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "licenseName": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "attribution": "Portugal - Algarve - coast west of Lagos (25657164162).jpg — muffinn from Worcester, UK, CC BY 2.0; via Wikimedia Commons.",
+      "transformationNote": "Resized and WebP-compressed; responsive display crop; no retouching. Adaptation retains the source image licence.",
+      "sha256": "d80c29d32f3d5f2a533a925458fd9907de50b1e53f121cd27d577e2adc4138e4",
+      "width": 1200,
+      "height": 800,
+      "bytes": 226972,
+      "focalX": 50,
+      "focalY": 50,
+      "approvalStatus": "approved",
+      "reviewedAt": "2026-11-08T00:00:00Z",
+      "reviewNote": "Existing Weekend Journal collection: source/licence recorded; named landmark or exact ground and desktop/mobile display reviewed in f27bf36. Re-reviewed from source metadata in creative library migration.",
+      "placements": [
+        {
+          "subjectType": "country",
+          "country": "Portugal",
+          "alt": "Algarve coast, Portugal — a country scene"
+        }
+      ]
+    },
+    {
+      "id": "italy-country-v1",
+      "localPath": "public/journal/italy-country.webp",
+      "title": "Cypress tree alley at sunset in Asciano, Tuscany.jpg",
+      "creator": "Eric Kilby",
+      "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Cypress_tree_alley_at_sunset_in_Asciano,_Tuscany.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/7/78/Cypress_tree_alley_at_sunset_in_Asciano%2C_Tuscany.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "licenseName": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "attribution": "Cypress tree alley at sunset in Asciano, Tuscany.jpg — Eric Kilby, CC BY-SA 2.0; via Wikimedia Commons.",
+      "transformationNote": "Resized and WebP-compressed; responsive display crop; no retouching. Adaptation retains the source image licence.",
+      "sha256": "83d07674a6638b6c2a438ffa8f8c0af0654b82c0b225e85f164a110219ab03c0",
+      "width": 1200,
+      "height": 800,
+      "bytes": 192514,
+      "focalX": 50,
+      "focalY": 50,
+      "approvalStatus": "approved",
+      "reviewedAt": "2026-11-08T00:00:00Z",
+      "reviewNote": "Existing Weekend Journal collection: source/licence recorded; named landmark or exact ground and desktop/mobile display reviewed in f27bf36. Re-reviewed from source metadata in creative library migration.",
+      "placements": [
+        {
+          "subjectType": "country",
+          "country": "Italy",
+          "alt": "Tuscan countryside, Italy — a country scene"
+        }
+      ]
+    },
+    {
+      "id": "spain-country-v1",
+      "localPath": "public/journal/spain-country.webp",
+      "title": "Gaztelugatxe (11355271064).jpg",
+      "creator": "Grand Parc - Bordeaux, France from France",
+      "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Gaztelugatxe_(11355271064).jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/8/87/Gaztelugatxe_%2811355271064%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "licenseName": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "attribution": "Gaztelugatxe (11355271064).jpg — Grand Parc - Bordeaux, France from France, CC BY 2.0; via Wikimedia Commons.",
+      "transformationNote": "Resized and WebP-compressed; responsive display crop; no retouching. Adaptation retains the source image licence.",
+      "sha256": "b539a08755fd2be856bb09298b829a0514cd5835393a3cd936b129480e69fee3",
+      "width": 728,
+      "height": 1200,
+      "bytes": 359508,
+      "focalX": 50,
+      "focalY": 50,
+      "approvalStatus": "approved",
+      "reviewedAt": "2026-11-08T00:00:00Z",
+      "reviewNote": "Existing Weekend Journal collection: source/licence recorded; named landmark or exact ground and desktop/mobile display reviewed in f27bf36. Re-reviewed from source metadata in creative library migration.",
+      "placements": [
+        {
+          "subjectType": "country",
+          "country": "Spain",
+          "alt": "Gaztelugatxe on Spain’s Basque coast — a country scene"
+        }
+      ]
+    },
+    {
+      "id": "ppl-city-01-v1",
+      "localPath": "public/creatives/ppl/ppl-city-01-v1.webp",
+      "title": "Torre Belém April 2009-4a.jpg",
+      "creator": "Alvesgaspar",
+      "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Torre_Bel%C3%A9m_April_2009-4a.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/6/65/Torre_Bel%C3%A9m_April_2009-4a.jpg",
+      "licenseName": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "attribution": "Torre Belém April 2009-4a.jpg — Alvesgaspar, CC BY-SA 3.0; via Wikimedia Commons.",
+      "transformationNote": "Resized and WebP-compressed; responsive display crop; no retouching. Adaptation retains the source image licence.",
+      "sha256": "939b70702a481f4c611a1cb468ffae8b4127e5ef0ada735bfad9118023261800",
+      "width": 1200,
+      "height": 1146,
+      "bytes": 249490,
+      "focalX": 50,
+      "focalY": 50,
+      "approvalStatus": "approved",
+      "reviewedAt": "2026-11-08T00:00:00Z",
+      "reviewNote": "Named subject checked against source description and reviewed venue registry; reusable licence/creator recorded; optimized image and display crop visually reviewed for mobile/desktop. Archival scene, not a guarantee of present facility condition.",
+      "placements": [
+        {
+          "subjectType": "city",
+          "country": "Portugal",
+          "city": "Lisbon",
+          "alt": "Belém Tower, Lisbon"
+        }
+      ]
+    },
+    {
+      "id": "ppl-city-02-v1",
+      "localPath": "public/creatives/ppl/ppl-city-02-v1.webp",
+      "title": "Igreja de Santa Clara vila do conde aqueduto (2).JPG",
+      "creator": "PedroPVZ",
+      "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Igreja_de_Santa_Clara_vila_do_conde_aqueduto_(2).JPG",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Igreja_de_Santa_Clara_vila_do_conde_aqueduto_%282%29.JPG",
+      "licenseName": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "attribution": "Igreja de Santa Clara vila do conde aqueduto (2).JPG — PedroPVZ, CC BY-SA 3.0; via Wikimedia Commons.",
+      "transformationNote": "Resized and WebP-compressed; responsive display crop; no retouching. Adaptation retains the source image licence.",
+      "sha256": "bbc358baa0272a9d7b96f930866f881266cdeb7dd8a22b9e453381045089e56d",
+      "width": 1200,
+      "height": 868,
+      "bytes": 259256,
+      "focalX": 50,
+      "focalY": 50,
+      "approvalStatus": "approved",
+      "reviewedAt": "2026-11-08T00:00:00Z",
+      "reviewNote": "Named subject checked against source description and reviewed venue registry; reusable licence/creator recorded; optimized image and display crop visually reviewed for mobile/desktop. Archival scene, not a guarantee of present facility condition.",
+      "placements": [
+        {
+          "subjectType": "city",
+          "country": "Portugal",
+          "city": "Vila do Conde",
+          "alt": "Santa Clara aqueduct and church, Vila do Conde"
+        }
+      ]
+    },
+    {
+      "id": "ppl-city-03-v1",
+      "localPath": "public/creatives/ppl/ppl-city-03-v1.webp",
+      "title": "Praia do Tamariz, Estoril, Portugal, 2022-07-26, DD 16-18 HDR.jpg",
+      "creator": "Diego Delso",
+      "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Praia_do_Tamariz,_Estoril,_Portugal,_2022-07-26,_DD_16-18_HDR.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/b/be/Praia_do_Tamariz%2C_Estoril%2C_Portugal%2C_2022-07-26%2C_DD_16-18_HDR.jpg",
+      "licenseName": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "attribution": "Praia do Tamariz, Estoril, Portugal, 2022-07-26, DD 16-18 HDR.jpg — Diego Delso, CC BY-SA 4.0; via Wikimedia Commons.",
+      "transformationNote": "Resized and WebP-compressed; responsive display crop; no retouching. Adaptation retains the source image licence.",
+      "sha256": "90ab2b7660c6173123d91d9c7dc9cf06be6f3f063b28f0436d52f7276ba2522f",
+      "width": 1200,
+      "height": 566,
+      "bytes": 82172,
+      "focalX": 50,
+      "focalY": 50,
+      "approvalStatus": "approved",
+      "reviewedAt": "2026-11-08T00:00:00Z",
+      "reviewNote": "Named subject checked against source description and reviewed venue registry; reusable licence/creator recorded; optimized image and display crop visually reviewed for mobile/desktop. Archival scene, not a guarantee of present facility condition.",
+      "placements": [
+        {
+          "subjectType": "city",
+          "country": "Portugal",
+          "city": "Estoril",
+          "alt": "Tamariz beach, Estoril"
+        }
+      ]
+    },
+    {
+      "id": "ppl-city-04-v1",
+      "localPath": "public/creatives/ppl/ppl-city-04-v1.webp",
+      "title": "Igreja Matriz de Moreira de Cónegos - Portugal (23674677828).jpg",
+      "creator": "Vitor Oliveira from Torres Vedras, PORTUGAL",
+      "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Igreja_Matriz_de_Moreira_de_C%C3%B3negos_-_Portugal_(23674677828).jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/a/ad/Igreja_Matriz_de_Moreira_de_C%C3%B3negos_-_Portugal_%2823674677828%29.jpg",
+      "licenseName": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "attribution": "Igreja Matriz de Moreira de Cónegos - Portugal (23674677828).jpg — Vitor Oliveira from Torres Vedras, PORTUGAL, CC BY-SA 2.0; via Wikimedia Commons.",
+      "transformationNote": "Resized and WebP-compressed; responsive display crop; no retouching. Adaptation retains the source image licence.",
+      "sha256": "ca142c4e7c162a9257905934c00d22e2b66bcfa08b3663eefeaeb15e94f2b377",
+      "width": 1200,
+      "height": 800,
+      "bytes": 150568,
+      "focalX": 50,
+      "focalY": 50,
+      "approvalStatus": "approved",
+      "reviewedAt": "2026-11-08T00:00:00Z",
+      "reviewNote": "Named subject checked against source description and reviewed venue registry; reusable licence/creator recorded; optimized image and display crop visually reviewed for mobile/desktop. Archival scene, not a guarantee of present facility condition.",
+      "placements": [
+        {
+          "subjectType": "city",
+          "country": "Portugal",
+          "city": "Moreira de Cónegos",
+          "alt": "Parish church of Moreira de Cónegos"
+        }
+      ]
+    },
+    {
+      "id": "ppl-city-05-v1",
+      "localPath": "public/creatives/ppl/ppl-city-05-v1.webp",
+      "title": "MOSTEIRO DE AROUCA 2.jpg",
+      "creator": "Lídia Maria Faria",
+      "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:MOSTEIRO_DE_AROUCA_2.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9e/MOSTEIRO_DE_AROUCA_2.jpg",
+      "licenseName": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "attribution": "MOSTEIRO DE AROUCA 2.jpg — Lídia Maria Faria, CC BY-SA 4.0; via Wikimedia Commons.",
+      "transformationNote": "Resized and WebP-compressed; responsive display crop; no retouching. Adaptation retains the source image licence.",
+      "sha256": "7888b0aeef82864eb37c08eac30787c5e6cc9f34622856989d79c6bdbfe22c64",
+      "width": 1200,
+      "height": 797,
+      "bytes": 237414,
+      "focalX": 50,
+      "focalY": 50,
+      "approvalStatus": "approved",
+      "reviewedAt": "2026-11-08T00:00:00Z",
+      "reviewNote": "Named subject checked against source description and reviewed venue registry; reusable licence/creator recorded; optimized image and display crop visually reviewed for mobile/desktop. Archival scene, not a guarantee of present facility condition.",
+      "placements": [
+        {
+          "subjectType": "city",
+          "country": "Portugal",
+          "city": "Arouca",
+          "alt": "Monastery of Arouca"
+        }
+      ]
+    },
+    {
+      "id": "ppl-city-06-v1",
+      "localPath": "public/creatives/ppl/ppl-city-06-v1.webp",
+      "title": "Viseu-Fachada da Sé-20140913.jpg",
+      "creator": "Daniel VILLAFRUELA.",
+      "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Viseu-Fachada_da_S%C3%A9-20140913.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c9/Viseu-Fachada_da_S%C3%A9-20140913.jpg",
+      "licenseName": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "attribution": "Viseu-Fachada da Sé-20140913.jpg — Daniel VILLAFRUELA., CC BY-SA 3.0; via Wikimedia Commons.",
+      "transformationNote": "Resized and WebP-compressed; responsive display crop; no retouching. Adaptation retains the source image licence.",
+      "sha256": "ae4608099f973d0e6870ba8f0010bf41e4f0f24a2c7f1ab21470456e9b6440fd",
+      "width": 710,
+      "height": 1200,
+      "bytes": 214976,
+      "focalX": 50,
+      "focalY": 50,
+      "approvalStatus": "approved",
+      "reviewedAt": "2026-11-08T00:00:00Z",
+      "reviewNote": "Named subject checked against source description and reviewed venue registry; reusable licence/creator recorded; optimized image and display crop visually reviewed for mobile/desktop. Archival scene, not a guarantee of present facility condition.",
+      "placements": [
+        {
+          "subjectType": "city",
+          "country": "Portugal",
+          "city": "Viseu",
+          "alt": "Cathedral of Viseu"
+        }
+      ]
+    },
+    {
+      "id": "ppl-city-07-v1",
+      "localPath": "public/creatives/ppl/ppl-city-07-v1.webp",
+      "title": "Funchal (Madeira, Portugal), Praça do Povo, Madeira - Letreiro -- 2025 -- 1110.jpg",
+      "creator": "Dietmar Rabich",
+      "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Funchal_(Madeira,_Portugal),_Pra%C3%A7a_do_Povo,_Madeira_-_Letreiro_--_2025_--_1110.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c6/Funchal_%28Madeira%2C_Portugal%29%2C_Pra%C3%A7a_do_Povo%2C_Madeira_-_Letreiro_--_2025_--_1110.jpg",
+      "licenseName": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "attribution": "Funchal (Madeira, Portugal), Praça do Povo, Madeira - Letreiro -- 2025 -- 1110.jpg — Dietmar Rabich, CC BY-SA 4.0; via Wikimedia Commons.",
+      "transformationNote": "Resized and WebP-compressed; responsive display crop; no retouching. Adaptation retains the source image licence.",
+      "sha256": "a95e3f2081c1dcb2b02640173dc5d9ee8e2dcb3e3191eda443b7a6c2afc3d32b",
+      "width": 1200,
+      "height": 600,
+      "bytes": 138158,
+      "focalX": 50,
+      "focalY": 50,
+      "approvalStatus": "approved",
+      "reviewedAt": "2026-11-08T00:00:00Z",
+      "reviewNote": "Named subject checked against source description and reviewed venue registry; reusable licence/creator recorded; optimized image and display crop visually reviewed for mobile/desktop. Archival scene, not a guarantee of present facility condition.",
+      "placements": [
+        {
+          "subjectType": "city",
+          "country": "Portugal",
+          "city": "Funchal",
+          "alt": "Praça do Povo, Funchal"
+        }
+      ]
+    },
+    {
+      "id": "ppl-city-08-v1",
+      "localPath": "public/creatives/ppl/ppl-city-08-v1.webp",
+      "title": "Portas da Cidade, Ponta Delgada, isla de San Miguel, Azores, Portugal, 2020-07-29, DD 123-125 HDR.jpg",
+      "creator": "Diego Delso",
+      "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Portas_da_Cidade,_Ponta_Delgada,_isla_de_San_Miguel,_Azores,_Portugal,_2020-07-29,_DD_123-125_HDR.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/8/85/Portas_da_Cidade%2C_Ponta_Delgada%2C_isla_de_San_Miguel%2C_Azores%2C_Portugal%2C_2020-07-29%2C_DD_123-125_HDR.jpg",
+      "licenseName": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "attribution": "Portas da Cidade, Ponta Delgada, isla de San Miguel, Azores, Portugal, 2020-07-29, DD 123-125 HDR.jpg — Diego Delso, CC BY-SA 4.0; via Wikimedia Commons.",
+      "transformationNote": "Resized and WebP-compressed; responsive display crop; no retouching. Adaptation retains the source image licence.",
+      "sha256": "cf8b52493db089b545f3d050b4f5833322acdeaca20462610a32a530400cdaa8",
+      "width": 1200,
+      "height": 716,
+      "bytes": 129752,
+      "focalX": 50,
+      "focalY": 50,
+      "approvalStatus": "approved",
+      "reviewedAt": "2026-11-08T00:00:00Z",
+      "reviewNote": "Named subject checked against source description and reviewed venue registry; reusable licence/creator recorded; optimized image and display crop visually reviewed for mobile/desktop. Archival scene, not a guarantee of present facility condition.",
+      "placements": [
+        {
+          "subjectType": "city",
+          "country": "Portugal",
+          "city": "Ponta Delgada",
+          "alt": "Portas da Cidade, Ponta Delgada"
+        }
+      ]
+    },
+    {
+      "id": "ppl-city-09-v1",
+      "localPath": "public/creatives/ppl/ppl-city-09-v1.webp",
+      "title": "Câmara Municipal de Vila Nova de Famalicão - Portugal (24653100438).jpg",
+      "creator": "Vitor Oliveira from Torres Vedras, PORTUGAL",
+      "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:C%C3%A2mara_Municipal_de_Vila_Nova_de_Famalic%C3%A3o_-_Portugal_(24653100438).jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/2/25/C%C3%A2mara_Municipal_de_Vila_Nova_de_Famalic%C3%A3o_-_Portugal_%2824653100438%29.jpg",
+      "licenseName": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "attribution": "Câmara Municipal de Vila Nova de Famalicão - Portugal (24653100438).jpg — Vitor Oliveira from Torres Vedras, PORTUGAL, CC BY-SA 2.0; via Wikimedia Commons.",
+      "transformationNote": "Resized and WebP-compressed; responsive display crop; no retouching. Adaptation retains the source image licence.",
+      "sha256": "b24910730415c7625de974d214f3f9ba16a9cad99fb1191dfed4f2471def9b93",
+      "width": 1200,
+      "height": 788,
+      "bytes": 232498,
+      "focalX": 50,
+      "focalY": 50,
+      "approvalStatus": "approved",
+      "reviewedAt": "2026-11-08T00:00:00Z",
+      "reviewNote": "Named subject checked against source description and reviewed venue registry; reusable licence/creator recorded; optimized image and display crop visually reviewed for mobile/desktop. Archival scene, not a guarantee of present facility condition.",
+      "placements": [
+        {
+          "subjectType": "city",
+          "country": "Portugal",
+          "city": "Vila Nova de Famalicão",
+          "alt": "Town hall of Vila Nova de Famalicão"
+        }
+      ]
+    },
+    {
+      "id": "ppl-city-10-v1",
+      "localPath": "public/creatives/ppl/ppl-city-10-v1.webp",
+      "title": "Museu Arqueológico de Barcelos - Portugal (52583306703).jpg",
+      "creator": "Vitor Oliveira from Torres Vedras, PORTUGAL",
+      "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Museu_Arqueol%C3%B3gico_de_Barcelos_-_Portugal_(52583306703).jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Museu_Arqueol%C3%B3gico_de_Barcelos_-_Portugal_%2852583306703%29.jpg",
+      "licenseName": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "attribution": "Museu Arqueológico de Barcelos - Portugal (52583306703).jpg — Vitor Oliveira from Torres Vedras, PORTUGAL, CC BY-SA 2.0; via Wikimedia Commons.",
+      "transformationNote": "Resized and WebP-compressed; responsive display crop; no retouching. Adaptation retains the source image licence.",
+      "sha256": "b9d140b108245fa05ccde10805b0ed8391785c27c87f37bdff23cefeaf0e6904",
+      "width": 1200,
+      "height": 800,
+      "bytes": 196372,
+      "focalX": 50,
+      "focalY": 50,
+      "approvalStatus": "approved",
+      "reviewedAt": "2026-11-08T00:00:00Z",
+      "reviewNote": "Named subject checked against source description and reviewed venue registry; reusable licence/creator recorded; optimized image and display crop visually reviewed for mobile/desktop. Archival scene, not a guarantee of present facility condition.",
+      "placements": [
+        {
+          "subjectType": "city",
+          "country": "Portugal",
+          "city": "Barcelos",
+          "alt": "Historic centre of Barcelos"
+        }
+      ]
+    },
+    {
+      "id": "ppl-city-11-v1",
+      "localPath": "public/creatives/ppl/ppl-city-11-v1.webp",
+      "title": "Nt-castelo-guimaraes-04.jpg",
+      "creator": "Nuno Tavares",
+      "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Nt-castelo-guimaraes-04.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/3/37/Nt-castelo-guimaraes-04.jpg",
+      "licenseName": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "attribution": "Nt-castelo-guimaraes-04.jpg — Nuno Tavares, CC BY-SA 3.0; via Wikimedia Commons.",
+      "transformationNote": "Resized and WebP-compressed; responsive display crop; no retouching. Adaptation retains the source image licence.",
+      "sha256": "d84a12641880ce2c20826c1abcca8ece2a89f5c3e9a6ce5c8e31262e19fb5ac2",
+      "width": 1200,
+      "height": 789,
+      "bytes": 200946,
+      "focalX": 50,
+      "focalY": 50,
+      "approvalStatus": "approved",
+      "reviewedAt": "2026-11-08T00:00:00Z",
+      "reviewNote": "Named subject checked against source description and reviewed venue registry; reusable licence/creator recorded; optimized image and display crop visually reviewed for mobile/desktop. Archival scene, not a guarantee of present facility condition. Creator recovered from the original Commons file-description wikitext because machine-readable Artist metadata is missing.",
+      "placements": [
+        {
+          "subjectType": "city",
+          "country": "Portugal",
+          "city": "Guimarães",
+          "alt": "Castle of Guimarães"
+        }
+      ]
+    },
+    {
+      "id": "ppl-city-12-v1",
+      "localPath": "public/creatives/ppl/ppl-city-12-v1.webp",
+      "title": "Bom Jesus de Braga.jpg",
+      "creator": "Rui Gouveia",
+      "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Bom_Jesus_de_Braga.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/9/92/Bom_Jesus_de_Braga.jpg",
+      "licenseName": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "attribution": "Bom Jesus de Braga.jpg — Rui Gouveia, CC BY-SA 3.0; via Wikimedia Commons.",
+      "transformationNote": "Resized and WebP-compressed; responsive display crop; no retouching. Adaptation retains the source image licence.",
+      "sha256": "da2a501401ebf2f9633159c23681f9ce85d61587ffadd79a514f7d9cb92f5861",
+      "width": 1200,
+      "height": 819,
+      "bytes": 124660,
+      "focalX": 50,
+      "focalY": 50,
+      "approvalStatus": "approved",
+      "reviewedAt": "2026-11-08T00:00:00Z",
+      "reviewNote": "Named subject checked against source description and reviewed venue registry; reusable licence/creator recorded; optimized image and display crop visually reviewed for mobile/desktop. Archival scene, not a guarantee of present facility condition. Creator recovered from the original Commons file-description wikitext because machine-readable Artist metadata is missing.",
+      "placements": [
+        {
+          "subjectType": "city",
+          "country": "Portugal",
+          "city": "Braga",
+          "alt": "Bom Jesus do Monte, Braga"
+        }
+      ]
+    },
+    {
+      "id": "ppl-city-13-v1",
+      "localPath": "public/creatives/ppl/ppl-city-13-v1.webp",
+      "title": "Salinas de Rio Maior - Portugal 🇵🇹 (54177477554).jpg",
+      "creator": "Vitor Oliveira from Torres Vedras, PORTUGAL",
+      "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Salinas_de_Rio_Maior_-_Portugal_%F0%9F%87%B5%F0%9F%87%B9_(54177477554).jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/4/42/Salinas_de_Rio_Maior_-_Portugal_%F0%9F%87%B5%F0%9F%87%B9_%2854177477554%29.jpg",
+      "licenseName": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "attribution": "Salinas de Rio Maior - Portugal 🇵🇹 (54177477554).jpg — Vitor Oliveira from Torres Vedras, PORTUGAL, CC BY-SA 2.0; via Wikimedia Commons.",
+      "transformationNote": "Resized and WebP-compressed; responsive display crop; no retouching. Adaptation retains the source image licence.",
+      "sha256": "f910b814ae63d33241ab510840eaee624b5ea939a9d98186d30017d429eb3973",
+      "width": 1200,
+      "height": 800,
+      "bytes": 346588,
+      "focalX": 50,
+      "focalY": 50,
+      "approvalStatus": "approved",
+      "reviewedAt": "2026-11-08T00:00:00Z",
+      "reviewNote": "Named subject checked against source description and reviewed venue registry; reusable licence/creator recorded; optimized image and display crop visually reviewed for mobile/desktop. Archival scene, not a guarantee of present facility condition.",
+      "placements": [
+        {
+          "subjectType": "city",
+          "country": "Portugal",
+          "city": "Rio Maior",
+          "alt": "Salt pans of Rio Maior"
+        }
+      ]
+    },
+    {
+      "id": "ppl-city-14-v1",
+      "localPath": "public/creatives/ppl/ppl-city-14-v1.webp",
+      "title": "Igreja Matriz de Alverca do Ribatejo - Portugal (6391544307).jpg",
+      "creator": "Vitor Oliveira from Torres Vedras, PORTUGAL",
+      "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Igreja_Matriz_de_Alverca_do_Ribatejo_-_Portugal_(6391544307).jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Igreja_Matriz_de_Alverca_do_Ribatejo_-_Portugal_%286391544307%29.jpg",
+      "licenseName": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "attribution": "Igreja Matriz de Alverca do Ribatejo - Portugal (6391544307).jpg — Vitor Oliveira from Torres Vedras, PORTUGAL, CC BY-SA 2.0; via Wikimedia Commons.",
+      "transformationNote": "Resized and WebP-compressed; responsive display crop; no retouching. Adaptation retains the source image licence.",
+      "sha256": "f62425ff20e04d723d2d5a44b6c1a6734ae649402ad29de8fa43808e558b4b93",
+      "width": 1200,
+      "height": 800,
+      "bytes": 171952,
+      "focalX": 50,
+      "focalY": 50,
+      "approvalStatus": "approved",
+      "reviewedAt": "2026-11-08T00:00:00Z",
+      "reviewNote": "Named subject checked against source description and reviewed venue registry; reusable licence/creator recorded; optimized image and display crop visually reviewed for mobile/desktop. Archival scene, not a guarantee of present facility condition.",
+      "placements": [
+        {
+          "subjectType": "city",
+          "country": "Portugal",
+          "city": "Alverca do Ribatejo",
+          "alt": "Parish church of Alverca do Ribatejo"
+        }
+      ]
+    },
+    {
+      "id": "ppl-city-15-v1",
+      "localPath": "public/creatives/ppl/ppl-city-15-v1.webp",
+      "title": "Parque de Delfim Guimaraes AMADORA PORTUGAL Photographed by Ph.G. de MENDONCA (Wikidata Q98940408).jpg",
+      "creator": "P.G. de Mendonça",
+      "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Parque_de_Delfim_Guimaraes_AMADORA_PORTUGAL_Photographed_by_Ph.G._de_MENDONCA_(Wikidata_Q98940408).jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Parque_de_Delfim_Guimaraes_AMADORA_PORTUGAL_Photographed_by_Ph.G._de_MENDONCA_%28Wikidata_Q98940408%29.jpg",
+      "licenseName": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "attribution": "Parque de Delfim Guimaraes AMADORA PORTUGAL Photographed by Ph.G. de MENDONCA (Wikidata Q98940408).jpg — P.G. de Mendonça, CC BY-SA 4.0; via Wikimedia Commons.",
+      "transformationNote": "Resized and WebP-compressed; responsive display crop; no retouching. Adaptation retains the source image licence.",
+      "sha256": "980daf20ea1cac6207d03f43a863678bc8211f5b5f545cccfc05bfcbbb7575a6",
+      "width": 1200,
+      "height": 798,
+      "bytes": 397320,
+      "focalX": 50,
+      "focalY": 50,
+      "approvalStatus": "approved",
+      "reviewedAt": "2026-11-08T00:00:00Z",
+      "reviewNote": "Named subject checked against source description and reviewed venue registry; reusable licence/creator recorded; optimized image and display crop visually reviewed for mobile/desktop. Archival scene, not a guarantee of present facility condition.",
+      "placements": [
+        {
+          "subjectType": "city",
+          "country": "Portugal",
+          "city": "Amadora",
+          "alt": "Delfim Guimarães Park, Amadora"
+        }
+      ]
+    },
+    {
+      "id": "ppl-stadium-17-v1",
+      "localPath": "public/creatives/ppl/ppl-stadium-17-v1.webp",
+      "title": "Estadio Jose Alvalade Pano 2025.jpg",
+      "creator": "Footballnerd2007",
+      "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Estadio_Jose_Alvalade_Pano_2025.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Estadio_Jose_Alvalade_Pano_2025.jpg",
+      "licenseName": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "attribution": "Estadio Jose Alvalade Pano 2025.jpg — Footballnerd2007, CC BY 4.0; via Wikimedia Commons.",
+      "transformationNote": "Resized and WebP-compressed; responsive display crop; no retouching. Adaptation retains the source image licence.",
+      "sha256": "a68437584518f6b69db756634666ccef6905793df1d032f4287ae6800d568e07",
+      "width": 1200,
+      "height": 513,
+      "bytes": 154190,
+      "focalX": 50,
+      "focalY": 50,
+      "approvalStatus": "approved",
+      "reviewedAt": "2026-11-08T00:00:00Z",
+      "reviewNote": "Named subject checked against source description and reviewed venue registry; reusable licence/creator recorded; optimized image and display crop visually reviewed for mobile/desktop. Archival scene, not a guarantee of present facility condition.",
+      "placements": [
+        {
+          "subjectType": "stadium",
+          "country": "Portugal",
+          "city": "Lisbon",
+          "stadium": "Estádio José Alvalade",
+          "alt": "Estádio José Alvalade, Lisbon"
+        }
+      ]
+    },
+    {
+      "id": "ppl-stadium-18-v1",
+      "localPath": "public/creatives/ppl/ppl-stadium-18-v1.webp",
+      "title": "20011019 CD Estoril Praia (2).JPG",
+      "creator": "Northside",
+      "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:20011019_CD_Estoril_Praia_(2).JPG",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3e/20011019_CD_Estoril_Praia_%282%29.JPG",
+      "licenseName": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "attribution": "20011019 CD Estoril Praia (2).JPG — Northside, CC BY-SA 3.0; via Wikimedia Commons.",
+      "transformationNote": "Resized and WebP-compressed; responsive display crop; no retouching. Adaptation retains the source image licence.",
+      "sha256": "98736c0422bca3b2c3ec96daf76022d63cbfe11181e6e02967ec29bb395dec99",
+      "width": 1200,
+      "height": 814,
+      "bytes": 81920,
+      "focalX": 50,
+      "focalY": 50,
+      "approvalStatus": "approved",
+      "reviewedAt": "2026-11-08T00:00:00Z",
+      "reviewNote": "Named subject checked against source description and reviewed venue registry; reusable licence/creator recorded; optimized image and display crop visually reviewed for mobile/desktop. Archival scene, not a guarantee of present facility condition.",
+      "placements": [
+        {
+          "subjectType": "stadium",
+          "country": "Portugal",
+          "city": "Estoril",
+          "stadium": "Estádio António Coimbra da Mota",
+          "alt": "Estádio António Coimbra da Mota, Estoril"
+        }
+      ]
+    },
+    {
+      "id": "ppl-stadium-19-v1",
+      "localPath": "public/creatives/ppl/ppl-stadium-19-v1.webp",
+      "title": "Panoramabild - Estádio Comendador Joaquim de Almeida Freitas.jpg",
+      "creator": "Bohemio09",
+      "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Panoramabild_-_Est%C3%A1dio_Comendador_Joaquim_de_Almeida_Freitas.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/7/76/Panoramabild_-_Est%C3%A1dio_Comendador_Joaquim_de_Almeida_Freitas.jpg",
+      "licenseName": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "attribution": "Panoramabild - Estádio Comendador Joaquim de Almeida Freitas.jpg — Bohemio09, CC BY-SA 4.0; via Wikimedia Commons.",
+      "transformationNote": "Resized and WebP-compressed; responsive display crop; no retouching. Adaptation retains the source image licence.",
+      "sha256": "c314b1266befe42240b63cd93060a32b30edde92aa3f5e50382c6e8ff756246e",
+      "width": 1200,
+      "height": 263,
+      "bytes": 30540,
+      "focalX": 50,
+      "focalY": 50,
+      "approvalStatus": "approved",
+      "reviewedAt": "2026-11-08T00:00:00Z",
+      "reviewNote": "Named subject checked against source description and reviewed venue registry; reusable licence/creator recorded; optimized image and display crop visually reviewed for mobile/desktop. Archival scene, not a guarantee of present facility condition.",
+      "placements": [
+        {
+          "subjectType": "stadium",
+          "country": "Portugal",
+          "city": "Moreira de Cónegos",
+          "stadium": "Estádio Comendador Joaquim de Almeida Freitas",
+          "alt": "Estádio Comendador Joaquim de Almeida Freitas, Moreira de Cónegos"
+        }
+      ]
+    },
+    {
+      "id": "ppl-stadium-20-v1",
+      "localPath": "public/creatives/ppl/ppl-stadium-20-v1.webp",
+      "title": "Estádio Municipal de Arouca.jpg",
+      "creator": "JP Ribeiro",
+      "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Est%C3%A1dio_Municipal_de_Arouca.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e7/Est%C3%A1dio_Municipal_de_Arouca.jpg",
+      "licenseName": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "attribution": "Estádio Municipal de Arouca.jpg — JP Ribeiro, CC BY-SA 4.0; via Wikimedia Commons.",
+      "transformationNote": "Resized and WebP-compressed; responsive display crop; no retouching. Adaptation retains the source image licence.",
+      "sha256": "73bc38b077f36a0e55c288c606e19eba5273fe472878ab3dc15a25c7c5e7c21f",
+      "width": 1200,
+      "height": 900,
+      "bytes": 189628,
+      "focalX": 50,
+      "focalY": 50,
+      "approvalStatus": "approved",
+      "reviewedAt": "2026-11-08T00:00:00Z",
+      "reviewNote": "Named subject checked against source description and reviewed venue registry; reusable licence/creator recorded; optimized image and display crop visually reviewed for mobile/desktop. Archival scene, not a guarantee of present facility condition.",
+      "placements": [
+        {
+          "subjectType": "stadium",
+          "country": "Portugal",
+          "city": "Arouca",
+          "stadium": "Estádio Municipal de Arouca",
+          "alt": "Estádio Municipal de Arouca, Arouca"
+        }
+      ]
+    },
+    {
+      "id": "ppl-stadium-21-v1",
+      "localPath": "public/creatives/ppl/ppl-stadium-21-v1.webp",
+      "title": "LuzLissabon.jpg",
+      "creator": "Massimo Catarinella",
+      "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:LuzLissabon.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1b/LuzLissabon.jpg",
+      "licenseName": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "attribution": "LuzLissabon.jpg — Massimo Catarinella, CC BY 3.0; via Wikimedia Commons.",
+      "transformationNote": "Resized and WebP-compressed; responsive display crop; no retouching. Adaptation retains the source image licence.",
+      "sha256": "67ea2342818ae482bf6852f7945d67280bfc2520e1e9fb2ff10088f7596413d7",
+      "width": 1200,
+      "height": 437,
+      "bytes": 136332,
+      "focalX": 50,
+      "focalY": 50,
+      "approvalStatus": "approved",
+      "reviewedAt": "2026-11-08T00:00:00Z",
+      "reviewNote": "Named subject checked against source description and reviewed venue registry; reusable licence/creator recorded; optimized image and display crop visually reviewed for mobile/desktop. Archival scene, not a guarantee of present facility condition.",
+      "placements": [
+        {
+          "subjectType": "stadium",
+          "country": "Portugal",
+          "city": "Lisbon",
+          "stadium": "Estádio do Sport Lisboa e Benfica",
+          "alt": "Estádio do Sport Lisboa e Benfica, Lisbon"
+        }
+      ]
+    },
+    {
+      "id": "ppl-stadium-22-v1",
+      "localPath": "public/creatives/ppl/ppl-stadium-22-v1.webp",
+      "title": "Estádio Municipal do Fontelo, Viseu.jpg",
+      "creator": "OlussMémèle",
+      "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Est%C3%A1dio_Municipal_do_Fontelo,_Viseu.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Est%C3%A1dio_Municipal_do_Fontelo%2C_Viseu.jpg",
+      "licenseName": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "attribution": "Estádio Municipal do Fontelo, Viseu.jpg — OlussMémèle, CC0; via Wikimedia Commons.",
+      "transformationNote": "Resized and WebP-compressed; responsive display crop; no retouching. Adaptation retains the source image licence.",
+      "sha256": "cd5de0b58e11416c83f0df8769cd6b67299ff415f079a5a04ff80d390c336bce",
+      "width": 1200,
+      "height": 675,
+      "bytes": 187300,
+      "focalX": 50,
+      "focalY": 50,
+      "approvalStatus": "approved",
+      "reviewedAt": "2026-11-08T00:00:00Z",
+      "reviewNote": "Named subject checked against source description and reviewed venue registry; reusable licence/creator recorded; optimized image and display crop visually reviewed for mobile/desktop. Archival scene, not a guarantee of present facility condition.",
+      "placements": [
+        {
+          "subjectType": "stadium",
+          "country": "Portugal",
+          "city": "Viseu",
+          "stadium": "Estádio Municipal do Fontelo",
+          "alt": "Estádio Municipal do Fontelo, Viseu"
+        }
+      ]
+    },
+    {
+      "id": "ppl-stadium-23-v1",
+      "localPath": "public/creatives/ppl/ppl-stadium-23-v1.webp",
+      "title": "Estádio Eng. Rui Alves 1.jpg",
+      "creator": "Mghamburg",
+      "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Est%C3%A1dio_Eng._Rui_Alves_1.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/2/28/Est%C3%A1dio_Eng._Rui_Alves_1.jpg",
+      "licenseName": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "attribution": "Estádio Eng. Rui Alves 1.jpg — Mghamburg, CC BY-SA 3.0; via Wikimedia Commons.",
+      "transformationNote": "Resized and WebP-compressed; responsive display crop; no retouching. Adaptation retains the source image licence.",
+      "sha256": "a12f040f7f379d970f769a2a371b3fa8c85ca91c606b6104b93c814723037e4b",
+      "width": 1024,
+      "height": 768,
+      "bytes": 84834,
+      "focalX": 50,
+      "focalY": 50,
+      "approvalStatus": "approved",
+      "reviewedAt": "2026-11-08T00:00:00Z",
+      "reviewNote": "Named subject checked against source description and reviewed venue registry; reusable licence/creator recorded; optimized image and display crop visually reviewed for mobile/desktop. Archival scene, not a guarantee of present facility condition.",
+      "placements": [
+        {
+          "subjectType": "stadium",
+          "country": "Portugal",
+          "city": "Funchal",
+          "stadium": "Estádio da Madeira",
+          "alt": "Estádio da Madeira, Funchal"
+        }
+      ]
+    },
+    {
+      "id": "ppl-stadium-24-v1",
+      "localPath": "public/creatives/ppl/ppl-stadium-24-v1.webp",
+      "title": "Estádio de São Miguel (17178).jpg",
+      "creator": "Rasibo",
+      "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Est%C3%A1dio_de_S%C3%A3o_Miguel_(17178).jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/3/37/Est%C3%A1dio_de_S%C3%A3o_Miguel_%2817178%29.jpg",
+      "licenseName": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "attribution": "Estádio de São Miguel (17178).jpg — Rasibo, CC BY-SA 4.0; via Wikimedia Commons.",
+      "transformationNote": "Resized and WebP-compressed; responsive display crop; no retouching. Adaptation retains the source image licence.",
+      "sha256": "86b5956b86bca23a38a4c20bbef5a97a321e4a03c3b0bc757aabf3b980432275",
+      "width": 675,
+      "height": 1200,
+      "bytes": 109698,
+      "focalX": 50,
+      "focalY": 30,
+      "approvalStatus": "approved",
+      "reviewedAt": "2026-11-08T00:00:00Z",
+      "reviewNote": "Named subject checked against source description and reviewed venue registry; reusable licence/creator recorded; optimized image and display crop visually reviewed for mobile/desktop. Archival scene, not a guarantee of present facility condition.",
+      "placements": [
+        {
+          "subjectType": "stadium",
+          "country": "Portugal",
+          "city": "Ponta Delgada",
+          "stadium": "Estádio de São Miguel",
+          "alt": "Entrance to Estádio de São Miguel, Ponta Delgada"
+        }
+      ]
+    },
+    {
+      "id": "ppl-stadium-25-v1",
+      "localPath": "public/creatives/ppl/ppl-stadium-25-v1.webp",
+      "title": "Blick von der Gegentribüne - Estádio Municipal 22 de Junho.jpg",
+      "creator": "Bohemio09",
+      "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Blick_von_der_Gegentrib%C3%BCne_-_Est%C3%A1dio_Municipal_22_de_Junho.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Blick_von_der_Gegentrib%C3%BCne_-_Est%C3%A1dio_Municipal_22_de_Junho.jpg",
+      "licenseName": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "attribution": "Blick von der Gegentribüne - Estádio Municipal 22 de Junho.jpg — Bohemio09, CC BY-SA 4.0; via Wikimedia Commons.",
+      "transformationNote": "Resized and WebP-compressed; responsive display crop; no retouching. Adaptation retains the source image licence.",
+      "sha256": "af26d21bee9784e73bc1ce9a9361a045f29d21ef44249de65e29e8d4396c819f",
+      "width": 1200,
+      "height": 900,
+      "bytes": 199600,
+      "focalX": 50,
+      "focalY": 50,
+      "approvalStatus": "approved",
+      "reviewedAt": "2026-11-08T00:00:00Z",
+      "reviewNote": "Named subject checked against source description and reviewed venue registry; reusable licence/creator recorded; optimized image and display crop visually reviewed for mobile/desktop. Archival scene, not a guarantee of present facility condition.",
+      "placements": [
+        {
+          "subjectType": "stadium",
+          "country": "Portugal",
+          "city": "Vila Nova de Famalicão",
+          "stadium": "Estádio Municipal de Famalicão",
+          "alt": "Estádio Municipal de Famalicão, Vila Nova de Famalicão"
+        }
+      ]
+    },
+    {
+      "id": "ppl-stadium-26-v1",
+      "localPath": "public/creatives/ppl/ppl-stadium-26-v1.webp",
+      "title": "Estádio de Barcelos.jpg",
+      "creator": "Joseolgon",
+      "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Est%C3%A1dio_de_Barcelos.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/d/dc/Est%C3%A1dio_de_Barcelos.jpg",
+      "licenseName": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "attribution": "Estádio de Barcelos.jpg — Joseolgon, CC BY-SA 4.0; via Wikimedia Commons.",
+      "transformationNote": "Resized and WebP-compressed; responsive display crop; no retouching. Adaptation retains the source image licence.",
+      "sha256": "592f3921e18b4f5b23138bd33a479eb8cd7afd90161d2918128916034a443c19",
+      "width": 1200,
+      "height": 788,
+      "bytes": 278046,
+      "focalX": 50,
+      "focalY": 50,
+      "approvalStatus": "approved",
+      "reviewedAt": "2026-11-08T00:00:00Z",
+      "reviewNote": "Named subject checked against source description and reviewed venue registry; reusable licence/creator recorded; optimized image and display crop visually reviewed for mobile/desktop. Archival scene, not a guarantee of present facility condition.",
+      "placements": [
+        {
+          "subjectType": "stadium",
+          "country": "Portugal",
+          "city": "Barcelos",
+          "stadium": "Estádio Cidade de Barcelos",
+          "alt": "Estádio Cidade de Barcelos, Barcelos"
+        }
+      ]
+    },
+    {
+      "id": "ppl-stadium-27-v1",
+      "localPath": "public/creatives/ppl/ppl-stadium-27-v1.webp",
+      "title": "Exteriores do Estádio D. Afonso Henriques 14.JPG",
+      "creator": "Tm",
+      "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Exteriores_do_Est%C3%A1dio_D._Afonso_Henriques_14.JPG",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Exteriores_do_Est%C3%A1dio_D._Afonso_Henriques_14.JPG",
+      "licenseName": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "attribution": "Exteriores do Estádio D. Afonso Henriques 14.JPG — Tm, CC BY-SA 3.0; via Wikimedia Commons.",
+      "transformationNote": "Resized and WebP-compressed; responsive display crop; no retouching. Adaptation retains the source image licence.",
+      "sha256": "d08eaa46c58cc512879caa4c967bafa9b8fc1c66af843adf4faa14da9babc91e",
+      "width": 1200,
+      "height": 798,
+      "bytes": 181442,
+      "focalX": 50,
+      "focalY": 50,
+      "approvalStatus": "approved",
+      "reviewedAt": "2026-11-08T00:00:00Z",
+      "reviewNote": "Named subject checked against source description and reviewed venue registry; reusable licence/creator recorded; optimized image and display crop visually reviewed for mobile/desktop. Archival scene, not a guarantee of present facility condition.",
+      "placements": [
+        {
+          "subjectType": "stadium",
+          "country": "Portugal",
+          "city": "Guimarães",
+          "stadium": "Estádio D. Afonso Henriques",
+          "alt": "Estádio D. Afonso Henriques, Guimarães"
+        }
+      ]
+    },
+    {
+      "id": "ppl-stadium-28-v1",
+      "localPath": "public/creatives/ppl/ppl-stadium-28-v1.webp",
+      "title": "Estádio do Marítimo enquadramento.jpg",
+      "creator": "NunoCaldeira",
+      "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Est%C3%A1dio_do_Mar%C3%ADtimo_enquadramento.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ed/Est%C3%A1dio_do_Mar%C3%ADtimo_enquadramento.jpg",
+      "licenseName": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "attribution": "Estádio do Marítimo enquadramento.jpg — NunoCaldeira, CC BY-SA 4.0; via Wikimedia Commons.",
+      "transformationNote": "Resized and WebP-compressed; responsive display crop; no retouching. Adaptation retains the source image licence.",
+      "sha256": "299fa8074694fcfacd52b42bb2ab7e03d19f2e1823dfe47dc84d7293e28f8a3f",
+      "width": 1200,
+      "height": 904,
+      "bytes": 269372,
+      "focalX": 50,
+      "focalY": 50,
+      "approvalStatus": "approved",
+      "reviewedAt": "2026-11-08T00:00:00Z",
+      "reviewNote": "Named subject checked against source description and reviewed venue registry; reusable licence/creator recorded; optimized image and display crop visually reviewed for mobile/desktop. Archival scene, not a guarantee of present facility condition.",
+      "placements": [
+        {
+          "subjectType": "stadium",
+          "country": "Portugal",
+          "city": "Funchal",
+          "stadium": "Estádio do Marítimo",
+          "alt": "Estádio do Marítimo, Funchal"
+        }
+      ]
+    },
+    {
+      "id": "ppl-stadium-29-v1",
+      "localPath": "public/creatives/ppl/ppl-stadium-29-v1.webp",
+      "title": "Estádio Municipal de Braga 3.jpg",
+      "creator": "Joseolgon",
+      "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Est%C3%A1dio_Municipal_de_Braga_3.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/4/47/Est%C3%A1dio_Municipal_de_Braga_3.jpg",
+      "licenseName": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "attribution": "Estádio Municipal de Braga 3.jpg — Joseolgon, CC0; via Wikimedia Commons.",
+      "transformationNote": "Resized and WebP-compressed; responsive display crop; no retouching. Adaptation retains the source image licence.",
+      "sha256": "9b94314197280856b38a2b021b04e86fb299ca08361bd2ddc6eb323f68425c1f",
+      "width": 1200,
+      "height": 900,
+      "bytes": 371928,
+      "focalX": 50,
+      "focalY": 50,
+      "approvalStatus": "approved",
+      "reviewedAt": "2026-11-08T00:00:00Z",
+      "reviewNote": "Named subject checked against source description and reviewed venue registry; reusable licence/creator recorded; optimized image and display crop visually reviewed for mobile/desktop. Archival scene, not a guarantee of present facility condition.",
+      "placements": [
+        {
+          "subjectType": "stadium",
+          "country": "Portugal",
+          "city": "Braga",
+          "stadium": "Estádio Municipal de Braga",
+          "alt": "Estádio Municipal de Braga, Braga"
+        }
+      ]
+    },
+    {
+      "id": "ppl-stadium-32-v1",
+      "localPath": "public/creatives/ppl/ppl-stadium-32-v1.webp",
+      "title": "Estádio José Gomes.jpg",
+      "creator": "Johnnypp005",
+      "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Est%C3%A1dio_Jos%C3%A9_Gomes.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6d/Est%C3%A1dio_Jos%C3%A9_Gomes.jpg",
+      "licenseName": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "attribution": "Estádio José Gomes.jpg — Johnnypp005, CC0; via Wikimedia Commons.",
+      "transformationNote": "Resized and WebP-compressed; responsive display crop; no retouching. Adaptation retains the source image licence.",
+      "sha256": "ea9059d79272b6cec6ff5f26c4b82a040b72a18ceb67ed4e78ee710e33d91666",
+      "width": 1200,
+      "height": 904,
+      "bytes": 109590,
+      "focalX": 50,
+      "focalY": 50,
+      "approvalStatus": "approved",
+      "reviewedAt": "2026-11-08T00:00:00Z",
+      "reviewNote": "Named subject checked against source description and reviewed venue registry; reusable licence/creator recorded; optimized image and display crop visually reviewed for mobile/desktop. Archival scene, not a guarantee of present facility condition.",
+      "placements": [
+        {
+          "subjectType": "stadium",
+          "country": "Portugal",
+          "city": "Amadora",
+          "stadium": "Estádio José Gomes",
+          "alt": "Estádio José Gomes, Amadora"
+        }
+      ]
+    }
+  ]
+}
