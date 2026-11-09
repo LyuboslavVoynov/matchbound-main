@@ -24,7 +24,8 @@
     "catalog-beer:review-queue": "tsx scripts/review-catalog-beer-candidates.ts",
     "db:diagnose": "tsx scripts/diagnose-db.ts",
     "creatives:sync": "tsx scripts/sync-creatives.ts",
-    "creatives:coverage": "tsx scripts/creative-coverage.ts"
+    "creatives:coverage": "tsx scripts/creative-coverage.ts",
+    "beers:import": "tsx scripts/import-beer-catalogue.ts"
   },
   "dependencies": {
     "dotenv": "^16.6.1",

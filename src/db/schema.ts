@@ -167,3 +167,19 @@ export const creativePlacements = pgTable("creative_placements", {
   alt: text("alt").notNull(),
   active: boolean("active").notNull().default(true),
 }, table => [index("creative_placements_asset_idx").on(table.assetId)]).enableRLS();
+
+/** Product catalogue supplements the legacy country-brand fallback. */
+export const beerBreweries = pgTable("beer_breweries", {
+  id: text("id").primaryKey(), name: text("name").notNull(),
+  countryCode: text("country_code").notNull(), originNation: text("origin_nation").notNull(),
+  sourceUrl: text("source_url").notNull(),
+}).enableRLS();
+export const beerProducts = pgTable("beer_products", {
+  id: text("id").primaryKey(), breweryId: text("brewery_id").notNull().references(() => beerBreweries.id),
+  name: text("name").notNull(), normalizedName: text("normalized_name").notNull(),
+  style: text("style"), abvBasisPoints: integer("abv_basis_points"),
+  sourceUrl: text("source_url").notNull(), reviewedAt: timestamp("reviewed_at", { withTimezone: true }).notNull(),
+  validUntil: timestamp("valid_until", { withTimezone: true }).notNull(),
+  approvalStatus: beerBrandApprovalStatus("approval_status").notNull().default("pending"),
+  active: boolean("active").notNull().default(true),
+}, (table) => [uniqueIndex("beer_product_brewery_name_idx").on(table.breweryId, table.normalizedName)]).enableRLS();

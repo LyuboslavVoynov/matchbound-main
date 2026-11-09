@@ -20,6 +20,6 @@ export type DrawResultSnapshot = Readonly<{
       /** Source update/observation time, retained so a share never overstates freshness. */
       observedAt: string;
     }>;
-    countryBrand?: Readonly<{ countryName: string; brandName: string; originStatement?: string }>;
+    countryBrand?: Readonly<{ countryName: string; brandName: string; originStatement?: string; productId?: string; breweryName?: string; style?: string; abvBasisPoints?: number; sourceUrl?: string }>;
   }>;
 }>;
