@@ -1,65 +1,56 @@
 # Matchbound delivery sprints — 9 November 2026
 
-Main baseline: a81c3ce (UK switch merged). The original Around the Match checkout remains excluded. No sprint authorizes automatic merges or production deployments. Local source checkpoints remain available independently.
+Baseline: main `3b379ff`, after merged PRs #7 (eight leagues), #9 (release integration), #10 (Germany beer catalogue) and #11 (Rio Maior photo). Work happens in isolated branches. Around the Match remains an unrelated uncommitted draft in the original checkout. No automatic merges or manual production deployments are authorized by this plan.
 
-| Sprint | Branch | Outcome | Dependency |
+## Current state
+
+The merged product includes the UK switch, 24-second Weekend Journal reveal, Matchday Scorecards, country/competition/club identity, sharing and immutable beer tickets. The beer catalogue contains 20 reviewed German products from five breweries; product artwork and additional country batches remain incomplete. Existing legacy country-brand records remain the fallback.
+
+The shared visual library has 39 published photos / 42 exact placements. The inventory has 133 unique cities and 154 grounds across eight leagues. Portugal covers all 16 cities and 16/18 grounds. Rio Ave and Alverca grounds remain unsourced. Milan and Bilbao have sample city/ground coverage; Allianz Arena has a local reviewed result-page background. Other destinations retain honest editorial fallbacks.
+
+| Sprint | Branch | Deliverable | Finish gate |
 | --- | --- | --- | --- |
-| 1 | sprint/01-release-integration | One coherent release candidate combining eight leagues, UK filtering, 24-second journal reveal, published Supabase visuals, Matchday Scorecards and optional beer ticket | Main + existing PR7 + approved local feature branches |
-| 2 | feat/beer-catalogue | Verified product-level beer catalogue with information/artwork and country selection | Sprint1 contracts |
-| 3 | feat/visual-coverage | Reviewed city/stadium image coverage expanded league by league | Existing creative-library importer/schema |
-| 4 | release/production-validation | Reviewed release deployed and checked on its public URL | Approved integration + content batches |
+| 4 — live release validation | `release/production-validation` | Repeatable, explicitly targeted live smoke suite; verified deployment report; fixes for reproduced release issues | Desktop/mobile real draw, reveal, saved result, identity, images, beer and sharing pass against the public deployment |
+| 5 — visual library batches | `feat/visual-coverage-portugal`, then `feat/visual-coverage-netherlands` | Close sourced Portugal gaps, then expand the Netherlands as the next league batch | Subject/licence/crop review, byte-verified publication, exact runtime mappings and updated coverage report |
+| 6 — beer country batches | `feat/beer-catalogue-portugal`, then `feat/beer-catalogue-netherlands` | 20–30 distinct reviewed products per destination country, using the existing catalogue/importer | Approved nonduplicate products, correct brewery/origin, reviewed source facts, dry run and live country selection |
+| 7 — beer artwork | `feat/beer-artwork-library` | Product-specific artwork with provenance and reuse approval, credited within the existing ticket | Exact product mapping, safe approved publication and mobile/failure fallback verification |
 
-## Sprint 1 — release integration (implemented locally)
+## Sprint 4 — in progress
 
-Acceptance:
-- Preserve the merged Include UK matches switch. Its exclusion applies to venue location before random selection.
-- Keep the active eight-league allowlist, complete roster gates, correct Welsh destinations and island timezones.
-- Retain the approved 24-second, distinct whole-card reveal and filling chapter circles, without playback buttons.
-- Read approved published images from Supabase for both reveal cards and the final stadium header. Keep exact mappings, creator/licence credits and missing-image fallbacks.
-- Retain two-column Matchday Scorecards, product typography, beer-ticket reveal, Copy link and labelled WhatsApp actions on web/mobile.
-- Reuse the small existing reviewed beer pool honestly; do not claim the larger catalogue is complete.
-- Run the combined unit suite once, focused desktop/mobile integration cases, production build and one scoped integration review.
+The public origin was verified as `https://random-footy-weekend.vercel.app` (Matchbound title and landing content). Branch-specific Vercel previews may require authentication and are not substitutes for checking the public origin. Vercel build status alone does not prove the application flow works.
 
-Implementation: integrated main, the existing GitHub league PR head, Weekend Journal f27bf36, curated library/publication35d0273, and result-page510883e. Resolved overlapping query filters by retaining both the UK exclusion and league eligibility rules. The final result page now obtains its stadium background from the same approved Supabase lookup used by the reveal, with the reviewed local fallback for Allianz Arena and existing samples.
+Implementation:
+- `playwright.production.config.ts` requires an explicit `PRODUCTION_BASE_URL`; it never starts or deploys a server.
+- The live smoke tests opt out of the default local suite. They require the configured database to match the deployment, use real fixture records, create bounded temporary test draws and delete them in `finally` blocks.
+- Exercise the live landing calendar and keyboard UK switch, a real non-UK draw, all seven reveal stages and the saved-result handoff. Check a broad timing bound rather than brittle exact millisecond assertions.
+- Check recorded home/away score order when meetings are available, canonical WhatsApp URLs, no horizontal overflow and representative screenshots.
+- Use controlled real Germany and Rio Maior fixture snapshots to check reduced motion, real identity images, reviewed stadium imagery, immutable catalogue beer facts and reload persistence.
+- Preserve absence states: missing H2H, beer or imagery must not become invented data or block the trip.
 
-The integration review found that optional image-query failures could block a valid saved trip; the shared creative lookup now returns the reviewed local/plain fallback for any failed optional artwork query, with a focused rejection test. The combined browser run also exposed a calendar RAF focus-restoration race; restoration now occurs synchronously after closing, preserving later keyboard focus on the UK switch.
+Run with:
 
-Validation:87unit tests passed in the combined suite; a new rejected-artwork regression also passes (88unique cases). Twenty targeted desktop/mobile browser cases passed across the combined and affected reruns: reveal playback, real non-UK draws, live Funchal Supabase imagery through handoff, scorecards/beer persistence, fallbacks, UK-switch keyboard/request behaviour and calendar keyboard navigation. TypeScript and lint passed (two pre-existing configuration warnings). The final production build passed after the optional-image error-boundary fix. One integration-only Product review found that issue; the focused regression and primary verification closed it.
+```sh
+PRODUCTION_BASE_URL=https://random-footy-weekend.vercel.app npx playwright test --config playwright.production.config.ts
+```
 
-No content reseeding, migration replay, data deletion or deployment is required for this integration. The creative migration/upload were already verified:38photos,41placements. Live test-created draws are temporary and cleaned up.
+Use the existing local suites for narrow fix verification. Reuse prior production-build evidence unless a reproduced issue requires a build-sensitive change. No broad critic cascade is needed for validation tooling or small technical repairs.
 
-## Sprint 2 — beer catalogue (Germany pilot implemented)
+## Sprint 5 — content, not a visual redesign
 
-Acceptance:
-- Distinct brewery and beer-product records; do not count brewery names and umbrella brands as separate beers.
-- Verified origin, brewery, product name and style; ABV, description and alcohol-free status remain nullable unless sourced.
-- Source URL, review date, approval status and exact artwork mapping with usage/credit records.
-- Explicit country/home-nation rules so country labels never misrepresent provenance.
-- Start with a reviewed Germany pilot, target20–30distinct approved beers per supported destination country, then publish further country batches.
-- Preserve legacy saved draws. Import/dry-run tooling rejects duplicates, unsourced claims and unapproved artwork. No new beer is eligible merely because a search API returned it.
-- Selection remains server-side and country-scoped; the selected product is saved once in the immutable trip snapshot. The ticket reveals that saved selection.
+Research the two remaining Portugal grounds first. If a correctly identified reusable source is unavailable, leave the gap visible and continue to the Netherlands; do not substitute another venue. Netherlands baseline is 16 cities / 18 grounds with no approved images in the shared manifest.
 
-Implementation: `feat/beer-catalogue` adds normalized breweries/products, strict transactional imports, nation-specific selection, immutable snapshot facts and ticket source/ABV details. The configured database now has20approved Germany products from five breweries, with RLS enabled. Thirteen targeted unit tests and two desktop/mobile saved-ticket checks passed; TypeScript, scoped lint and production build passed. One scoped Product review found a schema/snapshot RLS mismatch, now fixed with an empty follow-up schema diff. Product logos and additional country batches remain incomplete.
+Collect and review a useful league batch before opening a PR, rather than opening one PR per photograph. Retain exact venue names and aliases, creator, source/original URL, licence/link, transformation note, focal point, byte size, hash and review date. Inspect representative web/mobile crops. Publish only reviewed selections through the existing immutable-key importer; verify public bytes and runtime selection. Report approved local coverage separately from verified Storage publication.
 
-Deliver data/model/import in one branch; use small country commits for review. Keep the eight legacy catalogue entries until explicitly reviewed/replaced. Expanded coverage is incomplete until the approved counts and artwork report demonstrate it.
+## Sprint 6 — catalogue depth
 
-## Sprint 3 — visual coverage
+Portugal and the Netherlands come first because they are supported leagues without product-level beer pools. Follow with Spain, Italy and France as separate country branches; review UK nations independently so Welsh or Scottish origins are not labelled English. Germany already has its initial 20-product pilot.
 
-Acceptance:
-- Publish reviewed batches for remaining destinations, starting with the three Portugal ground gaps, then one complete additional league at a time.
-- Inventory baseline:133unique cities,154grounds across eight leagues. Current coverage includes16Portuguese cities and15/18Portuguese grounds, plus the Milan/Bilbao samples. Allianz Arena remains a local reviewed result-page background until imported into the shared collection.
-- Record subject, creator, licence, original/source links and focal points. Never substitute a neighbouring ground or treat automated search hits as approval.
-- Report covered/missing subjects after each import. Preserve immutable file keys, byte verification and approval/publication gates.
+Count distinct beer products, not breweries or umbrella brands. Prefer brewery product pages. Unknown style, ABV or description stays absent until sourced. Do not represent `<0.5%` as `0.0%`; alcohol-free ranges require an explicit model before import. Keep the saved product immutable, prices independent, equal product selection and the legacy fallback. No beer becomes eligible merely because a search/API returns it.
 
-## Sprint 4 — production validation
+## Sprint 7 — artwork
 
-Acceptance:
-- Reconcile approved PRs onto currentmain; inspect merge conflicts rather than overwriting one feature with another.
-- Verify server runtime DATABASE_URL, SUPABASE_URL and bucket configuration. The upload secret remains confined to the trusted import environment.
-- Check real date search, UK exclusion, all enabled leagues, live Supabase images/credits, missing data, 24-second handoff, score order, beer country selection and canonical sharing URLs.
-- Inspect desktop/mobile, reduced motion and slow/missing imagery. Confirm build/CI and public deployment state separately from merge state.
-- Merge/deploy only within the user's authorization, then check the actual production URL and document remaining coverage.
+Source permitted product-specific artwork; a brewery website displaying a logo does not establish reusable image permission. Record rights/credit information and keep the current Matchbound seal when a product has no approved artwork. Never use an unrelated beer's logo or generate a supposed official mark. Add approved artwork to the existing ticket with exact identity matching and failure fallbacks; no wheel or new reveal interaction is planned.
 
 ## Separate backlog
 
-Around the Match is an older uncommitted draft in the original checkout. It needs a fresh scope/review after these sprints; do not accidentally include it in release integration. Accounts, bookings and a general admin dashboard are not part of this plan.
+Around the Match needs its own scope and review after these sprints. Accounts, bookings, a general admin dashboard and a new visual redesign are outside this plan. Future content PRs should state their actual coverage and remaining gaps, and be merged by the user after review.
