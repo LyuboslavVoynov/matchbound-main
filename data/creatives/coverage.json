@@ -1,7 +1,7 @@
 {
   "inventorySnapshot": "2026-11-08; reviewed season-2026 registry including expansion branch",
-  "storagePublished": false,
-  "approvedLocalAssets": 38,
+  "publicationStatus": "not-checked; this report measures local approved coverage only",
+  "approvedLocalAssets": 39,
   "uniqueCities": 133,
   "uniqueStadiums": 154,
   "leagues": [
@@ -1721,20 +1721,13 @@
       "cities": 16,
       "approvedCities": 16,
       "stadiums": 18,
-      "approvedStadiums": 15,
+      "approvedStadiums": 16,
       "missing": [
         {
           "subjectType": "stadium",
           "country": "Portugal",
           "city": "Vila do Conde",
           "stadium": "Estádio do Rio Ave FC",
-          "alt": ""
-        },
-        {
-          "subjectType": "stadium",
-          "country": "Portugal",
-          "city": "Rio Maior",
-          "stadium": "Estádio Municipal de Rio Maior",
           "alt": ""
         },
         {
