@@ -11,14 +11,15 @@ import { findEligibleFixtures, persistDraw } from "@/db/draw-repository";
 
 import { findHeadToHeadForFixture } from "@/providers/head-to-head";
 
-const requestSchema = z.object({ startDate: z.string(), endDate: z.string() }).strict();
+const requestSchema = z.object({ startDate: z.string(), endDate: z.string(), includeUK: z.boolean().default(true) }).strict();
 
 export async function POST(request: Request) {
   try {
-    const dates = validateTripDates(requestSchema.parse(await request.json()));
+    const input = requestSchema.parse(await request.json());
+    const dates = validateTripDates(input);
     const db = createDb();
-    const fixture = selectRandomFixture(await findEligibleFixtures(db, dates.startDate, dates.endDate));
-    if (!fixture) return NextResponse.json({ error: "No eligible confirmed fixtures were found for these dates." }, { status: 404 });
+    const fixture = selectRandomFixture(await findEligibleFixtures(db, dates.startDate, dates.endDate, { includeUK: input.includeUK }));
+    if (!fixture) return NextResponse.json({ error: input.includeUK ? "No eligible confirmed fixtures were found for these dates." : "No eligible confirmed fixtures outside the UK were found for these dates. Try different dates or include UK matches." }, { status: 404 });
 
     const destination = fixtureDestination(fixture.country, fixture.competition);
 
