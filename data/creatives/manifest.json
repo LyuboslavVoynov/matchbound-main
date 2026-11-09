@@ -1137,6 +1137,36 @@
           "alt": "Estádio José Gomes, Amadora"
         }
       ]
+    },
+    {
+      "id": "ppl-stadium-rio-maior-v1",
+      "localPath": "public/creatives/ppl/ppl-stadium-rio-maior-v1.webp",
+      "title": "Rio Maior.jpg",
+      "creator": "Vitor Oliveira",
+      "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Rio_Maior.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/8/85/Rio_Maior.jpg",
+      "licenseName": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "attribution": "Rio Maior.jpg — Vitor Oliveira, CC BY-SA 2.0; via Wikimedia Commons.",
+      "transformationNote": "Resized and WebP-compressed; responsive display crop; no retouching. Adaptation retains the source image licence.",
+      "sha256": "355072d2d45f8d82711f8756ffdfc37a7f9f678a49a724c5e2d7054474347fac",
+      "width": 1200,
+      "height": 900,
+      "bytes": 125214,
+      "focalX": 50,
+      "focalY": 85,
+      "approvalStatus": "approved",
+      "reviewedAt": "2026-11-09T00:00:00Z",
+      "reviewNote": "Source description, creator and Commons/Flickr licence review checked. Visually verified the municipal football stadium grandstand and pitch; archival photograph dated 6 November 2005, not a claim of current condition. Lower focal point keeps the ground visible in responsive crops.",
+      "placements": [
+        {
+          "subjectType": "stadium",
+          "country": "Portugal",
+          "city": "Rio Maior",
+          "stadium": "Estádio Municipal de Rio Maior",
+          "alt": "Archival view of Estádio Municipal de Rio Maior, photographed in 2005"
+        }
+      ]
     }
   ]
 }

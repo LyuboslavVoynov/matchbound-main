@@ -12,6 +12,6 @@ async function main() {
     const rows=venues.filter(v=>v.competitionCode===code),cities=subjects(rows,"city"),stadiums=subjects(rows,"stadium");
     return {code,clubs:rows.length,cities:cities.length,approvedCities:cities.filter(([key])=>covered.has(key)).length,stadiums:stadiums.length,approvedStadiums:stadiums.filter(([key])=>covered.has(key)).length,missing:[...cities,...stadiums].filter(([key])=>!covered.has(key)).map(([,p])=>p)};
   });
-  console.log(JSON.stringify({inventorySnapshot:"2026-11-08; reviewed season-2026 registry including expansion branch",storagePublished:false,approvedLocalAssets:manifest.assets.filter(a=>a.approvalStatus==="approved").length,uniqueCities:subjects(venues,"city").length,uniqueStadiums:subjects(venues,"stadium").length,leagues},null,2));
+  console.log(JSON.stringify({inventorySnapshot:"2026-11-08; reviewed season-2026 registry including expansion branch",publicationStatus:"not-checked; this report measures local approved coverage only",approvedLocalAssets:manifest.assets.filter(a=>a.approvalStatus==="approved").length,uniqueCities:subjects(venues,"city").length,uniqueStadiums:subjects(venues,"stadium").length,leagues},null,2));
 }
 main().catch(error=>{console.error(error instanceof Error?error.message:"Coverage failed.");process.exitCode=1});

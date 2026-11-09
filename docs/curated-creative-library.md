@@ -57,6 +57,12 @@ Sources: [Commons reuse guidance](https://commons.wikimedia.org/wiki/Commons:Reu
 
 ## Verification
 
+### Visual coverage batch — 9 November 2026
+
+Added an exact Rio Maior stadium mapping using Vitor Oliveira's [Commons photograph](https://commons.wikimedia.org/wiki/File:Rio_Maior.jpg), under CC BY-SA 2.0. The image is explicitly described as an archival 2005 view. Its lower focal point retains the pitch and grandstand in responsive crops. Source, creator, licence, dimensions and SHA-256 were reviewed; the importer verified the published public bytes.
+
+The collection now contains **39 published photos / 42 active mappings**. Portugal has approved images for **16/18 stadiums** and all 16 destination cities. Rio Ave and Alverca stadium photography remain unsourced; neither is replaced with a different ground. Other leagues still need additional coverage. The generated coverage report measures local approvals and explicitly leaves Storage publication unverified rather than hard-coding a false unpublished status.
+
 - 17 focused tests cover approval/placement/host/licence/crop gates, old local fallbacks and modern/legacy key headers.
 - TypeScript and focused lint pass.
 - Production build passes with no configured Storage URL, preserving the existing reveal route and local library.
