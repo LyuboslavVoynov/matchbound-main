@@ -67,8 +67,8 @@ export function createFootballDataClient(
       const response = await request<FootballDataResponse<{ matches: FootballDataMatch[] }>>(`/competitions/${encodeURIComponent(competitionCode)}/matches?season=${season}`);
       return response.matches;
     },
-    async getCompetitionTeams(competitionCode: string): Promise<FootballDataTeam[]> {
-      const response = await request<FootballDataResponse<{ teams: FootballDataTeam[] }>>(`/competitions/${encodeURIComponent(competitionCode)}/teams`);
+    async getCompetitionTeams(competitionCode: string, season?: number): Promise<FootballDataTeam[]> {
+      const response = await request<FootballDataResponse<{ teams: FootballDataTeam[] }>>(`/competitions/${encodeURIComponent(competitionCode)}/teams${season === undefined ? "" : `?season=${season}`}`);
       return response.teams;
     },
   };

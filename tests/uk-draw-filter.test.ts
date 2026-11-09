@@ -20,6 +20,9 @@ describe("UK venue-country SQL filter",()=>{
   let condition:SQL|undefined;const builder={from:vi.fn(),innerJoin:vi.fn(),where:vi.fn((query:SQL)=>{condition=query;return Promise.resolve([]);})};builder.from.mockReturnValue(builder);builder.innerJoin.mockReturnValue(builder);
   await repository({select:()=>builder} as unknown as Database,"2026-11-27","2026-11-29",{includeUK});
   const compiled=new PgDialect().sqlToQuery(condition!);
+  expect(compiled.sql).toContain('"competitions"."active" =');
+  expect(compiled.sql).toContain('"competitions"."provider_competition_code" in');
+  for(const code of ["PL","PD","BL1","SA","FL1","ELC","DED","PPL"])expect(compiled.params).toContain(code);
   if(includeUK){expect(compiled.sql).not.toContain("not in");}else{expect(compiled.sql).toContain('lower(trim("venues"."country")) not in');for(const country of ["england","scotland","wales","northern ireland","united kingdom"])expect(compiled.params).toContain(country);expect(compiled.params).not.toContain("ireland");}
  });
 });

@@ -14,6 +14,12 @@ export function validateVenueRegistry(records: readonly VenueRecord[] = reviewed
     if (record.provider !== "football-data") errors.push(`Unexpected provider for team ${record.providerTeamId}`);
     if (![record.stadium, record.city, record.country, record.sourceUrl, record.reviewedAt].every((value) => value.trim())) errors.push(`Missing required venue data for team ${record.providerTeamId}`);
     if (!record.sourceUrl.endsWith(`/teams/${record.providerTeamId}`)) errors.push(`Unexpected source URL for team ${record.providerTeamId}`);
+    if (record.verificationUrl) {
+      try {
+        const evidence = new URL(record.verificationUrl);
+        if (evidence.protocol !== "https:" || evidence.username || evidence.password) errors.push(`Invalid verification URL for team ${record.providerTeamId}`);
+      } catch { errors.push(`Invalid verification URL for team ${record.providerTeamId}`); }
+    }
     if (Number.isNaN(Date.parse(record.reviewedAt))) errors.push(`Invalid review date for team ${record.providerTeamId}`);
     if (!isValidTimezone(record.timezone)) errors.push(`Invalid timezone for team ${record.providerTeamId}`);
     if (!REVIEWED_TEAM_NAMES[record.providerTeamId]) errors.push(`Missing reviewed team name for team ${record.providerTeamId}`);
