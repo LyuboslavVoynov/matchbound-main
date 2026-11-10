@@ -1,4 +1,39 @@
 {
   "version": 1,
-  "assets": []
+  "assets": [
+    {
+      "productId": "augustiner-2",
+      "country": "Germany",
+      "brand": "Augustiner Edelstoff",
+      "kind": "product-photo",
+      "src": "/beer/products/augustiner-2-3847d8f3e858.webp",
+      "source": "https://commons.wikimedia.org/wiki/File:Augustiner_edelstoff.JPG",
+      "author": "Kompakt",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "sha256": "3847d8f3e858a3bb4142d1317000964efda75ac54b46bd6e3960036db6327550",
+      "reviewedAt": "2026-11-09T00:00:00Z",
+      "approvalStatus": "approved",
+      "note": "Resized/WebP-compressed photograph of the named product; no retouching. Historical packaging/glassware. Photograph adaptation retains CC BY-SA 3.0; brand marks belong to their owners.",
+      "original": "https://upload.wikimedia.org/wikipedia/commons/2/2b/Augustiner_edelstoff.JPG",
+      "title": "Augustiner edelstoff.JPG"
+    },
+    {
+      "productId": "krombacher-1",
+      "country": "Germany",
+      "brand": "Krombacher Pils",
+      "kind": "product-photo",
+      "src": "/beer/products/krombacher-1-1ba75e0bdb11.webp",
+      "source": "https://commons.wikimedia.org/wiki/File:Krombacher_BHG.jpg",
+      "author": "Rjh1962",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "sha256": "1ba75e0bdb1100c3f4e885cba486a47e50b645b3f853eca634345badd0a85885",
+      "reviewedAt": "2026-11-09T00:00:00Z",
+      "approvalStatus": "approved",
+      "note": "Resized/WebP-compressed photograph of the named product; no retouching. Historical packaging/glassware. Photograph adaptation retains CC BY-SA 3.0; brand marks belong to their owners.",
+      "original": "https://upload.wikimedia.org/wikipedia/commons/6/6d/Krombacher_BHG.jpg",
+      "title": "Krombacher BHG.jpg"
+    }
+  ]
 }

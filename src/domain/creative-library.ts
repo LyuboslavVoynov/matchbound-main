@@ -26,7 +26,7 @@ export function reusableCreativeLicense(name: string, url: string): boolean {
   const kind = match[1] === "CC BY-SA" ? "by-sa" : "by";
   return url.startsWith(`https://creativecommons.org/licenses/${kind}/${match[2]}/`) || url === `https://creativecommons.org/licenses/${kind}/${match[2]}`;
 }
-export function validateCreativeManifest(manifest: CreativeManifest): string[] {
+export function validateCreativeManifest(manifest: CreativeManifest, options: { allowUnplacedAssets?: boolean } = {}): string[] {
   const issues: string[] = []; const ids = new Set<string>(); const placements = new Set<string>();
   if (manifest.version !== 1 || !Array.isArray(manifest.assets)) return ["Unsupported creative manifest."];
   for (const a of manifest.assets) {
@@ -40,7 +40,7 @@ export function validateCreativeManifest(manifest: CreativeManifest): string[] {
     if (![a.focalX, a.focalY].every(n => Number.isInteger(n) && n >= 0 && n <= 100)) fail("focal point must be 0–100");
     if (!["pending", "approved", "rejected"].includes(a.approvalStatus)) fail("invalid approval status");
     if (a.approvalStatus === "approved" && (!a.reviewedAt || !Number.isFinite(Date.parse(a.reviewedAt)) || !a.reviewNote?.trim())) fail("approval requires dated subject/licence/crop review");
-    if (!a.placements.length) fail("at least one placement required");
+    if (!a.placements.length && !options.allowUnplacedAssets) fail("at least one placement required");
     for (const p of a.placements) {
       if (!p.country.trim() || !p.alt.trim() || !["country", "city", "stadium"].includes(p.subjectType) || (p.subjectType !== "country" && !p.city?.trim()) || (p.subjectType === "stadium" && !p.stadium?.trim())) fail("complete exact destination placement required");
       const key = creativeSubjectKey(p);

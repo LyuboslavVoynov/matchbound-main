@@ -14,6 +14,6 @@ async function main(){
   const bytes=await readFile("public"+asset.src);
   if(createHash("sha256").update(bytes).digest("hex")!==asset.sha256)throw Error("Artwork bytes do not match reviewed hash");
  }
- console.info(JSON.stringify({approved:manifest.assets.filter(a=>a.approvalStatus==="approved").length,eligibleProductTargets:products.size,missingApprovedArtwork:[...products.keys()].filter(id=>!manifest.assets.some(a=>a.productId===id&&a.approvalStatus==="approved"))},null,2));
+ console.info(JSON.stringify({approved:manifest.assets.filter(a=>a.approvalStatus==="approved").length,catalogueProductTargets:products.size,missingApprovedArtwork:[...products.keys()].filter(id=>!manifest.assets.some(a=>a.productId===id&&a.approvalStatus==="approved"))},null,2));
 }
 main().catch(()=>{console.error("Beer artwork validation failed; inspect source, product, licence and file hash.");process.exitCode=1});

@@ -13,7 +13,7 @@ async function main() {
   const apply = process.argv.includes("--apply");
   const manifestPath = process.argv.find(arg => arg.startsWith("--manifest="))?.slice(11) ?? "data/creatives/manifest.json";
   const manifest = JSON.parse(await readFile(manifestPath, "utf8")) as CreativeManifest;
-  const issues = validateCreativeManifest(manifest);
+  const issues = validateCreativeManifest(manifest, { allowUnplacedAssets: process.argv.includes("--asset-only") });
   if (issues.length) throw Error(issues.join("\n"));
   const root = await realpath(process.cwd());
   const prepared = await Promise.all(manifest.assets.filter(a => a.approvalStatus === "approved").map(async asset => {

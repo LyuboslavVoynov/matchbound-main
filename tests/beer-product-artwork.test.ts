@@ -1,7 +1,7 @@
 import {describe,it,expect} from "vitest";
 import {beerProductArtworkSchema,productBeerArtworkFor} from "@/domain/beer-product-artwork";
 import {beerArtworkFor} from "@/domain/beer-artwork";
-const asset={productId:"augustiner-2",country:"Germany",brand:"Augustiner Edelstoff",src:"/beer/products/augustiner-edelstoff.webp",source:"https://example.com/source",author:"Creator",license:"CC BY 4.0",licenseUrl:"https://creativecommons.org/licenses/by/4.0/",sha256:"a".repeat(64),reviewedAt:"2026-11-09T00:00:00Z",approvalStatus:"approved"};
+const asset={productId:"augustiner-2",country:"Germany",brand:"Augustiner Edelstoff",src:"/beer/products/augustiner-edelstoff.webp",source:"https://example.com/source",original:"https://example.com/original",title:"Product photograph",author:"Creator",license:"CC BY 4.0",licenseUrl:"https://creativecommons.org/licenses/by/4.0/",sha256:"a".repeat(64),reviewedAt:"2026-11-09T00:00:00Z",approvalStatus:"approved"};
 const manifest={version:1,assets:[asset]};
 describe("product-specific artwork gates",()=>{
  it("matches approved exact product and country only",()=>{

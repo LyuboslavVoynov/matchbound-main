@@ -1,4 +1,5 @@
 import { findJournalVisuals } from "@/db/creative-repository";
+import {findProductBeerArtwork} from "@/db/beer-artwork-repository";
 import { MatchResult } from "@/components/match-result";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -13,6 +14,6 @@ export default async function MatchPage({ params }: { params: Promise<{ shareTok
   if (!draw) notFound();
   if (draw.expiresAt <= new Date()) return <main className="site-shell"><ResultReady fallback /><SiteHeader /><section className="draw-state"><p className="eyebrow">Matchbound</p><h1>This trip link has expired.</h1><p>Your next football weekend is still out there.</p><Link className="button" href="/">Draw another match <span aria-hidden="true">↗</span></Link></section><SiteFooter /></main>;
 
-  const photos = await findJournalVisuals(createDb(), draw.resultSnapshot);
-  return <MatchResult backdrop={photos.stadium} result={draw.resultSnapshot} tripStartDate={draw.tripStartDate} tripEndDate={draw.tripEndDate} resultPath={`/m/${shareToken}`}/>;
+  const [photos,beerArtwork] = await Promise.all([findJournalVisuals(createDb(), draw.resultSnapshot),findProductBeerArtwork(createDb(),draw.resultSnapshot.beerSignals?.countryBrand?.productId,draw.resultSnapshot.beerSignals?.countryBrand?.countryName??draw.resultSnapshot.country)]);
+  return <MatchResult backdrop={photos.stadium} beerArtwork={beerArtwork} result={draw.resultSnapshot} tripStartDate={draw.tripStartDate} tripEndDate={draw.tripEndDate} resultPath={`/m/${shareToken}`}/>;
 }
