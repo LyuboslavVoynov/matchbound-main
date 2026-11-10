@@ -1,0 +1,43 @@
+{
+  "reviewedAt": "2026-11-09",
+  "basis": "Direct brewery product specifications and permanent-range lists; origin confirmed on brewery/factory pages.",
+  "breweries": [
+    {
+      "id": "pt-musa",
+      "originSource": "https://cervejamusa.com/pages/fabrica"
+    },
+    {
+      "id": "pt-dois-corvos",
+      "originSource": "https://www.doiscorvos.pt/pt/beer/all?range=core-range"
+    },
+    {
+      "id": "pt-super-bock",
+      "originSource": "https://superbockgroup.com/grupo/onde-estamos/"
+    },
+    {
+      "id": "pt-letra",
+      "originSource": "https://cervejaletra.pt/sobre-nos/"
+    }
+  ],
+  "notes": [
+    "Ignore animated 0/0.00 alcohol counters on Super Bock pages; use the specification table.",
+    "Letra style fields remain null rather than reuse potentially stale style descriptions.",
+    "No product photos/logos, marketing descriptions or pub availability claims copied.",
+    "The importer is additive; existing Germany and saved-draw data remains unchanged.",
+    "Replaced uncertain one-off/collaboration candidates with three permanent Letra products, each in stock on the brewery shop."
+  ],
+  "excludedInitialCandidates": [
+    {
+      "id": "pt-dois-corvos-czech-norris",
+      "reason": "Removed from pilot: one-off/collaboration or incomplete product specification; use permanent domestic ranges instead."
+    },
+    {
+      "id": "pt-dois-corvos-little-urban-achiever",
+      "reason": "Removed from pilot: one-off/collaboration or incomplete product specification; use permanent domestic ranges instead."
+    },
+    {
+      "id": "pt-dois-corvos-portugal-the-beer",
+      "reason": "Removed from pilot: one-off/collaboration or incomplete product specification; use permanent domestic ranges instead."
+    }
+  ]
+}

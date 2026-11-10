@@ -20,6 +20,13 @@
       "countryCode": "PT",
       "originNation": "Portugal",
       "sourceUrl": "https://www.superbock.pt/as-nossas-cervejas"
+    },
+    {
+      "id": "pt-letra",
+      "name": "Letra",
+      "countryCode": "PT",
+      "originNation": "Portugal",
+      "sourceUrl": "https://cervejaletra.pt/sobre-nos/"
     }
   ],
   "products": [
@@ -29,12 +36,12 @@
       "name": "Psycho Pilsner",
       "normalizedName": "psycho pilsner",
       "style": "German Pilsner",
-      "abvBasisPoints": null,
-      "sourceUrl": "https://cervejamusa.com/",
+      "abvBasisPoints": 450,
+      "sourceUrl": "https://cervejamusa.com/products/psycho-pilsner",
       "reviewedAt": "2026-11-09T00:00:00Z",
       "validUntil": "2027-02-09T00:00:00Z",
-      "approvalStatus": "pending",
-      "active": false
+      "approvalStatus": "approved",
+      "active": true
     },
     {
       "id": "pt-musa-blondie-ale",
@@ -42,12 +49,12 @@
       "name": "Blondie Ale",
       "normalizedName": "blondie ale",
       "style": "Blonde Ale",
-      "abvBasisPoints": null,
-      "sourceUrl": "https://cervejamusa.com/",
+      "abvBasisPoints": 450,
+      "sourceUrl": "https://cervejamusa.com/products/blondie-ale",
       "reviewedAt": "2026-11-09T00:00:00Z",
       "validUntil": "2027-02-09T00:00:00Z",
-      "approvalStatus": "pending",
-      "active": false
+      "approvalStatus": "approved",
+      "active": true
     },
     {
       "id": "pt-musa-born-in-the-ipa",
@@ -55,12 +62,12 @@
       "name": "Born in the IPA",
       "normalizedName": "born in the ipa",
       "style": "India Pale Ale",
-      "abvBasisPoints": null,
-      "sourceUrl": "https://cervejamusa.com/",
+      "abvBasisPoints": 650,
+      "sourceUrl": "https://cervejamusa.com/products/born-in-the-ipa",
       "reviewedAt": "2026-11-09T00:00:00Z",
       "validUntil": "2027-02-09T00:00:00Z",
-      "approvalStatus": "pending",
-      "active": false
+      "approvalStatus": "approved",
+      "active": true
     },
     {
       "id": "pt-musa-twist-stout",
@@ -68,12 +75,12 @@
       "name": "Twist & Stout",
       "normalizedName": "twist & stout",
       "style": "Oat Stout",
-      "abvBasisPoints": null,
-      "sourceUrl": "https://cervejamusa.com/",
+      "abvBasisPoints": 600,
+      "sourceUrl": "https://cervejamusa.com/products/twist-stout",
       "reviewedAt": "2026-11-09T00:00:00Z",
       "validUntil": "2027-02-09T00:00:00Z",
-      "approvalStatus": "pending",
-      "active": false
+      "approvalStatus": "approved",
+      "active": true
     },
     {
       "id": "pt-musa-frank-apa",
@@ -81,12 +88,12 @@
       "name": "Frank APA",
       "normalizedName": "frank apa",
       "style": "American Pale Ale",
-      "abvBasisPoints": null,
-      "sourceUrl": "https://cervejamusa.com/",
+      "abvBasisPoints": 500,
+      "sourceUrl": "https://cervejamusa.com/products/frank-apa",
       "reviewedAt": "2026-11-09T00:00:00Z",
       "validUntil": "2027-02-09T00:00:00Z",
-      "approvalStatus": "pending",
-      "active": false
+      "approvalStatus": "approved",
+      "active": true
     },
     {
       "id": "pt-musa-red-zeppelin",
@@ -94,12 +101,12 @@
       "name": "Red Zeppelin",
       "normalizedName": "red zeppelin",
       "style": "Red Session IPA",
-      "abvBasisPoints": null,
-      "sourceUrl": "https://cervejamusa.com/",
+      "abvBasisPoints": 500,
+      "sourceUrl": "https://cervejamusa.com/products/red-zeppelin",
       "reviewedAt": "2026-11-09T00:00:00Z",
       "validUntil": "2027-02-09T00:00:00Z",
-      "approvalStatus": "pending",
-      "active": false
+      "approvalStatus": "approved",
+      "active": true
     },
     {
       "id": "pt-dois-corvos-trema",
@@ -107,12 +114,12 @@
       "name": "Trëma",
       "normalizedName": "trëma",
       "style": "Helles Lager",
-      "abvBasisPoints": null,
-      "sourceUrl": "https://www.doiscorvos.pt/pt/beer/all?range=core-range",
+      "abvBasisPoints": 450,
+      "sourceUrl": "https://www.doiscorvos.pt/pt/cerveja/trema",
       "reviewedAt": "2026-11-09T00:00:00Z",
       "validUntil": "2027-02-09T00:00:00Z",
-      "approvalStatus": "pending",
-      "active": false
+      "approvalStatus": "approved",
+      "active": true
     },
     {
       "id": "pt-dois-corvos-weekend",
@@ -120,12 +127,12 @@
       "name": "Weekend",
       "normalizedName": "weekend",
       "style": "Hazy IPA",
-      "abvBasisPoints": null,
-      "sourceUrl": "https://www.doiscorvos.pt/pt/beer/all?range=core-range",
+      "abvBasisPoints": 650,
+      "sourceUrl": "https://www.doiscorvos.pt/pt/cerveja/weekend",
       "reviewedAt": "2026-11-09T00:00:00Z",
       "validUntil": "2027-02-09T00:00:00Z",
-      "approvalStatus": "pending",
-      "active": false
+      "approvalStatus": "approved",
+      "active": true
     },
     {
       "id": "pt-dois-corvos-prata",
@@ -133,12 +140,12 @@
       "name": "Prata",
       "normalizedName": "prata",
       "style": "Pilsner",
-      "abvBasisPoints": null,
-      "sourceUrl": "https://www.doiscorvos.pt/pt/beer/all?range=core-range",
+      "abvBasisPoints": 500,
+      "sourceUrl": "https://www.doiscorvos.pt/pt/cerveja/prata",
       "reviewedAt": "2026-11-09T00:00:00Z",
       "validUntil": "2027-02-09T00:00:00Z",
-      "approvalStatus": "pending",
-      "active": false
+      "approvalStatus": "approved",
+      "active": true
     },
     {
       "id": "pt-dois-corvos-murmurio",
@@ -146,12 +153,12 @@
       "name": "Murmúrio",
       "normalizedName": "murmúrio",
       "style": "American Amber Ale",
-      "abvBasisPoints": null,
-      "sourceUrl": "https://www.doiscorvos.pt/pt/beer/all?range=core-range",
+      "abvBasisPoints": 560,
+      "sourceUrl": "https://www.doiscorvos.pt/pt/cerveja/murmurio",
       "reviewedAt": "2026-11-09T00:00:00Z",
       "validUntil": "2027-02-09T00:00:00Z",
-      "approvalStatus": "pending",
-      "active": false
+      "approvalStatus": "approved",
+      "active": true
     },
     {
       "id": "pt-dois-corvos-creature",
@@ -159,12 +166,12 @@
       "name": "Creature",
       "normalizedName": "creature",
       "style": "IPA",
-      "abvBasisPoints": null,
-      "sourceUrl": "https://www.doiscorvos.pt/pt/beer/all?range=core-range",
+      "abvBasisPoints": 630,
+      "sourceUrl": "https://www.doiscorvos.pt/pt/cerveja/creature",
       "reviewedAt": "2026-11-09T00:00:00Z",
       "validUntil": "2027-02-09T00:00:00Z",
-      "approvalStatus": "pending",
-      "active": false
+      "approvalStatus": "approved",
+      "active": true
     },
     {
       "id": "pt-dois-corvos-finisterra",
@@ -172,12 +179,12 @@
       "name": "Finisterra",
       "normalizedName": "finisterra",
       "style": "Imperial Porter",
-      "abvBasisPoints": null,
-      "sourceUrl": "https://www.doiscorvos.pt/pt/beer/all?range=core-range",
+      "abvBasisPoints": 850,
+      "sourceUrl": "https://www.doiscorvos.pt/pt/cerveja/finisterra",
       "reviewedAt": "2026-11-09T00:00:00Z",
       "validUntil": "2027-02-09T00:00:00Z",
-      "approvalStatus": "pending",
-      "active": false
+      "approvalStatus": "approved",
+      "active": true
     },
     {
       "id": "pt-dois-corvos-matine",
@@ -185,103 +192,103 @@
       "name": "Matiné",
       "normalizedName": "matiné",
       "style": "Session IPA",
-      "abvBasisPoints": null,
-      "sourceUrl": "https://www.doiscorvos.pt/pt/beer/all?range=core-range",
+      "abvBasisPoints": 450,
+      "sourceUrl": "https://www.doiscorvos.pt/pt/cerveja/matine",
       "reviewedAt": "2026-11-09T00:00:00Z",
       "validUntil": "2027-02-09T00:00:00Z",
-      "approvalStatus": "pending",
-      "active": false
-    },
-    {
-      "id": "pt-dois-corvos-portugal-the-beer",
-      "breweryId": "pt-dois-corvos",
-      "name": "Portugal the Beer",
-      "normalizedName": "portugal the beer",
-      "style": "Hazy Pale Ale",
-      "abvBasisPoints": null,
-      "sourceUrl": "https://www.doiscorvos.pt/pt/beer/all?scope=now",
-      "reviewedAt": "2026-11-09T00:00:00Z",
-      "validUntil": "2027-02-09T00:00:00Z",
-      "approvalStatus": "pending",
-      "active": false
-    },
-    {
-      "id": "pt-dois-corvos-czech-norris",
-      "breweryId": "pt-dois-corvos",
-      "name": "Czech Norris",
-      "normalizedName": "czech norris",
-      "style": "Dry Hopped Czech Lager",
-      "abvBasisPoints": null,
-      "sourceUrl": "https://www.doiscorvos.pt/pt/beer/all?scope=now",
-      "reviewedAt": "2026-11-09T00:00:00Z",
-      "validUntil": "2027-02-09T00:00:00Z",
-      "approvalStatus": "pending",
-      "active": false
-    },
-    {
-      "id": "pt-dois-corvos-little-urban-achiever",
-      "breweryId": "pt-dois-corvos",
-      "name": "Little Urban Achiever",
-      "normalizedName": "little urban achiever",
-      "style": "NE IPA",
-      "abvBasisPoints": null,
-      "sourceUrl": "https://www.doiscorvos.pt/pt/beer/all?scope=now",
-      "reviewedAt": "2026-11-09T00:00:00Z",
-      "validUntil": "2027-02-09T00:00:00Z",
-      "approvalStatus": "pending",
-      "active": false
+      "approvalStatus": "approved",
+      "active": true
     },
     {
       "id": "pt-super-bock-original",
       "breweryId": "pt-super-bock",
       "name": "Original",
       "normalizedName": "original",
-      "style": null,
-      "abvBasisPoints": null,
-      "sourceUrl": "https://www.superbock.pt/as-nossas-cervejas",
+      "style": "Pale Lager",
+      "abvBasisPoints": 520,
+      "sourceUrl": "https://www.superbock.pt/as-nossas-cervejas/super-bock-original",
       "reviewedAt": "2026-11-09T00:00:00Z",
       "validUntil": "2027-02-09T00:00:00Z",
-      "approvalStatus": "pending",
-      "active": false
+      "approvalStatus": "approved",
+      "active": true
     },
     {
       "id": "pt-super-bock-stout",
       "breweryId": "pt-super-bock",
       "name": "Stout",
       "normalizedName": "stout",
-      "style": null,
-      "abvBasisPoints": null,
-      "sourceUrl": "https://www.superbock.pt/as-nossas-cervejas",
+      "style": "Sweet Stout",
+      "abvBasisPoints": 500,
+      "sourceUrl": "https://www.superbock.pt/as-nossas-cervejas/super-bock-stout",
       "reviewedAt": "2026-11-09T00:00:00Z",
       "validUntil": "2027-02-09T00:00:00Z",
-      "approvalStatus": "pending",
-      "active": false
+      "approvalStatus": "approved",
+      "active": true
     },
     {
       "id": "pt-super-bock-abadia",
       "breweryId": "pt-super-bock",
       "name": "Abadia",
       "normalizedName": "abadia",
-      "style": null,
-      "abvBasisPoints": null,
-      "sourceUrl": "https://www.superbock.pt/as-nossas-cervejas",
+      "style": "Belgian Abbey",
+      "abvBasisPoints": 640,
+      "sourceUrl": "https://www.superbock.pt/as-nossas-cervejas/super-bock-abadia",
       "reviewedAt": "2026-11-09T00:00:00Z",
       "validUntil": "2027-02-09T00:00:00Z",
-      "approvalStatus": "pending",
-      "active": false
+      "approvalStatus": "approved",
+      "active": true
     },
     {
       "id": "pt-super-bock-sem-gluten",
       "breweryId": "pt-super-bock",
       "name": "Sem Glúten",
       "normalizedName": "sem glúten",
-      "style": null,
-      "abvBasisPoints": null,
-      "sourceUrl": "https://www.superbock.pt/as-nossas-cervejas",
+      "style": "Pale Lager",
+      "abvBasisPoints": 520,
+      "sourceUrl": "https://www.superbock.pt/as-nossas-cervejas/super-bock-sem-gluten",
       "reviewedAt": "2026-11-09T00:00:00Z",
       "validUntil": "2027-02-09T00:00:00Z",
-      "approvalStatus": "pending",
-      "active": false
+      "approvalStatus": "approved",
+      "active": true
+    },
+    {
+      "id": "pt-letra-a",
+      "breweryId": "pt-letra",
+      "name": "A",
+      "normalizedName": "a",
+      "style": null,
+      "abvBasisPoints": 460,
+      "sourceUrl": "https://cervejaletra.pt/product/letra-a/",
+      "reviewedAt": "2026-11-09T00:00:00Z",
+      "validUntil": "2027-02-09T00:00:00Z",
+      "approvalStatus": "approved",
+      "active": true
+    },
+    {
+      "id": "pt-letra-b",
+      "breweryId": "pt-letra",
+      "name": "B",
+      "normalizedName": "b",
+      "style": null,
+      "abvBasisPoints": 500,
+      "sourceUrl": "https://cervejaletra.pt/product/letra-b/",
+      "reviewedAt": "2026-11-09T00:00:00Z",
+      "validUntil": "2027-02-09T00:00:00Z",
+      "approvalStatus": "approved",
+      "active": true
+    },
+    {
+      "id": "pt-letra-c",
+      "breweryId": "pt-letra",
+      "name": "C",
+      "normalizedName": "c",
+      "style": null,
+      "abvBasisPoints": 550,
+      "sourceUrl": "https://cervejaletra.pt/product/letra-c/",
+      "reviewedAt": "2026-11-09T00:00:00Z",
+      "validUntil": "2027-02-09T00:00:00Z",
+      "approvalStatus": "approved",
+      "active": true
     }
   ]
 }
