@@ -1,0 +1,28 @@
+{
+  "status": "research-only",
+  "candidates": [
+    {
+      "subject": {
+        "subjectType": "stadium",
+        "country": "Netherlands",
+        "city": "Rotterdam",
+        "stadium": "Stadion Feijenoord (De Kuip)"
+      },
+      "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Feyenoord_Stadion,_De_Kuip_-_panoramio.jpg",
+      "status": "needs-review",
+      "sourceReportedLicense": "CC BY 3.0",
+      "note": "Source description names De Kuip; archival 2006 image. Full creator/licence, visual subject, quality and crop review required before download/publication."
+    },
+    {
+      "subject": {
+        "subjectType": "city",
+        "country": "Netherlands",
+        "city": "Amsterdam"
+      },
+      "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Fa%C3%A7ade_du_Rijksmuseum.jpg",
+      "status": "needs-review",
+      "sourceReportedLicense": "CC BY-SA 4.0",
+      "note": "Source describes the Rijksmuseum facade, dated2018. Confirm creator/licence and inspect the landmark/crops before approval."
+    }
+  ]
+}

@@ -1,0 +1,255 @@
+{
+  "reviewedAt": "2026-11-09",
+  "assets": [
+    {
+      "subjectKey": "[\"city\",\"netherlands\",\"enschede\"]",
+      "assetId": "ded-city-enschede-v1",
+      "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Grote_kerk_-_Enschede.jpg",
+      "decision": "approved",
+      "sourceDate": "31 July 2005 (original upload date)"
+    },
+    {
+      "subjectKey": "[\"stadium\",\"netherlands\",\"enschede\",\"de grolsch veste\"]",
+      "assetId": "ded-stadium-666-v1",
+      "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:De_Grolsch_Veste_Enschede_2019_4.jpg",
+      "decision": "approved",
+      "sourceDate": "2019-04-12 15:39:13"
+    },
+    {
+      "subjectKey": "[\"city\",\"netherlands\",\"rotterdam\"]",
+      "assetId": "ded-city-rotterdam-v1",
+      "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Erasmusbrug,_September_2019.jpg",
+      "decision": "approved",
+      "sourceDate": "2019-09-05 18:49:21"
+    },
+    {
+      "subjectKey": "[\"stadium\",\"netherlands\",\"rotterdam\",\"stadion woudestein\"]",
+      "assetId": "ded-stadium-670-v1",
+      "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:KNVB_finale_vrouwen_18-19_-Rotterdam-_20190511_204019898_HDR.jpg",
+      "decision": "approved",
+      "sourceDate": "2019-05-11 20:40:20"
+    },
+    {
+      "subjectKey": "[\"city\",\"netherlands\",\"tilburg\"]",
+      "assetId": "ded-city-tilburg-v1",
+      "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Tilburg-Paleis-Raadhuis-3-2009.jpg",
+      "decision": "approved",
+      "sourceDate": ""
+    },
+    {
+      "subjectKey": "[\"city\",\"netherlands\",\"heerenveen\"]",
+      "assetId": "ded-city-heerenveen-v1",
+      "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:20130303_Crackstate_Heerenveen_Fr_NL.jpg",
+      "decision": "approved",
+      "sourceDate": "2013-03-03"
+    },
+    {
+      "subjectKey": "[\"stadium\",\"netherlands\",\"heerenveen\",\"abe lenstra stadion\"]",
+      "assetId": "ded-stadium-673-v1",
+      "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Abe_Lenstra_Stadion_pano_03m.jpg",
+      "decision": "approved",
+      "sourceDate": "2007-08-11"
+    },
+    {
+      "subjectKey": "[\"city\",\"netherlands\",\"eindhoven\"]",
+      "assetId": "ded-city-eindhoven-v1",
+      "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Eindhoven_Evoluon_06.jpg",
+      "decision": "approved",
+      "sourceDate": "2015-08-01 12:29:28"
+    },
+    {
+      "subjectKey": "[\"stadium\",\"netherlands\",\"eindhoven\",\"philips stadion\"]",
+      "assetId": "ded-stadium-674-v1",
+      "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Philips_Stadion_-_PSV_Eindhoven,_2013.jpg",
+      "decision": "approved",
+      "sourceDate": "2013-07-30"
+    },
+    {
+      "subjectKey": "[\"stadium\",\"netherlands\",\"rotterdam\",\"stadion feijenoord (de kuip)\"]",
+      "assetId": "ded-stadium-675-v1",
+      "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Feyenoord_Rotterdam%27s_De_Kuip_stadium_in_2022_before_a_match_against_FC_Emmen.jpg",
+      "decision": "approved",
+      "sourceDate": "2022-08-27 19:47:52"
+    },
+    {
+      "subjectKey": "[\"city\",\"netherlands\",\"utrecht\"]",
+      "assetId": "ded-city-utrecht-v1",
+      "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:DomTorenUtrechtNederland.jpg",
+      "decision": "approved",
+      "sourceDate": "2009-08-31"
+    },
+    {
+      "subjectKey": "[\"stadium\",\"netherlands\",\"utrecht\",\"stadion galgenwaard\"]",
+      "assetId": "ded-stadium-676-v1",
+      "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Utrecht_Stadion_Galgenwaard_(3).jpg",
+      "decision": "approved",
+      "sourceDate": "2015-08-14"
+    },
+    {
+      "subjectKey": "[\"city\",\"netherlands\",\"groningen\"]",
+      "assetId": "ded-city-groningen-v1",
+      "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Groningen_(stad),_Martinitoren_in_Groningen._13-06-2022._(actm.).jpg",
+      "decision": "approved",
+      "sourceDate": "2022-06-13 11:57:13"
+    },
+    {
+      "subjectKey": "[\"stadium\",\"netherlands\",\"groningen\",\"euroborg\"]",
+      "assetId": "ded-stadium-677-v1",
+      "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Euroborg_Groningen_2018.jpg",
+      "decision": "approved",
+      "sourceDate": "2018-04-01 14:27:45"
+    },
+    {
+      "subjectKey": "[\"city\",\"netherlands\",\"amsterdam\"]",
+      "assetId": "ded-city-amsterdam-v1",
+      "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:South_facade_of_the_Rijksmuseum_Amsterdam_(DSCF0528).jpg",
+      "decision": "approved",
+      "sourceDate": "2019-05-05 13:26:04"
+    },
+    {
+      "subjectKey": "[\"stadium\",\"netherlands\",\"amsterdam\",\"johan cruijff arena\"]",
+      "assetId": "ded-stadium-678-v1",
+      "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Amsterdam_-_Amsterdam_ArenA_(29669039193).jpg",
+      "decision": "approved",
+      "sourceDate": "Taken on 7 May 2016, 09:16"
+    },
+    {
+      "subjectKey": "[\"city\",\"netherlands\",\"den haag\"]",
+      "assetId": "ded-city-den-haag-v1",
+      "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Den_Haag,_het_Binnenhof_diverse_RM_met_de_Hofvijver_op_de_voorgrond_foto8_2015-08-05_18.56.jpg",
+      "decision": "approved",
+      "sourceDate": "2015-08-05 18:59:44"
+    },
+    {
+      "subjectKey": "[\"stadium\",\"netherlands\",\"den haag\",\"werktalent stadion\"]",
+      "assetId": "ded-stadium-680-v1",
+      "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Cars_Jeans_Stadion,_Den_Haag_(NED).jpg",
+      "decision": "approved",
+      "sourceDate": "2017-09-02 16:02"
+    },
+    {
+      "subjectKey": "[\"city\",\"netherlands\",\"alkmaar\"]",
+      "assetId": "ded-city-alkmaar-v1",
+      "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Waag_(Alkmaar).jpg",
+      "decision": "approved",
+      "sourceDate": "2024-07-28 13:11:04"
+    },
+    {
+      "subjectKey": "[\"stadium\",\"netherlands\",\"alkmaar\",\"afas stadion\"]",
+      "assetId": "ded-stadium-682-v1",
+      "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Alkmaar,_het_AFAS_stadion_IMG_8382_2025-06-22_13.57.jpg",
+      "decision": "approved",
+      "sourceDate": "2025-06-22 12:57:55"
+    },
+    {
+      "subjectKey": "[\"city\",\"netherlands\",\"zwolle\"]",
+      "assetId": "ded-city-zwolle-v1",
+      "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Zwolle,_de_Sassenpoort_RM41788_foto5_2016-06-05_10.11.jpg",
+      "decision": "approved",
+      "sourceDate": "2016-06-05 10:13:04"
+    },
+    {
+      "subjectKey": "[\"stadium\",\"netherlands\",\"zwolle\",\"mac³park stadion\"]",
+      "assetId": "ded-stadium-684-v1",
+      "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:MAC%C2%B3PARK_stadion.jpg",
+      "decision": "approved",
+      "sourceDate": "2018-09-16 16:51:58"
+    },
+    {
+      "subjectKey": "[\"city\",\"netherlands\",\"deventer\"]",
+      "assetId": "ded-city-deventer-v1",
+      "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Museum_De_Waag,_zomer_2023.jpg",
+      "decision": "approved",
+      "sourceDate": "2023-07-13 17:15:59"
+    },
+    {
+      "subjectKey": "[\"stadium\",\"netherlands\",\"deventer\",\"de adelaarshorst\"]",
+      "assetId": "ded-stadium-718-v1",
+      "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:De_Adelaarshorst,_Deventer_(2019)_02.jpg",
+      "decision": "approved",
+      "sourceDate": "2019-01-19 13:37:07"
+    },
+    {
+      "subjectKey": "[\"city\",\"netherlands\",\"leeuwarden\"]",
+      "assetId": "ded-city-leeuwarden-v1",
+      "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Oldehove_1584.jpg",
+      "decision": "approved",
+      "sourceDate": "2016-08-29 19:29:51"
+    },
+    {
+      "subjectKey": "[\"stadium\",\"netherlands\",\"leeuwarden\",\"kooi stadion\"]",
+      "assetId": "ded-stadium-1909-v1",
+      "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Kooi_Stadion_west_-_Leeuwarden_2025.jpg",
+      "decision": "approved",
+      "sourceDate": "2025"
+    },
+    {
+      "subjectKey": "[\"city\",\"netherlands\",\"velsen-zuid\"]",
+      "assetId": "ded-city-velsen-zuid-v1",
+      "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Exterieur_OVERZICHT_ACHTERGEVEL_-_Velsen-Zuid_-_20309417_-_RCE.jpg",
+      "decision": "approved",
+      "sourceDate": "1995-03"
+    },
+    {
+      "subjectKey": "[\"stadium\",\"netherlands\",\"velsen-zuid\",\"buko stadion\"]",
+      "assetId": "ded-stadium-1912-v1",
+      "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:TATA_Steel_Stadion_Telstar_-_panoramio.jpg",
+      "decision": "approved",
+      "sourceDate": "Taken on 4 July 2014"
+    },
+    {
+      "subjectKey": "[\"city\",\"netherlands\",\"nijmegen\"]",
+      "assetId": "ded-city-nijmegen-v1",
+      "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Nijmegen,_de_Waalbrug_RM523067_vanaf_Nijmegen_Bloxx_IMG_3793_2022-11-13_15.58.jpg",
+      "decision": "approved",
+      "sourceDate": "2022-11-13 15:58:24"
+    },
+    {
+      "subjectKey": "[\"stadium\",\"netherlands\",\"nijmegen\",\"goffertstadion\"]",
+      "assetId": "ded-stadium-1915-v1",
+      "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Nijmegen_Goffertstadion,_hoofdingang_voorkant.JPG",
+      "decision": "approved",
+      "sourceDate": "2013-10-06 12:41:56"
+    },
+    {
+      "subjectKey": "[\"city\",\"netherlands\",\"sittard\"]",
+      "assetId": "ded-city-sittard-v1",
+      "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Sittard,_de_Markt_met_diverse_monumentale_panden_en_de_Sint-Petrus%27_Stoel_van_Antiochi%C3%ABkerk_op_de_achtergrond_IMG_8193_2021-02-21_09.47.jpg",
+      "decision": "approved",
+      "sourceDate": "2021-02-21 09:47:07"
+    },
+    {
+      "subjectKey": "[\"stadium\",\"netherlands\",\"sittard\",\"fortuna sittard stadion\"]",
+      "assetId": "ded-stadium-1920-v1",
+      "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:20150312_Sittard;_Stadium_of_Fortuna_Sittard_04.jpg",
+      "decision": "approved",
+      "sourceDate": "2015-03-12 11:55:17"
+    },
+    {
+      "subjectKey": "[\"stadium\",\"netherlands\",\"rotterdam\",\"sparta stadion het kasteel\"]",
+      "assetId": "ded-stadium-6806-v1",
+      "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Sparta_Stadion_Het_Kasteel_01.jpg",
+      "decision": "approved",
+      "sourceDate": "2012-08-07 13:57:41"
+    }
+  ],
+  "remaining": [
+    {
+      "subject": {
+        "subjectType": "stadium",
+        "country": "Netherlands",
+        "city": "Tilburg",
+        "stadium": "Koning Willem II Stadion",
+        "alt": ""
+      },
+      "reason": "Only a small archival author-release photograph and a stadium diagram found; neither meets this batch's photo/licence quality gate."
+    }
+  ],
+  "rejectedExamples": [
+    "Stadium model in Amsterdam",
+    "Apartment block instead of Woudestein",
+    "Museum logo and painting instead of Deventer landmark photo",
+    "Old Cambuur ground instead of current Kooi Stadion",
+    "Seating maps instead of actual stadium photos"
+  ]
+}

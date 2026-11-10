@@ -1,0 +1,24 @@
+{
+  "league": "DED",
+  "status": "research-only",
+  "tasks": [
+    {
+      "subjectKey": "[\"stadium\",\"netherlands\",\"tilburg\",\"koning willem ii stadion\"]",
+      "subject": {
+        "subjectType": "stadium",
+        "country": "Netherlands",
+        "city": "Tilburg",
+        "stadium": "Koning Willem II Stadion",
+        "alt": ""
+      },
+      "providerTeamIds": [
+        672
+      ],
+      "verificationUrls": [
+        "https://www.willem-ii.nl/contact"
+      ],
+      "status": "needs-source",
+      "searchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Netherlands%20Tilburg%20Koning%20Willem%20II%20Stadion"
+    }
+  ]
+}

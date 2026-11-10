@@ -1167,6 +1167,985 @@
           "alt": "Archival view of Estádio Municipal de Rio Maior, photographed in 2005"
         }
       ]
+    },
+    {
+      "id": "ded-city-enschede-v1",
+      "localPath": "public/creatives/ded/ded-city-enschede-v1.webp",
+      "title": "Grote kerk - Enschede.jpg",
+      "creator": "Hullie  at  Dutch Wikipedia",
+      "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Grote_kerk_-_Enschede.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Grote_kerk_-_Enschede.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "licenseName": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "attribution": "Grote kerk - Enschede.jpg — Hullie  at  Dutch Wikipedia, CC BY-SA 3.0; via Wikimedia Commons.",
+      "transformationNote": "Resized and WebP-compressed; responsive display crop; no retouching. Adaptation retains the source image licence.",
+      "sha256": "efde0aa825627968b2d25288cf31ddc40e5e7e7123db900859bcbe67860bafb6",
+      "width": 900,
+      "height": 1200,
+      "bytes": 162208,
+      "focalX": 50,
+      "focalY": 50,
+      "approvalStatus": "approved",
+      "reviewedAt": "2026-11-09T00:00:00Z",
+      "reviewNote": "Individually reviewed Commons creator/licence and named subject against the exact venue registry; source photograph visually inspected. Archival architecture/branding is not a claim of current stadium condition. Responsive crop focal point reviewed. Source date: 31 July 2005 (original upload date).",
+      "placements": [
+        {
+          "subjectType": "city",
+          "country": "Netherlands",
+          "city": "Enschede",
+          "alt": "Grote Kerk, Enschede"
+        }
+      ]
+    },
+    {
+      "id": "ded-stadium-666-v1",
+      "localPath": "public/creatives/ded/ded-stadium-666-v1.webp",
+      "title": "De Grolsch Veste Enschede 2019 4.jpg",
+      "creator": "Steven Lek",
+      "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:De_Grolsch_Veste_Enschede_2019_4.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/6/67/De_Grolsch_Veste_Enschede_2019_4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "licenseName": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "attribution": "De Grolsch Veste Enschede 2019 4.jpg — Steven Lek, CC BY-SA 4.0; via Wikimedia Commons.",
+      "transformationNote": "Resized and WebP-compressed; responsive display crop; no retouching. Adaptation retains the source image licence.",
+      "sha256": "dde51adb98d9c02489fa5c41b624a772d94888900704d4b90ea6521c51b191fd",
+      "width": 1200,
+      "height": 795,
+      "bytes": 198042,
+      "focalX": 50,
+      "focalY": 50,
+      "approvalStatus": "approved",
+      "reviewedAt": "2026-11-09T00:00:00Z",
+      "reviewNote": "Individually reviewed Commons creator/licence and named subject against the exact venue registry; source photograph visually inspected. Archival architecture/branding is not a claim of current stadium condition. Responsive crop focal point reviewed. Source date: 2019-04-12 15:39:13.",
+      "placements": [
+        {
+          "subjectType": "stadium",
+          "country": "Netherlands",
+          "city": "Enschede",
+          "stadium": "De Grolsch Veste",
+          "alt": "De Grolsch Veste, Enschede"
+        }
+      ]
+    },
+    {
+      "id": "ded-city-rotterdam-v1",
+      "localPath": "public/creatives/ded/ded-city-rotterdam-v1.webp",
+      "title": "Erasmusbrug, September 2019.jpg",
+      "creator": "Martin Falbisoner",
+      "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Erasmusbrug,_September_2019.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Erasmusbrug%2C_September_2019.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "licenseName": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "attribution": "Erasmusbrug, September 2019.jpg — Martin Falbisoner, CC BY-SA 4.0; via Wikimedia Commons.",
+      "transformationNote": "Resized and WebP-compressed; responsive display crop; no retouching. Adaptation retains the source image licence.",
+      "sha256": "3bbafab9bb9a71e3fb4f8d755e9c5c1d500e311b1e7f3379e859897f293533e8",
+      "width": 1200,
+      "height": 695,
+      "bytes": 130240,
+      "focalX": 50,
+      "focalY": 50,
+      "approvalStatus": "approved",
+      "reviewedAt": "2026-11-09T00:00:00Z",
+      "reviewNote": "Individually reviewed Commons creator/licence and named subject against the exact venue registry; source photograph visually inspected. Archival architecture/branding is not a claim of current stadium condition. Responsive crop focal point reviewed. Source date: 2019-09-05 18:49:21.",
+      "placements": [
+        {
+          "subjectType": "city",
+          "country": "Netherlands",
+          "city": "Rotterdam",
+          "alt": "Erasmus Bridge, Rotterdam"
+        }
+      ]
+    },
+    {
+      "id": "ded-stadium-670-v1",
+      "localPath": "public/creatives/ded/ded-stadium-670-v1.webp",
+      "title": "KNVB finale vrouwen 18-19 -Rotterdam- 20190511 204019898 HDR.jpg",
+      "creator": "Edoderoo",
+      "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:KNVB_finale_vrouwen_18-19_-Rotterdam-_20190511_204019898_HDR.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/d/db/KNVB_finale_vrouwen_18-19_-Rotterdam-_20190511_204019898_HDR.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "licenseName": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "attribution": "KNVB finale vrouwen 18-19 -Rotterdam- 20190511 204019898 HDR.jpg — Edoderoo, CC BY-SA 4.0; via Wikimedia Commons.",
+      "transformationNote": "Resized and WebP-compressed; responsive display crop; no retouching. Adaptation retains the source image licence.",
+      "sha256": "da939fbc42e65c3adb310b4582254ecebb7d1742a2d51f0132fb421b94495749",
+      "width": 1200,
+      "height": 900,
+      "bytes": 259662,
+      "focalX": 50,
+      "focalY": 50,
+      "approvalStatus": "approved",
+      "reviewedAt": "2026-11-09T00:00:00Z",
+      "reviewNote": "Individually reviewed Commons creator/licence and named subject against the exact venue registry; source photograph visually inspected. Archival architecture/branding is not a claim of current stadium condition. Responsive crop focal point reviewed. Source date: 2019-05-11 20:40:20.",
+      "placements": [
+        {
+          "subjectType": "stadium",
+          "country": "Netherlands",
+          "city": "Rotterdam",
+          "stadium": "Stadion Woudestein",
+          "alt": "Stadion Woudestein, Rotterdam"
+        }
+      ]
+    },
+    {
+      "id": "ded-city-tilburg-v1",
+      "localPath": "public/creatives/ded/ded-city-tilburg-v1.webp",
+      "title": "Tilburg-Paleis-Raadhuis-3-2009.jpg",
+      "creator": "Coenen",
+      "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Tilburg-Paleis-Raadhuis-3-2009.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Tilburg-Paleis-Raadhuis-3-2009.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "licenseName": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "attribution": "Tilburg-Paleis-Raadhuis-3-2009.jpg — Coenen, CC BY-SA 3.0; via Wikimedia Commons.",
+      "transformationNote": "Resized and WebP-compressed; responsive display crop; no retouching. Adaptation retains the source image licence.",
+      "sha256": "17ee3da7e242779143434b736e925a13a0b3d7705063d07a6600f0e6a32da23c",
+      "width": 899,
+      "height": 1200,
+      "bytes": 163790,
+      "focalX": 50,
+      "focalY": 50,
+      "approvalStatus": "approved",
+      "reviewedAt": "2026-11-09T00:00:00Z",
+      "reviewNote": "Individually reviewed Commons creator/licence and named subject against the exact venue registry; source photograph visually inspected. Archival architecture/branding is not a claim of current stadium condition. Responsive crop focal point reviewed. Source date: .",
+      "placements": [
+        {
+          "subjectType": "city",
+          "country": "Netherlands",
+          "city": "Tilburg",
+          "alt": "Paleis-Raadhuis, Tilburg"
+        }
+      ]
+    },
+    {
+      "id": "ded-city-heerenveen-v1",
+      "localPath": "public/creatives/ded/ded-city-heerenveen-v1.webp",
+      "title": "20130303 Crackstate Heerenveen Fr NL.jpg",
+      "creator": "Wutsje",
+      "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:20130303_Crackstate_Heerenveen_Fr_NL.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/2/25/20130303_Crackstate_Heerenveen_Fr_NL.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "licenseName": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "attribution": "20130303 Crackstate Heerenveen Fr NL.jpg — Wutsje, CC BY-SA 3.0; via Wikimedia Commons.",
+      "transformationNote": "Resized and WebP-compressed; responsive display crop; no retouching. Adaptation retains the source image licence.",
+      "sha256": "e2f6e9d2e1108e6716755dc1bf02e4656c6ac6128c163dee3d599abd8811bdfd",
+      "width": 1200,
+      "height": 1200,
+      "bytes": 224214,
+      "focalX": 50,
+      "focalY": 50,
+      "approvalStatus": "approved",
+      "reviewedAt": "2026-11-09T00:00:00Z",
+      "reviewNote": "Individually reviewed Commons creator/licence and named subject against the exact venue registry; source photograph visually inspected. Archival architecture/branding is not a claim of current stadium condition. Responsive crop focal point reviewed. Source date: 2013-03-03.",
+      "placements": [
+        {
+          "subjectType": "city",
+          "country": "Netherlands",
+          "city": "Heerenveen",
+          "alt": "Crackstate, Heerenveen"
+        }
+      ]
+    },
+    {
+      "id": "ded-stadium-673-v1",
+      "localPath": "public/creatives/ded/ded-stadium-673-v1.webp",
+      "title": "Abe Lenstra Stadion pano 03m.jpg",
+      "creator": "Udo Ockema",
+      "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Abe_Lenstra_Stadion_pano_03m.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Abe_Lenstra_Stadion_pano_03m.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "licenseName": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "attribution": "Abe Lenstra Stadion pano 03m.jpg — Udo Ockema, CC BY 3.0; via Wikimedia Commons.",
+      "transformationNote": "Resized and WebP-compressed; responsive display crop; no retouching. Adaptation retains the source image licence.",
+      "sha256": "62986f2e88e7d8a4d173aded78e40aec5e2269954137f843991c69e7d7396911",
+      "width": 1200,
+      "height": 307,
+      "bytes": 76808,
+      "focalX": 50,
+      "focalY": 65,
+      "approvalStatus": "approved",
+      "reviewedAt": "2026-11-09T00:00:00Z",
+      "reviewNote": "Individually reviewed Commons creator/licence and named subject against the exact venue registry; source photograph visually inspected. Archival architecture/branding is not a claim of current stadium condition. Responsive crop focal point reviewed. Source date: 2007-08-11.",
+      "placements": [
+        {
+          "subjectType": "stadium",
+          "country": "Netherlands",
+          "city": "Heerenveen",
+          "stadium": "Abe Lenstra Stadion",
+          "alt": "Abe Lenstra Stadion, Heerenveen"
+        }
+      ]
+    },
+    {
+      "id": "ded-city-eindhoven-v1",
+      "localPath": "public/creatives/ded/ded-city-eindhoven-v1.webp",
+      "title": "Eindhoven Evoluon 06.jpg",
+      "creator": "Zairon",
+      "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Eindhoven_Evoluon_06.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Eindhoven_Evoluon_06.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "licenseName": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "attribution": "Eindhoven Evoluon 06.jpg — Zairon, CC BY-SA 4.0; via Wikimedia Commons.",
+      "transformationNote": "Resized and WebP-compressed; responsive display crop; no retouching. Adaptation retains the source image licence.",
+      "sha256": "d27304f64fe6f87d645eed45a7c103ca776c1156168265581c340ec61df21ce6",
+      "width": 1200,
+      "height": 713,
+      "bytes": 98540,
+      "focalX": 50,
+      "focalY": 50,
+      "approvalStatus": "approved",
+      "reviewedAt": "2026-11-09T00:00:00Z",
+      "reviewNote": "Individually reviewed Commons creator/licence and named subject against the exact venue registry; source photograph visually inspected. Archival architecture/branding is not a claim of current stadium condition. Responsive crop focal point reviewed. Source date: 2015-08-01 12:29:28.",
+      "placements": [
+        {
+          "subjectType": "city",
+          "country": "Netherlands",
+          "city": "Eindhoven",
+          "alt": "Evoluon, Eindhoven"
+        }
+      ]
+    },
+    {
+      "id": "ded-stadium-674-v1",
+      "localPath": "public/creatives/ded/ded-stadium-674-v1.webp",
+      "title": "Philips Stadion - PSV Eindhoven, 2013.jpg",
+      "creator": "Metro Centric",
+      "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Philips_Stadion_-_PSV_Eindhoven,_2013.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0b/Philips_Stadion_-_PSV_Eindhoven%2C_2013.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "licenseName": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "attribution": "Philips Stadion - PSV Eindhoven, 2013.jpg — Metro Centric, CC BY 2.0; via Wikimedia Commons.",
+      "transformationNote": "Resized and WebP-compressed; responsive display crop; no retouching. Adaptation retains the source image licence.",
+      "sha256": "a51f2981837f5b5633a56af1e03669bf4b1e217265c6c91b38fad3780f0f4e9c",
+      "width": 1200,
+      "height": 800,
+      "bytes": 205636,
+      "focalX": 50,
+      "focalY": 50,
+      "approvalStatus": "approved",
+      "reviewedAt": "2026-11-09T00:00:00Z",
+      "reviewNote": "Individually reviewed Commons creator/licence and named subject against the exact venue registry; source photograph visually inspected. Archival architecture/branding is not a claim of current stadium condition. Responsive crop focal point reviewed. Source date: 2013-07-30.",
+      "placements": [
+        {
+          "subjectType": "stadium",
+          "country": "Netherlands",
+          "city": "Eindhoven",
+          "stadium": "Philips Stadion",
+          "alt": "Philips Stadion, Eindhoven"
+        }
+      ]
+    },
+    {
+      "id": "ded-stadium-675-v1",
+      "localPath": "public/creatives/ded/ded-stadium-675-v1.webp",
+      "title": "Feyenoord Rotterdam's De Kuip stadium in 2022 before a match against FC Emmen.jpg",
+      "creator": "Vincenzo.togni",
+      "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Feyenoord_Rotterdam%27s_De_Kuip_stadium_in_2022_before_a_match_against_FC_Emmen.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/5/51/Feyenoord_Rotterdam%27s_De_Kuip_stadium_in_2022_before_a_match_against_FC_Emmen.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "licenseName": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "attribution": "Feyenoord Rotterdam's De Kuip stadium in 2022 before a match against FC Emmen.jpg — Vincenzo.togni, CC BY-SA 4.0; via Wikimedia Commons.",
+      "transformationNote": "Resized and WebP-compressed; responsive display crop; no retouching. Adaptation retains the source image licence.",
+      "sha256": "488baef57f9a9e5a3f17c47aafb6d094805771f4df03210f5c5531ee753e5516",
+      "width": 1200,
+      "height": 900,
+      "bytes": 315688,
+      "focalX": 50,
+      "focalY": 65,
+      "approvalStatus": "approved",
+      "reviewedAt": "2026-11-09T00:00:00Z",
+      "reviewNote": "Individually reviewed Commons creator/licence and named subject against the exact venue registry; source photograph visually inspected. Archival architecture/branding is not a claim of current stadium condition. Responsive crop focal point reviewed. Source date: 2022-08-27 19:47:52.",
+      "placements": [
+        {
+          "subjectType": "stadium",
+          "country": "Netherlands",
+          "city": "Rotterdam",
+          "stadium": "Stadion Feijenoord (De Kuip)",
+          "alt": "Stadion Feijenoord (De Kuip), Rotterdam"
+        }
+      ]
+    },
+    {
+      "id": "ded-city-utrecht-v1",
+      "localPath": "public/creatives/ded/ded-city-utrecht-v1.webp",
+      "title": "DomTorenUtrechtNederland.jpg",
+      "creator": "Massimo Catarinella",
+      "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:DomTorenUtrechtNederland.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/c/cb/DomTorenUtrechtNederland.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "licenseName": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "attribution": "DomTorenUtrechtNederland.jpg — Massimo Catarinella, CC BY 3.0; via Wikimedia Commons.",
+      "transformationNote": "Resized and WebP-compressed; responsive display crop; no retouching. Adaptation retains the source image licence.",
+      "sha256": "ea9414bab19b804ec706ed79c83f46e04e4ed04a008aff8cf70cd4d21fe252e8",
+      "width": 641,
+      "height": 1200,
+      "bytes": 112794,
+      "focalX": 50,
+      "focalY": 25,
+      "approvalStatus": "approved",
+      "reviewedAt": "2026-11-09T00:00:00Z",
+      "reviewNote": "Individually reviewed Commons creator/licence and named subject against the exact venue registry; source photograph visually inspected. Archival architecture/branding is not a claim of current stadium condition. Responsive crop focal point reviewed. Source date: 2009-08-31.",
+      "placements": [
+        {
+          "subjectType": "city",
+          "country": "Netherlands",
+          "city": "Utrecht",
+          "alt": "Dom Tower, Utrecht"
+        }
+      ]
+    },
+    {
+      "id": "ded-stadium-676-v1",
+      "localPath": "public/creatives/ded/ded-stadium-676-v1.webp",
+      "title": "Utrecht Stadion Galgenwaard (3).jpg",
+      "creator": "Detlefrueter",
+      "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Utrecht_Stadion_Galgenwaard_(3).jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/7/78/Utrecht_Stadion_Galgenwaard_%283%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "licenseName": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "attribution": "Utrecht Stadion Galgenwaard (3).jpg — Detlefrueter, CC BY-SA 4.0; via Wikimedia Commons.",
+      "transformationNote": "Resized and WebP-compressed; responsive display crop; no retouching. Adaptation retains the source image licence.",
+      "sha256": "0d3e7f9ab0603c8872678b6fba61eccbd54290d28a24fb064bb4029e64c98a14",
+      "width": 1200,
+      "height": 900,
+      "bytes": 127448,
+      "focalX": 50,
+      "focalY": 50,
+      "approvalStatus": "approved",
+      "reviewedAt": "2026-11-09T00:00:00Z",
+      "reviewNote": "Individually reviewed Commons creator/licence and named subject against the exact venue registry; source photograph visually inspected. Archival architecture/branding is not a claim of current stadium condition. Responsive crop focal point reviewed. Source date: 2015-08-14.",
+      "placements": [
+        {
+          "subjectType": "stadium",
+          "country": "Netherlands",
+          "city": "Utrecht",
+          "stadium": "Stadion Galgenwaard",
+          "alt": "Stadion Galgenwaard, Utrecht"
+        }
+      ]
+    },
+    {
+      "id": "ded-city-groningen-v1",
+      "localPath": "public/creatives/ded/ded-city-groningen-v1.webp",
+      "title": "Groningen (stad), Martinitoren in Groningen. 13-06-2022. (actm.).jpg",
+      "creator": "Agnes Monkelbaan",
+      "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Groningen_(stad),_Martinitoren_in_Groningen._13-06-2022._(actm.).jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/0/07/Groningen_%28stad%29%2C_Martinitoren_in_Groningen._13-06-2022._%28actm.%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "licenseName": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "attribution": "Groningen (stad), Martinitoren in Groningen. 13-06-2022. (actm.).jpg — Agnes Monkelbaan, CC BY-SA 4.0; via Wikimedia Commons.",
+      "transformationNote": "Resized and WebP-compressed; responsive display crop; no retouching. Adaptation retains the source image licence.",
+      "sha256": "7719d724d24a16755058f76ee94c8e07f1045dff4b6a6bab93138bc164f8683c",
+      "width": 654,
+      "height": 1200,
+      "bytes": 110998,
+      "focalX": 50,
+      "focalY": 25,
+      "approvalStatus": "approved",
+      "reviewedAt": "2026-11-09T00:00:00Z",
+      "reviewNote": "Individually reviewed Commons creator/licence and named subject against the exact venue registry; source photograph visually inspected. Archival architecture/branding is not a claim of current stadium condition. Responsive crop focal point reviewed. Source date: 2022-06-13 11:57:13.",
+      "placements": [
+        {
+          "subjectType": "city",
+          "country": "Netherlands",
+          "city": "Groningen",
+          "alt": "Martinitoren, Groningen"
+        }
+      ]
+    },
+    {
+      "id": "ded-stadium-677-v1",
+      "localPath": "public/creatives/ded/ded-stadium-677-v1.webp",
+      "title": "Euroborg Groningen 2018.jpg",
+      "creator": "Rick Leeuwen",
+      "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Euroborg_Groningen_2018.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Euroborg_Groningen_2018.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "licenseName": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "attribution": "Euroborg Groningen 2018.jpg — Rick Leeuwen, CC0; via Wikimedia Commons.",
+      "transformationNote": "Resized and WebP-compressed; responsive display crop; no retouching. Adaptation retains the source image licence.",
+      "sha256": "4e8a30d823168519a3a1c43ac3df57d2fc9e4bba524deaf111a530eee89f7a13",
+      "width": 1200,
+      "height": 825,
+      "bytes": 213240,
+      "focalX": 50,
+      "focalY": 65,
+      "approvalStatus": "approved",
+      "reviewedAt": "2026-11-09T00:00:00Z",
+      "reviewNote": "Individually reviewed Commons creator/licence and named subject against the exact venue registry; source photograph visually inspected. Archival architecture/branding is not a claim of current stadium condition. Responsive crop focal point reviewed. Source date: 2018-04-01 14:27:45.",
+      "placements": [
+        {
+          "subjectType": "stadium",
+          "country": "Netherlands",
+          "city": "Groningen",
+          "stadium": "Euroborg",
+          "alt": "Euroborg, Groningen"
+        }
+      ]
+    },
+    {
+      "id": "ded-city-amsterdam-v1",
+      "localPath": "public/creatives/ded/ded-city-amsterdam-v1.webp",
+      "title": "South facade of the Rijksmuseum Amsterdam (DSCF0528).jpg",
+      "creator": "Trougnouf (Benoit Brummer)",
+      "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:South_facade_of_the_Rijksmuseum_Amsterdam_(DSCF0528).jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/8/80/South_facade_of_the_Rijksmuseum_Amsterdam_%28DSCF0528%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "licenseName": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "attribution": "South facade of the Rijksmuseum Amsterdam (DSCF0528).jpg — Trougnouf (Benoit Brummer), CC BY 4.0; via Wikimedia Commons.",
+      "transformationNote": "Resized and WebP-compressed; responsive display crop; no retouching. Adaptation retains the source image licence.",
+      "sha256": "8062c7c9fcaf304ba66218894b7dcf4b813fbc69031e3893bc3a2e23c3e4ce40",
+      "width": 1200,
+      "height": 874,
+      "bytes": 224034,
+      "focalX": 50,
+      "focalY": 50,
+      "approvalStatus": "approved",
+      "reviewedAt": "2026-11-09T00:00:00Z",
+      "reviewNote": "Individually reviewed Commons creator/licence and named subject against the exact venue registry; source photograph visually inspected. Archival architecture/branding is not a claim of current stadium condition. Responsive crop focal point reviewed. Source date: 2019-05-05 13:26:04.",
+      "placements": [
+        {
+          "subjectType": "city",
+          "country": "Netherlands",
+          "city": "Amsterdam",
+          "alt": "Rijksmuseum, Amsterdam"
+        },
+        {
+          "subjectType": "country",
+          "country": "Netherlands",
+          "alt": "Rijksmuseum in Amsterdam, Netherlands"
+        }
+      ]
+    },
+    {
+      "id": "ded-stadium-678-v1",
+      "localPath": "public/creatives/ded/ded-stadium-678-v1.webp",
+      "title": "Amsterdam - Amsterdam ArenA (29669039193).jpg",
+      "creator": "Fred Romero  from Paris, France",
+      "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Amsterdam_-_Amsterdam_ArenA_(29669039193).jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Amsterdam_-_Amsterdam_ArenA_%2829669039193%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "licenseName": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "attribution": "Amsterdam - Amsterdam ArenA (29669039193).jpg — Fred Romero  from Paris, France, CC BY 2.0; via Wikimedia Commons.",
+      "transformationNote": "Resized and WebP-compressed; responsive display crop; no retouching. Adaptation retains the source image licence.",
+      "sha256": "aa41c787de9ce7c7cb1f1f4692c275728cf011102cddc3ba2c6677c99aaf3126",
+      "width": 1200,
+      "height": 800,
+      "bytes": 133634,
+      "focalX": 50,
+      "focalY": 50,
+      "approvalStatus": "approved",
+      "reviewedAt": "2026-11-09T00:00:00Z",
+      "reviewNote": "Individually reviewed Commons creator/licence and named subject against the exact venue registry; source photograph visually inspected. Archival architecture/branding is not a claim of current stadium condition. Responsive crop focal point reviewed. Source date: Taken on 7 May 2016, 09:16.",
+      "placements": [
+        {
+          "subjectType": "stadium",
+          "country": "Netherlands",
+          "city": "Amsterdam",
+          "stadium": "Johan Cruijff ArenA",
+          "alt": "Johan Cruijff ArenA, Amsterdam"
+        }
+      ]
+    },
+    {
+      "id": "ded-city-den-haag-v1",
+      "localPath": "public/creatives/ded/ded-city-den-haag-v1.webp",
+      "title": "Den Haag, het Binnenhof diverse RM met de Hofvijver op de voorgrond foto8 2015-08-05 18.56.jpg",
+      "creator": "Michielverbeek",
+      "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Den_Haag,_het_Binnenhof_diverse_RM_met_de_Hofvijver_op_de_voorgrond_foto8_2015-08-05_18.56.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Den_Haag%2C_het_Binnenhof_diverse_RM_met_de_Hofvijver_op_de_voorgrond_foto8_2015-08-05_18.56.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "licenseName": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "attribution": "Den Haag, het Binnenhof diverse RM met de Hofvijver op de voorgrond foto8 2015-08-05 18.56.jpg — Michielverbeek, CC BY-SA 4.0; via Wikimedia Commons.",
+      "transformationNote": "Resized and WebP-compressed; responsive display crop; no retouching. Adaptation retains the source image licence.",
+      "sha256": "55c945e937e21ed6f4f8a08f640752adcc83c89ddacaaf790e2fcb5a7235d1b5",
+      "width": 1200,
+      "height": 900,
+      "bytes": 199256,
+      "focalX": 50,
+      "focalY": 50,
+      "approvalStatus": "approved",
+      "reviewedAt": "2026-11-09T00:00:00Z",
+      "reviewNote": "Individually reviewed Commons creator/licence and named subject against the exact venue registry; source photograph visually inspected. Archival architecture/branding is not a claim of current stadium condition. Responsive crop focal point reviewed. Source date: 2015-08-05 18:59:44.",
+      "placements": [
+        {
+          "subjectType": "city",
+          "country": "Netherlands",
+          "city": "Den Haag",
+          "alt": "Binnenhof, Den Haag"
+        }
+      ]
+    },
+    {
+      "id": "ded-stadium-680-v1",
+      "localPath": "public/creatives/ded/ded-stadium-680-v1.webp",
+      "title": "Cars Jeans Stadion, Den Haag (NED).jpg",
+      "creator": "FaceMePLS  from The Hague, The Netherlands",
+      "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Cars_Jeans_Stadion,_Den_Haag_(NED).jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/9/97/Cars_Jeans_Stadion%2C_Den_Haag_%28NED%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "licenseName": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "attribution": "Cars Jeans Stadion, Den Haag (NED).jpg — FaceMePLS  from The Hague, The Netherlands, CC BY 2.0; via Wikimedia Commons.",
+      "transformationNote": "Resized and WebP-compressed; responsive display crop; no retouching. Adaptation retains the source image licence.",
+      "sha256": "ffd0982180f9766f40e40848fcc50d03ef0d61333ca6b34ab8b15e31cb20241a",
+      "width": 1200,
+      "height": 624,
+      "bytes": 181364,
+      "focalX": 50,
+      "focalY": 50,
+      "approvalStatus": "approved",
+      "reviewedAt": "2026-11-09T00:00:00Z",
+      "reviewNote": "Individually reviewed Commons creator/licence and named subject against the exact venue registry; source photograph visually inspected. Archival architecture/branding is not a claim of current stadium condition. Responsive crop focal point reviewed. Source date: 2017-09-02 16:02.",
+      "placements": [
+        {
+          "subjectType": "stadium",
+          "country": "Netherlands",
+          "city": "Den Haag",
+          "stadium": "WerkTalent Stadion",
+          "alt": "WerkTalent Stadion, Den Haag"
+        }
+      ]
+    },
+    {
+      "id": "ded-city-alkmaar-v1",
+      "localPath": "public/creatives/ded/ded-city-alkmaar-v1.webp",
+      "title": "Waag (Alkmaar).jpg",
+      "creator": "Jörg Braukmann",
+      "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Waag_(Alkmaar).jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/7/73/Waag_%28Alkmaar%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "licenseName": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "attribution": "Waag (Alkmaar).jpg — Jörg Braukmann, CC BY-SA 4.0; via Wikimedia Commons.",
+      "transformationNote": "Resized and WebP-compressed; responsive display crop; no retouching. Adaptation retains the source image licence.",
+      "sha256": "e6ddacbf309cde0496648b316e4d5b94ed717e9d3522c843f4cdcab3b9b002af",
+      "width": 644,
+      "height": 1200,
+      "bytes": 144446,
+      "focalX": 50,
+      "focalY": 25,
+      "approvalStatus": "approved",
+      "reviewedAt": "2026-11-09T00:00:00Z",
+      "reviewNote": "Individually reviewed Commons creator/licence and named subject against the exact venue registry; source photograph visually inspected. Archival architecture/branding is not a claim of current stadium condition. Responsive crop focal point reviewed. Source date: 2024-07-28 13:11:04.",
+      "placements": [
+        {
+          "subjectType": "city",
+          "country": "Netherlands",
+          "city": "Alkmaar",
+          "alt": "Waag, Alkmaar"
+        }
+      ]
+    },
+    {
+      "id": "ded-stadium-682-v1",
+      "localPath": "public/creatives/ded/ded-stadium-682-v1.webp",
+      "title": "Alkmaar, het AFAS stadion IMG 8382 2025-06-22 13.57.jpg",
+      "creator": "Michielverbeek",
+      "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Alkmaar,_het_AFAS_stadion_IMG_8382_2025-06-22_13.57.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Alkmaar%2C_het_AFAS_stadion_IMG_8382_2025-06-22_13.57.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "licenseName": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "attribution": "Alkmaar, het AFAS stadion IMG 8382 2025-06-22 13.57.jpg — Michielverbeek, CC BY 4.0; via Wikimedia Commons.",
+      "transformationNote": "Resized and WebP-compressed; responsive display crop; no retouching. Adaptation retains the source image licence.",
+      "sha256": "3f657a53b18f9c791fc0968af9d33bf3a72a7a4aee89f616b5f071aeed10b5d5",
+      "width": 1200,
+      "height": 548,
+      "bytes": 115382,
+      "focalX": 50,
+      "focalY": 50,
+      "approvalStatus": "approved",
+      "reviewedAt": "2026-11-09T00:00:00Z",
+      "reviewNote": "Individually reviewed Commons creator/licence and named subject against the exact venue registry; source photograph visually inspected. Archival architecture/branding is not a claim of current stadium condition. Responsive crop focal point reviewed. Source date: 2025-06-22 12:57:55.",
+      "placements": [
+        {
+          "subjectType": "stadium",
+          "country": "Netherlands",
+          "city": "Alkmaar",
+          "stadium": "AFAS Stadion",
+          "alt": "AFAS Stadion, Alkmaar"
+        }
+      ]
+    },
+    {
+      "id": "ded-city-zwolle-v1",
+      "localPath": "public/creatives/ded/ded-city-zwolle-v1.webp",
+      "title": "Zwolle, de Sassenpoort RM41788 foto5 2016-06-05 10.11.jpg",
+      "creator": "Michielverbeek",
+      "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Zwolle,_de_Sassenpoort_RM41788_foto5_2016-06-05_10.11.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Zwolle%2C_de_Sassenpoort_RM41788_foto5_2016-06-05_10.11.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "licenseName": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "attribution": "Zwolle, de Sassenpoort RM41788 foto5 2016-06-05 10.11.jpg — Michielverbeek, CC BY-SA 4.0; via Wikimedia Commons.",
+      "transformationNote": "Resized and WebP-compressed; responsive display crop; no retouching. Adaptation retains the source image licence.",
+      "sha256": "e108a694d311cf15ce628084a22790a40e2a6520441880e0f6e17de301e11b73",
+      "width": 870,
+      "height": 1200,
+      "bytes": 180430,
+      "focalX": 50,
+      "focalY": 25,
+      "approvalStatus": "approved",
+      "reviewedAt": "2026-11-09T00:00:00Z",
+      "reviewNote": "Individually reviewed Commons creator/licence and named subject against the exact venue registry; source photograph visually inspected. Archival architecture/branding is not a claim of current stadium condition. Responsive crop focal point reviewed. Source date: 2016-06-05 10:13:04.",
+      "placements": [
+        {
+          "subjectType": "city",
+          "country": "Netherlands",
+          "city": "Zwolle",
+          "alt": "Sassenpoort, Zwolle"
+        }
+      ]
+    },
+    {
+      "id": "ded-stadium-684-v1",
+      "localPath": "public/creatives/ded/ded-stadium-684-v1.webp",
+      "title": "MAC³PARK stadion.jpg",
+      "creator": "KSKB1935",
+      "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:MAC%C2%B3PARK_stadion.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/6/65/MAC%C2%B3PARK_stadion.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "licenseName": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "attribution": "MAC³PARK stadion.jpg — KSKB1935, CC BY-SA 4.0; via Wikimedia Commons.",
+      "transformationNote": "Resized and WebP-compressed; responsive display crop; no retouching. Adaptation retains the source image licence.",
+      "sha256": "5a7c94604bda23afd457dacd69bf6a2f0ae8a8d3ab9fb246443aa624651f5e02",
+      "width": 1200,
+      "height": 510,
+      "bytes": 104768,
+      "focalX": 50,
+      "focalY": 65,
+      "approvalStatus": "approved",
+      "reviewedAt": "2026-11-09T00:00:00Z",
+      "reviewNote": "Individually reviewed Commons creator/licence and named subject against the exact venue registry; source photograph visually inspected. Archival architecture/branding is not a claim of current stadium condition. Responsive crop focal point reviewed. Source date: 2018-09-16 16:51:58.",
+      "placements": [
+        {
+          "subjectType": "stadium",
+          "country": "Netherlands",
+          "city": "Zwolle",
+          "stadium": "MAC³PARK Stadion",
+          "alt": "MAC³PARK Stadion, Zwolle"
+        }
+      ]
+    },
+    {
+      "id": "ded-city-deventer-v1",
+      "localPath": "public/creatives/ded/ded-city-deventer-v1.webp",
+      "title": "Museum De Waag, zomer 2023.jpg",
+      "creator": "Bart Ros / Erfgoed Deventer",
+      "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Museum_De_Waag,_zomer_2023.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/c/cd/Museum_De_Waag%2C_zomer_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "licenseName": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "attribution": "Museum De Waag, zomer 2023.jpg — Bart Ros / Erfgoed Deventer, CC BY 4.0; via Wikimedia Commons.",
+      "transformationNote": "Resized and WebP-compressed; responsive display crop; no retouching. Adaptation retains the source image licence.",
+      "sha256": "445adc0a91f4b6b504fa82b7df2bd59cd887db775a073f19a04d82be06eac843",
+      "width": 1200,
+      "height": 800,
+      "bytes": 277818,
+      "focalX": 30,
+      "focalY": 50,
+      "approvalStatus": "approved",
+      "reviewedAt": "2026-11-09T00:00:00Z",
+      "reviewNote": "Individually reviewed Commons creator/licence and named subject against the exact venue registry; source photograph visually inspected. Archival architecture/branding is not a claim of current stadium condition. Responsive crop focal point reviewed. Source date: 2023-07-13 17:15:59.",
+      "placements": [
+        {
+          "subjectType": "city",
+          "country": "Netherlands",
+          "city": "Deventer",
+          "alt": "Museum De Waag, Deventer"
+        }
+      ]
+    },
+    {
+      "id": "ded-stadium-718-v1",
+      "localPath": "public/creatives/ded/ded-stadium-718-v1.webp",
+      "title": "De Adelaarshorst, Deventer (2019) 02.jpg",
+      "creator": "Donald Trung Quoc Don (Chữ Hán: 徵國單)  -  Wikimedia Commons . ( Want to use this image? )",
+      "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:De_Adelaarshorst,_Deventer_(2019)_02.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/1/16/De_Adelaarshorst%2C_Deventer_%282019%29_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "licenseName": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "attribution": "De Adelaarshorst, Deventer (2019) 02.jpg — Donald Trung Quoc Don (Chữ Hán: 徵國單)  -  Wikimedia Commons . ( Want to use this image? ), CC BY-SA 4.0; via Wikimedia Commons.",
+      "transformationNote": "Resized and WebP-compressed; responsive display crop; no retouching. Adaptation retains the source image licence.",
+      "sha256": "98394bcb5577e9abb09ea3ad0648ff22eb57a7e6f424ae2a01fdf234b6666ae6",
+      "width": 1200,
+      "height": 675,
+      "bytes": 166802,
+      "focalX": 50,
+      "focalY": 50,
+      "approvalStatus": "approved",
+      "reviewedAt": "2026-11-09T00:00:00Z",
+      "reviewNote": "Individually reviewed Commons creator/licence and named subject against the exact venue registry; source photograph visually inspected. Archival architecture/branding is not a claim of current stadium condition. Responsive crop focal point reviewed. Source date: 2019-01-19 13:37:07.",
+      "placements": [
+        {
+          "subjectType": "stadium",
+          "country": "Netherlands",
+          "city": "Deventer",
+          "stadium": "De Adelaarshorst",
+          "alt": "De Adelaarshorst, Deventer"
+        }
+      ]
+    },
+    {
+      "id": "ded-city-leeuwarden-v1",
+      "localPath": "public/creatives/ded/ded-city-leeuwarden-v1.webp",
+      "title": "Oldehove 1584.jpg",
+      "creator": "C messier",
+      "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Oldehove_1584.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/4/42/Oldehove_1584.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "licenseName": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "attribution": "Oldehove 1584.jpg — C messier, CC BY-SA 4.0; via Wikimedia Commons.",
+      "transformationNote": "Resized and WebP-compressed; responsive display crop; no retouching. Adaptation retains the source image licence.",
+      "sha256": "3bec07bb0ebf99c7a9292879f6a02a0600bf4c4cd3d0072a04961eec6d3fdac5",
+      "width": 1200,
+      "height": 897,
+      "bytes": 224240,
+      "focalX": 50,
+      "focalY": 50,
+      "approvalStatus": "approved",
+      "reviewedAt": "2026-11-09T00:00:00Z",
+      "reviewNote": "Individually reviewed Commons creator/licence and named subject against the exact venue registry; source photograph visually inspected. Archival architecture/branding is not a claim of current stadium condition. Responsive crop focal point reviewed. Source date: 2016-08-29 19:29:51.",
+      "placements": [
+        {
+          "subjectType": "city",
+          "country": "Netherlands",
+          "city": "Leeuwarden",
+          "alt": "Oldehove, Leeuwarden"
+        }
+      ]
+    },
+    {
+      "id": "ded-stadium-1909-v1",
+      "localPath": "public/creatives/ded/ded-stadium-1909-v1.webp",
+      "title": "Kooi Stadion west - Leeuwarden 2025.jpg",
+      "creator": "Condor3d",
+      "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Kooi_Stadion_west_-_Leeuwarden_2025.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/7/73/Kooi_Stadion_west_-_Leeuwarden_2025.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "licenseName": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "attribution": "Kooi Stadion west - Leeuwarden 2025.jpg — Condor3d, CC BY 4.0; via Wikimedia Commons.",
+      "transformationNote": "Resized and WebP-compressed; responsive display crop; no retouching. Adaptation retains the source image licence.",
+      "sha256": "82ba5d8dfdd8c022224d20ad1f1660c8b86cd263647e2ee19dc4dd4fb1acc087",
+      "width": 1200,
+      "height": 449,
+      "bytes": 85954,
+      "focalX": 50,
+      "focalY": 50,
+      "approvalStatus": "approved",
+      "reviewedAt": "2026-11-09T00:00:00Z",
+      "reviewNote": "Individually reviewed Commons creator/licence and named subject against the exact venue registry; source photograph visually inspected. Archival architecture/branding is not a claim of current stadium condition. Responsive crop focal point reviewed. Source date: 2025.",
+      "placements": [
+        {
+          "subjectType": "stadium",
+          "country": "Netherlands",
+          "city": "Leeuwarden",
+          "stadium": "Kooi Stadion",
+          "alt": "Kooi Stadion, Leeuwarden"
+        }
+      ]
+    },
+    {
+      "id": "ded-city-velsen-zuid-v1",
+      "localPath": "public/creatives/ded/ded-city-velsen-zuid-v1.webp",
+      "title": "Exterieur OVERZICHT ACHTERGEVEL - Velsen-Zuid - 20309417 - RCE.jpg",
+      "creator": "Gerard Dukker",
+      "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Exterieur_OVERZICHT_ACHTERGEVEL_-_Velsen-Zuid_-_20309417_-_RCE.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f0/Exterieur_OVERZICHT_ACHTERGEVEL_-_Velsen-Zuid_-_20309417_-_RCE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "licenseName": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "attribution": "Exterieur OVERZICHT ACHTERGEVEL - Velsen-Zuid - 20309417 - RCE.jpg — Gerard Dukker, CC BY-SA 4.0; via Wikimedia Commons.",
+      "transformationNote": "Resized and WebP-compressed; responsive display crop; no retouching. Adaptation retains the source image licence.",
+      "sha256": "ed44cb6f64fa56c05a5bc3986643339a5cfe9bf4c54316d73e8d8c6af0a28ee0",
+      "width": 1200,
+      "height": 1193,
+      "bytes": 460662,
+      "focalX": 50,
+      "focalY": 50,
+      "approvalStatus": "approved",
+      "reviewedAt": "2026-11-09T00:00:00Z",
+      "reviewNote": "Individually reviewed Commons creator/licence and named subject against the exact venue registry; source photograph visually inspected. Archival architecture/branding is not a claim of current stadium condition. Responsive crop focal point reviewed. Source date: 1995-03.",
+      "placements": [
+        {
+          "subjectType": "city",
+          "country": "Netherlands",
+          "city": "Velsen-Zuid",
+          "alt": "Beeckestijn estate, Velsen-Zuid (archival view)"
+        }
+      ]
+    },
+    {
+      "id": "ded-stadium-1912-v1",
+      "localPath": "public/creatives/ded/ded-stadium-1912-v1.webp",
+      "title": "TATA Steel Stadion Telstar - panoramio.jpg",
+      "creator": "E v Schoonhoven",
+      "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:TATA_Steel_Stadion_Telstar_-_panoramio.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9e/TATA_Steel_Stadion_Telstar_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "licenseName": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "attribution": "TATA Steel Stadion Telstar - panoramio.jpg — E v Schoonhoven, CC BY 3.0; via Wikimedia Commons.",
+      "transformationNote": "Resized and WebP-compressed; responsive display crop; no retouching. Adaptation retains the source image licence.",
+      "sha256": "3ab775154b49e15c90e4af308d9adfe50814cd9592ead560ce013c8d8b9c6de5",
+      "width": 1200,
+      "height": 900,
+      "bytes": 124890,
+      "focalX": 50,
+      "focalY": 65,
+      "approvalStatus": "approved",
+      "reviewedAt": "2026-11-09T00:00:00Z",
+      "reviewNote": "Individually reviewed Commons creator/licence and named subject against the exact venue registry; source photograph visually inspected. Archival architecture/branding is not a claim of current stadium condition. Responsive crop focal point reviewed. Source date: Taken on 4 July 2014.",
+      "placements": [
+        {
+          "subjectType": "stadium",
+          "country": "Netherlands",
+          "city": "Velsen-Zuid",
+          "stadium": "BUKO Stadion",
+          "alt": "BUKO Stadion, Velsen-Zuid"
+        }
+      ]
+    },
+    {
+      "id": "ded-city-nijmegen-v1",
+      "localPath": "public/creatives/ded/ded-city-nijmegen-v1.webp",
+      "title": "Nijmegen, de Waalbrug RM523067 vanaf Nijmegen Bloxx IMG 3793 2022-11-13 15.58.jpg",
+      "creator": "Michielverbeek",
+      "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Nijmegen,_de_Waalbrug_RM523067_vanaf_Nijmegen_Bloxx_IMG_3793_2022-11-13_15.58.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Nijmegen%2C_de_Waalbrug_RM523067_vanaf_Nijmegen_Bloxx_IMG_3793_2022-11-13_15.58.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "licenseName": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "attribution": "Nijmegen, de Waalbrug RM523067 vanaf Nijmegen Bloxx IMG 3793 2022-11-13 15.58.jpg — Michielverbeek, CC BY-SA 4.0; via Wikimedia Commons.",
+      "transformationNote": "Resized and WebP-compressed; responsive display crop; no retouching. Adaptation retains the source image licence.",
+      "sha256": "cd45d9a53e792837a15e1b692a3ec764e2b42653f7bcd986e247b0bd4feb2c31",
+      "width": 1200,
+      "height": 781,
+      "bytes": 162766,
+      "focalX": 50,
+      "focalY": 50,
+      "approvalStatus": "approved",
+      "reviewedAt": "2026-11-09T00:00:00Z",
+      "reviewNote": "Individually reviewed Commons creator/licence and named subject against the exact venue registry; source photograph visually inspected. Archival architecture/branding is not a claim of current stadium condition. Responsive crop focal point reviewed. Source date: 2022-11-13 15:58:24.",
+      "placements": [
+        {
+          "subjectType": "city",
+          "country": "Netherlands",
+          "city": "Nijmegen",
+          "alt": "Waalbrug, Nijmegen"
+        }
+      ]
+    },
+    {
+      "id": "ded-stadium-1915-v1",
+      "localPath": "public/creatives/ded/ded-stadium-1915-v1.webp",
+      "title": "Nijmegen Goffertstadion, hoofdingang voorkant.JPG",
+      "creator": "Havang(nl)",
+      "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Nijmegen_Goffertstadion,_hoofdingang_voorkant.JPG",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/1/12/Nijmegen_Goffertstadion%2C_hoofdingang_voorkant.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "licenseName": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "attribution": "Nijmegen Goffertstadion, hoofdingang voorkant.JPG — Havang(nl), CC0; via Wikimedia Commons.",
+      "transformationNote": "Resized and WebP-compressed; responsive display crop; no retouching. Adaptation retains the source image licence.",
+      "sha256": "5be029cde2c4d4c7d675106ca9b6232772312084acf388db35d6c0c49fcf075c",
+      "width": 1200,
+      "height": 900,
+      "bytes": 217688,
+      "focalX": 50,
+      "focalY": 50,
+      "approvalStatus": "approved",
+      "reviewedAt": "2026-11-09T00:00:00Z",
+      "reviewNote": "Individually reviewed Commons creator/licence and named subject against the exact venue registry; source photograph visually inspected. Archival architecture/branding is not a claim of current stadium condition. Responsive crop focal point reviewed. Source date: 2013-10-06 12:41:56.",
+      "placements": [
+        {
+          "subjectType": "stadium",
+          "country": "Netherlands",
+          "city": "Nijmegen",
+          "stadium": "Goffertstadion",
+          "alt": "Goffertstadion, Nijmegen"
+        }
+      ]
+    },
+    {
+      "id": "ded-city-sittard-v1",
+      "localPath": "public/creatives/ded/ded-city-sittard-v1.webp",
+      "title": "Sittard, de Markt met diverse monumentale panden en de Sint-Petrus' Stoel van Antiochiëkerk op de achtergrond IMG 8193 2021-02-21 09.47.jpg",
+      "creator": "Michielverbeek",
+      "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Sittard,_de_Markt_met_diverse_monumentale_panden_en_de_Sint-Petrus%27_Stoel_van_Antiochi%C3%ABkerk_op_de_achtergrond_IMG_8193_2021-02-21_09.47.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f9/Sittard%2C_de_Markt_met_diverse_monumentale_panden_en_de_Sint-Petrus%27_Stoel_van_Antiochi%C3%ABkerk_op_de_achtergrond_IMG_8193_2021-02-21_09.47.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "licenseName": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "attribution": "Sittard, de Markt met diverse monumentale panden en de Sint-Petrus' Stoel van Antiochiëkerk op de achtergrond IMG 8193 2021-02-21 09.47.jpg — Michielverbeek, CC BY-SA 4.0; via Wikimedia Commons.",
+      "transformationNote": "Resized and WebP-compressed; responsive display crop; no retouching. Adaptation retains the source image licence.",
+      "sha256": "a98d5bccf616332da21ea4b21caf46e67738b5135b6cbeb7b9fdccebc7e601c6",
+      "width": 1200,
+      "height": 685,
+      "bytes": 126120,
+      "focalX": 50,
+      "focalY": 50,
+      "approvalStatus": "approved",
+      "reviewedAt": "2026-11-09T00:00:00Z",
+      "reviewNote": "Individually reviewed Commons creator/licence and named subject against the exact venue registry; source photograph visually inspected. Archival architecture/branding is not a claim of current stadium condition. Responsive crop focal point reviewed. Source date: 2021-02-21 09:47:07.",
+      "placements": [
+        {
+          "subjectType": "city",
+          "country": "Netherlands",
+          "city": "Sittard",
+          "alt": "Markt, Sittard"
+        }
+      ]
+    },
+    {
+      "id": "ded-stadium-1920-v1",
+      "localPath": "public/creatives/ded/ded-stadium-1920-v1.webp",
+      "title": "20150312 Sittard; Stadium of Fortuna Sittard 04.jpg",
+      "creator": "Mark Ahsmann",
+      "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:20150312_Sittard;_Stadium_of_Fortuna_Sittard_04.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a4/20150312_Sittard%3B_Stadium_of_Fortuna_Sittard_04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "licenseName": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "attribution": "20150312 Sittard; Stadium of Fortuna Sittard 04.jpg — Mark Ahsmann, CC BY-SA 4.0; via Wikimedia Commons.",
+      "transformationNote": "Resized and WebP-compressed; responsive display crop; no retouching. Adaptation retains the source image licence.",
+      "sha256": "92c771396b9fd148204f44c0894e57f5e2de84db564a9e9d4829fd99aa88d5ba",
+      "width": 1200,
+      "height": 676,
+      "bytes": 170164,
+      "focalX": 50,
+      "focalY": 50,
+      "approvalStatus": "approved",
+      "reviewedAt": "2026-11-09T00:00:00Z",
+      "reviewNote": "Individually reviewed Commons creator/licence and named subject against the exact venue registry; source photograph visually inspected. Archival architecture/branding is not a claim of current stadium condition. Responsive crop focal point reviewed. Source date: 2015-03-12 11:55:17.",
+      "placements": [
+        {
+          "subjectType": "stadium",
+          "country": "Netherlands",
+          "city": "Sittard",
+          "stadium": "Fortuna Sittard Stadion",
+          "alt": "Fortuna Sittard Stadion, Sittard"
+        }
+      ]
+    },
+    {
+      "id": "ded-stadium-6806-v1",
+      "localPath": "public/creatives/ded/ded-stadium-6806-v1.webp",
+      "title": "Sparta Stadion Het Kasteel 01.jpg",
+      "creator": "Dick Aalders",
+      "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Sparta_Stadion_Het_Kasteel_01.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Sparta_Stadion_Het_Kasteel_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "licenseName": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "attribution": "Sparta Stadion Het Kasteel 01.jpg — Dick Aalders, CC BY-SA 2.0; via Wikimedia Commons.",
+      "transformationNote": "Resized and WebP-compressed; responsive display crop; no retouching. Adaptation retains the source image licence.",
+      "sha256": "5e7927028089b8ad13c60386587cccc008fe0599ced3d651bd8cb588fd114e9e",
+      "width": 1200,
+      "height": 799,
+      "bytes": 195120,
+      "focalX": 50,
+      "focalY": 50,
+      "approvalStatus": "approved",
+      "reviewedAt": "2026-11-09T00:00:00Z",
+      "reviewNote": "Individually reviewed Commons creator/licence and named subject against the exact venue registry; source photograph visually inspected. Archival architecture/branding is not a claim of current stadium condition. Responsive crop focal point reviewed. Source date: 2012-08-07 13:57:41.",
+      "placements": [
+        {
+          "subjectType": "stadium",
+          "country": "Netherlands",
+          "city": "Rotterdam",
+          "stadium": "Sparta Stadion Het Kasteel",
+          "alt": "Sparta Stadion Het Kasteel, Rotterdam"
+        }
+      ]
     }
   ]
 }
