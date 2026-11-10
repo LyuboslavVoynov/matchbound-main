@@ -3,6 +3,13 @@ import manifest from "../data/creatives/manifest.json";
 import { approvedCreativeUrl,creativeObjectKey,creativePublicUrl,creativeSubjectKey,reusableCreativeLicense,validateCreativeManifest,type CreativeManifest } from "@/domain/creative-library";
 const valid=manifest as CreativeManifest;
 describe("curated creative publication gates",()=>{
+ it("permits unplaced assets only in explicit asset-only mode while retaining licence gates",()=>{
+  const m=structuredClone(valid);m.assets[0].placements=[];
+  expect(validateCreativeManifest(m).join()).toContain("at least one placement");
+  expect(validateCreativeManifest(m,{allowUnplacedAssets:true})).toEqual([]);
+  m.assets[0].licenseName="CC BY-NC 4.0";
+  expect(validateCreativeManifest(m,{allowUnplacedAssets:true}).join()).toContain("reusable licence");
+ });
  it("validates reviewed sources and every exact placement in the local collection",()=>{expect(validateCreativeManifest(valid)).toEqual([])});
  it("normalizes accents without borrowing another stadium or country",()=>{
   const venue={subjectType:"stadium" as const,country:"Spain",city:"Bilbao",stadium:"San Mamés"};

@@ -25,7 +25,10 @@
     "db:diagnose": "tsx scripts/diagnose-db.ts",
     "creatives:sync": "tsx scripts/sync-creatives.ts",
     "creatives:coverage": "tsx scripts/creative-coverage.ts",
-    "beers:import": "tsx scripts/import-beer-catalogue.ts"
+    "beers:import": "tsx scripts/import-beer-catalogue.ts",
+    "beer-artwork:validate": "tsx scripts/validate-beer-artwork.ts",
+    "beer-artwork:import": "tsx scripts/import-beer-artwork.ts",
+    "prebuild": "npm run beer-artwork:validate"
   },
   "dependencies": {
     "dotenv": "^16.6.1",

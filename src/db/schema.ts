@@ -183,3 +183,11 @@ export const beerProducts = pgTable("beer_products", {
   approvalStatus: beerBrandApprovalStatus("approval_status").notNull().default("pending"),
   active: boolean("active").notNull().default(true),
 }, (table) => [uniqueIndex("beer_product_brewery_name_idx").on(table.breweryId, table.normalizedName)]).enableRLS();
+
+/** Beer mappings reuse reviewed/published creative assets without inventing place subjects. */
+export const beerProductArtwork = pgTable("beer_product_artwork", {
+  productId: text("product_id").primaryKey().references(() => beerProducts.id),
+  assetId: text("asset_id").notNull().references(() => creativeAssets.id),
+  kind: text("kind", { enum: ["product-photo", "product-logo", "brewery-logo"] }).notNull(),
+  active: boolean("active").notNull().default(true),
+}).enableRLS();

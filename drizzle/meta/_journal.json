@@ -127,6 +127,13 @@
       "when": 1794225127923,
       "tag": "0017_beer_product_catalogue",
       "breakpoints": true
+    },
+    {
+      "idx": 18,
+      "version": "7",
+      "when": 1794247277021,
+      "tag": "0018_beer_product_artwork",
+      "breakpoints": true
     }
   ]
 }
