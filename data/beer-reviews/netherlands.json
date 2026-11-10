@@ -1,0 +1,16 @@
+{
+  "reviewedAt": "2026-11-10T00:00:00Z",
+  "rangeSources": [
+    "https://www.brouwerijhetij.nl/onze-bieren",
+    "https://www.texels.nl/bieren",
+    "https://www.trappist.be/en/products/beers/la-trappe/"
+  ],
+  "decisions": [
+    "Brouwerij 't IJ: eight products listed in Vaste bieren; product pages supply alcohol values. Current 't Gouden IJ is 6.8%, NIJPA 6.2%, Blondie 5.8%; do not substitute older strengths.",
+    "Texels: seven named products from the current range. Zeebries and Tuunwal Tripel are current names for the former Blond and Tripel; no duplicate alias products. The brewery reports production on Texel and the Dutch mainland, so this catalogue makes no claim that every bottle is brewed on the island.",
+    "La Trappe: five products and alcohol values verified directly in the International Trappist Association's producer listing. Its abbey directory identifies Koningshoeven in Berkel-Enschot, Netherlands. The brewery website returned an age-gate page, which was not treated as a product specification. This producer association is the recorded primary source; no guessed individual product URL. Style remains null where not explicitly established.",
+    "Excluded alcohol-free Vrijwit, Free IPA, Texels Skuumkoppe 0.0, La Trappe Epos and Nillis. Excluded seasonal/occasional, secret, aged and collaboration batches rather than model uncertain availability or batch-varying strength.",
+    "Product pages establish names, origin and facts, not image reuse permission. No new logos or photos are included; preserve the Matchbound seal.",
+    "Country-level selection describes a Dutch beer, not a promise of city-specific or venue availability. Existing product snapshots remain immutable."
+  ]
+}
