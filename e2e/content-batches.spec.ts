@@ -27,11 +27,12 @@ for(const target of [{country:"Netherlands",city:"Amsterdam",ground:678},{countr
    await expect(photo).toHaveAttribute("src",new RegExp(target.country==="Netherlands"?"ded-stadium-"+target.ground+"-v1":"ppl-stadium-rio-maior-v1"));
    await expect.poll(()=>photo.evaluate(i=>(i as HTMLImageElement).naturalWidth)).toBeGreaterThan(0);
    await page.getByText("Photo credit",{exact:true}).click();await expect(page.locator(".fixture-photo-credit")).toContainText(/CC BY|CC0/);
-   if(target.country==="Portugal"){
-    expect(beerSignals?.countryBrand?.productId).toMatch(/^pt-/);
+   {
+    expect(beerSignals?.countryBrand?.productId).toMatch(target.country==="Portugal"?/^pt-/:/^nl-/);
     await page.emulateMedia({reducedMotion:"reduce"});await page.getByRole("button",{name:"Reveal my beer"}).click();
     await expect(page.locator(".beer-ticket h2")).toHaveText(beerSignals!.countryBrand!.brandName);
     await expect(page.locator(".beer-ticket")).toContainText(beerSignals!.countryBrand!.abvBasisPoints!/100+"% ABV");
+    await expect(page.locator(".beer-ticket .beer-seal")).toBeVisible();
     await page.reload();await expect(page.locator(".beer-ticket")).toHaveAttribute("data-beer-state","revealed");
    }
    expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
