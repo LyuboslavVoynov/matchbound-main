@@ -1,0 +1,22 @@
+{
+  "reviewedAt": "2026-11-10T00:00:00Z",
+  "rangeSources": [
+    "https://www.mahou-sanmiguel.com/es-es/nuestras-marcas",
+    "https://www.cervezasalhambra.com/es/nuestras-cervezas",
+    "https://moritz.com/en/moritz-classic-beers",
+    "https://bigcrafters.com/collections/marca-cervezas-1906"
+  ],
+  "additionalFactSources": [
+    "https://portal.estrellagalicia.es/beermaster/cultura-cervecera/"
+  ],
+  "decisions": [
+    "Mahou: eight distinct current producer-listed products, corroborated by individual official store specifications. Maestra is the producer's Mahou Maestra / Maestra de Mahou, stored once; Maestra Dunkel is separate. Sin Gluten and Sin Filtrar are distinct formulations, not bottle-size variants. Packaging and pack size do not create extra products.",
+    "Alhambra: four current beers verified on individual brewery pages. Current name Reserva Roja, not a second entry alongside Roja. Reserva Esencia Citra IPA is 6.5%, not a guessed 6.3%. The official shop redirect for Citra was not treated as a product specification; the brewery product page supplies facts.",
+    "Moritz: four current products verified directly in the producer store. Moritz 7 is a name, not an alcohol percentage: it is 5.5%. Bruta Unfiltered is 5.6%, Original 5.4%, Epidor 7.2%. Several fields were absent from an earlier rendered extract; the actual Alcohol content / % Alcohol specifications establish the values. Styles use the producer's own labels.",
+    "Estrella Galicia / Hijos de Rivera: Especial plus three distinct 1906 products. The official store now calls Reserva Especial '1906 La Milnueve'; retain one product, not separate aliases or bottle/can variants. Product specifications name the manufacturer in A Coruña, España. Alcohol and styles are corroborated by the producer's public beermaster training catalogue; direct retrieval of that training page returned 503, so its indexed primary text was used alongside accessible current product pages.",
+    "Origin evidence: Mahou's producer information lists Madrid, España; Alhambra's brewery page links its Granada factory and origin; Moritz's official range and store describe Barcelona; Hijos de Rivera's product manufacturer address explicitly lists A Coruña, España. Brand origins establish Spain; no city-specific brewing or pub availability is promised.",
+    "Excluded imports from the mixed corporate portfolio (including Founders, Corona, Budweiser, Leffe); no beer becomes Spanish merely because a Spanish distributor stocks it. San Miguel was not used to avoid conflating its international brand history with this domestic-origin batch.",
+    "Excluded alcohol-free/low-alcohol lines, Radler/shandy mixes, barrel/numbered/secret editions, collaborations and cider. Record concise factual metadata only, not copied marketing descriptions or medical/dietary suitability advice.",
+    "No artwork is downloaded or licensed by these factual source pages. All twenty products retain the existing Matchbound seal until exact product artwork is separately approved. Existing saved draws and city prices remain independent."
+  ]
+}
