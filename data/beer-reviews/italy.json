@@ -1,0 +1,16 @@
+{
+  "reviewedAt": "2026-11-11T00:00:00Z",
+  "rangeSources": [
+    "https://www.baladin.it/",
+    "https://www.birrificiodelducato.it/birre/",
+    "https://www.birrificioangeloporetti.it/it/birre"
+  ],
+  "decisions": [
+    "Baladin: seven named non-special core beers, each verified on its individual brewery product page. The text extractor omits numeric specification values because the public page writes them from carString.split(';'). Read the actual public HTML specification string and the Grado alcolico document.write(caratteristiche[0]) mapping without executing page scripts. Values in order: Nazionale 6.5%, Isaac 5%, Wayan 5.8%, Nora 6.8%, Super 8%, Leon 8.5%, L'ippa 5.5%. Do not substitute an older 9% value for Leon. Product styles are explicit on the respective brewery pages.",
+    "Ducato: all nine beers are listed in the current Italian brewery range with styles and alcohol values. A.F.O. has changed from its old Amber Ale formulation to Session IPA at 4.7%; White Riot is 4%. Current product pages corroborate accessible entries. Machete, Onirika and Futura individual links returned temporary retrieval errors; their sourceUrl uses the accessible authoritative range page instead of claiming those individual pages were verified.",
+    "Poretti: four distinct beers from current Italian producer pages. Numbers count hop varieties, not alcohol: 3 Luppoli is 4.8%, 4 Luppoli L'Originale is currently 5.0%, 5 Luppoli Doppio Malto Chiara 6.5%, 6 Luppoli Doppio Malto Rossa 7.0%. Use these Italian specifications rather than older/export retailer values. Bottles, cans and kegs are formats of the same product.",
+    "Origin evidence: Baladin's own site describes its Piozzo, Italy origins and Italian brewing; Ducato's history identifies Parma/Soragna production; Carlsberg Italia's own history places Poretti's founding brewery in Induno Olona near Varese. Corporate parent nationality, foreign-inspired styles and spice names do not determine beer origin. No city-specific pub or stadium availability is promised.",
+    "Excluded Duvel and Chouffe imports even though Ducato distributes them. Excluded Baladin specials, seasonal/aged/reserve/collaboration releases, alcohol-free and Radler/shandy products, spirits and soft drinks. Marketing descriptions, ingredients and dietary claims are not copied.",
+    "No image reuse permission is inferred from producer pages. No product logos/photos are downloaded; the Matchbound seal remains until exact artwork is separately approved. Saved beer selections, legacy brands and independent city prices remain intact."
+  ]
+}
