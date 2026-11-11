@@ -1,0 +1,19 @@
+{
+  "reviewedAt": "2026-11-11T00:00:00Z",
+  "rangeSources": [
+    "https://www.3monts.fr/marques/3-monts/",
+    "https://www.3monts.fr/marques/du-moulin/",
+    "https://www.brasserie-montblanc.com/bieres-de-degustation/",
+    "https://www.brasserie-montblanc.com/bieres-desalterantes/",
+    "https://brasserie-goudale.com/nos-marques/la-goudale-fr/"
+  ],
+  "decisions": [
+    "3 Monts: six current 3 Monts recipes and four Du Moulin recipes from the same domestic brewery, each counted once across formats. Primary range pages supply alcohol values: Triple 9.5%, IPA 5.6%, Du Moulin Session IPA 4.3%, Du Moulin Bock 3.9%. Numbers in the producer name do not encode strength. Saison is included as a current named range product, not an ephemeral/seasonal release; its formal style is left null because the page only labels it a blonde tasting beer.",
+    "Mont Blanc: six selected beers verified on individual producer pages. Actual current specifications: La Neipa 4.7%, Triple Epices 7.2%, La Cristal 4.7%, La Blanche 4.7%, La Blonde 5.8%, La Rousse 6.5%. Current La Cristal is labelled Pale Ale by the producer; do not relabel it a lager from colour/name. Belgian Blonde Ale and Witbier describe style, not Belgian origin. Regional packaging exclusivity does not create another product or promise local availability.",
+    "Mont Blanc's old Python TLS client could not connect. A modern Node HTTPS client retrieved the public pages with normal certificate verification; specifications were read from actual HTML without disabling security. La Cristal IPA was not included because its returned specification extract did not establish an alcohol value during review; no value was guessed.",
+    "Goudale: four current La Goudale beers checked on individual producer pages: Blonde, Ambree and IPA are 7.2%; Hop Lager is 5.2%. Producer colour/type labels are retained conservatively rather than imposing an unsupported formal style. These are different recipes, not bottle/can/pack-size duplicates.",
+    "Origin: 3 Monts identifies its French Flanders brewery in Saint-Sylvestre-Cappel; Mont Blanc's contact/product pages give La Motte-Servolex, FRANCE; Goudale identifies its French brewery and Arques address. Product source URLs establish facts, not reuse rights for logos or photos.",
+    "Excluded imported portfolio brands, alcohol-free ranges, soft drinks, Radler/shandy or spirit/fruit mixed-drink lines, barrel-aged/reserve and ephemeral/seasonal editions. Excluding uncertain selections does not claim they are not beers; it keeps this first batch within verified scope. No copied marketing descriptions or dietary suitability claims.",
+    "All twenty products retain the Matchbound seal until exact approved artwork exists. No logos/photos are downloaded in this batch. Country selection does not promise pub/stadium stock, and city-average prices remain independent. Saved draws and existing legacy brands remain intact."
+  ]
+}
