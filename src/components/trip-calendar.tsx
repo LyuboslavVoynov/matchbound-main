@@ -77,7 +77,7 @@ export function TripCalendar({ startDate, endDate, onChange, disabled, hasError,
     </div>
     <button type="button" className="calendar-clear" onClick={() => { setOpen(false); (selecting === "start" ? startRef : endRef).current?.focus(); }}>Close calendar</button>
     </div>
-    <div className="calendar-selection" id="calendar-selection" role="status" aria-live="polite" aria-atomic="true"><span>{count ? `${shortDate.format(asDate(startDate))} – ${shortDate.format(asDate(endDate))}` : prompt}</span>{count > 0 && <strong>{count} calendar {count === 1 ? "day" : "days"}</strong>}</div>
+    <div className={`calendar-selection ${!open && !count ? "calendar-selection--idle" : ""}`} id="calendar-selection" role="status" aria-live="polite" aria-atomic="true"><span>{count ? `${shortDate.format(asDate(startDate))} – ${shortDate.format(asDate(endDate))}` : prompt}</span>{count > 0 && <strong>{count} calendar {count === 1 ? "day" : "days"}</strong>}</div>
     {(startDate || endDate) && <button type="button" className="calendar-clear" disabled={disabled} onClick={() => { onChange("", ""); setSelecting("start"); setOpen(false); startRef.current?.focus(); }}>Clear dates</button>}
   </div>;
 }
