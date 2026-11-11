@@ -19,3 +19,34 @@
 @keyframes journal-stadium-arrive{from{opacity:0;clip-path:inset(100% 0 0 0)}to{opacity:1;clip-path:inset(0 0 0 0)}}
 @keyframes journal-clubs-arrive{from{opacity:0;transform:translateY(65px) rotate(-3deg);transform-origin:50% 100%}to{opacity:1;transform:none;transform-origin:50% 100%}}
 @media(prefers-reduced-motion:reduce){.journal-live-card,.journal-live-card *{animation:none!important}}
+
+/* Fit the closed card to the stable Safari viewport; shrink art before text.
+   Credits and unusually long text remain naturally scrollable, never clipped. */
+@media(max-width:600px){
+ .journal-reveal{padding:0 16px max(12px,env(safe-area-inset-bottom));overflow-x:clip}
+ .journal-live-header{padding:16px 0;min-height:54px;flex:none}
+ .journal-live-card{margin:12px auto 0;padding:16px 18px 12px;display:flex;flex-direction:column;min-height:0;max-height:calc(100svh - 92px - env(safe-area-inset-bottom))}
+ .journal-live-card:has(details[open]){max-height:none}
+ .journal-live-progress{margin-bottom:16px;flex:none}
+ .journal-live-chapter{padding-top:10px;font-size:8px;flex:none}
+ .journal-live-card h2{font-size:clamp(30px,5.5svh,38px);letter-spacing:-1.3px;margin-top:12px;flex:none}
+ .journal-live-card h2:after{height:4px;margin-top:10px}
+ .journal-live-label{font-size:8px;margin:12px 0;flex:none}
+ .journal-live-art{min-height:0;flex:1 1 auto}
+ .journal-live-photo{display:flex;flex-direction:column}
+ .journal-live-photo>img{height:clamp(120px,calc(100svh - 405px),240px);min-height:0;flex:1 1 auto;object-fit:cover}
+ .journal-live-photo figcaption{font-size:9px;padding:8px 0;gap:10px;flex:none}
+ .journal-editorial,.journal-clubs{min-height:0;height:clamp(150px,calc(100svh - 390px),260px)}
+ .journal-editorial{padding:20px}
+ .journal-editorial>strong{font-size:clamp(26px,4.7svh,34px)}
+ .journal-editorial>p{margin-top:12px}
+ .journal-league{padding:16px 12px;gap:16px}
+ .journal-league>.identity-emblem{width:clamp(68px,15svh,112px);height:clamp(68px,15svh,112px)}
+ .journal-league>strong,.journal-ground-lines+strong{display:none}
+ .journal-league>p{margin:0}
+ .journal-clubs{padding-top:8px;height:auto;min-height:min-content;flex:0 0 auto}
+ .journal-clubs .crest-slot{width:clamp(58px,12svh,80px);height:clamp(58px,12svh,80px);margin-bottom:10px}
+ .journal-clubs .clubname{font-size:13px}
+ .journal-clubs>p{font-size:26px;margin:20px 0 10px}
+ .journal-live-caption{font-size:12px;margin-top:10px;padding-top:10px;flex:none}
+}
