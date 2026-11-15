@@ -1,0 +1,16 @@
+{
+  "reviewedAt": "2026-11-15T00:00:00Z",
+  "rangeSources": [
+    "https://www.timothytaylor.co.uk/our-beers",
+    "https://www.theakstons.co.uk/",
+    "https://www.staustellbrewery.co.uk/our-breweries"
+  ],
+  "decisions": [
+    "Twenty distinct current beers from three English breweries. GB is the country code; England is the origin nation. Scotland, Wales and Northern Ireland are not pooled with England.",
+    "Timothy Taylor's: seven current beers listed in the Keighley brewery's range. Blonde is the current producer name; do not add its former Knowle Spring identity as another product. Golden Best 3.4%, Blonde 3.8%, Stout 4.2%, Hopical Storm 4.0%. Landlord and Landlord Dark show 4.3% cask versus 4.1% bottle; Boltmaker shows 4.0% cask versus 4.2% bottle. Their ABVs stay null because the ticket does not select a serving format. Style labels summarize factual producer categories, not copied tasting prose.",
+    "Theakston: Masham, Yorkshire origin verified on the brewery homepage. Best Bitter 3.8%, Lightfoot 4.1%, XB 4.5%, Barista Stout 4.2%, Pale 4.5%, Quencher 3.4%. Current Pale page specifies 4.5%; do not use an older 4.0% trade listing. Lightfoot is explicitly a permanent year-round beer despite its former seasonal history. Quencher source is the current producer shop page.",
+    "St Austell Brewery: Cornwall and Bristol brewing locations verified on the producer's breweries page. Seven year-round products: Tribute 4.2%, Korev 4.8%, Mena Dhu 4.5%, Hicks 5.0%, Big Job 7.2%, Anthem 3.4%. Current Anthem specification and shop agree on 3.4%; older launch news says 3.8% and is not the specification used. Proper Job shows cask/keg 4.5% versus bottle/can 5.5%, so its ABV remains null. Distinct recipes count once across packaging.",
+    "No imported portfolio products, cider, mixed drinks, alcohol-free, seasonal or limited/reserve releases. No dietary claims or copied marketing prose. Product facts and source links do not license logos/photos; all twenty retain the existing Matchbound seal pending approved exact-product artwork.",
+    "Country selection does not promise pub or stadium stock. City-average prices remain independent. Existing saved draws and legacy brands are preserved by the additive importer."
+  ]
+}
