@@ -1,0 +1,531 @@
+{
+  "league": "BL1",
+  "status": "research-only",
+  "tasks": [
+    {
+      "subjectKey": "[\"city\",\"germany\",\"zuzenhausen\"]",
+      "subject": {
+        "subjectType": "city",
+        "country": "Germany",
+        "city": "Zuzenhausen",
+        "alt": ""
+      },
+      "providerTeamIds": [
+        2
+      ],
+      "verificationUrls": [
+        "https://api.football-data.org/v4/teams/2"
+      ],
+      "status": "needs-source",
+      "searchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Germany%20Zuzenhausen%20landmark"
+    },
+    {
+      "subjectKey": "[\"stadium\",\"germany\",\"zuzenhausen\",\"prezero arena\"]",
+      "subject": {
+        "subjectType": "stadium",
+        "country": "Germany",
+        "city": "Zuzenhausen",
+        "stadium": "PreZero Arena",
+        "alt": ""
+      },
+      "providerTeamIds": [
+        2
+      ],
+      "verificationUrls": [
+        "https://api.football-data.org/v4/teams/2"
+      ],
+      "status": "needs-source",
+      "searchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Germany%20Zuzenhausen%20PreZero%20Arena"
+    },
+    {
+      "subjectKey": "[\"city\",\"germany\",\"leverkusen\"]",
+      "subject": {
+        "subjectType": "city",
+        "country": "Germany",
+        "city": "Leverkusen",
+        "alt": ""
+      },
+      "providerTeamIds": [
+        3
+      ],
+      "verificationUrls": [
+        "https://api.football-data.org/v4/teams/3"
+      ],
+      "status": "needs-source",
+      "searchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Germany%20Leverkusen%20landmark"
+    },
+    {
+      "subjectKey": "[\"stadium\",\"germany\",\"leverkusen\",\"bayarena\"]",
+      "subject": {
+        "subjectType": "stadium",
+        "country": "Germany",
+        "city": "Leverkusen",
+        "stadium": "BayArena",
+        "alt": ""
+      },
+      "providerTeamIds": [
+        3
+      ],
+      "verificationUrls": [
+        "https://api.football-data.org/v4/teams/3"
+      ],
+      "status": "needs-source",
+      "searchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Germany%20Leverkusen%20BayArena"
+    },
+    {
+      "subjectKey": "[\"city\",\"germany\",\"gelsenkirchen\"]",
+      "subject": {
+        "subjectType": "city",
+        "country": "Germany",
+        "city": "Gelsenkirchen",
+        "alt": ""
+      },
+      "providerTeamIds": [
+        6
+      ],
+      "verificationUrls": [
+        "https://api.football-data.org/v4/teams/6"
+      ],
+      "status": "needs-source",
+      "searchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Germany%20Gelsenkirchen%20landmark"
+    },
+    {
+      "subjectKey": "[\"stadium\",\"germany\",\"gelsenkirchen\",\"veltins-arena\"]",
+      "subject": {
+        "subjectType": "stadium",
+        "country": "Germany",
+        "city": "Gelsenkirchen",
+        "stadium": "Veltins-Arena",
+        "alt": ""
+      },
+      "providerTeamIds": [
+        6
+      ],
+      "verificationUrls": [
+        "https://api.football-data.org/v4/teams/6"
+      ],
+      "status": "needs-source",
+      "searchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Germany%20Gelsenkirchen%20Veltins-Arena"
+    },
+    {
+      "subjectKey": "[\"city\",\"germany\",\"hamburg\"]",
+      "subject": {
+        "subjectType": "city",
+        "country": "Germany",
+        "city": "Hamburg",
+        "alt": ""
+      },
+      "providerTeamIds": [
+        7
+      ],
+      "verificationUrls": [
+        "https://api.football-data.org/v4/teams/7"
+      ],
+      "status": "needs-source",
+      "searchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Germany%20Hamburg%20landmark"
+    },
+    {
+      "subjectKey": "[\"stadium\",\"germany\",\"hamburg\",\"volksparkstadion\"]",
+      "subject": {
+        "subjectType": "stadium",
+        "country": "Germany",
+        "city": "Hamburg",
+        "stadium": "Volksparkstadion",
+        "alt": ""
+      },
+      "providerTeamIds": [
+        7
+      ],
+      "verificationUrls": [
+        "https://api.football-data.org/v4/teams/7"
+      ],
+      "status": "needs-source",
+      "searchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Germany%20Hamburg%20Volksparkstadion"
+    },
+    {
+      "subjectKey": "[\"city\",\"germany\",\"stuttgart\"]",
+      "subject": {
+        "subjectType": "city",
+        "country": "Germany",
+        "city": "Stuttgart",
+        "alt": ""
+      },
+      "providerTeamIds": [
+        10
+      ],
+      "verificationUrls": [
+        "https://api.football-data.org/v4/teams/10"
+      ],
+      "status": "needs-source",
+      "searchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Germany%20Stuttgart%20landmark"
+    },
+    {
+      "subjectKey": "[\"stadium\",\"germany\",\"stuttgart\",\"mercedes-benz arena\"]",
+      "subject": {
+        "subjectType": "stadium",
+        "country": "Germany",
+        "city": "Stuttgart",
+        "stadium": "Mercedes-Benz Arena",
+        "alt": ""
+      },
+      "providerTeamIds": [
+        10
+      ],
+      "verificationUrls": [
+        "https://api.football-data.org/v4/teams/10"
+      ],
+      "status": "needs-source",
+      "searchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Germany%20Stuttgart%20Mercedes-Benz%20Arena"
+    },
+    {
+      "subjectKey": "[\"city\",\"germany\",\"bremen\"]",
+      "subject": {
+        "subjectType": "city",
+        "country": "Germany",
+        "city": "Bremen",
+        "alt": ""
+      },
+      "providerTeamIds": [
+        12
+      ],
+      "verificationUrls": [
+        "https://api.football-data.org/v4/teams/12"
+      ],
+      "status": "needs-source",
+      "searchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Germany%20Bremen%20landmark"
+    },
+    {
+      "subjectKey": "[\"stadium\",\"germany\",\"bremen\",\"weserstadion\"]",
+      "subject": {
+        "subjectType": "stadium",
+        "country": "Germany",
+        "city": "Bremen",
+        "stadium": "Weserstadion",
+        "alt": ""
+      },
+      "providerTeamIds": [
+        12
+      ],
+      "verificationUrls": [
+        "https://api.football-data.org/v4/teams/12"
+      ],
+      "status": "needs-source",
+      "searchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Germany%20Bremen%20Weserstadion"
+    },
+    {
+      "subjectKey": "[\"city\",\"germany\",\"mainz\"]",
+      "subject": {
+        "subjectType": "city",
+        "country": "Germany",
+        "city": "Mainz",
+        "alt": ""
+      },
+      "providerTeamIds": [
+        15
+      ],
+      "verificationUrls": [
+        "https://api.football-data.org/v4/teams/15"
+      ],
+      "status": "needs-source",
+      "searchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Germany%20Mainz%20landmark"
+    },
+    {
+      "subjectKey": "[\"stadium\",\"germany\",\"mainz\",\"mewa arena\"]",
+      "subject": {
+        "subjectType": "stadium",
+        "country": "Germany",
+        "city": "Mainz",
+        "stadium": "MEWA ARENA",
+        "alt": ""
+      },
+      "providerTeamIds": [
+        15
+      ],
+      "verificationUrls": [
+        "https://api.football-data.org/v4/teams/15"
+      ],
+      "status": "needs-source",
+      "searchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Germany%20Mainz%20MEWA%20ARENA"
+    },
+    {
+      "subjectKey": "[\"city\",\"germany\",\"augsburg\"]",
+      "subject": {
+        "subjectType": "city",
+        "country": "Germany",
+        "city": "Augsburg",
+        "alt": ""
+      },
+      "providerTeamIds": [
+        16
+      ],
+      "verificationUrls": [
+        "https://api.football-data.org/v4/teams/16"
+      ],
+      "status": "needs-source",
+      "searchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Germany%20Augsburg%20landmark"
+    },
+    {
+      "subjectKey": "[\"stadium\",\"germany\",\"augsburg\",\"wwk arena\"]",
+      "subject": {
+        "subjectType": "stadium",
+        "country": "Germany",
+        "city": "Augsburg",
+        "stadium": "WWK Arena",
+        "alt": ""
+      },
+      "providerTeamIds": [
+        16
+      ],
+      "verificationUrls": [
+        "https://api.football-data.org/v4/teams/16"
+      ],
+      "status": "needs-source",
+      "searchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Germany%20Augsburg%20WWK%20Arena"
+    },
+    {
+      "subjectKey": "[\"city\",\"germany\",\"freiburg\"]",
+      "subject": {
+        "subjectType": "city",
+        "country": "Germany",
+        "city": "Freiburg",
+        "alt": ""
+      },
+      "providerTeamIds": [
+        17
+      ],
+      "verificationUrls": [
+        "https://api.football-data.org/v4/teams/17"
+      ],
+      "status": "needs-source",
+      "searchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Germany%20Freiburg%20landmark"
+    },
+    {
+      "subjectKey": "[\"stadium\",\"germany\",\"freiburg\",\"europa-park stadion\"]",
+      "subject": {
+        "subjectType": "stadium",
+        "country": "Germany",
+        "city": "Freiburg",
+        "stadium": "Europa-Park Stadion",
+        "alt": ""
+      },
+      "providerTeamIds": [
+        17
+      ],
+      "verificationUrls": [
+        "https://api.football-data.org/v4/teams/17"
+      ],
+      "status": "needs-source",
+      "searchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Germany%20Freiburg%20Europa-Park%20Stadion"
+    },
+    {
+      "subjectKey": "[\"city\",\"germany\",\"monchengladbach\"]",
+      "subject": {
+        "subjectType": "city",
+        "country": "Germany",
+        "city": "Mönchengladbach",
+        "alt": ""
+      },
+      "providerTeamIds": [
+        18
+      ],
+      "verificationUrls": [
+        "https://api.football-data.org/v4/teams/18"
+      ],
+      "status": "needs-source",
+      "searchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Germany%20M%C3%B6nchengladbach%20landmark"
+    },
+    {
+      "subjectKey": "[\"stadium\",\"germany\",\"monchengladbach\",\"stadion im borussia-park\"]",
+      "subject": {
+        "subjectType": "stadium",
+        "country": "Germany",
+        "city": "Mönchengladbach",
+        "stadium": "Stadion im Borussia-Park",
+        "alt": ""
+      },
+      "providerTeamIds": [
+        18
+      ],
+      "verificationUrls": [
+        "https://api.football-data.org/v4/teams/18"
+      ],
+      "status": "needs-source",
+      "searchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Germany%20M%C3%B6nchengladbach%20Stadion%20im%20Borussia-Park"
+    },
+    {
+      "subjectKey": "[\"city\",\"germany\",\"frankfurt am main\"]",
+      "subject": {
+        "subjectType": "city",
+        "country": "Germany",
+        "city": "Frankfurt am Main",
+        "alt": ""
+      },
+      "providerTeamIds": [
+        19
+      ],
+      "verificationUrls": [
+        "https://api.football-data.org/v4/teams/19"
+      ],
+      "status": "needs-source",
+      "searchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Germany%20Frankfurt%20am%20Main%20landmark"
+    },
+    {
+      "subjectKey": "[\"stadium\",\"germany\",\"frankfurt am main\",\"deutsche bank park\"]",
+      "subject": {
+        "subjectType": "stadium",
+        "country": "Germany",
+        "city": "Frankfurt am Main",
+        "stadium": "Deutsche Bank Park",
+        "alt": ""
+      },
+      "providerTeamIds": [
+        19
+      ],
+      "verificationUrls": [
+        "https://api.football-data.org/v4/teams/19"
+      ],
+      "status": "needs-source",
+      "searchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Germany%20Frankfurt%20am%20Main%20Deutsche%20Bank%20Park"
+    },
+    {
+      "subjectKey": "[\"city\",\"germany\",\"berlin\"]",
+      "subject": {
+        "subjectType": "city",
+        "country": "Germany",
+        "city": "Berlin",
+        "alt": ""
+      },
+      "providerTeamIds": [
+        28
+      ],
+      "verificationUrls": [
+        "https://api.football-data.org/v4/teams/28"
+      ],
+      "status": "needs-source",
+      "searchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Germany%20Berlin%20landmark"
+    },
+    {
+      "subjectKey": "[\"stadium\",\"germany\",\"berlin\",\"stadion an der alten forsterei\"]",
+      "subject": {
+        "subjectType": "stadium",
+        "country": "Germany",
+        "city": "Berlin",
+        "stadium": "Stadion An der Alten Försterei",
+        "alt": ""
+      },
+      "providerTeamIds": [
+        28
+      ],
+      "verificationUrls": [
+        "https://api.football-data.org/v4/teams/28"
+      ],
+      "status": "needs-source",
+      "searchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Germany%20Berlin%20Stadion%20An%20der%20Alten%20F%C3%B6rsterei"
+    },
+    {
+      "subjectKey": "[\"city\",\"germany\",\"paderborn\"]",
+      "subject": {
+        "subjectType": "city",
+        "country": "Germany",
+        "city": "Paderborn",
+        "alt": ""
+      },
+      "providerTeamIds": [
+        29
+      ],
+      "verificationUrls": [
+        "https://api.football-data.org/v4/teams/29"
+      ],
+      "status": "needs-source",
+      "searchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Germany%20Paderborn%20landmark"
+    },
+    {
+      "subjectKey": "[\"stadium\",\"germany\",\"paderborn\",\"home deluxe arena\"]",
+      "subject": {
+        "subjectType": "stadium",
+        "country": "Germany",
+        "city": "Paderborn",
+        "stadium": "Home Deluxe Arena",
+        "alt": ""
+      },
+      "providerTeamIds": [
+        29
+      ],
+      "verificationUrls": [
+        "https://api.football-data.org/v4/teams/29"
+      ],
+      "status": "needs-source",
+      "searchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Germany%20Paderborn%20Home%20Deluxe%20Arena"
+    },
+    {
+      "subjectKey": "[\"city\",\"germany\",\"spiesen-elversberg\"]",
+      "subject": {
+        "subjectType": "city",
+        "country": "Germany",
+        "city": "Spiesen-Elversberg",
+        "alt": ""
+      },
+      "providerTeamIds": [
+        719
+      ],
+      "verificationUrls": [
+        "https://api.football-data.org/v4/teams/719"
+      ],
+      "status": "needs-source",
+      "searchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Germany%20Spiesen-Elversberg%20landmark"
+    },
+    {
+      "subjectKey": "[\"stadium\",\"germany\",\"spiesen-elversberg\",\"ursapharm-arena an der kaiserlinde\"]",
+      "subject": {
+        "subjectType": "stadium",
+        "country": "Germany",
+        "city": "Spiesen-Elversberg",
+        "stadium": "Ursapharm-Arena an der Kaiserlinde",
+        "alt": ""
+      },
+      "providerTeamIds": [
+        719
+      ],
+      "verificationUrls": [
+        "https://api.football-data.org/v4/teams/719"
+      ],
+      "status": "needs-source",
+      "searchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Germany%20Spiesen-Elversberg%20Ursapharm-Arena%20an%20der%20Kaiserlinde"
+    },
+    {
+      "subjectKey": "[\"city\",\"germany\",\"leipzig\"]",
+      "subject": {
+        "subjectType": "city",
+        "country": "Germany",
+        "city": "Leipzig",
+        "alt": ""
+      },
+      "providerTeamIds": [
+        721
+      ],
+      "verificationUrls": [
+        "https://api.football-data.org/v4/teams/721"
+      ],
+      "status": "needs-source",
+      "searchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Germany%20Leipzig%20landmark"
+    },
+    {
+      "subjectKey": "[\"stadium\",\"germany\",\"leipzig\",\"red bull arena\"]",
+      "subject": {
+        "subjectType": "stadium",
+        "country": "Germany",
+        "city": "Leipzig",
+        "stadium": "Red Bull Arena",
+        "alt": ""
+      },
+      "providerTeamIds": [
+        721
+      ],
+      "verificationUrls": [
+        "https://api.football-data.org/v4/teams/721"
+      ],
+      "status": "needs-source",
+      "searchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Germany%20Leipzig%20Red%20Bull%20Arena"
+    }
+  ]
+}
