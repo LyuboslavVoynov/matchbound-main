@@ -2146,6 +2146,183 @@
           "alt": "Sparta Stadion Het Kasteel, Rotterdam"
         }
       ]
+    },
+    {
+      "id": "bl1-munich-city-v1",
+      "localPath": "public/creatives/bl1/munich-city.webp",
+      "title": "München Neues Rathaus.jpg",
+      "creator": "Intermerker",
+      "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:M%C3%BCnchen_Neues_Rathaus.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1b/M%C3%BCnchen_Neues_Rathaus.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "licenseName": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "attribution": "München Neues Rathaus.jpg — Intermerker, CC BY-SA 4.0; via Wikimedia Commons.",
+      "transformationNote": "Resized and WebP-compressed; responsive display crop; no retouching. Derivative retains the source licence.",
+      "sha256": "45e1b249afac23670b12a241027cd47f143ef8074d793174680a9762e52151b0",
+      "width": 1067,
+      "height": 1600,
+      "bytes": 214294,
+      "focalX": 50,
+      "focalY": 0,
+      "approvalStatus": "approved",
+      "placements": [
+        {
+          "subjectType": "city",
+          "country": "Germany",
+          "city": "Munich",
+          "alt": "New Town Hall at Marienplatz, Munich"
+        }
+      ],
+      "reviewNote": "Source date: 9 March 2024 (according to Exif data). Source description, creator, reusable licence and downloaded photograph visually reviewed. Exact named landmark/ground confirmed; older imagery is archival and does not claim current conditions.",
+      "reviewedAt": "2026-11-15T00:00:00Z"
+    },
+    {
+      "id": "bl1-munich-stadium-v1",
+      "localPath": "public/creatives/bl1/munich-stadium.webp",
+      "title": "Allianz Arena.jpg",
+      "creator": "werkunz",
+      "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Allianz_Arena.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b0/Allianz_Arena.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "licenseName": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "attribution": "Allianz Arena.jpg — werkunz, CC BY-SA 2.0; via Wikimedia Commons.",
+      "transformationNote": "Resized and WebP-compressed; responsive display crop; no retouching. Derivative retains the source licence.",
+      "sha256": "ac45ae4a9ec541c794758c48ae92207be7cd77a2567c1f809f84c46b1399e9f7",
+      "width": 1600,
+      "height": 852,
+      "bytes": 158650,
+      "focalX": 50,
+      "focalY": 50,
+      "approvalStatus": "approved",
+      "placements": [
+        {
+          "subjectType": "stadium",
+          "country": "Germany",
+          "city": "Munich",
+          "stadium": "Allianz Arena",
+          "alt": "Allianz Arena exterior, Munich"
+        }
+      ],
+      "reviewNote": "Source date: 2009-06-24. Source description, creator, reusable licence and downloaded photograph visually reviewed. Exact named landmark/ground confirmed; older imagery is archival and does not claim current conditions. Blue facade is historical 2009 illumination, not a claim about current club branding.",
+      "reviewedAt": "2026-11-15T00:00:00Z"
+    },
+    {
+      "id": "bl1-dortmund-city-v1",
+      "localPath": "public/creatives/bl1/dortmund-city.webp",
+      "title": "Dortmund Reinoldikirche 01.jpg",
+      "creator": "Arnoldius",
+      "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Dortmund_Reinoldikirche_01.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/d/dc/Dortmund_Reinoldikirche_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "licenseName": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "attribution": "Dortmund Reinoldikirche 01.jpg — Arnoldius, CC BY-SA 3.0; via Wikimedia Commons.",
+      "transformationNote": "Resized and WebP-compressed; responsive display crop; no retouching. Derivative retains the source licence.",
+      "sha256": "6bb7637a4a3f8f7db93573efba5cf4ed6e4ca7f25a92c12bf01992b393639336",
+      "width": 1200,
+      "height": 1600,
+      "bytes": 233326,
+      "focalX": 50,
+      "focalY": 0,
+      "approvalStatus": "approved",
+      "placements": [
+        {
+          "subjectType": "city",
+          "country": "Germany",
+          "city": "Dortmund",
+          "alt": "St Reinold’s Church, Dortmund"
+        }
+      ],
+      "reviewNote": "Source date: 2015-12-23. Source description, creator, reusable licence and downloaded photograph visually reviewed. Exact named landmark/ground confirmed; older imagery is archival and does not claim current conditions.",
+      "reviewedAt": "2026-11-15T00:00:00Z"
+    },
+    {
+      "id": "bl1-dortmund-stadium-v1",
+      "localPath": "public/creatives/bl1/dortmund-stadium.webp",
+      "title": "Signal Iduna Park.jpg",
+      "creator": "Moayad Abuawad",
+      "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Signal_Iduna_Park.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f4/Signal_Iduna_Park.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "licenseName": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "attribution": "Signal Iduna Park.jpg — Moayad Abuawad, CC BY-SA 4.0; via Wikimedia Commons.",
+      "transformationNote": "Resized and WebP-compressed; responsive display crop; no retouching. Derivative retains the source licence.",
+      "sha256": "1b01e05e8106385e00e398579708a7ad5efdda4f817294a9cc1ba9e7d8af4a5f",
+      "width": 1600,
+      "height": 900,
+      "bytes": 253682,
+      "focalX": 50,
+      "focalY": 50,
+      "approvalStatus": "approved",
+      "placements": [
+        {
+          "subjectType": "stadium",
+          "country": "Germany",
+          "city": "Dortmund",
+          "stadium": "Signal Iduna Park",
+          "alt": "Signal Iduna Park, Dortmund"
+        }
+      ],
+      "reviewNote": "Source date: 2018-02-23 10:48:00. Source description, creator, reusable licence and downloaded photograph visually reviewed. Exact named landmark/ground confirmed; older imagery is archival and does not claim current conditions.",
+      "reviewedAt": "2026-11-15T00:00:00Z"
+    },
+    {
+      "id": "bl1-cologne-city-v1",
+      "localPath": "public/creatives/bl1/cologne-city.webp",
+      "title": "Cologne Cathedral-1.jpg",
+      "creator": "Ahmed Yousry Mahfouz",
+      "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Cologne_Cathedral-1.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Cologne_Cathedral-1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "licenseName": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "attribution": "Cologne Cathedral-1.jpg — Ahmed Yousry Mahfouz, CC BY-SA 4.0; via Wikimedia Commons.",
+      "transformationNote": "Resized and WebP-compressed; responsive display crop; no retouching. Derivative retains the source licence.",
+      "sha256": "be8e144fac4ff1837ca44356220517c729467ec61a63a7fbbeaa18c048981ec8",
+      "width": 1067,
+      "height": 1600,
+      "bytes": 445696,
+      "focalX": 50,
+      "focalY": 0,
+      "approvalStatus": "approved",
+      "placements": [
+        {
+          "subjectType": "city",
+          "country": "Germany",
+          "city": "Cologne",
+          "alt": "Cologne Cathedral"
+        }
+      ],
+      "reviewNote": "Source date: 2014-09-19 15:13:19. Source description, creator, reusable licence and downloaded photograph visually reviewed. Exact named landmark/ground confirmed; older imagery is archival and does not claim current conditions.",
+      "reviewedAt": "2026-11-15T00:00:00Z"
+    },
+    {
+      "id": "bl1-cologne-stadium-v1",
+      "localPath": "public/creatives/bl1/cologne-stadium.webp",
+      "title": "Cologne-Germany RheinEnergieStadion-01.jpg",
+      "creator": "CEphoto, Uwe Aranas",
+      "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Cologne-Germany_RheinEnergieStadion-01.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Cologne-Germany_RheinEnergieStadion-01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "licenseName": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "attribution": "Photo by CEphoto, Uwe Aranas or alternatively © CEphoto, Uwe Aranas",
+      "transformationNote": "Resized and WebP-compressed; responsive display crop; no retouching. Derivative retains the source licence.",
+      "sha256": "82a99bf84ff19939dcfc3080f646f337e0d85a467199fbfd1fddb6eed3dfef13",
+      "width": 1600,
+      "height": 873,
+      "bytes": 152300,
+      "focalX": 50,
+      "focalY": 50,
+      "approvalStatus": "approved",
+      "placements": [
+        {
+          "subjectType": "stadium",
+          "country": "Germany",
+          "city": "Cologne",
+          "stadium": "RheinEnergieSTADION",
+          "alt": "RheinEnergieSTADION, Cologne"
+        }
+      ],
+      "reviewNote": "Source date: 2015-10-17. Source description, creator, reusable licence and downloaded photograph visually reviewed. Exact named landmark/ground confirmed; older imagery is archival and does not claim current conditions.",
+      "reviewedAt": "2026-11-15T00:00:00Z"
     }
   ]
 }
