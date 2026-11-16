@@ -1,3 +1,13 @@
+/** A duplicate upload is reusable only after the caller verifies the public bytes. */
+export async function creativeUploadAlreadyExists(response: Response): Promise<boolean> {
+  if (response.status === 409) return true;
+  if (response.status !== 400) return false;
+  try {
+    const body = await response.json() as {statusCode?: unknown; error?: unknown};
+    return body !== null && String(body.statusCode) === "409" && body.error === "Duplicate";
+  } catch { return false; }
+}
+
 /** Server-only Storage request headers. New opaque secret keys are not JWTs. */
 export function creativeStorageHeaders(secret: string): Record<string, string> {
   if (secret.startsWith("sb_secret_") && secret.length > 12) return { apikey: secret };
