@@ -3,7 +3,7 @@ import { createHash } from "node:crypto";
 import { readFile, realpath } from "node:fs/promises";
 import path from "node:path";
 import { eq } from "drizzle-orm";
-import { creativeStorageHeaders } from "../src/providers/creative-storage";
+import { creativeStorageHeaders, creativeUploadAlreadyExists } from "../src/providers/creative-storage";
 import { createDb } from "../src/db/client";
 import { creativeAssets, creativePlacements } from "../src/db/schema";
 import { creativeObjectKey, creativePublicUrl, creativeSubjectKey, validateCreativeManifest, type CreativeManifest } from "../src/domain/creative-library";
@@ -42,7 +42,7 @@ async function main() {
     for (const { asset, bytes, objectKey } of prepared) {
       const imageUrl = creativePublicUrl(base, bucket, objectKey);
       const response = await fetch(`${storageOrigin}/storage/v1/object/${bucket}/${objectKey}`, { method:"POST",headers:{...headers,"Content-Type":"image/webp","cache-control":"31536000","x-upsert":"false"},body:bytes,signal:AbortSignal.timeout(30000) });
-      if (!response.ok && response.status !== 409) throw Error(`${asset.id}: storage upload failed (HTTP ${response.status}).`);
+      if (!response.ok && !await creativeUploadAlreadyExists(response)) throw Error(`${asset.id}: storage upload failed (HTTP ${response.status}).`);
       const verification = await fetch(imageUrl, { cache:"no-store",signal:AbortSignal.timeout(15000) });
       if (!verification.ok || !(verification.headers.get("content-type")??"").startsWith("image/webp") || hash(new Uint8Array(await verification.arrayBuffer())) !== asset.sha256) throw Error(`${asset.id}: public object verification failed; no metadata published.`);
       const publishedAt = new Date();
