@@ -1,0 +1,182 @@
+{
+  "version": 1,
+  "assets": [
+    {
+      "id": "bl1-hamburg-city-v1",
+      "localPath": "public/creatives/bl1/hamburg-city.webp",
+      "title": "Hamburg - Hamburger Rathaus.jpg",
+      "creator": "Fred Romero from Paris, France",
+      "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Hamburg_-_Hamburger_Rathaus.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/9/98/Hamburg_-_Hamburger_Rathaus.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "licenseName": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "attribution": "Hamburg - Hamburger Rathaus.jpg — Fred Romero from Paris, France, CC BY 2.0; via Wikimedia Commons. Hamburg - Hamburger Rathaus.jpg / Wikimedia Commons / CC BY 2.0.",
+      "transformationNote": "Resized and WebP-compressed; responsive display crop; no retouching. Derivative retains the source licence.",
+      "sha256": "7a9ce19eab446ecccbb2f655ed401843f429861a13af1c261085954f8894a7cc",
+      "width": 1600,
+      "height": 1067,
+      "bytes": 158028,
+      "focalX": 50,
+      "focalY": 0,
+      "approvalStatus": "approved",
+      "placements": [
+        {
+          "subjectType": "city",
+          "country": "Germany",
+          "city": "Hamburg",
+          "alt": "Hamburg City Hall"
+        }
+      ],
+      "reviewNote": "Source date: Taken on 2 August 2016, 18:28. Subject, author, reusable licence and optimized photograph visually reviewed; older photographs are archival, not claims about current conditions.",
+      "reviewedAt": "2026-11-16T00:00:00Z"
+    },
+    {
+      "id": "bl1-hamburg-stadium-v1",
+      "localPath": "public/creatives/bl1/hamburg-stadium.webp",
+      "title": "RK 1009 9831 Volksparkstadion.jpg",
+      "creator": "Reinhard Kraasch",
+      "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:RK_1009_9831_Volksparkstadion.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/d/de/RK_1009_9831_Volksparkstadion.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "licenseName": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "attribution": "Foto: Reinhard Kraasch, Lizenz: CC-BY-SA 4.0 DE RK 1009 9831 Volksparkstadion.jpg / Wikimedia Commons / CC BY-SA 4.0.",
+      "transformationNote": "Resized and WebP-compressed; responsive display crop; no retouching. Derivative retains the source licence.",
+      "sha256": "419355799f884f344d9145ff994292daa9b273d3b0cc6ca05e8f742457c6fd90",
+      "width": 1600,
+      "height": 1067,
+      "bytes": 361634,
+      "focalX": 50,
+      "focalY": 50,
+      "approvalStatus": "approved",
+      "placements": [
+        {
+          "subjectType": "stadium",
+          "country": "Germany",
+          "city": "Hamburg",
+          "stadium": "Volksparkstadion",
+          "alt": "Volksparkstadion, Hamburg"
+        }
+      ],
+      "reviewNote": "Source date: 2010-09. Subject, author, reusable licence and optimized photograph visually reviewed; older photographs are archival, not claims about current conditions. Source describes the same ground under its historical Imtech Arena name.",
+      "reviewedAt": "2026-11-16T00:00:00Z"
+    },
+    {
+      "id": "bl1-bremen-city-v1",
+      "localPath": "public/creatives/bl1/bremen-city.webp",
+      "title": "Bremen rathaus front.jpg",
+      "creator": "Wickler (talk)",
+      "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Bremen_rathaus_front.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/1/18/Bremen_rathaus_front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "licenseName": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "attribution": "Bremen rathaus front.jpg — Wickler (talk), CC BY-SA 3.0; via Wikimedia Commons. Bremen rathaus front.jpg / Wikimedia Commons / CC BY-SA 3.0.",
+      "transformationNote": "Resized and WebP-compressed; responsive display crop; no retouching. Derivative retains the source licence.",
+      "sha256": "9ef07e89ebc6a063d9d2b1bff5113e105010fcbb8a62a3c6d4eafac78fc81821",
+      "width": 1600,
+      "height": 946,
+      "bytes": 284054,
+      "focalX": 50,
+      "focalY": 0,
+      "approvalStatus": "approved",
+      "placements": [
+        {
+          "subjectType": "city",
+          "country": "Germany",
+          "city": "Bremen",
+          "alt": "Bremen City Hall"
+        }
+      ],
+      "reviewNote": "Source date: 2014-09-18. Subject, author, reusable licence and optimized photograph visually reviewed; older photographs are archival, not claims about current conditions.",
+      "reviewedAt": "2026-11-16T00:00:00Z"
+    },
+    {
+      "id": "bl1-bremen-stadium-v1",
+      "localPath": "public/creatives/bl1/bremen-stadium.webp",
+      "title": "Germany bremen stadium.jpg",
+      "creator": "Arne Müseler",
+      "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Germany_bremen_stadium.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Germany_bremen_stadium.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "licenseName": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "attribution": "Germany bremen stadium.jpg — Arne Müseler, CC BY-SA 4.0; via Wikimedia Commons. Germany bremen stadium.jpg / Wikimedia Commons / CC BY-SA 4.0.",
+      "transformationNote": "Resized and WebP-compressed; responsive display crop; no retouching. Derivative retains the source licence.",
+      "sha256": "59d7ed65236042ec3f58e5d0e79a5917559ba153ed44284da04b865ca86e165e",
+      "width": 1600,
+      "height": 1198,
+      "bytes": 587666,
+      "focalX": 50,
+      "focalY": 50,
+      "approvalStatus": "approved",
+      "placements": [
+        {
+          "subjectType": "stadium",
+          "country": "Germany",
+          "city": "Bremen",
+          "stadium": "Weserstadion",
+          "alt": "Weserstadion, Bremen"
+        }
+      ],
+      "reviewNote": "Source date: 2024-09-09 11:48:09. Subject, author, reusable licence and optimized photograph visually reviewed; older photographs are archival, not claims about current conditions.",
+      "reviewedAt": "2026-11-16T00:00:00Z"
+    },
+    {
+      "id": "bl1-berlin-city-v1",
+      "localPath": "public/creatives/bl1/berlin-city.webp",
+      "title": "Berlin, Brandenburger Tor -- 2019 -- 6331.jpg",
+      "creator": "Dietmar Rabich",
+      "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Berlin,_Brandenburger_Tor_--_2019_--_6331.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Berlin%2C_Brandenburger_Tor_--_2019_--_6331.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "licenseName": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "attribution": "Dietmar Rabich Berlin, Brandenburger Tor -- 2019 -- 6331.jpg / Wikimedia Commons / CC BY-SA 4.0.",
+      "transformationNote": "Resized and WebP-compressed; responsive display crop; no retouching. Derivative retains the source licence.",
+      "sha256": "c2636cff329fa123bc044703166230197ec8bf140f9a93e0b158eae2249b03ee",
+      "width": 1600,
+      "height": 1000,
+      "bytes": 244586,
+      "focalX": 50,
+      "focalY": 0,
+      "approvalStatus": "approved",
+      "placements": [
+        {
+          "subjectType": "city",
+          "country": "Germany",
+          "city": "Berlin",
+          "alt": "Brandenburg Gate, Berlin"
+        }
+      ],
+      "reviewNote": "Source date: Taken on 25 May 2019, 17:32. Subject, author, reusable licence and optimized photograph visually reviewed; older photographs are archival, not claims about current conditions.",
+      "reviewedAt": "2026-11-16T00:00:00Z"
+    },
+    {
+      "id": "bl1-berlin-stadium-v1",
+      "localPath": "public/creatives/bl1/berlin-stadium.webp",
+      "title": "Eingang Stadion Alte Försterei-2.jpg",
+      "creator": "GodeNehler",
+      "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Eingang_Stadion_Alte_F%C3%B6rsterei-2.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a7/Eingang_Stadion_Alte_F%C3%B6rsterei-2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "licenseName": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "attribution": "Eingang Stadion Alte Försterei-2.jpg — GodeNehler, CC BY-SA 4.0; via Wikimedia Commons. Eingang Stadion Alte Försterei-2.jpg / Wikimedia Commons / CC BY-SA 4.0.",
+      "transformationNote": "Resized and WebP-compressed; responsive display crop; no retouching. Derivative retains the source licence.",
+      "sha256": "4bea6f2e9c61fe90177b83856e74b2067d581402c17ed445d0f9433c9fc9cedd",
+      "width": 1600,
+      "height": 1067,
+      "bytes": 337246,
+      "focalX": 75,
+      "focalY": 75,
+      "approvalStatus": "approved",
+      "placements": [
+        {
+          "subjectType": "stadium",
+          "country": "Germany",
+          "city": "Berlin",
+          "stadium": "Stadion An der Alten Försterei",
+          "alt": "Entrance to Stadion An der Alten Försterei, Berlin"
+        }
+      ],
+      "reviewNote": "Source date: 2019-10-13 14:19:36. Subject, author, reusable licence and optimized photograph visually reviewed; older photographs are archival, not claims about current conditions.",
+      "reviewedAt": "2026-11-16T00:00:00Z"
+    }
+  ]
+}
