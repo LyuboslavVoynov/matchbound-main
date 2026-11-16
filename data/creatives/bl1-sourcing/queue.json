@@ -108,41 +108,6 @@
       "searchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Germany%20Gelsenkirchen%20Veltins-Arena"
     },
     {
-      "subjectKey": "[\"city\",\"germany\",\"hamburg\"]",
-      "subject": {
-        "subjectType": "city",
-        "country": "Germany",
-        "city": "Hamburg",
-        "alt": ""
-      },
-      "providerTeamIds": [
-        7
-      ],
-      "verificationUrls": [
-        "https://api.football-data.org/v4/teams/7"
-      ],
-      "status": "needs-source",
-      "searchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Germany%20Hamburg%20landmark"
-    },
-    {
-      "subjectKey": "[\"stadium\",\"germany\",\"hamburg\",\"volksparkstadion\"]",
-      "subject": {
-        "subjectType": "stadium",
-        "country": "Germany",
-        "city": "Hamburg",
-        "stadium": "Volksparkstadion",
-        "alt": ""
-      },
-      "providerTeamIds": [
-        7
-      ],
-      "verificationUrls": [
-        "https://api.football-data.org/v4/teams/7"
-      ],
-      "status": "needs-source",
-      "searchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Germany%20Hamburg%20Volksparkstadion"
-    },
-    {
       "subjectKey": "[\"city\",\"germany\",\"stuttgart\"]",
       "subject": {
         "subjectType": "city",
@@ -176,41 +141,6 @@
       ],
       "status": "needs-source",
       "searchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Germany%20Stuttgart%20Mercedes-Benz%20Arena"
-    },
-    {
-      "subjectKey": "[\"city\",\"germany\",\"bremen\"]",
-      "subject": {
-        "subjectType": "city",
-        "country": "Germany",
-        "city": "Bremen",
-        "alt": ""
-      },
-      "providerTeamIds": [
-        12
-      ],
-      "verificationUrls": [
-        "https://api.football-data.org/v4/teams/12"
-      ],
-      "status": "needs-source",
-      "searchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Germany%20Bremen%20landmark"
-    },
-    {
-      "subjectKey": "[\"stadium\",\"germany\",\"bremen\",\"weserstadion\"]",
-      "subject": {
-        "subjectType": "stadium",
-        "country": "Germany",
-        "city": "Bremen",
-        "stadium": "Weserstadion",
-        "alt": ""
-      },
-      "providerTeamIds": [
-        12
-      ],
-      "verificationUrls": [
-        "https://api.football-data.org/v4/teams/12"
-      ],
-      "status": "needs-source",
-      "searchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Germany%20Bremen%20Weserstadion"
     },
     {
       "subjectKey": "[\"city\",\"germany\",\"mainz\"]",
@@ -386,41 +316,6 @@
       ],
       "status": "needs-source",
       "searchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Germany%20Frankfurt%20am%20Main%20Deutsche%20Bank%20Park"
-    },
-    {
-      "subjectKey": "[\"city\",\"germany\",\"berlin\"]",
-      "subject": {
-        "subjectType": "city",
-        "country": "Germany",
-        "city": "Berlin",
-        "alt": ""
-      },
-      "providerTeamIds": [
-        28
-      ],
-      "verificationUrls": [
-        "https://api.football-data.org/v4/teams/28"
-      ],
-      "status": "needs-source",
-      "searchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Germany%20Berlin%20landmark"
-    },
-    {
-      "subjectKey": "[\"stadium\",\"germany\",\"berlin\",\"stadion an der alten forsterei\"]",
-      "subject": {
-        "subjectType": "stadium",
-        "country": "Germany",
-        "city": "Berlin",
-        "stadium": "Stadion An der Alten Försterei",
-        "alt": ""
-      },
-      "providerTeamIds": [
-        28
-      ],
-      "verificationUrls": [
-        "https://api.football-data.org/v4/teams/28"
-      ],
-      "status": "needs-source",
-      "searchUrl": "https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search=Germany%20Berlin%20Stadion%20An%20der%20Alten%20F%C3%B6rsterei"
     },
     {
       "subjectKey": "[\"city\",\"germany\",\"paderborn\"]",
