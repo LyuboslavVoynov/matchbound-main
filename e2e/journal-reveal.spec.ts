@@ -40,6 +40,19 @@ test("failed photos use editorial fallback and reduced motion goes directly to t
   for(let i=0;i<30;i++)await page.clock.runFor(100);
   await expect(page.locator("main")).toHaveAttribute("data-active-stage","country");
   await expect(page.locator(".journal-editorial")).toBeVisible();
+  for(const kind of ["country","city","stadium"]){
+    for(let i=0;i<120;i++){
+      if(await page.locator(`[data-destination-icon="${kind}"]`).count())break;
+      await page.clock.runFor(100);
+    }
+    const icon=page.locator(`[data-destination-icon="${kind}"]`);
+    await expect(icon).toBeVisible();
+    const box=await icon.boundingBox();
+    expect(box!.width).toBeGreaterThan(40);
+    expect(box!.height).toBeGreaterThan(40);
+    expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
+    await page.screenshot({path:test.info().outputPath(kind+"-fallback.png"),animations:"disabled"});
+  }
   expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
   await page.emulateMedia({reducedMotion:"reduce"});await page.waitForURL("**/weekend-journal/complete");
   await expect(page.locator(".result-handoff-overlay")).toHaveCount(0);

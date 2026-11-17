@@ -4,7 +4,8 @@ import { useRouter } from "next/navigation";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import type { DrawResultSnapshot } from "@/domain/result";
 import { journalVisuals, type JournalVisualSet } from "@/domain/journal-visuals";
-import { CompetitionEmblemMark, CountryFlagMark, FixtureTeams, useVisualIdentityReadiness } from "@/components/visual-identity";
+import { CompetitionEmblemMark, FixtureTeams, useVisualIdentityReadiness } from "@/components/visual-identity";
+import { DestinationIcon } from "@/components/destination-icon";
 import { useResultHandoff } from "@/components/result-handoff";
 import { JournalArtwork, useJournalPreload } from "@/components/journal-artwork";
 import { BrandLockup } from "@/components/brand-lockup";
@@ -87,7 +88,8 @@ export function RevealExperience({ result, resultHref, preview = false, photos: 
       <div className="journal-live-chapter"><span>CHAPTER 0{chapter+1}</span><span>0{chapter+1} / 05</span></div>
       <h2>{title}</h2><p className="journal-live-label">{["The destination", "The city", "The competition", "The ground", "The clubs"][chapter]}</p>
       {stage===3 ? <div className="journal-live-art journal-editorial journal-league"><CompetitionEmblemMark identity={result.visualIdentity}/><strong>{result.competition}</strong><p>The weekend has a stage.</p></div> : stage===5 ? <div className="journal-live-art journal-clubs"><FixtureTeams identity={result.visualIdentity} homeTeam={result.homeTeam} awayTeam={result.awayTeam}><span className="journal-live-versus">v</span></FixtureTeams><p>One match.<br/><em>A new story.</em></p><span>{result.stadium} / {result.city}</span></div> : <JournalArtwork onCreditToggle={setCreditOpen} photo={photo} usable={Boolean(photo && preload.loaded.includes(photo.src))}>
-        {stage===1 ? <><CountryFlagMark identity={result.visualIdentity}/><strong>{result.country}</strong><p>It starts here.</p></> : stage===2 ? <><strong>{result.city}</strong><p>Football takes you places.</p></> : <><span className="journal-ground-lines" aria-hidden="true"><i/><i/><i/></span><strong>{result.stadium}</strong><p>Your weekend has a home.</p></>}
+        <DestinationIcon kind={stage===1?"country":stage===2?"city":"stadium"}/>
+        {stage===1 ? <><strong>{result.country}</strong><p>It starts here.</p></> : stage===2 ? <><strong>{result.city}</strong><p>Football takes you places.</p></> : <><strong>{result.stadium}</strong><p>Your weekend has a home.</p></>}
       </JournalArtwork>}
       <p className="journal-live-caption">{stage===1?"Your next chapter starts here.":stage===2?"A new city. A different weekend.":stage===4?"Imagine the walk to the ground.":"Football takes you places."}</p>
     </section>}
