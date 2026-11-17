@@ -47,6 +47,7 @@ test("failed photos use editorial fallback and reduced motion goes directly to t
     }
     const icon=page.locator(`[data-destination-icon="${kind}"]`);
     await expect(icon).toBeVisible();
+    expect(await page.locator(".journal-destination-fallback").evaluate(el=>getComputedStyle(el).backgroundColor)).toBe("rgba(0, 0, 0, 0)");
     const box=await icon.boundingBox();
     expect(box!.width).toBeGreaterThan(40);
     expect(box!.height).toBeGreaterThan(40);

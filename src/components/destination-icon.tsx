@@ -1,7 +1,8 @@
 import "./destination-icon.css";
-/** Original Matchbound marks for destinations without usable photography. */
+/** Original field marks; labels remain in the reveal heading. */
 export function DestinationIcon({kind}:{kind:"country"|"city"|"stadium"}) {
- return <svg className="journal-destination-icon" data-destination-icon={kind} viewBox="0 0 160 112" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" focusable="false">
-  {kind==="country" ? <><circle cx="80" cy="56" r="42"/><ellipse cx="80" cy="56" rx="20" ry="42"/><path d="M38 56h84M46 32c20 12 48 12 68 0M46 80c20-12 48-12 68 0"/><circle cx="112" cy="25" r="6" fill="currentColor" stroke="none"/></> : kind==="city" ? <><path d="M20 94h120M27 94V52h30v42M65 94V30h31v64M105 94V44h27v50M80 30V16M74 16h12M35 63h3m9 0h3m-15 13h3m9 0h3M75 44h11M75 57h11M75 70h11M76 94V82h9v12M114 56h9m-9 13h9m-9 13h9"/></> : <><path d="M20 48 42 26h76l22 22v36l-22 15H42L20 84V48ZM20 48l22 12h76l22-12M42 60v39m76-39v39M42 26v18h76V26M55 44V26m17 18V26m17 18V26m17 18V26"/><path d="m52 71 13-7h30l13 7v13l-13 7H65l-13-7V71Zm28-7v27"/><ellipse cx="80" cy="77.5" rx="10" ry="6"/></>}
+ return <svg className="journal-destination-icon" data-destination-icon={kind} viewBox="0 0 112 112" fill="none" stroke="currentColor" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" focusable="false">
+  <circle className="journal-destination-accent" cx="69" cy="46" r="36" stroke="none"/>
+  {kind==="country" ? <path d="m16 30 25-10 27 10 25-10v64L68 94 41 84 16 94V30Zm25-10v64m27-54v64"/> : kind==="city" ? <path d="M23 96V24h52v72M15 96h82M75 48h15v48M36 38h3m20 0h3M36 53h3m20 0h3M36 68h3m20 0h3M42 96V82h15v14"/> : <path d="M18 95V31h76v64M18 31l17 17h42l17-17M35 48v47m42-47v47M18 95h76M35 65h42M35 81h42M49 48v47m14-47v47"/>}
  </svg>;
 }
