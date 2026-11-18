@@ -42,7 +42,7 @@ test("Weekend Journal chapters lead automatically to one locked fixture and deta
     await expect(page.locator(".result-locked")).toHaveText("Fixture locked");
     await expect(page.locator(".fixture-heading")).toHaveText("Arsenal v Chelsea");
     await expect(page.locator(".matchuptop")).toContainText("Last 3 meetings");
-    await expect(page.getByRole("button",{name:"Reveal my beer"})).toBeVisible();
+    await expect(page.getByRole("button",{name:"Pour my pick"})).toBeVisible();
     await expect(page.getByRole("link", { name: "View match details" })).toHaveCount(0);
     await expect(page.locator("html")).not.toHaveCSS("overflow", "hidden");
     await page.getByRole("button", { name: "Copy link" }).focus();

@@ -29,7 +29,7 @@ for(const target of [{country:"Netherlands",city:"Amsterdam",ground:678},{countr
    await page.getByText("Photo credit",{exact:true}).click();await expect(page.locator(".fixture-photo-credit")).toContainText(/CC BY|CC0/);
    {
     expect(beerSignals?.countryBrand?.productId).toMatch(target.country==="Portugal"?/^pt-/:/^nl-/);
-    await page.emulateMedia({reducedMotion:"reduce"});await page.getByRole("button",{name:"Reveal my beer"}).click();
+    await page.emulateMedia({reducedMotion:"reduce"});await page.getByRole("button",{name:"Pour my pick"}).click();
     await expect(page.locator(".beer-ticket h2")).toHaveText(beerSignals!.countryBrand!.brandName);
     await expect(page.locator(".beer-ticket")).toContainText(beerSignals!.countryBrand!.abvBasisPoints!/100+"% ABV");
     await expect(page.locator(".beer-ticket .beer-seal")).toBeVisible();

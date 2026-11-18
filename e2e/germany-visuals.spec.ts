@@ -29,7 +29,7 @@ for(const target of [{country:"Germany",city:"Munich",slug:"munich"},{country:"G
    await page.getByText("Photo credit",{exact:true}).click();await expect(page.locator(".fixture-photo-credit")).toContainText(/CC BY|CC0/);
    {
     expect(beerSignals?.countryBrand?.productId).toMatch(/^(augustiner|paulaner|weihenstephaner|erdinger|krombacher)-/);
-    await page.emulateMedia({reducedMotion:"reduce"});await page.getByRole("button",{name:"Reveal my beer"}).click();
+    await page.emulateMedia({reducedMotion:"reduce"});await page.getByRole("button",{name:"Pour my pick"}).click();
     await expect(page.locator(".beer-ticket h2")).toHaveText(beerSignals!.countryBrand!.brandName);
     const abv=beerSignals!.countryBrand!.abvBasisPoints;
     if(abv!==undefined)await expect(page.locator(".beer-ticket")).toContainText(abv/100+"% ABV");

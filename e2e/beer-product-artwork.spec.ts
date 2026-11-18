@@ -15,7 +15,7 @@ for(const id of ["augustiner-2","krombacher-1"])test(id+" uses published exact p
  await db.insert(draws).values({shareToken:token,fixtureId:row.fixture.id,resultSnapshot:result,tripStartDate:result.kickoffDate,tripEndDate:result.kickoffDate,expiresAt:new Date(Date.now()+3600000)});
  try{
   await page.emulateMedia({reducedMotion:"reduce"});await page.goto("/m/"+token);
-  await page.getByRole("button",{name:"Reveal my beer"}).click();const image=page.getByRole("img",{name:brand+" product photo"});
+  await page.getByRole("button",{name:"Pour my pick"}).click();const image=page.getByRole("img",{name:brand+" product photo"});
   await expect(image).toHaveAttribute("src",new RegExp("/storage/v1/object/public/matchbound-creatives/journal/beer-art-"+id+"-v1/"));
   await expect.poll(()=>image.evaluate(i=>(i as HTMLImageElement).naturalWidth)).toBeGreaterThan(0);
   await page.getByText("Photo source",{exact:true}).click();await expect(page.locator("details.beer-art-credit")).toContainText("CC BY-SA 3.0");await expect(page.locator("details.beer-art-credit")).toContainText("Historical packaging");

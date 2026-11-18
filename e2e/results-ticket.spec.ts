@@ -11,9 +11,15 @@ test("ledger preserves recorded score order and ticket reveal survives a reload"
  expect(await page.locator(".fixture-backdrop img").evaluate((img)=> (img as HTMLImageElement).naturalWidth)).toBeGreaterThan(0);
  expect(await page.locator(".matchuptop h2").evaluate(el=>getComputedStyle(el).fontFamily)).toContain("Inter");
  const brand=sample.beerSignals.countryBrand.brandName;
+ await expect(page.locator(".beer-ticket-sealed")).toContainText("The match is a surprise.");
+ await expect(page.locator(".beer-ticket-sealed")).toContainText("randomly picked beer from your destination country");
+ expect(await page.locator(".beer-ticket-sealed h2").evaluate(el=>getComputedStyle(el).fontFamily)).toContain("Inter");
+ await page.screenshot({path:info.outputPath("first-pour-sealed.png"),fullPage:true,animations:"disabled"});
  await expect(page.getByRole("heading",{name:brand,exact:true})).toHaveCount(0);
- await page.getByRole("button",{name:"Reveal my beer"}).click();await expect(page.locator(".beer-ticket")).toHaveAttribute("data-beer-state","opening");
- await expect(page.getByRole("heading",{name:brand,exact:true})).toBeVisible();await expect(page.getByRole("button",{name:"Reveal my beer"})).toHaveCount(0);
+ await page.getByRole("button",{name:"Pour my pick"}).click();await expect(page.locator(".beer-ticket")).toHaveAttribute("data-beer-state","opening");
+ await expect(page.getByRole("button",{name:"Pouring your pick…"})).toBeDisabled();
+ expect(await page.locator(".beer-ticket-sealed .beer-pour-liquid").evaluate(el=>getComputedStyle(el).animationName)).toBe("beer-first-pour-fill");
+ await expect(page.getByRole("heading",{name:brand,exact:true})).toBeVisible();await expect(page.getByRole("button",{name:"Pour my pick"})).toHaveCount(0);
  await page.reload();await expect(page.locator(".beer-ticket")).toHaveAttribute("data-beer-state","revealed");
  expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
  await page.screenshot({path:info.outputPath("ledger-ticket-revealed.png"),fullPage:true,animations:"disabled"});
@@ -21,7 +27,7 @@ test("ledger preserves recorded score order and ticket reveal survives a reload"
 test("reduced motion and denied storage still allow the beer reveal",async({page})=>{
  await page.emulateMedia({reducedMotion:"reduce"});
  await page.addInitScript(()=>{Object.defineProperty(Storage.prototype,"getItem",{value:()=>{throw Error("Unavailable")}});Object.defineProperty(Storage.prototype,"setItem",{value:()=>{throw Error("Unavailable")}})});
- await page.goto("/design/results-ticket?beer=Berliner%20Pilsner");await page.getByRole("button",{name:"Reveal my beer"}).click();
+ await page.goto("/design/results-ticket?beer=Berliner%20Pilsner");await page.getByRole("button",{name:"Pour my pick"}).click();
  await expect(page.locator(".beer-ticket")).toHaveAttribute("data-beer-state","revealed");await expect(page.getByRole("img",{name:"Berliner Pilsner logo"})).toBeVisible();
 });
 test("missing meeting and beer data show an honest empty ledger without a ticket",async({page})=>{

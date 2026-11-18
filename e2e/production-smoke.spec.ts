@@ -88,7 +88,7 @@ for (const destination of [
     await expect(page.locator(".fixturebody img,.competition img,.country img")).toHaveCount(expectedMarks);
     for (const img of await page.locator(".fixturebody img,.competition img,.country img").all()) await expect.poll(() => img.evaluate(node => (node as HTMLImageElement).naturalWidth)).toBeGreaterThan(0);
     if (beerSignals?.countryBrand) {
-      await page.getByRole("button", { name: "Reveal my beer" }).click();
+      await page.getByRole("button", { name: "Pour my pick" }).click();
       await expect(page.locator(".beer-ticket")).toHaveAttribute("data-beer-state", "revealed");
       await expect(page.locator(".beer-ticket h2")).toHaveText(beerSignals.countryBrand.brandName);
       if (beerSignals.countryBrand.sourceUrl) await expect(page.getByRole("link", { name: "Brewery source" })).toHaveAttribute("href", beerSignals.countryBrand.sourceUrl);
