@@ -14,7 +14,7 @@ test("beer has a substantial panel and sharing stays compact for every data vari
         await expect(page.locator(".beer-ticket")).toHaveCount(beer === "price" ? 0 : 1);
         await expect(page.locator(".beer-price strong")).toHaveCount(beer === "brand" ? 0 : 1);
         if (beer !== "price") {
-          await page.getByRole("button",{name:"Reveal my beer"}).click();
+          await page.getByRole("button",{name:"Pour my pick"}).click();
           await expect(page.locator(".beer-ticket-result h2")).toHaveText("London Pride");
           expect(parseFloat(await page.locator(".beer-ticket-result h2").evaluate(el => getComputedStyle(el).fontSize))).toBeGreaterThanOrEqual(23);
         }

@@ -28,7 +28,7 @@ for(const city of ["Rome","Milan"]){
   await db.insert(draws).values({shareToken:token,fixtureId:row.fixture.id,resultSnapshot:result,tripStartDate:result.kickoffDate,tripEndDate:result.kickoffDate,expiresAt:new Date(Date.now()+3600000)});
   try{
    await page.emulateMedia({reducedMotion:"reduce"});await page.goto("/m/"+token);
-   await page.getByRole("button",{name:"Reveal my beer"}).click();
+   await page.getByRole("button",{name:"Pour my pick"}).click();
    const ticket=page.locator(".beer-ticket");
    await expect(ticket.locator("h2")).toHaveText(beer.brandName);
    await expect(ticket).toContainText(beer.abvBasisPoints!/100+"% ABV");

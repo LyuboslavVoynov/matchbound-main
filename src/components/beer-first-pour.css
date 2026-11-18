@@ -1,0 +1,22 @@
+.beer-ticket .beer-ticket-sealed{flex-direction:column;text-align:center;gap:14px;padding:24px 0 8px}
+.beer-ticket .beer-ticket-sealed h2{font-family:inherit;font-size:clamp(22px,3vw,28px);font-weight:750;line-height:1.17;letter-spacing:-.7px}
+.beer-ticket .beer-ticket-sealed p{font-family:inherit;font-style:normal;font-size:13px;line-height:1.6;color:var(--muted);max-width:290px;margin:13px auto 0}
+.beer-ticket .beer-ticket-result h2{font-family:inherit;font-weight:750;letter-spacing:-.7px}
+.beer-pour-art{width:116px;height:128px;position:relative;display:grid;place-items:center;flex:none}
+.beer-pour-halo{position:absolute;width:86px;height:86px;background:var(--accent);border-radius:50%;right:0;top:12px;opacity:.5}
+.beer-pour-glass{position:relative;overflow:hidden;width:64px;height:88px;border:2px solid var(--ink);border-top:0;border-radius:3px 3px 13px 13px;transform:rotate(-5deg);background:#faf7e9}
+.beer-pour-glass:after{content:"";position:absolute;inset:0 0 auto;height:2px;background:var(--ink)}
+.beer-pour-liquid{position:absolute;inset:7px 3px 3px;background:#dca540;transform:translateY(115%);border-radius:0 0 9px 9px}
+.beer-pour-foam{display:block;position:absolute;top:0;left:0;right:0;height:10px;background:#fff5db;border-radius:45% 35% 0 0}
+.beer-pour-shine{position:absolute;left:11px;top:15px;width:3px;height:50px;border-radius:3px;background:#ffffff80}
+.beer-ticket.beer-ticket--opening .beer-ticket-sealed{animation:beer-first-pour-exit 550ms cubic-bezier(.4,0,.2,1) 1950ms both}
+.beer-ticket--opening .beer-pour-liquid{animation:beer-first-pour-fill 1800ms cubic-bezier(.22,1,.36,1) both}
+.beer-ticket--opening .beer-pour-glass{animation:beer-first-pour-settle 1900ms cubic-bezier(.22,1,.36,1) both}
+.beer-ticket.beer-ticket--revealed .beer-ticket-result{animation:beer-first-pour-result 400ms cubic-bezier(.22,1,.36,1) both}
+.beer-ticket .beer-first-pour-seal{border:0;outline:0;width:auto;height:auto}
+.beer-first-pour-seal .beer-pour-liquid{transform:translateY(0)}
+@keyframes beer-first-pour-fill{0%{transform:translateY(115%)}85%{transform:translateY(-2%)}100%{transform:translateY(0)}}
+@keyframes beer-first-pour-settle{from{transform:rotate(-5deg)}to{transform:rotate(0)}}
+@keyframes beer-first-pour-exit{to{transform:translateY(-18px);opacity:0}}
+@keyframes beer-first-pour-result{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+@media(prefers-reduced-motion:reduce){.beer-ticket.beer-ticket--opening .beer-ticket-sealed,.beer-ticket--opening .beer-pour-liquid,.beer-ticket--opening .beer-pour-glass,.beer-ticket.beer-ticket--revealed .beer-ticket-result{animation:none}}

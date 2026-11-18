@@ -19,7 +19,7 @@ test("Matchday surfaces match the selected direction and show sample-aligned mat
     await expect(page.locator(".matchuptop")).toContainText("Last 3 meetings");
     await expect(page.locator(".ledger-summary strong")).toHaveText(["1", "1", "1"]);
     await expect(page.locator(".ledger-score")).toHaveText(["3–0", "2–1", "1–1"]);
-    await expect(page.getByRole("button", { name: "Reveal my beer" })).toBeVisible();
+    await expect(page.getByRole("button", { name: "Pour my pick" })).toBeVisible();
     await expect(page.locator(".fixture-heading")).toHaveText("Arsenal v Chelsea");
     await expect(page.locator(".competition .identity-emblem img")).toHaveCount(1);
     await expect(page.locator(".fixture .teams img")).toHaveCount(2);
