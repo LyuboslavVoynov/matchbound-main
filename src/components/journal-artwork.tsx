@@ -37,6 +37,6 @@ export function useJournalPreload(photos: ReturnType<typeof import("@/domain/jou
 
 export function JournalArtwork({ photo, usable, children, onCreditToggle }: { photo?: JournalPhoto; usable: boolean; children: React.ReactNode; onCreditToggle?: (open: boolean) => void }) {
   const [failedSrc, setFailedSrc] = useState<string | null>(null);
-  if (!photo || !usable || failedSrc === photo.src) return <div className="journal-live-art journal-editorial">{children}</div>;
+  if (!photo || !usable || failedSrc === photo.src) return <div className="journal-live-art journal-editorial journal-destination-fallback">{children}</div>;
   return <figure className="journal-live-art journal-live-photo"><img src={photo.src} alt={photo.alt} style={{ objectPosition: photo.position }} onError={() => setFailedSrc(photo.src)} /><figcaption><span>{photo.alt}</span><details onToggle={event => { onCreditToggle?.(event.currentTarget.open); }}><summary>Photo credit</summary><div><a href={photo.source} target="_blank" rel="noreferrer">{photo.title}</a><span>{photo.author}</span><a href={photo.licenseUrl || photo.source} target="_blank" rel="noreferrer">{photo.license}</a><span>Responsive crop · no retouching</span><span>Close credit to continue the reveal.</span></div></details></figcaption></figure>;
 }

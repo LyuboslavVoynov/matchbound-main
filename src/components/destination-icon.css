@@ -1,2 +1,4 @@
-.journal-destination-icon{display:block;width:clamp(100px,30vw,160px);height:112px;max-width:100%;flex:0 1 auto;min-height:48px;color:var(--journal-lime);margin:0 0 16px}
-@media(max-width:600px){.journal-destination-icon{width:clamp(80px,22svh,140px);height:clamp(54px,12svh,96px);margin-bottom:10px}.journal-destination-icon+strong{display:none}}
+.journal-editorial.journal-destination-fallback{background:transparent;color:var(--journal-ink);clip-path:none}
+.journal-destination-icon{display:block;width:clamp(110px,30vw,160px);height:140px;max-width:100%;flex:0 1 auto;min-height:48px;color:var(--journal-ink);margin:0 0 16px}
+.journal-destination-accent{fill:var(--journal-lime)}
+@media(max-width:600px){.journal-destination-icon{width:clamp(80px,22svh,140px);height:clamp(70px,15svh,120px);margin-bottom:10px}.journal-destination-icon+strong{display:none}}
